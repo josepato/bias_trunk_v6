@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+
+
+       <record id="restart_restart_tree" model="ir.ui.view">
+            <field name="name">restart.restart.form</field>
+            <field name="model">restart.restart</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Time Machine Configuration">
+                    <field name="user_id"/>
+                    <field name="date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_restart_form" model="ir.actions.act_window">
+            <field name="name">Restart Server Kardex</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">restart.restart</field>
+            <field name="view_type">tree</field>
+            <field name="view_id" ref="restart_restart_tree"/>
+        </record>
+        
+
+        <menuitem action="action_restart_form" id="menu_restart_kardex" parent="menu_restart" sequence="2"/>
+
+
+ 
+    </data>
+</openerp>

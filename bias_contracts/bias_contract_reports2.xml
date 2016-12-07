@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<terp>
+<data>
+	<!-- 
+	Phisical Inventory Report
+	-->
+	<report
+		id="report_stock_bias"
+		string="Imprimir Inventario F�sico"
+		model="stock.location"
+		name="stock.inventory.bias"
+		rml="bias_stock/report/stock.rml"
+		auto="False"/>
+
+    <!-- 	
+    Lista de Embarques
+	-->
+	<report
+		id="sotck_picking_bias"
+		string="Lista de Embarques"
+		model="stock.picking"
+		name="stock.picking.bias"
+		rml="bias_stock/report/picking.rml"
+		auto="False"/>
+
+  <!-- 
+	Solicitud de Movimiento
+	-->
+	<report
+		id="stock_location_movimiento"
+		string="Solicitud de Movimientos"
+		model="stock.location"
+		name="stock.location.movimiento"
+		rml="bias_stock/report/sol_movimiento.rml"
+		auto="False"/>
+
+  <!-- 
+	Comprobante de Movimiento
+	-->
+	<report
+		id="stock_location_comprobante"
+		string="Comprobante de Movimientos"
+		model="stock.picking"
+		name="stock.comprobante_mov"
+		rml="bias_stock/report/comprobante_mov.rml"
+		auto="False"/>
+ 
+</data>
+</terp>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Comprobante xsi:schemaLocation="http://www.sat.gob.mx/sitio_internet/cfd/2/cfdv2.xsd " xmlns="http://www.sat.gob.mx/cfd/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+version="2.0" serie="A" folio="1" fecha="2010-10-12T10:11:12" noAprobacion="174764"
+anoAprobacion="2010" formaDePago="una sola exhibición"
+subTotal="7400.00" total="7054.67"
+tipoDeComprobante="ingreso">
+<Emisor rfc="GARA680610SC6" nombre="Arturo Galván Rodríguez">
+  <DomicilioFiscal calle="Valle de Moscatel" noExterior="124" noInterior="1" colonia="Valle del Contry"
+   municipio="Guadalupe" estado="Nuevo León" pais="México" codigoPostal="67174"/>
+</Emisor>
+<Receptor rfc="MCM9910067H6" nombre="Minerales y Carbones de México S.A. de C.V.">
+  <Domicilio calle="Bolivia" noExterior="130" colonia="Vista Hermosa" municipio="Monterrey"
+   estado="Nuevo León" pais="México"/>
+</Receptor>
+<Conceptos>
+  <Concepto cantidad="1.00" unidad="Servicio" descripcion="Honorarios" valorUnitario="7400.00"
+   importe="7400.00"/>
+</Conceptos>
+<Impuestos totalImpuestosRetenidos="1529.33" totalImpuestosTrasladados="1184.00">
+  <Retenciones>
+    <Retencion impuesto="ISR" importe="740.00"/>
+    <Retencion impuesto="IVA" importe="789.33"/>
+  </Retenciones>
+  <Traslados>
+    <Traslado impuesto="IVA" tasa="16.00" importe="1184.00"/>
+  </Traslados>
+</Impuestos>
+</Comprobante>

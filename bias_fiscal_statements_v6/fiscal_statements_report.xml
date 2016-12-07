@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<openerp>
+<data>
+
+<!--	Print Fiscal Statements	-->	
+        <report auto="False" 
+		id="fiscal_statements_balance" 
+		menu="False" 
+		model="fiscal.statements" 
+		name="fiscal_statements_balance" 
+		rml="bias_fiscal_statements_v6/report/fiscal_statements_balance.rml" 
+                header ="False"
+		string="Balance Sheet"/>
+        <report auto="False" 
+		id="fiscal_statements_balance_1" 
+		menu="False" 
+		model="fiscal.statements" 
+		name="fiscal_statements_balance_1" 
+		rml="bias_fiscal_statements_v6/report/fiscal_statements_balance_1.rml" 
+		string="Balance Sheet 1"/>
+        <report auto="False" 
+		id="fiscal_statements_income" 
+		menu="False" 
+		model="fiscal.statements" 
+		name="fiscal_statements_income" 
+		rml="bias_fiscal_statements_v6/report/fiscal_statements_income.rml" 
+		string="Income statement / Statement of earnings"/>
+
+</data>
+</openerp>
+

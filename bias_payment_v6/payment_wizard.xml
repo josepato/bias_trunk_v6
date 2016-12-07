@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <wizard id="wizard_import_invoice" menu="False" model="payment.cheque" name="import_invoice" string="Import Supplier Invoice"/>
+    </data>
+</openerp>

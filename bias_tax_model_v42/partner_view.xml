@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+
+        <!--
+        Partners Extension
+    	-->
+
+	<record model="ir.ui.view" id="view_partner_fiscal_form">
+		<field name="name">view.partner.fiscal.form</field>
+		<field name="model">res.partner</field>
+		<field name="inherit_id" ref="base.view_partner_form"/>
+		<field name="arch" type="xml">
+		    <notebook>
+                        <page position="inside" string="Fiscal Properties">
+			    <field name="curp" />
+			    <field name="operation_type_id"/>
+			    <field name="ietu_concept_id"/>
+			    <field name="partner_type_id"/>
+                        </page>
+                    </notebook>
+		</field>
+	</record>
+
+        <!-- Partner Type -->
+
+        <record id="res_partner_type_tree_view" model="ir.ui.view">
+            <field name="name">res.partner.type.tree</field>
+            <field name="model">res.partner.type</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Partner Type">
+		    <field name="code"/>
+		    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="res_partner_type_form_view" model="ir.ui.view">
+            <field name="name">res.partner.type.form</field>
+            <field name="model">res.partner.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Partner Type">
+		    <field name="name"/>
+		    <field name="code"/>
+                </form>
+            </field>
+        </record>
+        <record id="res_partner_type_form_action" model="ir.actions.act_window">
+            <field name="name">Partner Type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner.type</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="res_partner_type_tree_view"/>
+        </record>
+        <menuitem action="res_partner_type_form_action" id="menu_res_partner_type_form_action" name="Partners/Configuration/"/>
+
+        <!-- Operation Type -->
+
+        <record id="res_partner_operation_type_tree_view" model="ir.ui.view">
+            <field name="name">res.partner.operation.type.tree</field>
+            <field name="model">res.partner.operation.type</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Operation Type">
+		    <field name="code"/>
+		    <field name="name"/>
+		    <field name="auto"/>
+		    <field name="tax_ids"/>
+		    <field name="account_ids"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="res_partner_operation_type_form_view" model="ir.ui.view">
+            <field name="name">res.partner.operation.type.form</field>
+            <field name="model">res.partner.operation.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Operation Type">
+                    <group col="8" colspan="4">
+		    	<field name="name"/>
+		    	<field name="code"/>
+		    	<field name="auto"/>
+		    </group>
+                    <notebook colspan="4">
+                        <page string="Tax Income Details">
+			    <field name="tax_income_ids" nolabel="1" colspan="4"/>
+			    <separator string="Accounts Where Operation Apply" colspan="4"/>
+	                    <field name="account_income_ids" nolabel="1" colspan="4"/>
+                        </page>
+                        <page string="Tax Outcome Details">
+			    <field name="tax_ids" nolabel="1" colspan="4"/>
+			    <separator string="Accounts Where Operation Apply" colspan="4"/>
+	                    <field name="account_ids" nolabel="1" colspan="4"/>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+        <record id="res_partner_operation_type_form_action" model="ir.actions.act_window">
+            <field name="name">Operation Type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner.operation.type</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="res_partner_operation_type_tree_view"/>
+        </record>
+        <menuitem action="res_partner_operation_type_form_action" id="menu_res_partner_operation_type_form_action" name="Partners/Configuration/"/>
+
+        <record id="res_partner_operation_tax_tree_view" model="ir.ui.view">
+            <field name="name">res.partner.operation.tax.tree</field>
+            <field name="model">res.partner.operation.tax</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom" string="Operation Tax">
+		    <field name="tax_id"/>
+		    <field name="tax_type"/>
+		    <field name="from_account_id"/>
+		    <field name="to_account_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="res_partner_operation_tax_form_view" model="ir.ui.view">
+            <field name="name">res.partner.operation.tax.form</field>
+            <field name="model">res.partner.operation.tax</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Operation Tax">
+		    <field name="tax_id"/>
+		    <field name="tax_type"/>
+		    <field name="from_account_id"/>
+		    <field name="to_account_id"/>
+                </form>
+            </field>
+        </record>
+        <record id="res_partner_operation_tax_form_action" model="ir.actions.act_window">
+            <field name="name">Operation Tax</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner.operation.tax</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="res_partner_operation_tax_tree_view"/>
+        </record>
+
+        <record id="res_partner_operation_income_tax_tree_view" model="ir.ui.view">
+            <field name="name">res.partner.operation.income.tax.tree</field>
+            <field name="model">res.partner.operation.income.tax</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom" string="Operation Tax">
+		    <field name="tax_id"/>
+		    <field name="tax_type"/>
+		    <field name="from_account_id"/>
+		    <field name="to_account_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="res_partner_operation_tax_income_form_view" model="ir.ui.view">
+            <field name="name">rres.partner.operation.income.tax.form</field>
+            <field name="model">res.partner.operation.income.tax</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Operation Tax">
+		    <field name="tax_id"/>
+		    <field name="tax_type"/>
+		    <field name="from_account_id"/>
+		    <field name="to_account_id"/>
+                </form>
+            </field>
+        </record>
+        <record id="res_partner_operation_tax_income_form_action" model="ir.actions.act_window">
+            <field name="name">Operation Income Tax</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner.operation.income.tax</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="res_partner_operation_income_tax_tree_view"/>
+        </record>
+
+
+    </data>
+</openerp>

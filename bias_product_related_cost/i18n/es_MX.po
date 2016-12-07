@@ -1,0 +1,286 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_product_related_cost
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-06-23 23:17+0000\n"
+"PO-Revision-Date: 2011-06-23 23:17+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_product_related_cost
+#: view:res.partner.category:0
+msgid "Partners"
+msgstr "Empresas"
+
+#. module: bias_product_related_cost
+#: field:stock.move.cost,move_id:0
+msgid "Move"
+msgstr "Movimiento"
+
+#. module: bias_product_related_cost
+#: help:product.product,last_cost:0
+#: help:stock.move.cost,last_cost:0
+msgid "Product's last cost."
+msgstr "Ultimo costo del producto."
+
+#. module: bias_product_related_cost
+#: model:ir.model,name:bias_product_related_cost.model_stock_picking
+msgid "Picking List"
+msgstr "Albarán"
+
+#. module: bias_product_related_cost
+#: constraint:stock.move:0
+msgid "You must assign a production lot for this product"
+msgstr "Debe asignar un lote de producción para este producto"
+
+#. module: bias_product_related_cost
+#: help:product.product,first_cost:0
+msgid "Product's first cost."
+msgstr "Primer Costo"
+
+#. module: bias_product_related_cost
+#: field:res.partner.related.cost,factor:0
+#: field:res.partner.related.cost.line,factor:0
+#: field:stock.move.cost,related_cost:0
+msgid "Factor"
+msgstr "Factor"
+
+#. module: bias_product_related_cost
+#: field:product.product,purchase_standard_price:0
+#: field:stock.move.cost,purchase_standard_price:0
+msgid "Std. Purchase Price"
+msgstr "Costo Estandar (Compras)"
+
+#. module: bias_product_related_cost
+#: field:product.product,last_cost:0
+#: field:stock.move.cost,last_cost:0
+msgid "Last Cost"
+msgstr "Ultimo Costo"
+
+#. module: bias_product_related_cost
+#: help:product.product,purchase_standard_price:0
+#: help:stock.move.cost,purchase_standard_price:0
+msgid "Product's standard cost based in purchase only."
+msgstr "Costo estandar basado solo en compras."
+
+#. module: bias_product_related_cost
+#: model:ir.model,name:bias_product_related_cost.model_product_product
+#: field:res.partner.related.cost.line,product_id:0
+#: view:stock.move.cost:0
+#: field:stock.move.cost,product_id:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: bias_product_related_cost
+#: constraint:stock.move:0
+msgid "You try to assign a lot which is not from the same product"
+msgstr "Está intentando asignar un lote que no es del mismo producto"
+
+#. module: bias_product_related_cost
+#: field:stock.move.cost,product_stock_qty:0
+msgid "Stock Qty"
+msgstr "Cant. Stock"
+
+#. module: bias_product_related_cost
+#: model:ir.actions.act_window,name:bias_product_related_cost.partner_related_cost_form_action
+#: model:ir.ui.menu,name:bias_product_related_cost.menu_partner_related_cost
+#: model:ir.ui.menu,name:bias_product_related_cost.menu_partner_related_cost_form_action
+#: view:res.partner.related.cost:0
+msgid "Partner Related Costs"
+msgstr "Costos Relacionados de Empresas"
+
+#. module: bias_product_related_cost
+#: help:stock.move.cost,standard_price:0
+msgid "Product's cost for accounting stock valuation. It is the base price for the supplier price."
+msgstr "Cuenta de valuación de costo de inventario. Es el precio base para el precio del proveedor."
+
+#. module: bias_product_related_cost
+#: field:product.product,first_cost:0
+msgid "First Cost"
+msgstr "Primer Costo"
+
+#. module: bias_product_related_cost
+#: view:product.product:0
+msgid "Product's Costs"
+msgstr "Costo de Producto"
+
+#. module: bias_product_related_cost
+#: field:stock.move.cost,product_purchase_qty:0
+msgid "Purchase Qty"
+msgstr "Cant. Compra"
+
+#. module: bias_product_related_cost
+#: field:stock.move.cost,date:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: bias_product_related_cost
+#: model:ir.actions.act_window,name:bias_product_related_cost.stock_move_cost_form_action
+#: model:ir.ui.menu,name:bias_product_related_cost.menu_stock_move_cost_form_action
+#: view:stock.move.cost:0
+msgid "Stock Move Costs"
+msgstr "Costo de Movimientos de Inventario"
+
+#. module: bias_product_related_cost
+#: view:product.product:0
+#: view:res.partner:0
+#: view:res.partner.category:0
+msgid "Total Factor"
+msgstr "Total Factor"
+
+#. module: bias_product_related_cost
+#: field:product.product,clon_standard_price:0
+#: field:stock.move.cost,standard_price:0
+msgid "Cost Price"
+msgstr "Costo Estandar"
+
+#. module: bias_product_related_cost
+#: field:res.partner.related.cost,name:0
+#: field:stock.move.cost,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bias_product_related_cost
+#: model:ir.model,name:bias_product_related_cost.model_stock_move_cost
+#: view:stock.move.cost:0
+msgid "Stock Move Cost"
+msgstr "Costo de Movimientos de Inventario"
+
+#. module: bias_product_related_cost
+#: help:product.product,clon_standard_price:0
+msgid "Product's standard cost based in purchase and related costs."
+msgstr "Costo estandar del producto basado en compras y costos relacionados."
+
+#. module: bias_product_related_cost
+#: code:addons/bias_product_related_cost/stock.py:162
+#: code:addons/bias_product_related_cost/stock.py:301
+#, python-format
+msgid "Missing partial picking data for move #%s"
+msgstr "Missing partial picking data for move #%s"
+
+#. module: bias_product_related_cost
+#: field:product.product,related_cost_ids:0
+#: field:res.partner,related_cost_ids:0
+#: field:res.partner.category,related_cost_ids:0
+#: field:res.partner.related.cost.line,relaed_cost_id:0
+msgid "Related Cost"
+msgstr "Costos Relacionados"
+
+#. module: bias_product_related_cost
+#: field:res.partner.related.cost,active:0
+#: field:res.partner.related.cost.line,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: bias_product_related_cost
+#: view:res.partner:0
+#: view:res.partner.category:0
+msgid "Partner's Related Costs"
+msgstr "Costos Relacionados de Empresa"
+
+#. module: bias_product_related_cost
+#: view:product.product:0
+msgid "Extra Purchase Cost "
+msgstr "Costo Extra en Compras "
+
+#. module: bias_product_related_cost
+#: model:ir.model,name:bias_product_related_cost.model_res_partner_category
+msgid "Partner Categories"
+msgstr "Categorías de empresas"
+
+#. module: bias_product_related_cost
+#: view:res.partner.related.cost:0
+#: view:stock.move.cost:0
+msgid "Partner Related Cost"
+msgstr "Costos Relacionados de Empresa"
+
+#. module: bias_product_related_cost
+#: field:res.partner.related.cost,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: bias_product_related_cost
+#: constraint:res.partner:0
+msgid "unique (vat), The VAT of the partner must be unique !"
+msgstr "Único (RFC), El RFC de la empresa debe ser único !"
+
+#. module: bias_product_related_cost
+#: model:ir.model,name:bias_product_related_cost.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento stock"
+
+#. module: bias_product_related_cost
+#: view:product.product:0
+#: view:res.partner:0
+#: view:res.partner.category:0
+msgid "Related Costs"
+msgstr "Costos Relacionados"
+
+#. module: bias_product_related_cost
+#: constraint:res.partner.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "¡Error! No puede crear categorías recursivas."
+
+#. module: bias_product_related_cost
+#: view:stock.move.cost:0
+msgid "Month"
+msgstr "Mes"
+
+#. module: bias_product_related_cost
+#: model:ir.actions.act_window,help:bias_product_related_cost.partner_related_cost_form_action
+msgid "Create and manage the product cost directly related to the received product. You could include such elements as:\n"
+"    • supplier price, • delivery charges, • manufacturing costs, • storage charges..\n"
+"	    "
+msgstr "Crea y administra costos directamente relacionados a recepci'on de productos. Puede incluir elementos como:\n"
+"    • Precio de proveedor, • cargos de entrega, • Costos de manufactura, • Costos de almacenaje..\n"
+"	    "
+
+#. module: bias_product_related_cost
+#: view:stock.move.cost:0
+msgid "Group by..."
+msgstr "Agrupar por..."
+
+#. module: bias_product_related_cost
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Error: Código EAN erróneo"
+
+#. module: bias_product_related_cost
+#: help:product.product,extra_cost:0
+#: help:res.partner.related.cost,extra_cost:0
+#: help:res.partner.related.cost.line,extra_cost:0
+#: help:stock.move.cost,extra_cost:0
+msgid "Fixed cost added by product each time it is recived in the stock location."
+msgstr "Costo fijo añadido al producto cada vez que entra al almacén."
+
+#. module: bias_product_related_cost
+#: model:ir.model,name:bias_product_related_cost.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: bias_product_related_cost
+#: field:product.product,extra_cost:0
+#: field:res.partner.related.cost,extra_cost:0
+#: field:res.partner.related.cost.line,extra_cost:0
+#: field:stock.move.cost,extra_cost:0
+msgid "Extra Cost Price"
+msgstr "Costo Extra"
+
+#. module: bias_product_related_cost
+#: model:ir.model,name:bias_product_related_cost.model_res_partner_related_cost
+msgid "res.partner.related.cost"
+msgstr "res.partner.related.cost"
+
+#. module: bias_product_related_cost
+#: model:ir.model,name:bias_product_related_cost.model_res_partner_related_cost_line
+msgid "res.partner.related.cost.line"
+msgstr "res.partner.related.cost.line"
+

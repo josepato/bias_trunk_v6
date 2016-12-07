@@ -1,0 +1,356 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* import_files
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-06-22 19:00:31+0000\n"
+"PO-Revision-Date: 2010-06-22 19:00:31+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: import_files
+#: field:file.description,file_id:0
+#: field:import.file.columns,file_id:0
+msgid "File to Import"
+msgstr "Archivo a Importar"
+
+#. module: import_files
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "¡El nombre del objeto debe empezar con x_ y no contener ningún carácter especial!"
+
+#. module: import_files
+#: model:ir.actions.act_window,name:import_files.action_import_file_columns_form
+#: model:ir.ui.menu,name:import_files.menu_import_columns_file
+msgid "File Columns"
+msgstr "Columnas del Archivo"
+
+#. module: import_files
+#: wizard_view:get.configuration,init:0
+msgid "Do you Want to Import or Export information?"
+msgstr "¿Usted desea importar o exportar la información?"
+
+#. module: import_files
+#: selection:import.file,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: import_files
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo inválido en definición de acción"
+
+#. module: import_files
+#: wizard_view:get.configuration,start_import:0
+msgid "Succesful Importation!!!!"
+msgstr "Importacion Exitosa"
+
+#. module: import_files
+#: model:ir.actions.wizard,name:import_files.wizard_export_configuration
+msgid "Export Configuration"
+msgstr "Configuracion de Exportacion"
+
+#. module: import_files
+#: field:field.selection,type:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: import_files
+#: model:ir.module.module,description:import_files.module_meta_information
+msgid "Helps you import different CSV to the OpenERP"
+msgstr "Ayuda a importar diferentes CSV a el OpenERP"
+
+#. module: import_files
+#: field:field.selection,name:0
+#: field:file.description,name:0
+#: field:import.file,name:0
+#: selection:import.file.columns,altre_value_type:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: import_files
+#: field:import.file,state:0
+msgid "Status"
+msgstr "Estatus"
+
+#. module: import_files
+#: model:ir.model,name:import_files.model_field_selection
+msgid "Field Selection"
+msgstr "Campo de Seleccion"
+
+#. module: import_files
+#: model:ir.actions.wizard,name:import_files.wizard_get_configuration
+msgid "Get Configuration"
+msgstr "Obtener Configuracion"
+
+#. module: import_files
+#: field:field.selection,relation:0
+msgid "Relation"
+msgstr Relacion"
+
+#. module: import_files
+#: view:import.file:0
+#: view:import.file.columns:0
+msgid "Import File"
+msgstr "Importar Archivo"
+
+#. module: import_files
+#: selection:import.file.columns,value:0
+msgid "Of Column"
+msgstr "De la Columna"
+
+#. module: import_files
+#: view:file.description:0
+#: model:ir.actions.act_window,name:import_files.action_file_description_form
+#: model:ir.model,name:import_files.model_file_description
+#: model:ir.ui.menu,name:import_files.menu_file_description
+msgid "File Description"
+msgstr "Descripcion del Archivo"
+
+#. module: import_files
+#: wizard_button:get.configuration,init,export:0
+msgid "Export Object"
+msgstr "Exportar Objeto"
+
+#. module: import_files
+#: field:import.file.columns,alter_value:0
+msgid "Alternative Value"
+msgstr "Valor Alternativo"
+
+#. module: import_files
+#: field:file.description,row_number:0
+msgid "Row Number"
+msgstr "Numero de Fila"
+
+#. module: import_files
+#: field:import.file,configured:0
+msgid "Configured"
+msgstr "Configurar"
+
+#. module: import_files
+#: selection:import.file.columns,value:0
+msgid "Null"
+msgstr "Nulo"
+
+#. module: import_files
+#: field:import.file,active:0
+#: field:import.file.columns,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: import_files
+#: selection:import.file,state:0
+msgid "Done"
+msgstr "Hecho"
+
+#. module: import_files
+#: view:import.file.columns:0
+msgid "Configure Column"
+msgstr "Configurar Columna"
+
+#. module: import_files
+#: model:ir.actions.act_window,name:import_files.action_import_file_form
+#: model:ir.ui.menu,name:import_files.menu_import_file
+msgid "File Import"
+msgstr "Importar Archivo"
+
+#. module: import_files
+#: field:import.file,user_id:0
+msgid "User"
+msgstr "Usuario"
+
+#. module: import_files
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: import_files
+#: field:import.file.columns,required:0
+msgid "Required"
+msgstr "Requerido"
+
+#. module: import_files
+#: model:ir.module.module,shortdesc:import_files.module_meta_information
+msgid "Bias Import File"
+msgstr "Bias Archivo Importar"
+
+#. module: import_files
+#: field:import.file.columns,myself_id:0
+msgid "From Field to Import"
+msgstr "Del Campo a Importar"
+
+#. module: import_files
+#: wizard_button:get.configuration,import,start_import:0
+#: wizard_button:get.configuration,init,import:0
+msgid "Import Object"
+msgstr "Importar Objeto"
+
+#. module: import_files
+#: selection:import.file.columns,value:0
+msgid "This"
+msgstr "Este"
+
+#. module: import_files
+#: field:import.file,record_per_line:0
+msgid "Record per Line"
+msgstr "Registro por linea"
+
+#. module: import_files
+#: field:import.file.columns,value:0
+msgid "Value"
+msgstr "Valor"
+
+#. module: import_files
+#: view:import.file:0
+msgid "Get File Columns"
+msgstr "Obtener Columnas de Archivo"
+
+#. module: import_files
+#: view:import.file.columns:0
+msgid "Import Columns"
+msgstr "Importar columnas"
+
+#. module: import_files
+#: field:import.file.columns,column_numbre:0
+msgid "Column Number"
+msgstr "Columna Numero"
+
+#. module: import_files
+#: field:import.file.columns,altre_value_type:0
+msgid "Value Type"
+msgstr "Tipo del valor"
+
+#. module: import_files
+#: model:ir.ui.menu,name:import_files.menu_import_file_root
+msgid "Import Files"
+msgstr "Importar Archivo"
+
+#. module: import_files
+#: wizard_view:get.configuration,start_import:0
+msgid "Import Data Done!"
+msgstr "¡ Importar Datos Hecho !"
+
+#. module: import_files
+#: model:ir.model,name:import_files.model_import_file
+#: model:ir.model,name:import_files.model_import_file_columns
+msgid "Import Fields"
+msgstr "Importar Campos"
+
+#. module: import_files
+#: field:import.file.columns,field_id:0
+msgid "Field Name"
+msgstr "Nombre del Campo"
+
+#. module: import_files
+#: wizard_view:import.file,init:0
+#: wizard_view:import.file,restart:0
+msgid "Are you sure you want to restart the OpenERP Server?"
+msgstr "¿Estas seguro que deseas reiniciar el Servidor de OpenERP?"
+
+#. module: import_files
+#: selection:import.file.columns,altre_value_type:0
+msgid "ID"
+msgstr "ID"
+
+#. module: import_files
+#: view:import.file:0
+msgid "Get File Data"
+msgstr "Obtener Datos"
+
+#. module: import_files
+#: field:field.selection,code:0
+#: selection:import.file.columns,altre_value_type:0
+#: field:import.file.columns,code:0
+msgid "Code"
+msgstr "Codigo"
+
+#. module: import_files
+#: selection:import.file,state:0
+msgid "Partial"
+msgstr "Parcial"
+
+#. module: import_files
+#: wizard_field:get.configuration,export,object_information:0
+#: wizard_field:get.configuration,import,object_information:0
+msgid "Object Information"
+msgstr "Informacion de Objeto"
+
+#. module: import_files
+#: field:import.file,field_ids:0
+#: field:import.file.columns,field_ids:0
+msgid "Fields to Import"
+msgstr "Campos a Importar"
+
+#. module: import_files
+#: field:import.file,path:0
+msgid "File Path"
+msgstr "Ruta de Archivo"
+
+#. module: import_files
+#: wizard_view:get.configuration,export:0
+msgid "Save Data on wanted file"
+msgstr "Guardar Datos en el Archivo Deseado"
+
+#. module: import_files
+#: field:file.description,column_name:0
+#: field:import.file.columns,name:0
+msgid "Column Name"
+msgstr "Nombre de la Columna"
+
+#. module: import_files
+#: wizard_view:get.configuration,init:0
+#: wizard_view:import.file,init:0
+#: wizard_view:import.file,restart:0
+msgid "Restart"
+msgstr "Reiniciar"
+
+#. module: import_files
+#: wizard_button:get.configuration,export,end:0
+#: wizard_button:get.configuration,import,end:0
+#: wizard_button:get.configuration,init,end:0
+#: wizard_button:get.configuration,start_import,end:0
+#: wizard_button:import.file,init,end:0
+#: wizard_button:import.file,restart,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: import_files
+#: selection:import.file.columns,value:0
+msgid "Alternative"
+msgstr "Alternativo"
+
+#. module: import_files
+#: field:field.selection,model:0
+#: field:import.file,model:0
+#: field:import.file.columns,model:0
+msgid "Model Name"
+msgstr "Nombre del Modelo"
+
+#. module: import_files
+#: wizard_button:import.file,init,restart:0
+msgid "Restart Server"
+msgstr "Reiniciar Servidor"
+
+#. module: import_files
+#: wizard_view:get.configuration,export:0
+msgid "Export"
+msgstr "Exportar"
+
+#. module: import_files
+#: wizard_view:get.configuration,import:0
+#: view:import.file:0
+msgid "Import Data"
+msgstr "Importar Datos"
+
+#. module: import_files
+#: wizard_view:get.configuration,import:0
+msgid "Select Data File and click on Import"
+msgstr "Selecciona Archivo de datos y da click en Import"
+

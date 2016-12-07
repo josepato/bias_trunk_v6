@@ -1,0 +1,20 @@
+<Comprobante xmlns="http://www.sat.gob.mx/cfd/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/sitio_internet/cfd/2/cfdv2.xsd " version="2.0" serie="A" folio="1" fecha="2010-10-12T10:11:12" noAprobacion="174764" anoAprobacion="2010" formaDePago="una sola exhibición" subTotal="7400.00" total="7054.67" tipoDeComprobante="ingreso" noSerie="00001000000102052521" certificado="MIIECzCCAvOgAwIBAgIUMDAwMDEwMDAwMDAxMDIwNTI1MjEwDQYJKoZIhvcNAQEF&#10;BQAwggE2MTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJh&#10;Y2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3Ry&#10;YWNpw7NuIFRyaWJ1dGFyaWExHzAdBgkqhkiG9w0BCQEWEGFjb2RzQHNhdC5nb2Iu&#10;bXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYD&#10;VQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVy&#10;YWwxEzARBgNVBAcMCkN1YXVodGVtb2MxMzAxBgkqhkiG9w0BCQIMJFJlc3BvbnNh&#10;YmxlOiBGZXJuYW5kbyBNYXJ0w61uZXogQ29zczAeFw0xMDEwMDUxNzQyMTBaFw0x&#10;MjEwMDQxNzQyMTBaMIGrMSAwHgYDVQQDExdBUlRVUk8gR0FMVkFOIFJPRFJJR1VF&#10;WjEgMB4GA1UEKRMXQVJUVVJPIEdBTFZBTiBST0RSSUdVRVoxIDAeBgNVBAoTF0FS&#10;VFVSTyBHQUxWQU4gUk9EUklHVUVaMRYwFAYDVQQtEw1HQVJBNjgwNjEwU0M2MRsw&#10;GQYDVQQFExJHQVJBNjgwNjEwSENMTERSMDMxDjAMBgNVBAsTBVVuaWNhMIGfMA0G&#10;CSqGSIb3DQEBAQUAA4GNADCBiQKBgQDcMzQ2ydNqJkVEo8D7qyIysKwhg4agyJ9q&#10;gdxa037B/XFxqCajPEaQny6WoZax7CTZgtzSRtLJv+S8ZfM2EZi0u8M+0Ldlo7Ej&#10;2JJgzI2C3lMpShRyhq4MQBWMNpvjDvHWMl7FMQWd4p2fRqEq5/0OdDgmcG2Y8v/b&#10;wGBngEf01QIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkq&#10;hkiG9w0BAQUFAAOCAQEADOmZlowYyLpoQCuzirgnvSUhQDTPbCVyFggdnAJ6ioSa&#10;ZuohJemdIhkJv9wo/HmM+kzwxnZdL2NJJQC18P05o5bcvRvki4YkF/REX1XPOPl3&#10;nLKXUdKqgFBVCRqBfx2yHEXfUDKH0r3up7JstwuBa2ogeevzyzxNyI2GUU15bLGb&#10;UYmuCyjz/Ep4a29bmZsCAPUC728WOn6RjVrMfhEuLiEKVdyQpWbHveiDsmrXkggn&#10;iG9TlnwZHfK5+OBH1Qxr1ZJ1idWLJEYXIgZnDiP/e+e/P+PRbgs71mT5+c7UJU+W&#10;Tjku3tCbb+ZcdHKOmtdWxcIhJ/DGnWz32CvuGu2s+w==" sello="ESowCgr1rdssPyjD8UcbCK3F0A5CM1iKXGxGGnaf6B2nOM2X2kffglOBw5x6uZI6jc++0no6LCvBckqSsXBt8aV2lnbHh5HoPSEzsjwjIO5nfsauyGss5ba79NxbiB+UITDmn+wOajwE/P310kWx+gTbG66FQkSkN7M1i2nelCg=">
+<Emisor rfc="GARA680610SC6" nombre="Arturo Galván Rodríguez">
+  <DomicilioFiscal calle="Valle de Moscatel" noExterior="124" noInterior="1" colonia="Valle del Contry" municipio="Guadalupe" estado="Nuevo León" pais="México" codigoPostal="67174"/>
+</Emisor>
+<Receptor rfc="MCM9910067H6" nombre="Minerales y Carbones de México S.A. de C.V.">
+  <Domicilio calle="Bolivia" noExterior="130" colonia="Vista Hermosa" municipio="Monterrey" estado="Nuevo León" pais="México"/>
+</Receptor>
+<Conceptos>
+  <Concepto cantidad="1.00" unidad="Servicio" descripcion="Honorarios" valorUnitario="7400.00" importe="7400.00"/>
+</Conceptos>
+<Impuestos totalImpuestosRetenidos="1529.33" totalImpuestosTrasladados="1184.00">
+  <Retenciones>
+    <Retencion impuesto="ISR" importe="740.00"/>
+    <Retencion impuesto="IVA" importe="789.33"/>
+  </Retenciones>
+  <Traslados>
+    <Traslado impuesto="IVA" tasa="16.00" importe="1184.00"/>
+  </Traslados>
+</Impuestos>
+</Comprobante>

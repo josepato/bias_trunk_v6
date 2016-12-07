@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+
+<!--        Partner Category Related Cost Tab -->
+    <record id="view_partner_category_cost_form" model="ir.ui.view">
+        <field name="name">res.partner.category.cost.inherit</field>
+        <field name="model">res.partner.category</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base.view_partner_category_form"/>
+        <field name="arch" type="xml">
+            <field name="partner_ids" position="replace">
+                <notebook colspan="4">
+	            <page string="Partners">
+	                <separator colspan="4" string="Partners"/>
+        	        <field colspan="4" name="partner_ids" nolabel="1"/>
+                    </page>
+	            <page string="Partner's Related Costs" groups="base.group_extended">
+                    	<field colspan="4" name="related_cost_ids" nolabel="1" widget="one2many_list">
+                            <tree string="Related Costs" editable="bottom">
+                                <field name="relaed_cost_id"/>
+                                <field name="factor" sum="Total Factor"/>
+	                        <field name="extra_cost"/>
+                                <field name="active"/>
+                            </tree>
+                            <form string="Related Costs">
+                                <field name="relaed_cost_id"/>
+                                <field name="factor"/>
+	                        <field name="extra_cost"/>
+                                <field name="active"/>
+                            </form>
+                        </field>
+                    </page>
+                </notebook>
+            </field>
+        </field>
+    </record>
+
+<!--        Partner Related Cost Tab -->
+    <record id="view_partner_cost_form" model="ir.ui.view">
+        <field name="name">res.partner.cost.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook[last()]" position="inside">
+                <page string="Partner's Related Costs" groups="base.group_extended">
+                        <field colspan="4" name="related_cost_ids" nolabel="1" widget="one2many_list">
+                            <tree string="Related Costs" editable="bottom">
+                                <field name="relaed_cost_id"/>
+                                <field name="factor" sum="Total Factor"/>
+	                        <field name="extra_cost"/>
+                                <field name="active"/>
+                            </tree>
+                            <form string="Related Costs">
+                                <field name="relaed_cost_id"/>
+                                <field name="factor"/>
+	                        <field name="extra_cost"/>
+                                <field name="active"/>
+                            </form>
+                        </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+        <!-- Partner Related Cost -->
+
+        <record id="partner_related_cost_tree_view" model="ir.ui.view">
+            <field name="name">res.partner.related.cost.tree</field>
+            <field name="model">res.partner.related.cost</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+<!--                <tree editable="bottom" string="Partner Related Cost">-->
+                <tree string="Partner Related Cost">
+		    <field name="code"/>
+		    <field name="name"/>
+                    <field name="factor"/>
+                    <field name="extra_cost"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="partner_related_cost_form_view" model="ir.ui.view">
+            <field name="name">res.partner.related.cost.form</field>
+            <field name="model">res.partner.related.cost</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Partner Related Costs">
+		    <field name="name"/>
+		    <field name="code"/>
+                    <field name="factor"/>
+                    <field name="extra_cost"/>
+                    <field name="active"/>
+                </form>
+            </field>
+        </record>
+        <record id="partner_related_cost_form_action" model="ir.actions.act_window">
+            <field name="name">Partner Related Costs</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner.related.cost</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="partner_related_cost_tree_view"/>
+            <field name="help">Create and manage the product cost directly related to the received product. You could include such elements as:
+    • supplier price, • delivery charges, • manufacturing costs, • storage charges..
+	    </field>
+        </record>
+        <menuitem id="menu_partner_related_cost" name="Partner Related Costs" parent="purchase.menu_purchase_config_purchase" sequence="60"/>
+        <menuitem action="partner_related_cost_form_action" id="menu_partner_related_cost_form_action" parent="menu_partner_related_cost"/>
+
+    </data>
+</openerp>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <wizard
+            id="load_module"
+            model="migrate.migrate"
+            multi="True"
+            name="migrate.load.module"
+            string="Load Module"/>
+
+        <wizard
+            id="migrate_module"
+            model="migrate.migrate"
+            multi="True"
+            name="migrate.migrate.module"
+            string="Migrate Module"/>
+
+        <wizard
+            id="set_sequences"
+            model="migrate.migrate"
+            multi="True"
+            name="migrate.set.sequences"
+            string="Set Sequences"/>
+
+        <wizard
+            id="run_python"
+            model="migrate.migrate"
+            multi="True"
+            name="migrate.run.python"
+            string="Run Python"/>
+
+<!--        <wizard
+            id="load_utilities"
+            model="migrate.migrate.script"
+            multi="True"
+            name="migrate.load.utilities"
+            string="Load Utilities"/>
+
+        <wizard
+            id="convert_python"
+            model="migrate.utilities"
+            multi="True"
+            name="migrate.convert.python"
+            string="Convert Python"/>
+-->
+    </data>
+</openerp>

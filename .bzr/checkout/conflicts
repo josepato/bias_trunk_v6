@@ -1,0 +1,6 @@
+BZR conflict list format 1
+path: bias_electronic_invoice_v6/mx.moved
+type: duplicate
+action: Moved existing file to
+conflict_path: bias_electronic_invoice_v6/mx
+conflict_file_id: mx-20110513210037-xl12y98qpa1cmlk6-1

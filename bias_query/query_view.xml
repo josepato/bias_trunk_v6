@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+<!-- **********************************************************************
+	Query Tool <field name="python" nolabel="1" attrs="{'readonly':[('f_type','!=','python')] }" colspan="4"/>
+     **********************************************************************-->
+        <record id="view_query_tool_form" model="ir.ui.view">
+            <field name="name">query.tool.form</field>
+            <field name="model">query.tool</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Query Tool">
+                    <field name="name" select="1"/>
+		    <group col="8" colspan="4">
+                    <field name="categ_id" select="1"/>
+                    <button name="%(wizard_run_query)d" string="Run Query" type="action"/>
+		    </group>
+                    <separator colspan="4" string="Query Tool"/>
+                    <notebook colspan="4">
+			<page string="Parameters">   
+			    <field colspan="4" name="parameters_ids" nolabel="1" widget="one2many_list">
+                                <tree editable="bottom" string="Parameters">
+                            	    <field name="sequence" />
+                            	    <field name="name" on_change="onchange_name(name)"/>
+                            	    <field name="code" on_change="onchange_name(name)"/>
+                            	    <field name="f_type" on_change="onchange_type(f_type, required)"/>
+                            	    <field name="required" on_change="onchange_type(f_type, required)"/>
+                            	    <field name="relation"/>
+                            	    <field name="default"/>
+                            	    <field name="line_query"/>
+                                </tree>
+                        	<form string="Parameters">
+                            	    <field name="sequence" />
+                            	    <field name="name"/>
+                            	    <field name="code"/>
+                            	    <field name="f_type"/>
+                            	    <field name="required" />
+                            	    <field name="relation" on_change="onchange_relation(f_type, relation)"/>
+                            	    <field name="default"/>
+                            	    <field name="line_query"/>
+                            	    <field name="selection" colspan="4"/>
+			            <separator string="Local Dictionary" colspan="4"/>
+                            	    <field name="localdic" nolabel="1" height="20" colspan="4"/>
+			            <separator string="Python Code" colspan="4"/>
+                            	    <field name="python" nolabel="1" height="150" colspan="4"/>
+                        	</form>
+                    	    </field>
+			</page>
+			<page string="Query">   
+		 	    <field name="query" nolabel="1" colspan="4"/>
+			</page>
+			<page string="Python">   
+		 	    <field name="python" nolabel="1" colspan="4"/>
+			</page>
+			<page string="Query Labels">   
+			    <field colspan="4" name="label_ids" nolabel="1" widget="one2many_list">
+                                <tree editable="bottom" string="Query Labels">
+                            	    <field name="sequence" />
+                            	    <field name="name"/>
+                            	    <field name="label" readonly="1"/>
+                            	    <field name="label_new"/>
+                            	    <field name="f_type"/>
+                            	    <field name="sum"/>
+                            	    <field name="invisible"/>
+                            	    <field name="size"/>
+                            	    <field name="align"/>
+                            	    <field name="fontname"/>
+                            	    <field name="fontsize"/>
+                               	    <field name="textcolor"/>
+                               	    <field name="backcolor"/>
+                                </tree>
+                        	<form string="Parameters">
+                            	    <field name="sequence" />
+                            	    <field name="name"/>
+                            	    <field name="label"/>
+                            	    <field name="label_new"/>
+                            	    <field name="f_type"/>
+                            	    <field name="sum"/>
+                            	    <field name="invisible"/>
+                            	    <field name="size"/>
+                            	    <field name="align"/>
+                            	    <field name="fontname"/>
+                            	    <field name="fontsize"/>
+                               	    <field name="textcolor"/>
+                               	    <field name="backcolor"/>
+                                    <field colspan="4" name="style_ids" nolabel="1" widget="one2many_list">
+                                       <tree editable="bottom" string="Query Labels">
+                              	         <field name="sequence" />
+                            	         <field name="name"  />
+                               	         <field name="value" />
+                                      	 <field name="align"/>
+                                    	 <field name="fontname"/>
+                            	         <field name="fontsize"/>
+                               	         <field name="textcolor"/>
+                               	         <field name="backcolor"/>
+                                      </tree>
+                               	      <form string="Parameters">
+                              	         <field name="sequence" />
+                            	         <field name="name" />
+                               	         <field name="value" />
+                                      	 <field name="align"/>
+                                    	 <field name="fontname"/>
+                            	         <field name="fontsize"/>
+                               	         <field name="textcolor"/>
+                               	         <field name="backcolor"/>
+                        	      </form>
+                                    </field>
+
+                        	</form>
+                    	    </field>
+			</page>
+			<page string="Report Users">   
+		 	    <field name="user_ids" nolabel="1" colspan="4" on_change="onchange_users(user_ids)"/>
+			</page>
+			<page string="PDF Design">   
+		 	    <field name="page_size" />
+		 	    <field name="portrait" />
+		 	    <field name="rotation" />
+		 	    <field name="count_pages" />
+		 	    <field name="margin_x" />
+		 	    <field name="margin_y" />
+			</page>
+			<page string="Python Examples">   
+	                    <field name="text2fields"/>
+	                    <field name="no_result"/>
+		 	    <field name="python_examples" nolabel="1" colspan="4"/>
+			</page>
+		    </notebook>
+		</form>
+            </field>
+        </record>
+        <record id="view_query_tool_tree" model="ir.ui.view">
+            <field name="name">query.tool.tree</field>
+            <field name="model">query.tool</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Query Tool">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+	<record model="ir.actions.act_window" id="action_query_tool_form">
+		<field name="name">Query Tool</field>
+		<field name="res_model">query.tool</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+        <menuitem id="menu_query_tool" name="Query Tool" parent="base.menu_administration" sequence="15"/>
+       	<menuitem action="action_query_tool_form" id="menu_action_query_tool_form" parent="menu_query_tool" sequence="10"/>
+
+        <record model="ir.actions.act_window" id="action_query_tool_new">
+            <field name="name">New query</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">query.tool</field>
+            <field name="view_mode">form,tree</field>
+        </record>
+        <menuitem action="action_query_tool_new" id="menu_action_query_new" parent="menu_query_tool" sequence="15"/>
+
+	<wizard
+		string="My Querys"
+		model="query.tool"
+		name="my.query.tool"
+		menu="False"
+		id="wizard_my_query_tool"/>
+	<menuitem
+		parent="menu_query_tool"
+		action="wizard_my_query_tool"
+		type="wizard"
+		icon="STOCK_JUSTIFY_FILL"
+		sequence="10"
+		id="menu_wizard_my_query_tool"/>
+
+        <!--
+    ======================
+    Categories
+    ======================
+    -->
+        <record id="query_category_form_view" model="ir.ui.view">
+            <field name="name">query.category.form</field>
+            <field name="model">query.category</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Query Categories">
+                    <field name="name" select="1"/>
+                    <field name="parent_id"/>
+                    <field name="sequence"/>
+                    <newline/>
+                </form>
+            </field>
+        </record>
+        <record id="query_category_list_view" model="ir.ui.view">
+            <field name="name">query.category.list</field>
+            <field name="model">query.category</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Puery Categories">
+                    <field name="complete_name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="query_category_tree_view" model="ir.ui.view">
+            <field name="name">query.category.tree</field>
+            <field name="model">query.category</field>
+            <field name="type">tree</field>
+            <field name="field_parent">child_id</field>
+            <field name="arch" type="xml">
+                <tree string="Puery Categories">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="query_category_action" model="ir.actions.act_window">
+            <field name="name">Querys by Category</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">query.category</field>
+            <field name="domain">[('parent_id','=',False)]</field>
+            <field name="view_type">tree</field>
+            <field name="view_id" ref="query_category_tree_view"/>
+        </record>
+        <menuitem action="query_category_action" id="menu_query_category_action" parent="menu_query_tool" sequence="8"/>
+        
+        <record id="query_category_action_form" model="ir.actions.act_window">
+            <field name="name">Querys Categories</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">query.category</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="query_category_list_view"/>
+        </record>
+        <menuitem action="query_category_action_form" id="menu_query_category_action_form" parent="menu_query_tool" sequence="5"/>
+        
+        
+        <record id="query_normal_action_tree" model="ir.actions.act_window">
+            <field name="name">Querys</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">query.tool</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('categ_id','child_of',[active_id])]</field>
+            <field name="context">{'categ_id':active_id}</field>
+        </record>
+        <record id="ir_query_category_open" model="ir.values">
+            <field eval="'tree_but_open'" name="key2"/>
+            <field eval="'query.category'" name="model"/>
+            <field name="name">Querys by Categories</field>
+            <field eval="'ir.actions.act_window,%d'%query_normal_action_tree" name="value"/>
+            <field eval="True" name="object"/>
+        </record>
+        
+    </data>
+</openerp>

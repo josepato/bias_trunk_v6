@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+<terp>
+	<data>
+	<menuitem name="Contracts Management/Configuration" groups="admin" sequence="1"/>
+	<menuitem name="Contracts Management" icon="terp-sale" id="menu_contracts_root"/>
+
+	<record model="ir.ui.view" id="contracts_order_form">
+		<field name="name">contracts.order</field>
+		<field name="model">contracts.order</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Contract">
+			<notebook>
+				<page string="Contract">
+					<field name="name" select="1"/>
+					<field name="shop_id" select="1"/>
+					<field name="partner_id" on_change="onchange_partner_id(partner_id)"/>
+					<field name="determinante"/>
+					<field name="partner_invoice_id" domain="[('partner_id','=',partner_id)]" select="1"/>
+					<field name="partner_order_id"  domain="[('partner_id','=',partner_id)]" select="1"/>
+					<field name="partner_shipping_id"  domain="[('partner_id','=',partner_id)]" select="1"/>
+					<field name="pricelist_id"  domain="[('type','=','sale')]"/>
+					<field name="business_type"/>
+					<field name="date_order"/>
+					<field name="zone"/>
+					<field name="route_id" domain="[('shop_id','=',shop_id)]"/>
+					<field name="user_id"/>
+					<field name="currency_id"/>
+					<field name="layout"/>
+					<field name="technician_id" domain="[('route_id','=',route_id)]"/>
+					<field name="format"/>
+					<group col="8" colspan="4">
+						<field name="duration"/>
+						<!--<label string="(Meses)"	align="0.0"/>-->
+						<field name="periodicity"/>
+						<field name="date_start" />
+						<field name="date_stop" />
+					</group>
+					<field name="contract_services" widget="one2many_list" colspan="4" nolabel="1" mode="tree,graph">
+						<form string="Services">
+							<notebook>
+								<page string="Services">
+									<separator string="Automatic Declaration" colspan="4"/>
+									<field name="product_uom_qty" on_change="product_id_change(parent.pricelist_id,product_id,product_uom_qty,product_uom,product_uos_qty,product_uos,name,parent.partner_id, 'lang' in context and context['lang'], False, parent.date_order)"					context="partner_id=parent.partner_id,quantity=product_uom_qty,pricelist=parent.pricelist_id,shop=parent.shop_id,uom=product_uom" select="1"/>
+									<field name="product_uom"					on_change="product_uom_change(parent.pricelist_id,product_id,product_uom_qty,product_uom,product_uos_qty,product_uos,name,parent.partner_id, 'lang' in context and context['lang'], False, parent.date_order)"	/>
+									<field name="product_uos_qty" on_change="uos_change(product_uos, product_uos_qty, product_id)"/>
+									<field name="product_uos"  />
+									<field name="product_id" on_change="product_id_change(parent.pricelist_id,product_id,product_uom_qty,product_uom,product_uos_qty,product_uos,name,parent.partner_id, 'lang' in context and context['lang'], True, parent.date_order)"											context="partner_id=parent.partner_id,quantity=product_uom_qty,pricelist=parent.pricelist_id,shop=parent.shop_id,uom=product_uom"						colspan="4" select="1"/>
+									<field name="init" />
+									<field name="prod_type"/>
+									<separator string="Manual Description" colspan="4"/>
+									<field name="name" colspan="4" select="2"/>
+									<field name="price_unit" select="2"/>
+									<field name="discount"/>
+									<field name="type"/>
+									<field name="delay" select="2"/>
+									<newline/>
+									<field name="tax_id" colspan="4"/>
+									<separator string="States" colspan="4"/>
+									<field name="state" select="2"/>
+									<field name="invoiced" select="2"/>
+								</page>
+
+
+
+
+
+
+
+
+
+							</notebook>
+						</form>
+						<tree string="Services">
+							<field name="prod_type"/>
+							<field name="init"/>
+							<field name="name" />
+							<field name="product_uom_qty" string="Qty"/>
+							<field name="product_uom" string="UoM"/>
+							<field name="discount"/>
+							<field name="price_unit"/>
+							<field name="price_net"/>
+							<field name="price_subtotal"/>
+						</tree>
+					</field>
+					<newline/>
+					<group colspan="4" col="7">
+					<field name="amount_initial" />
+					<field name="amount_service" />
+					<newline/>
+					<field name="amount_untaxed" sum="Untaxed amount"/>
+					<field name="amount_tax"/>
+					<field name="amount_total" sum="Total amount"/>
+<!--					<button name="button_scheduler" string="Compute" states="draft" type="object"/>-->
+					<newline/>
+					<field name="state"/>
+					<button name="button_cancel" string="Cancel" states="progress" type="object"/>
+					<!--<button name="button_draft" string="Set to Draft" states="draft" type="object"/>-->
+					<button name="button_confirm" string="Confirm" states="draft" type="object"/>
+	                                <button name="button_draft" string="Renew" states="progress,expired,cancel" type="object"/>
+					</group>
+				</page>
+				<page string="Schedule">
+					<field name="schedule"/>
+					<newline/>
+					<separator string="Service Time" colspan="2"/>
+					<separator string="Force To" colspan="2"/>
+					<group col="4" colspan="2">
+						<field name="hour"/>
+						<field name="minutes"/>
+						<field name="serv_len"/>
+						<label string="(minutos)" align="0.0"/>
+					</group>
+					<group col="4" colspan="2">
+						<field name="week"/>
+						<field name="day"/>
+						<field name="renew_no"/>
+						<newline/>
+						<field name="renew" />
+					</group>
+					<field name="old_price"/>
+					<field name="date_inc" />
+					<newline/>
+					<separator string="Instructions" colspan="2"/>
+					<separator string="Areas" colspan="2"/>
+					<field name="instructions" colspan="2" nolabel="1"/>
+					<field name="areas" colspan="2"  domain="[('partner_id','in',[partner_id])]" nolabel="1"/>
+					<separator string="Comments" colspan="2"/>
+					<separator string="Pest" colspan="2"/>
+	 				<field name="comments" colspan="2" nolabel="1" />
+					<field name="pest" colspan="2" nolabel="1"/>
+				</page>
+				<page string="Service Order">
+					<group col="4" colspan="2">
+					</group>
+					<group col="4" colspan="2">
+						<button name="button_scheduler" string="Scheduler" states="draft" type="object"/>
+					</group>
+					<field name="service_order" widget="one2many_list" colspan="4" nolabel="1"/>
+				</page> 
+			</notebook>
+			</form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="contracts_order_tree">
+		<field name="name">contracts.order</field>
+		<field name="model">contracts.order</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Contracts">
+				<field name="name"/>
+				<field name="shop_id"/>
+				<field name="partner_id"/>
+				<field name="state"/>
+			</tree>
+		</field>
+	</record>
+
+	<record model="ir.actions.act_window" id="action_contracts_order_form">
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">contracts.order</field>
+		<field name="view_type">form</field>
+		<field name="view_id" ref="contracts_order_tree"/>
+	</record>
+	<menuitem name="Contracts Management/Contracts" id="menu_contracts_order_form" action="action_contracts_order_form"/>
+
+	<record model="ir.actions.act_window" id="action_contracts_order_expired">
+		<field name="name">Contract Expired</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">contracts.order</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+		<field name="domain">[('state','=','expired')]</field>
+	</record>
+	<menuitem name="Contracts Management/Contracts/" id="menu_contracts_order_expired" action="action_contracts_order_expired"/>
+	<!--
+	=======================
+	Route
+	=======================
+	-->
+	<record model="ir.ui.view" id="view_contracts_route_form">
+		<field name="name">contracts.route.form</field>
+		<field name="model">contracts.route</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Route">
+				<field name="name" select="1"/>
+				<field name="shortcut" select="1"/>
+				<field name="shop_id"/>
+			</form>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_contracts_route">
+		<field name="name">Route</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">contracts.route</field>
+		<field name="view_type">form</field>
+	</record>
+	<menuitem name="Contracts Management/Configuration/Routes" groups="admin" action="action_contracts_route" id="menu_contracts_route"/>
+
+	<!--
+	=======================
+	technician
+	=======================
+	-->
+	<record model="ir.ui.view" id="view_contracts_technician_tree">
+		<field name="name">contracts.technician.tree</field>
+		<field name="model">contracts.technician</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Technician">
+				<field name="employee_id"/>
+				<field name="route_id"/>
+			</tree>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="view_contracts_technician_form">
+		<field name="name">contracts.technician.form</field>
+		<field name="model">contracts.technician</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Technician">
+				<field name="name"/>
+				<field name="employee_id" on_change="onchange_employee_id(employee_id)" select="1"/>
+				<field name="route_id" select="1"/>
+			</form>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_contracts_technician">
+		<field name="name">technician</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">contracts.technician</field>
+		<field name="view_type">form</field>
+	</record>
+	<menuitem name="Contracts Management/Configuration/Technicians" groups="admin" action="action_contracts_technician" id="menu_contracts_technician"/>
+
+	<!--
+	=======================
+	Areas
+	=======================
+	-->
+	<record model="ir.ui.view" id="view_contracts_areas_tree">
+		<field name="name">contracts.areas.tree</field>
+		<field name="model">contracts.areas</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Areas">
+				<field name="name"/>
+				<field name="partner_id"/>
+			</tree>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="view_contracts_areas_form">
+		<field name="name">contracts.areas.form</field>
+		<field name="model">contracts.areas</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Areas">
+				<field name="name" select="1"/>
+				<newline/>
+				<field name="partner_id" select="1"/>
+				<separator string="Notes" colspan="4"/>
+				<field name="notes" colspan="4" nolabel="1"/>
+			</form>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_contracts_areas">
+		<field name="name">Areas</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">contracts.areas</field>
+		<field name="view_type">form</field>
+	</record>
+	<menuitem name="Contracts Management/Configuration/Areas" groups="admin" action="action_contracts_areas" id="menu_contracts_areas"/>
+
+	<!--
+	=======================
+	Pest
+	=======================
+	-->
+	<record model="ir.ui.view" id="view_contracts_pests_tree">
+		<field name="name">contracts.pest.tree</field>
+		<field name="model">contracts.pest</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Pest">
+				<field name="name"/>
+			</tree>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="view_contracts_pest_form">
+		<field name="name">contracts.pest.form</field>
+		<field name="model">contracts.pest</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Pest">
+				<field name="name" select="1"/>
+				<separator string="Notes" colspan="4"/>
+				<field name="notes" colspan="4" nolabel="1"/>
+			</form>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_contracts_pest">
+		<field name="name">Pest</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">contracts.pest</field>
+		<field name="view_type">form</field>
+	</record>
+	<menuitem name="Contracts Management/Configuration/Pest" groups="admin" action="action_contracts_pest" id="menu_contracts_pest"/>
+
+	<!--
+	=======================
+	Scheduled Service Order
+	=======================
+	-->
+	<record model="ir.ui.view" id="view_service_order_tree">
+		<field name="name">service.order.tree</field>
+		<field name="model">service.order</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Service Order">
+				<field name="name"/>
+				<field name="init"/>
+				<field name="date_order"/>
+				<field name="done"/>
+				<field name="price"/>
+				<field name="state"/>
+			</tree>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="view_service_order_form">
+		<field name="name">service.order.form</field>
+		<field name="model">service.order</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Service Order">
+				<notebook>
+					<page string="Service Order">
+						<field name="name"/>
+						<field name="date_order"/>
+						<field name="done"/>
+						<field name="price"/>
+						<field name="state"/>
+						<field name="partner_id"/>
+						<field name="pricelist_id"/>
+						<newline/>
+						<field name="order_line" widget="one2many_list" colspan="4" nolabel="1" mode="tree,graph">
+							<form string="Sale Order Lines">
+								<notebook>
+									<page string="Order Line">
+										<separator string="Automatic Declaration"
+											colspan="4"/>
+										<field name="product_uom_qty"
+											on_change="product_id_change(parent.pricelist_id,product_id,product_uom_qty,product_uom,product_uos_qty,product_uos,name,parent.partner_id, 'lang' in context and context['lang'], False, parent.date_order)"
+											context="partner_id=parent.partner_id,quantity=product_uom_qty,pricelist=parent.pricelist_id,shop=parent.shop_id,uom=product_uom"
+											select="1"/>
+										<field name="product_uom"
+											on_change="product_uom_change(parent.pricelist_id,product_id,product_uom_qty,product_uom,product_uos_qty,product_uos,name,parent.partner_id, 'lang' in context and context['lang'], False, parent.date_order)"
+											/>
+<!--										<field name="product_id"/>-->
+										<field name="product_id"
+											on_change="product_id_change(parent.pricelist_id,product_id,product_uom_qty,product_uom,product_uos_qty,product_uos,name,parent.partner_id, 'lang' in context and context['lang'], True, parent.date_order)"
+											context="partner_id=parent.partner_id,quantity=product_uom_qty,pricelist=parent.pricelist_id,shop=parent.shop_id,uom=product_uom"
+											colspan="4" select="1"/>
+										<field name="duration"/>
+										<field name="periodicity"/>
+										<separator string="Manual Description"
+											colspan="4"/>
+										<field name="name" colspan="4" select="2"/>
+										<field name="price_unit" select="2"/>
+										<field name="discount"/>
+										<field name="type"/>
+										<field name="delay" select="2"/>
+										<newline/>
+										<field name="tax_id" colspan="4"/>
+										<separator string="States" colspan="4"/>
+										<field name="state" select="2"/>
+										<field name="invoiced" select="2"/>
+									</page>
+									<page string="Extra Info">
+										<field name="product_uos_qty"/><!-- on_change="uos_change(product_uos, product_uos_qty, product_id)"/>-->
+										<field name="product_uos"  />
+										<field name="product_packaging" />
+										<field name="address_allotment_id" select="2"/>
+										<separator string="Properties" colspan="4"/>
+										<field name="property_ids" colspan="4" nolabel="1"/>
+									</page>
+									<page string="Notes">
+										<field name="notes" colspan="4" nolabel="1"/>
+									</page>
+									<page string="History">
+										<separator string="Invoice Lines" colspan="4"/>
+										<field name="invoice_lines" colspan="4" nolabel="1"/>
+										<separator string="Inventory Moves" colspan="4"/>
+										<field name="move_ids" colspan="4" nolabel="1"/>
+									</page>
+								</notebook>
+							</form>
+							<tree string="Sales order lines">
+								<field name="name" colspan="4"/>
+								<field name="product_id"/>
+								<field name="product_uom_qty" string="Qty"/>
+								<field name="product_uom" string="UoM"/>
+								<field name="discount"/>
+								<field name="price_unit"/>
+								<field name="price_net"/>
+								<field name="price_subtotal"/>
+							</tree>
+						</field>
+<!--						<newline/>
+						<group colspan="4" col="7">
+							<field name="amount_untaxed" sum="Untaxed amount"/>
+							<field name="amount_tax"/>
+							<field name="amount_total" sum="Total amount"/>
+							<button name="button_dummy" string="Compute" states="draft" type="object"/>
+						</group>
+						<group colspan="4" col="13">
+							<field name="state" select="2"/>
+							<button name="order_confirm" string="Confirm Order" states="draft"/>
+							<button name="invoice_recreate" string="Recreate Invoice" states="invoice_except"/>
+							<button name="invoice_corrected" string="Invoice Corrected" states="invoice_except"/>
+							<button name="ship_recreate" string="Recreate Procurement" states="shipping_except"/>
+							<button name="ship_corrected" string="Procurement Corrected" states="shipping_except"/>
+							<button name="manual_invoice" states="manual" string="Create Invoice"/>
+							<button name="ship_cancel" string="Cancel Order" states="shipping_except"/>
+							<button name="action_cancel_draft" states="cancel" string="Set to Draft" type="object"/>
+							<button name="action_cancel" string="Cancel Order" states="manual,progress" type="object"/>
+							<button name="cancel" string="Cancel Order" states="draft"/>
+							<button name="invoice_cancel" string="Cancel Order" states="invoice_except"/>
+						</group>
+-->					</page>
+<!--					<page string="Other data">
+						<field name="picking_policy" required="True"/>
+						<field name="user_id"/>
+						<field name="order_policy" />
+						<field name="invoice_quantity"/>
+						<field name="client_order_ref" />
+						<separator string="Notes" colspan="4"/>
+						<field name="note" colspan="4" nolabel="1"/>
+					</page>
+					<page string="History">
+						<separator string="Related invoices" colspan="4"/>
+						<field name="invoice_ids" colspan="4" nolabel="1"/>
+						<separator string="Related packings" colspan="4"/>
+						<field name="picking_ids" colspan="4" nolabel="1"/>
+					</page>
+-->				</notebook>
+			</form>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_service_order_form">
+		<field name="name">Order Service</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">service.order</field>
+		<field name="view_type">form</field>
+	</record>
+	<menuitem name="Contracts Management/Service Order" action="action_service_order_form" id="menu_service_order"/>
+
+										
+	</data>
+</terp>

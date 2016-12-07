@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+        <!-- Account Move IETU Concept-->
+
+        <record id="account_move_ietu_concept_tree_view" model="ir.ui.view">
+            <field name="name">account.move.ietu.concept.tree</field>
+            <field name="model">account.move.ietu.concept.rate</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom" string="IETU Concept">
+		    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="account_move_ietu_concept_form_view" model="ir.ui.view">
+            <field name="name">account.move.ietu.concept.form</field>
+            <field name="model">account.move.ietu.concept</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="IETU Concept">
+		    <field name="name"/>
+                    <field name="code"/>
+                </form>
+            </field>
+        </record>
+        <record id="account_move_ietu_concept_form_action" model="ir.actions.act_window">
+            <field name="name">IETU Concept</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.move.ietu.concept</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="account_move_ietu_concept_tree_view"/>
+        </record>
+        <menuitem action="account_move_ietu_concept_form_action" id="menu_account_move_ietu_concept_form_action" parent="account.menu_configuration_misc"/>
+
+<!--        Account Entry Fiscal Tab -->
+    <record id="view_move_fiscal_form" model="ir.ui.view">
+        <field name="name">account.move.fiscal.inherit</field>
+        <field name="model">account.move</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook[last()]" position="inside">
+                <page string="Fiscal" groups="base.group_extended" >
+                    <field colspan="4" name="fiscal_ids" nolabel="1" widget="one2many_list">
+                        <form string="Fiscal">
+                            <field name="line_id" invisible="1"/>
+                            <field name="partner_id"/>
+                            <field name="operation_type_id" widget="selection" on_change="onchange_operation(operation_type_id, line_id)"/>
+                            <field name="amount"/>
+                            <field name="ietu_concept_id" widget="selection"/>
+                            <group col="2" colspan="2">
+                            <field name="rate_id" widget="selection"/>
+                            <field name="base"/>
+                            <field name="ietu"/>
+                            <field name="iva"/>
+                            <field name="other"/>
+                            <field name="amount_before_retension"/>
+                            <field name="retained_iva"/>
+                            <field name="retained_isr"/>
+                            <field name="total"/>
+                            <field name="iva_payed_na"/>
+                            </group>
+                            <group col="2" colspan="2">
+                            	<group col="3" colspan="2">
+                            	<field name="applies" on_change="onchange_applies(applies)"/>
+                            	<button name="button_applies" string="Change" type="object" icon="gtk-execute" colspan="1"/>
+                            	</group>
+                            <separator string="Tax Transfer Entries" colspan="2"/>
+                            <field name="xfer_ids" nolabel="1" colspan="2"/>
+                            </group>
+                            <group col="8" colspan="4">
+	                    <field name="state"/>
+                            <button name="button_tax_xfer" states="untransfer" string="Tax Transfer" type="object" icon="gtk-execute" colspan="2"/>
+                            <button name="button_tax_unxfer" states="transfer" string="Tax Untransfer" type="object" icon="gtk-execute" colspan="2"/>
+                            <button name="button_dummy" string="Compute" type="object" icon="gtk-execute" colspan="2"/>
+                            </group>
+                        </form>
+                        <tree string="Fiscal" editable="bottom">
+                            <field name="line_id" invisible="1"/>
+                            <field name="applies" on_change="onchange_applies(applies)"/>
+                            <button name="button_tax_xfer" states="untransfer" string="Tax Transfer" type="object" icon="gtk-execute"  groups="account.group_account_manager"/>
+                            <button name="button_tax_unxfer" states="transfer" string="Tax Untransfer" type="object" icon="gtk-execute"  groups="account.group_account_manager"/>
+                            <field name="operation_type_id" widget="selection"/>
+                            <field name="partner_id"/>
+                            <field name="amount" sum="Amount"/>
+                            <field name="rate_id" widget="selection"/>
+                            <field name="base" sum="Base" on_change="onchange_base(base)"/>
+                            <field name="ietu" sum="Base IETU"/>
+                            <field name="iva" sum="IVA"/>
+                            <field name="other" sum="Other Expenses"/>
+                            <field name="amount_before_retension" sum="Amount Before Retension"/>
+                            <field name="retained_iva" sum="Retained IVA"/>
+                            <field name="retained_isr" sum="Retained ISR"/>
+                            <field name="total" sum="Total"/>
+                            <field name="iva_payed_na" sum="IVA Payed not accredited"/>
+	                    <field name="state" invisible="1"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    </data>
+</openerp>

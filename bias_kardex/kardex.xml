@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <wizard id="wizard_kardex_report" menu="False" model="stock.move" name="wizard.kardex.report" string="Kardex"/>
+
+        <menuitem icon="STOCK_INDENT" action="wizard_kardex_report" id="menu_wizard_kardex_report" parent="stock.next_id_62" type="wizard"/>
+
+
+    </data>
+</openerp>

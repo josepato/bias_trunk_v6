@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <report auto="False" 
+		id="report_sale_order_bias" 
+		model="sale.order" 
+		name="sale.order.bias" 
+		rml="bias_print_forms/sale/report/sale_order.rml" 
+		string="Quotation / Order"/>
+
+    </data>
+</openerp>

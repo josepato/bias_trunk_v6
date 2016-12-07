@@ -1,0 +1,5 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_invoice_printing","invoice.printing","model_invoice_printing","base.group_system",1,1,1,1
+"access_invoice_printing_line","invoice.printing.line","model_invoice_printing_line","base.group_system",1,1,1,1
+"access_invoice_printing_function","invoice.printing.lfunction","model_invoice_printing_function","base.group_system",1,1,1,1
+"access_pay_invoice_bias","wizard.account.invoice.pay.bias","model_wizard_account_invoice_pay_bias","base.group_system",1,0,0,0

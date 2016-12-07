@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_fluctuation_account_form" model="ir.ui.view">
+            <field name="name">exchange.fluctuation.account.form</field>
+            <field name="model">exchange.fluctuation.account</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Account">
+                    <field name="company_id"/>
+                    <separator colspan="4" />
+                    <field name="journal_id"/>
+	            <field name="currency_id"/>
+		    <newline/>
+                    <field name="gain_fluc_acc"/>
+                    <field name="loss_fluc_acc"/>
+                    <field name="line_ids" colspan="4" nolabel="1" widget="one2many_list" readonly="1"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_fluctuation_account_tree" model="ir.ui.view">
+            <field name="name">exchange.fluctuation.account.tree</field>
+            <field name="model">exchange.fluctuation.account</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Account">
+                    <field name="gain_fluc_acc"/>
+                    <field name="loss_fluc_acc"/>
+                    <field name="company_id"/>
+                    <field name="line_ids"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_fluctuation_account_form" model="ir.actions.act_window">
+            <field name="name">Exchange Fluctuation Accounts</field>
+            <field name="res_model">exchange.fluctuation.account</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="action_fluctuation_account_form" id="menu_action_fluctuation_account_form" parent="account.menu_configuration_misc"/>
+
+        <record id="view_fluctuation_account_line_form" model="ir.ui.view">
+            <field name="name">exchange.fluctuation.account.line.form</field>
+            <field name="model">exchange.fluctuation.account.line</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+		<form string="Entries">
+                    <field name="move_id"/>
+                    <field name="reverse_move_id"/>
+                    <field name="period_id"/>
+		</form>
+            </field>
+        </record>
+        <record id="view_fluctuation_account_line_tree" model="ir.ui.view">
+            <field name="name">exchange.fluctuation.account.line.tree</field>
+            <field name="model">exchange.fluctuation.account.line</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+		<tree string="Entries">
+                    <field name="move_id"/>
+                    <field name="reverse_move_id"/>
+                    <field name="period_id"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</openerp>

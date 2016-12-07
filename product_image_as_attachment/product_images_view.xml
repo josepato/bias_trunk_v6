@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+
+	# ------------------------------------------------------
+	# Adds the company certificate number for the electronic invoice
+	# ------------------------------------------------------
+	<record  id="view_product_image_form_inherit" model="ir.ui.view">
+		<field name="name">product.image.form.inherit</field>
+		<field name="model">product.images</field>
+		<field name="inherit_id" ref="product_images_olbs.view_product_image_form"/>
+		<field name="arch" type="xml">
+                           <field name="image"  position="replace">
+				<field name="image" colspan="4" string="imagggen" domain="[('res_model','=','res.company'), ('res_id','=',id)]"  />
+                          </field>
+ 
+                </field>
+         </record>
+
+
+	</data>
+</openerp>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <wizard id="wizard_invoice_pay" model="account.invoice" name="account.invoice.pay.bias" string="Pay invoice" groups="base.group_user"/>
+
+    </data>
+</openerp>

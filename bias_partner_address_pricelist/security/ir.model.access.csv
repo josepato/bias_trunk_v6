@@ -1,0 +1,5 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_address_price_list_id","address_price_list_id","model_address_price_list_id","base.group_user",1,0,0,0
+"access_res_partner_address","res_partner_address","model_res_partner_address","base.group_user",1,0,0,0
+"access_address_price_list_id","address_price_list_id","model_address_price_list_id","base.group_user",1,0,0,0
+"access_res_partner_address","res_partner_address","model_res_partner_address","base.group_user",1,0,0,0

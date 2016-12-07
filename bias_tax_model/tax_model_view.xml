@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+ 	=========================================================
+	  Bank Entries
+	=========================================================
+	<record model="ir.ui.view" id="view_account_bank_entries_form">
+		<field name="name">account.bank.entries.form</field>
+		<field name="model">account.bank.entries</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Bank Entries">
+		                <separator colspan="4" string="General Information"/>
+				<field name="date" />
+				<field name="bank_move_id" />
+				<field name="partner_id" />
+				<field name="vat" />
+				<field name="amount" />
+			</form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="view_account_bank_entries_tree">
+		<field name="name">account_bank.entries.tree</field>
+		<field name="model">account.bank.entries</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree editable="top" string="Bank Entries">
+				<field name="date" />
+				<field name="bank_move_id" />
+				<field name="partner_id" />
+				<field name="vat" />
+				<field name="amount" />
+			</tree>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_account_bank_entries_form">
+		<field name="name">Bank Entries</field>
+		<field name="res_model">account.bank.entries</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+<!--	<menuitem id="menu_action_tax_model_form" action="action_account_bank_entries_form" parent="account.menu_finance_periodical_processing" />-->
+
+	<wizard
+		string="Bank Entries"
+		model="account.bank.entries"
+		name="wizard.account.bank.entries"
+		menu="False"
+		id="wizard_account_bank_entries"/>
+
+	<menuitem
+		parent="account.menu_finance_periodical_processing"
+		action="wizard_account_bank_entries"
+		type="wizard"
+		icon="STOCK_JUSTIFY_FILL"
+		sequence="10"
+		id="menu_wizard_account_bank_entries"/>
+
+        <!--
+    ================================
+    Tax Model
+    ================================
+    -->
+        <record id="view_account_tax_model_form" model="ir.ui.view">
+            <field name="name">account.tax.model.form</field>
+            <field name="model">account.tax.model</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Tax Model">
+                    <field name="tax_id" />
+                    <field name="xfer" />
+                    <field name="active"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_account_tax_model_tree" model="ir.ui.view">
+            <field name="name">account.tax.model.tree</field>
+            <field name="model">account.tax.model</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree editable="top" string="Tax Model">
+                    <field name="tax"  width="220"/>
+                    <field name="xfer"  width="250"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_account_tax_model_form" model="ir.actions.act_window">
+            <field name="name">Tax Model</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.tax.model</field>
+            <field name="view_type">form</field>
+        </record>
+
+        <!--
+    ================================
+    Fiscal Tax
+    ================================
+    -->
+        <record id="view_account_tax_fiscal_form" model="ir.ui.view">
+            <field name="name">account.tax.fiscal.form</field>
+            <field name="model">account.tax.fiscal</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Fiscal Information">
+                    <field name="move_id" invisible="1"/>
+                    <field name="name" />
+                    <field name="tax" readonly="1" />
+                    <field name="xfer"/>
+                    <field name="amount" />
+                    <field name="active"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_account_tax_fiscal_tree" model="ir.ui.view">
+            <field name="name">account.tax.fiscal.tree</field>
+            <field name="model">account.tax.fiscal</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree editable="top" string="Fiscal Information">
+                    <field name="move_id" invisible="1"/>
+                    <field name="tax"  width="220" readonly="1"/>
+                    <field name="xfer"  width="250"/>
+                    <field name="amount" sum="Total"/>
+                    <field name="name" />
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_account_tax_fiscal_form" model="ir.actions.act_window">
+            <field name="name">Fiscal Information</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.tax.fiscal</field>
+            <field name="view_type">form</field>
+        </record>
+
+        <!--
+    ================================
+    Fiscal IETU
+    ================================
+    -->
+        <record id="view_account_tax_ietu_form" model="ir.ui.view">
+            <field name="name">account.tax.ietu.form</field>
+            <field name="model">account.tax.ietu</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="IETU Information">
+                    <field name="move_id" invisible="1"/>
+                    <field name="name" />
+                    <field name="account_id" />
+                    <field name="amount" />
+                    <field name="active"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_account_tax_ietu_tree" model="ir.ui.view">
+            <field name="name">account.tax.ietu.tree</field>
+            <field name="model">account.tax.ietu</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree editable="top" string="IETU Information">
+                    <field name="move_id" invisible="1"/>
+                    <field name="account_id"  width="220"/>
+                    <field name="amount" sum="Total"/>
+                    <field name="active"/>
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_account_tax_ietu_form" model="ir.actions.act_window">
+            <field name="name">IETU Information</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.tax.ietu</field>
+            <field name="view_type">form</field>
+        </record>
+
+        <!--
+    ================================
+    Tax IETU Concept
+    ================================
+    -->
+        <record id="view_account_tax_ietu_concept_form" model="ir.ui.view">
+            <field name="name">account.tax.ietu.concept.form</field>
+            <field name="model">account.tax.ietu.concept</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Tax IETU Concept">
+                    <field name="name" select="1"/>
+                    <field name="code" select="1"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_account_tax_ietu_concept_tree" model="ir.ui.view">
+            <field name="name">account.tax.ietu.concept.tree</field>
+            <field name="model">account.tax.ietu.concept</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Tax IETU Concept">
+                    <field name="code" select="1"/>
+                    <field name="name" select="1"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_account_tax_ietu_concept_form" model="ir.actions.act_window">
+            <field name="name">Tax IETU Concept</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.tax.ietu.concept</field>
+            <field name="view_type">form</field>
+        </record>
+<!--        <menuitem action="action_account_tax_ietu_concept_form" id="menu_account_tax_ietu_concept_form" parent="account.next_id_27" sequence="14"/>-->
+
+        <!--
+    ================================
+    Tax Parameters
+    ================================
+    -->
+        <record id="view_account_tax_parameters_form" model="ir.ui.view">
+            <field name="name">account.tax.parameters.form</field>
+            <field name="model">account.tax.parameters</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Tax Parameters">
+                    <field name="name" select="1"/>
+                    <field name="company_id" select="1"/>
+                    <notebook colspan="4">
+                        <page string="Partners">
+	                    <field name="third_party_type_ids" colspan="4" nolabel="1"/>
+        	            <field name="third_party_operation_ids" colspan="4" nolabel="1"/>
+                        </page>
+                        <page string="IETU">
+                            <separator colspan="4" string="Accounts Type For IETU"/>
+        	            <field name="ietu" colspan="4" nolabel="1"/>
+        	            <field name="account_tax_ietu_ids" colspan="4" nolabel="1"/>
+                        </page>
+                        <page string="Amount">
+                            <separator colspan="4" string="Accounts Type For Amount"/>
+        	            <field name="amount" colspan="4" nolabel="1"/>
+                        </page>
+                        <page string="Base">
+                            <separator colspan="4" string="Accounts Type For Base"/>
+        	            <field name="base" colspan="4" nolabel="1"/>
+                        </page>
+                        <page string="Other">
+                            <separator colspan="4" string="Accounts Type For Other"/>
+        	            <field name="other" colspan="4" nolabel="1"/>
+                        </page>
+                        <page string="Total">
+                            <separator colspan="4" string="Accounts Type For Total"/>
+        	            <field name="total" colspan="4" nolabel="1"/>
+                        </page>
+                        <page string="Tax">
+                            <separator colspan="4" string="Accounts Type For Tax"/>
+        	            <field name="tax" colspan="4" nolabel="1"/>
+                        </page>
+                        <page string="Tax Model">
+                            <separator colspan="4" string="Accounts Tranfer For Tax Declaration"/>
+        	            <field name="tax_model" colspan="4" nolabel="1"/>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+        <record id="view_account_tax_parameters_tree" model="ir.ui.view">
+            <field name="name">account.tax.parameters.tree</field>
+            <field name="model">account.tax.parameters</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Tax Parameters">
+                    <field name="name" select="1"/>
+                    <field name="third_party_type_ids"/>
+                    <field name="third_party_operation_ids"/>
+       	            <field name="account_tax_ietu_ids"/>
+       	            <field name="amount"/>
+       	            <field name="base"/>
+       	            <field name="other"/>
+       	            <field name="total"/>
+       	            <field name="tax"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_account_tax_parameters_form" model="ir.actions.act_window">
+            <field name="name">Tax Parameters</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.tax.parameters</field>
+            <field name="view_type">form</field>
+        </record>
+        <menuitem action="action_account_tax_parameters_form" id="menu_account_tax_parameters_form" parent="account.next_id_27" sequence="14"/>
+
+    </data>
+</openerp>

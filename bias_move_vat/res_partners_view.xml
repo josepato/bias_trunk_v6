@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <record id="view_partner_form2" model="ir.ui.view">
+      <field name="name">res.partner.vat.inherit2</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="account.view_partner_property_form"/>
+      <field name="arch" type="xml">
+        <field name="vat" position="replace">
+        </field>
+      </field>
+    </record>
+
+    <record id="view_partner_form3" model="ir.ui.view">
+      <field name="name">res.partner.vat.inherit3</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="account.view_partner_property_form"/>
+      <field name="arch" type="xml">
+        <field name="lang" position="after">
+           <field name="vat" required="1" />
+        </field>
+      </field>
+    </record>
+
+  </data>
+</openerp>

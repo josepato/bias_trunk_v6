@@ -1,0 +1,147 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_product_related_cost
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-05-09 00:02+0000\n"
+"PO-Revision-Date: 2011-05-09 00:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_product_related_cost
+#: help:product.product,first_cost:0
+msgid "Product's first cost."
+msgstr "Primer Costo"
+
+#. module: bias_product_related_cost
+#: help:product.product,purchase_standard_price:0
+msgid "Product's standard cost based in purchase only."
+msgstr "Costo estandar basado solo en compras."
+
+#. module: bias_product_related_cost
+#: field:res.partner.related.cost,factor:0
+#: field:res.partner.related.cost.line,factor:0
+msgid "Factor"
+msgstr "Factor"
+
+#. module: bias_product_related_cost
+#: field:product.product,purchase_standard_price:0
+msgid "Std. Purchase Price"
+msgstr "Precio de compras estandar"
+
+#. module: bias_product_related_cost
+#: field:product.product,last_cost:0
+msgid "Last Cost"
+msgstr "Ultimo Costo"
+
+#. module: bias_product_related_cost
+#: model:ir.model,name:bias_product_related_cost.model_product_product
+#: field:res.partner.related.cost.line,product_id:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: bias_product_related_cost
+#: model:ir.actions.act_window,name:bias_product_related_cost.partner_related_cost_form_action
+#: model:ir.ui.menu,name:bias_product_related_cost.menu_partner_related_cost
+#: model:ir.ui.menu,name:bias_product_related_cost.menu_partner_related_cost_form_action
+#: view:res.partner.related.cost:0
+msgid "Partner Related Costs"
+msgstr "Costos Relacionados de Empresas"
+
+#. module: bias_product_related_cost
+#: field:product.product,first_cost:0
+msgid "First Cost"
+msgstr "Primer Costo"
+
+#. module: bias_product_related_cost
+#: view:product.product:0
+msgid "Product's Costs"
+msgstr "Costo de Producto"
+
+#. module: bias_product_related_cost
+#: field:res.partner.related.cost,active:0
+#: field:res.partner.related.cost.line,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: bias_product_related_cost
+#: field:product.product,clon_standard_price:0
+msgid "Cost Price"
+msgstr "Costo Estandar"
+
+#. module: bias_product_related_cost
+#: field:res.partner.related.cost,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bias_product_related_cost
+#: help:product.product,clon_standard_price:0
+msgid "Product's standard cost based in purchase and related costs."
+msgstr "Costo estandar del producto basado en compras y costos relacionados."
+
+#. module: bias_product_related_cost
+#: field:res.partner,related_cost_ids:0
+#: field:res.partner.related.cost.line,relaed_cost_id:0
+msgid "Related Cost"
+msgstr "Costos Relacionados"
+
+#. module: bias_product_related_cost
+#: view:res.partner:0
+msgid "Partner's Related Costs"
+msgstr "Costos Relacionados de Empresa"
+
+#. module: bias_product_related_cost
+#: help:product.product,last_cost:0
+msgid "Product's last cost."
+msgstr "Ultimo costo del producto."
+
+#. module: bias_product_related_cost
+#: model:ir.actions.act_window,help:bias_product_related_cost.partner_related_cost_form_action
+msgid "Create and manage the product cost directly related to the received product. You could include such elements as:\n"
+"    • supplier price,\n"
+"    • delivery charges,\n"
+"    • manufacturing costs,\n"
+"    • storage charges.."
+msgstr "Administra diferentes costos relacionados con los productos recibidos en almacén. Pueden incluirse elementos tales como:\n"
+"    • Precio del Proveedor,\n"
+"    • Fletes,\n"
+"    • Costos de Manufactura,\n"
+"    • Cargos de almacenamiento.."
+
+#. module: bias_product_related_cost
+#: view:res.partner:0
+msgid "Related Costs"
+msgstr "Costos Relacionados"
+
+#. module: bias_product_related_cost
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Error: Código EAN erróneo"
+
+#. module: bias_product_related_cost
+#: model:ir.model,name:bias_product_related_cost.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: bias_product_related_cost
+#: view:res.partner.related.cost:0
+msgid "Partner Related Cost"
+msgstr "Costos Relacionados de Empresa"
+
+#. module: bias_product_related_cost
+#: model:ir.model,name:bias_product_related_cost.model_res_partner_related_cost
+msgid "res.partner.related.cost"
+msgstr "res.partner.related.cost"
+
+#. module: bias_product_related_cost
+#: model:ir.model,name:bias_product_related_cost.model_res_partner_related_cost_line
+msgid "res.partner.related.cost.line"
+msgstr "res.partner.related.cost.line"
+

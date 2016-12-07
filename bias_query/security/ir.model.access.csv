@@ -1,0 +1,11 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_query","query.tool","model_query_tool","bias_query.group_query_manager",1,1,1,1
+"access_query_user","query.tool","model_query_tool","bias_query.group_query_user",1,0,0,0
+"access_query_line","query.tool.line","model_query_tool_line","bias_query.group_query_manager",1,1,1,1
+"access_query_line_user","query.tool.line","model_query_tool_line","bias_query.group_query_user",1,0,0,0
+"access_label","query.label","model_query_label","bias_query.group_query_manager",1,1,1,1
+"access_label_user","query.label","model_query_label","bias_query.group_query_user",1,0,0,0
+"access_query_category","query.label","model_query_category","bias_query.group_query_manager",1,1,1,1
+"access_query_category_user","query.label","model_query_category","bias_query.group_query_user",1,0,0,0
+"access_query_style_condition_user","query.style.condition","model_query_style_condition","bias_query.group_query_user",1,0,0,0
+"access_query_style_condition","query.style.condition","model_query_style_condition","bias_query.group_query_manager",1,1,1,1

@@ -1,0 +1,307 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_exchange_fluctuation_v6
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-22 21:20+0000\n"
+"PO-Revision-Date: 2011-07-22 21:20+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_exchange_fluctuation_v6
+#: view:wizard.exchange.fluctuation:0
+msgid "Parameters"
+msgstr "Par'ametros"
+
+#. module: bias_exchange_fluctuation_v6
+#: view:wizard.exchange.fluctuation:0
+msgid "Replace Entry"
+msgstr "Reemplazar Asientos"
+
+#. module: bias_exchange_fluctuation_v6
+#: sql_constraint:exchange.fluctuation.account:0
+msgid "The fluctuation account definition must be unique per company !"
+msgstr "La cuenta de definiciones de cuentas de fluctuación debe ser unica por compañía !"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:exchange.fluctuation.account.line,period_id:0
+#: field:wizard.exchange.fluctuation,period_id:0
+msgid "Period"
+msgstr "Período"
+
+#. module: bias_exchange_fluctuation_v6
+#: model:ir.actions.act_window,name:bias_exchange_fluctuation_v6.action_exchange_fluctuation
+#: model:ir.model,name:bias_exchange_fluctuation_v6.model_exchange_fluctuation
+#: model:ir.model,name:bias_exchange_fluctuation_v6.model_wizard_exchange_fluctuation
+#: model:ir.ui.menu,name:bias_exchange_fluctuation_v6.menu_exchange_fluctuation_root
+#: model:ir.ui.menu,name:bias_exchange_fluctuation_v6.menu_reports_exchange_fluctuation
+msgid "Exchange Fluctuation"
+msgstr "Fluctuación Cambiaria"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:exchange.fluctuation.account,gain_fluc_acc:0
+msgid "Gain Account"
+msgstr "Cuenta de Ganancia"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,bank_move_id:0
+msgid "Bank Entry"
+msgstr "Asiento de Bancos"
+
+#. module: bias_exchange_fluctuation_v6
+#: model:ir.actions.act_window,name:bias_exchange_fluctuation_v6.action_fluctuation_account_form
+#: model:ir.model,name:bias_exchange_fluctuation_v6.model_exchange_fluctuation_account
+#: model:ir.ui.menu,name:bias_exchange_fluctuation_v6.menu_action_fluctuation_account_form
+msgid "Exchange Fluctuation Accounts"
+msgstr "Cuentas de Fluctuación Cambiaria"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:exchange.fluctuation.account,loss_fluc_acc:0
+msgid "Loss Account"
+msgstr "Cuenta de Perdida"
+
+#. module: bias_exchange_fluctuation_v6
+#: code:addons/bias_exchange_fluctuation_v6/wizard/wizard_exchange_fluctuation.py:207
+#, python-format
+msgid "Notification !"
+msgstr "Notificación !"
+
+#. module: bias_exchange_fluctuation_v6
+#: code:addons/bias_exchange_fluctuation_v6/wizard/wizard_exchange_fluctuation.py:134
+#, python-format
+msgid "Error !"
+msgstr "Error !"
+
+#. module: bias_exchange_fluctuation_v6
+#: code:addons/bias_exchange_fluctuation_v6/account_move_line.py:49
+#, python-format
+msgid "Bad account!"
+msgstr "Cuenta Erronea!"
+
+#. module: bias_exchange_fluctuation_v6
+#: sql_constraint:exchange.fluctuation.account.line:0
+msgid "The fluctuation entry must be unique per company !"
+msgstr " !"
+
+#. module: bias_exchange_fluctuation_v6
+#: code:addons/bias_exchange_fluctuation_v6/account_move_line.py:49
+#, python-format
+msgid "You can not use an inactive account!"
+msgstr "No puedes usar cuentas contables inactivas!"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,state:0
+msgid "unknown"
+msgstr "unknown"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:exchange.fluctuation.account,company_id:0
+#: field:exchange.fluctuation.account.line,company_id:0
+#: field:wizard.exchange.fluctuation,company_id:0
+msgid "Company"
+msgstr "Compañía"
+
+#. module: bias_exchange_fluctuation_v6
+#: selection:wizard.exchange.fluctuation,state:0
+msgid "get"
+msgstr "get"
+
+#. module: bias_exchange_fluctuation_v6
+#: code:addons/bias_exchange_fluctuation_v6/wizard/wizard_exchange_fluctuation.py:253
+#, python-format
+msgid "Fluctuation Entry"
+msgstr "Asiento de Fluctuación"
+
+#. module: bias_exchange_fluctuation_v6
+#: code:addons/bias_exchange_fluctuation_v6/wizard/wizard_exchange_fluctuation.py:208
+#, python-format
+msgid "No Exchange Fluctuation for this period."
+msgstr "Este período no tiene fluctuación."
+
+#. module: bias_exchange_fluctuation_v6
+#: field:exchange.fluctuation.account,line_ids:0
+msgid "Enries"
+msgstr "Asientos"
+
+#. module: bias_exchange_fluctuation_v6
+#: selection:wizard.exchange.fluctuation,state:0
+msgid "choose"
+msgstr "choose"
+
+#. module: bias_exchange_fluctuation_v6
+#: view:exchange.fluctuation.account.line:0
+msgid "Entries"
+msgstr "Asientos"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,date:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: bias_exchange_fluctuation_v6
+#: constraint:account.move.line:0
+msgid "Company must be same for its related account and period."
+msgstr "La compañía debe ser la misma para la cuenta y periodo relacionados."
+
+#. module: bias_exchange_fluctuation_v6
+#: view:exchange.fluctuation.account:0
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bias_exchange_fluctuation_v6
+#: code:addons/bias_exchange_fluctuation_v6/account_move_line.py:107
+#, python-format
+msgid "You can not use this general account in this journal !"
+msgstr "No puedes usar cuentas generales en este diario !"
+
+#. module: bias_exchange_fluctuation_v6
+#: constraint:account.move.line:0
+msgid "You can not create move line on closed account."
+msgstr "No puede crear una línea de movimiento en una cuenta cerrada."
+
+#. module: bias_exchange_fluctuation_v6
+#: selection:wizard.exchange.fluctuation,state:0
+msgid "replace"
+msgstr "Remplazar"
+
+#. module: bias_exchange_fluctuation_v6
+#: model:ir.model,name:bias_exchange_fluctuation_v6.model_account_move_line
+msgid "Journal Items"
+msgstr "Registros del diario"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:exchange.fluctuation.account.line,bank_move_id:0
+#: field:exchange.fluctuation.account.line,reverse_move_id:0
+#: field:wizard.exchange.fluctuation,reverse_move_id:0
+msgid "Reverse Entry"
+msgstr "Asiento de Reversa"
+
+#. module: bias_exchange_fluctuation_v6
+#: code:addons/bias_exchange_fluctuation_v6/account_move_line.py:107
+#, python-format
+msgid "Bad account !"
+msgstr "Cuenta Erronea !"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:exchange.fluctuation.account.line,move_id:0
+#: field:wizard.exchange.fluctuation,move_id:0
+msgid "Entry"
+msgstr "Asiento"
+
+#. module: bias_exchange_fluctuation_v6
+#: code:addons/bias_exchange_fluctuation_v6/account_move_line.py:81
+#, python-format
+msgid "Can not create an automatic sequence for this piece !\n"
+"\n"
+"Put a sequence in the journal definition for automatic numbering or create a sequence manually for this piece."
+msgstr "Can not create an automatic sequence for this piece !\n"
+"\n"
+"Put a sequence in the journal definition for automatic numbering or create a sequence manually for this piece."
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,totals:0
+msgid "Totals"
+msgstr "Totales"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,detailed:0
+msgid "Detailed"
+msgstr "Detallado"
+
+#. module: bias_exchange_fluctuation_v6
+#: code:addons/bias_exchange_fluctuation_v6/account_move_line.py:81
+#, python-format
+msgid "No piece number !"
+msgstr "No piece number !"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,ref:0
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,bank_totals:0
+msgid "Bank Totals"
+msgstr "Bank Totals"
+
+#. module: bias_exchange_fluctuation_v6
+#: view:wizard.exchange.fluctuation:0
+msgid "Create Entry"
+msgstr "Crear Asientos"
+
+#. module: bias_exchange_fluctuation_v6
+#: model:ir.model,name:bias_exchange_fluctuation_v6.model_exchange_fluctuation_account_line
+msgid "Exchange Fluctuation Accounts Lines"
+msgstr "Exchange Fluctuation Accounts Lines"
+
+#. module: bias_exchange_fluctuation_v6
+#: view:wizard.exchange.fluctuation:0
+msgid "Excel (.csv)"
+msgstr "Excel (.csv)"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,file.csv:0
+msgid "File (.csv Format)"
+msgstr "Archivo (Formato .csv)"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:exchange.fluctuation.account,currency_id:0
+#: field:wizard.exchange.fluctuation,currency_id:0
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,rate:0
+msgid "Rate"
+msgstr "Tasa"
+
+#. module: bias_exchange_fluctuation_v6
+#: code:addons/bias_exchange_fluctuation_v6/wizard/wizard_exchange_fluctuation.py:134
+#, python-format
+msgid "No Exchange Fluctuation set for this company !"
+msgstr "No hay definicion de cuentas de fluctuación para esta comañía !"
+
+#. module: bias_exchange_fluctuation_v6
+#: view:wizard.exchange.fluctuation:0
+msgid "File"
+msgstr "Archivo"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:exchange.fluctuation.account.line,fluctuation_id:0
+#: field:wizard.exchange.fluctuation,fluctuation_id:0
+msgid "Fluctuation"
+msgstr "Fluctuación"
+
+#. module: bias_exchange_fluctuation_v6
+#: view:wizard.exchange.fluctuation:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bias_exchange_fluctuation_v6
+#: sql_constraint:account.move.line:0
+msgid "Wrong credit or debit value in accounting entry !"
+msgstr "¡Valor haber o debe erróneo en el asiento contable!"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:exchange.fluctuation.account,journal_id:0
+#: field:wizard.exchange.fluctuation,journal_id:0
+msgid "Journal"
+msgstr "Diario"
+
+#. module: bias_exchange_fluctuation_v6
+#: constraint:account.move.line:0
+msgid "You can not create move line on view account."
+msgstr "No puede crear una línea de movimiento en una cuenta de tipo vista."
+

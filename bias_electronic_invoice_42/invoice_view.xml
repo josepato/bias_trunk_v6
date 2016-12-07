@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<terp>
+	<data>
+
+
+	# ------------------------------------------------------
+	# Add Sello y Certificado to Electronic Invoice
+	# ------------------------------------------------------
+	# ------------------------------------------------------
+	# Customer Invoice
+	# ------------------------------------------------------
+	<record model="ir.ui.view" id="invoice_client_form">
+		<field name="name">account.electronic.invoice.form.inherit</field>
+		<field name="model">account.invoice</field>
+		<field name="inherit_id" ref="account.invoice_form"/>
+		<field name="arch" type="xml">
+      			<xpath expr="/form/notebook/page[@string='Other Info']" position="after">
+                             <page string="Electronic Invoice">
+                                <group colspan="4" col="8">
+				<field name="sign_date" readonly="1"/>
+				<field name="cancel_date"  readonly="1"/>
+				<field name="approved_year" readonly="1"/>
+				<field name="approved_number" readonly="1"/>
+                                </group>
+				<separator string="Certificado" colspan="4"/>
+				<field name="certificate" colspan="4" nolabel="1" readonly="1"/>
+				<separator string="Sello" colspan="4"/>
+				<field name="digital_signature" colspan="4" nolabel="1" readonly="1"/>
+				<separator string="Cadena" colspan="4"/>
+				<field name="cadena" nolabel="1" readonly="1"/>
+
+                            </page>
+			</xpath>
+
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="invoice_client_form2">
+		<field name="name">account.electronic.invoice.date.form.inherit</field>
+		<field name="model">account.invoice</field>
+		<field name="inherit_id" ref="account.invoice_form"/>
+		<field name="arch" type="xml">
+      			<field name="date_invoice" position="replace">
+	                        <field name="date_invoice" select="1" readonly="1"/>
+
+		        </field>
+
+		</field>
+	</record>
+
+
+	# ------------------------------------------------------
+	# Supplier
+	# ------------------------------------------------------
+	<record model="ir.ui.view" id="invoice_form">
+		<field name="name">account.electronic.invoice.supplier.form.inherit</field>
+		<field name="model">account.invoice</field>
+		<field name="inherit_id" ref="account.invoice_supplier_form"/>
+		<field name="arch" type="xml">
+      			<xpath expr="/form/notebook/page[@string='Other Info']" position="after">
+                             <page string="Electronic Invoice">
+                                <group colspan="4" col="6">
+				<field name="sign_date"  readonly="1"/>
+				<field name="cancel_date"  readonly="1"/>
+				<field name="approved_year" />
+				<field name="approved_number" />
+                                </group>
+				<separator string="Certificado" colspan="4"/>
+				<field name="certificate" colspan="4" nolabel="1"/>
+				<separator string="Sello" colspan="4"/>
+				<field name="digital_signature" colspan="4" nolabel="1"/>
+				<separator string="Cadena" colspan="4"/>
+				<field name="cadena" nolabel="1" />
+
+                            </page>
+			</xpath>
+
+		</field>
+	</record>
+
+        ###----------------------------------
+        ###Addenda
+        ###----------------------------------
+
+        <!--
+    Account Invoice Addendas
+    -->
+
+        <record id="view_account_invoice_addenda_form" model="ir.ui.view">
+            <field name="name">account.invoice.addenda.form</field>
+            <field name="model">account.invoice.addenda</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Addenda">
+                    <field name="name" select="1"/>
+                    <field name="active" select="1"/>
+                    <field name="note"/>
+                    <newline/>
+                    <field name="line_ids"/>
+
+                </form>
+            </field>
+        </record>
+        <record id="view_account_invoice_addenda_tree" model="ir.ui.view">
+            <field name="name">account.invoice.addenda.tree</field>
+            <field name="model">account.invoice.addenda</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Addenda">
+                    <field name="name"/>
+                    <field name="active"/>
+                    <field name="note"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_account_invoice_addenda_form" model="ir.actions.act_window">
+            <field name="name">Addenda</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.invoice.addenda</field>
+            <field name="view_type">form</field>
+        </record>
+
+      <record id="action_account_invoice_addenda_formview1" model="ir.actions.act_window.view">
+            <field eval="10" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_account_invoice_addenda_tree"/>
+            <field name="act_window_id" ref="action_account_invoice_addenda_form"/>
+        </record>
+      <record id="action_account_invoice_addenda_formview2" model="ir.actions.act_window.view">
+            <field eval="20" name="sequence"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_account_invoice_addenda_form"/>
+            <field name="act_window_id" ref="action_account_invoice_addenda_form"/>
+        </record>
+
+        <menuitem action="action_account_invoice_addenda_form" id="menu_account_invoice_addenda_form" name="Financial Management/Electronic Invoice Configuration"/>
+
+
+
+
+	</data>
+</terp>

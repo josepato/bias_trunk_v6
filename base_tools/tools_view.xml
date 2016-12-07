@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+          <menuitem icon="STOCK_PREFERENCES" id="base.menu_tools"
+                    name="Tools" sequence="28"/>
+    </data>
+</openerp>

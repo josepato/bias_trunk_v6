@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<openerp>
+<data>
+
+<!--	Print Entry Third Party Ledger	-->	
+        <report auto="False" 
+		id="account_custom_report" 
+		menu="False" 
+		model="res.partner" 
+		name="account.custom_report_split" 
+		rml="bias_account_report/report/custom_report.rml" 
+                header ="False"
+		string="Partner Ledger"/>
+
+        <report auto="False" 
+		id="account_custom_report_aged" 
+		menu="False" 
+		model="res.partner" 
+		name="account.custom_report_aged"
+		rml="bias_account_report/report/custom_report_aged.rml" 
+                header ="False"
+		string="Aged Partner Balance"/>
+
+        <report auto="False" 
+		id="account_custom_report_other" 
+		menu="False" 
+		model="res.partner" 
+		name="account.custom_report_other" 
+		rml="bias_account_report/report/custom_report_other.rml" 
+                header ="False"
+		string="Partner Other Ledger"/>
+
+        <report auto="False" 
+		id="account_custom_report_balance" 
+		menu="False" 
+		model="res.partner" 
+		name="account.custom_report_balance" 
+		rml="bias_account_report/report/custom_report_balance.rml" 
+                header ="False"
+		string="Partner Other Ledger"/>
+
+</data>
+</openerp>

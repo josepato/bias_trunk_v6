@@ -1,0 +1,2784 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-12-05 17:37:32+0000\n"
+"PO-Revision-Date: 2009-12-05 17:37:32+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_account
+#: wizard_view:account.invoice.pay.bias,init:0
+msgid "Invoice Information"
+msgstr "Información de Factura"
+
+#. module: bias_account
+#: model:ir.actions.report.xml,name:bias_account.account_reporte_ventas_producto_minerales
+msgid "Reporte Ventas x Producto"
+msgstr "Reporte Ventas x Producto"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Helvetica-Bold"
+msgstr "Helvetica-Bold"
+
+#. module: bias_account
+#: field:fiscal.statements.lines,display_amount:0
+msgid "Display Amount"
+msgstr "Mostrar Monto"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,next_1,unreconcile_id:0
+msgid "Unreconcile Lines"
+msgstr "Líneas no Conciliadas"
+
+#. module: bias_account
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo inválido en definición de acción"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Nombre"
+msgstr "Nombre"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Ref. Empresa"
+msgstr "Ref. Empresa"
+
+#. module: bias_account
+#: field:account.journal,debit_fluc_acc:0
+msgid "Debit Fluctuation Acc."
+msgstr "Cuenta Débito de Fluc."
+
+#. module: bias_account
+#: selection:fiscal.statements,format:0
+#: model:ir.actions.report.xml,name:bias_account.fiscal_statements_balance
+msgid "Balance Sheet"
+msgstr "Balance General"
+
+#. module: bias_account
+#: code:addons/bias_account/account_petty_cash.py:0
+#: code:addons/bias_account/petty_cash.py:0
+#, python-format
+msgid "Account move line \"%s\" is not valid"
+msgstr "Movimiento en linea contable \"%s\" no es valido"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Centro de Costos"
+msgstr "Centro de Costos"
+
+#. module: bias_account
+#: view:petty.cash.statement.reconcile:0
+msgid "Entries"
+msgstr "Entradas"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_balance_bias:0
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+#: rml:fiscal_statements_balance:0
+#: rml:fiscal_statements_income:0
+msgid "By:"
+msgstr "Por"
+
+#. module: bias_account
+#: view:account.move.line:0
+msgid "Account Entry Line"
+msgstr "Línea del asiento contable"
+
+#. module: bias_account
+#: wizard_view:account.aged.trial.balance.bias,init:0
+msgid "Aged Trial Balance"
+msgstr "Antiguedad de Saldos"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,amount_1:0
+#: wizard_field:account.invoice.pay.bias,factoring,amount:0
+#: field:petty.cash.line,amount:0
+#: field:petty.cash.statement.reconcile.line,amount:0
+msgid "Amount"
+msgstr "Importe"
+
+#. module: bias_account
+#: model:ir.actions.report.xml,name:bias_account.account_3rdparty_ledger
+msgid "Partner Ledger"
+msgstr "Libro mayor de empresa"
+
+#. module: bias_account
+#: wizard_view:account.chek.currency.rate,init:0
+msgid "Work Information"
+msgstr "Área de Trabajo"
+
+#. module: bias_account
+#: code:addons/bias_account/wizard/wizard_close_currency_rate.py:0
+#, python-format
+msgid "There are more then one Exchange Rate Differential objects for this period."
+msgstr "El Período tiene mas de un Objeto de Revaluación Cambiaria"
+
+#. module: bias_account
+#: wizard_view:account.account.balance.report.bias2,checktype:0
+#: wizard_view:account.bias.costcenter.report,init:0
+#: wizard_view:account.bias.report,init:0
+#: wizard_view:account.bias.report2,init:0
+msgid "Select period"
+msgstr "Seleccionar Período"
+
+#. module: bias_account
+#: wizard_button:account.move.line.reconcile.bias,addendum,reconcile:0
+#: wizard_button:account.move.line.reconcile.bias,init_full,reconcile:0
+#: field:petty.cash.line,reconcile_id:0
+#: view:petty.cash.statement.reconcile:0
+#: field:petty.cash.statement.reconcile.line,line_id:0
+msgid "Reconcile"
+msgstr "Conciliar"
+
+#. module: bias_account
+#: wizard_button:account.close.currency,next_5,compute:0
+msgid "Create Entry"
+msgstr "Crear Asiento"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,amount:0
+msgid "Line Amount"
+msgstr "Monto de Línea"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Factura"
+msgstr "Factura"
+
+#. module: bias_account
+#: view:fiscal.statements.lines:0
+#: field:fiscal.statements.lines,account_id:0
+msgid "Accounts"
+msgstr "Cuentas"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.wizard_invoice_pay_bias
+msgid "Pay invoice Bias"
+msgstr "Pagar Factura"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_bias:0
+#: selection:account.third_party_ledger_bias.report,init,group_by:0
+#: wizard_field:account.third_party_ledger_bias.report,init,partner_id:0
+#: rml:account.third_party_ledger_other_bias:0
+#: field:factoring.partner,partner_id:0
+#: field:petty.cash.line,partner_id:0
+#: field:petty.cash.statement.reconcile,partner_id:0
+msgid "Partner"
+msgstr "Proveedor"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,rate_inv:0
+msgid "Inverse Rate"
+msgstr "Taza Inversa"
+
+#. module: bias_account
+#: field:petty.cash.line,petty_cash_line_id:0
+msgid "Line Relation"
+msgstr "Linea de relación"
+
+#. module: bias_account
+#: wizard_view:account.third_party_ledger_bias.report,account:0
+msgid "Selected Account"
+msgstr "Cuentas Seleccionadas"
+
+#. module: bias_account
+#: view:fiscal.statements:0
+#: wizard_view:fiscal.statements,init:0
+#: field:fiscal.statements.lines,fiscal_statements_id:0
+#: model:ir.actions.act_window,name:bias_account.action_fiscal_statements_form
+#: model:ir.actions.wizard,name:bias_account.wizard_fiscal_statements
+#: model:ir.model,name:bias_account.model_fiscal_statements
+#: model:ir.ui.menu,name:bias_account.menu_fiscal_statement_tree
+#: model:ir.ui.menu,name:bias_account.menu_fiscal_statements
+#: model:ir.ui.menu,name:bias_account.menu_fiscal_statements_config
+#: model:ir.ui.menu,name:bias_account.menu_wizard_fiscal_statements
+msgid "Fiscal Statements"
+msgstr "Apuntes fiscales"
+
+#. module: bias_account
+#: wizard_field:account.account.balance.report.bias,report_selection,report_kind:0
+#: field:fiscal.statements.lines,report_type:0
+msgid "Report Type"
+msgstr "Tipo de Reporte"
+
+#. module: bias_account
+#: field:petty.cash,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: bias_account
+#: model:ir.actions.act_window,name:bias_account.action_petty_cash_tree2
+#: model:ir.ui.menu,name:bias_account.menu_petty_cash_tree2
+msgid "New Petty Cash Statement"
+msgstr "Nueva Caja Chica"
+
+#. module: bias_account
+#: field:close.currency,credit:0
+msgid "Total Fluctuation Credit"
+msgstr "Fluctuación Total en Credito"
+
+#. module: bias_account
+#: wizard_button:account.account.balance.report.bias,account_selection,checktype:0
+#: wizard_button:account.account.balance.report.bias,report_selection,account_selection:0
+#: wizard_button:account.account.balance.report.bias2,account_selection,checktype:0
+#: wizard_button:account.close.currency,init,next_1:0
+#: wizard_button:account.close.currency,next_1,next_2:0
+#: wizard_button:account.close.currency,next_2,next_3:0
+#: wizard_button:account.close.currency,next_3,next_4:0
+#: wizard_button:account.close.currency,next_4,next_5:0
+#: wizard_button:account.mask,init,next:0
+#: wizard_button:account.third_party_ledger_bias.report,init,account:0
+msgid "Next"
+msgstr "Siguiente"
+
+#. module: bias_account
+#: wizard_view:account.third_party_ledger_bias.report,init:0
+msgid "(This account and childs)"
+msgstr "(Esta cuenta y sus hijos)"
+
+#. module: bias_account
+#: help:account.journal,reconcile_tolerance:0
+msgid "Difference tolerated in payment transaction. "
+msgstr "Tolerancia en Pagos"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Referencia:"
+msgstr "Referencia:"
+
+#. module: bias_account
+#: model:ir.model,name:bias_account.model_account_cost_center
+msgid "Account Cost Center"
+msgstr "Cuenta del centro de costo"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Concepto de Compra"
+msgstr "Concepto de Compra"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Para ser Verificado:"
+msgstr "Para ser Verificado:"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Fecha Elaboración:"
+msgstr "Fecha Elaboración:"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.wizard_aged_trial_balance_bias
+#: model:ir.ui.menu,name:bias_account.menu_aged_trial_balance_bias
+msgid "Aged Partner Balance"
+msgstr "Balance de empresa anterior"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "(MM/DD/AAAA)"
+msgstr "(MM/DD/AAAA)"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.wizard_entry_unreconcile
+msgid "Unreconcile Line Entries"
+msgstr "Romper Conciliación de líneas de Asiento"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Helvetica-Oblique"
+msgstr "Helvetica-Oblique"
+
+#. module: bias_account
+#: code:addons/bias_account/wizard/wizard_pay_invoice.py:0
+#, python-format
+msgid "Can not pay paid/draft/proforma/cancel invoice."
+msgstr "No puede pagar/borrador/proforma/cancel invoice."
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.bias_period_statements2
+msgid "Print Anual Statement"
+msgstr "Imprimir Estados Anuales"
+
+#. module: bias_account
+#: help:account.tax.code,account_credit_id:0
+msgid "The account credit in the extra lines created after a reconcile."
+msgstr "La cuenta de crédito de las líneas extras de IVA creadas tras la conciliación"
+
+#. module: bias_account
+#: field:petty.cash,expense_total:0
+msgid "Total Expens"
+msgstr "Total de Gastos"
+
+#. module: bias_account
+#: view:account.move.line:0
+msgid "St."
+msgstr "Ext."
+
+#. module: bias_account
+#: wizard_button:account.bias.costcenter.report,init,report:0
+#: wizard_button:account.bias.report,init,report:0
+#: wizard_button:account.bias.report2,init,report:0
+msgid "Print Statement"
+msgstr "Imprimir Estado"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+#: rml:account.reporte.ventas.minerales:0
+#: rml:account.reporte.ventas.producto.minerales:0
+msgid "Gran Total"
+msgstr "Gran Total"
+
+#. module: bias_account
+#: help:account.journal,debit_fluc_acc:0
+msgid "Used as write off account when the currency fluctuation result in gain."
+msgstr "Usada como cuenta de ajuste cuando la fluctuación cambiaria resuta en ganancia"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.wizard_bias_account_balance_report
+#: model:ir.ui.menu,name:bias_account.menu_bias_account_balance_report
+msgid "Bias Account Balance"
+msgstr "Bias Balance Contable"
+
+#. module: bias_account
+#: wizard_view:account.invoice.pay.bias,factoring:0
+msgid "Factoring Information"
+msgstr "Información del Factoraje"
+
+#. module: bias_account
+#: wizard_field:account.pretty.tool,init,balance_start:0
+msgid "Actual Starting Balance"
+msgstr "Balance inicial Actual"
+
+#. module: bias_account
+#: rml:account.invoice.minerales:0
+#: rml:account.nota.credito.minerales:0
+msgid ", CP:"
+msgstr ", CP:"
+
+#. module: bias_account
+#: code:addons/bias_account/account_petty_cash.py:0
+#: code:addons/bias_account/petty_cash.py:0
+#, python-format
+msgid "The expected balance (%.2f) is different than the computed one. (%.2f)"
+msgstr "El importe previsto (%.2f) es diferente al calculado. (%.2f)"
+
+#. module: bias_account
+#: wizard_view:account.account.balance.report.bias,checktype:0
+#: wizard_view:account.account.balance.report.bias2,checktype:0
+#: wizard_view:account.third_party_ledger_bias.report,init:0
+msgid "(Keep empty for all open fiscal years)"
+msgstr "(en blanco para todos los años fiscales)"
+
+#. module: bias_account
+#: field:close.currency,line_id:0
+msgid "Move Lines"
+msgstr "Líneas de Póliza"
+
+#. module: bias_account
+#: wizard_view:account.chek.currency.rate,init:0
+msgid "Line Information"
+msgstr "Información de Línea"
+
+#. module: bias_account
+#: wizard_view:account.close.currency,next_3:0
+msgid "Lines out of parity range selected"
+msgstr "Lineas con Tipo de Cambio fuera del rango seleccionado"
+
+#. module: bias_account
+#: wizard_view:account.invoice.pay.bias,factoring:0
+msgid "Payment Data"
+msgstr "Datos del Pago"
+
+#. module: bias_account
+#: model:ir.model,name:bias_account.model_wizard_account_chek_currency_rate
+msgid "wizard.account.chek.currency.rate"
+msgstr ", CP:"
+
+#. module: bias_account
+#: rml:account.invoice.minerales:0
+msgid "m2"
+msgstr "m2"
+
+#. module: bias_account
+#: code:addons/bias_account/wizard/wizard_invoice_tool.py:0
+#, python-format
+msgid "Can not use Invoice Tool when invoice currency is local."
+msgstr "No puede usarse esta herramienta cuando la factura esta en moneda local"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Courier-Oblique"
+msgstr "Courier-Oblique"
+
+#. module: bias_account
+#: selection:account.account.balance.report.bias,checktype,display_account:0
+#: selection:account.account.balance.report.bias2,checktype,display_account:0
+msgid "With movements"
+msgstr "Con Movimientos"
+
+#. module: bias_account
+#: rml:account.reporte.ventas.minerales:0
+#: rml:account.reporte.ventas.producto.minerales:0
+msgid "Nombre Cliente"
+msgstr "m2"
+
+#. module: bias_account
+#: rml:account.reporte.ventas.minerales:0
+#: rml:account.reporte.ventas.producto.minerales:0
+msgid "Imp. IVA"
+msgstr "Imp. IVA"
+
+#. module: bias_account
+#: help:account.account.balance.report.bias,checktype,fiscalyear:0
+#: help:account.account.balance.report.bias2,checktype,fiscalyear:0
+#: help:account.aged.trial.balance.bias,init,fiscalyear:0
+#: help:account.bias.costcenter.report,init,fiscalyear:0
+#: help:account.third_party_ledger_bias.report,init,fiscalyear:0
+#: help:fiscal.statements,init,fiscalyear:0
+msgid "Keep empty for all open fiscal year"
+msgstr "En blanco para todos los años fiscales abiertos"
+
+#. module: bias_account
+#: wizard_field:account.move.line.reconcile.bias,addendum,journal_id:0
+msgid "Write-Off Journal"
+msgstr "Diario de Ajuste"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,amount_currency_1:0
+msgid "Amount Currency"
+msgstr "Monto Moneda Sec."
+
+#. module: bias_account
+#: wizard_field:account.close.currency,init,rate_max:0
+msgid "Maximum Rate"
+msgstr "Pariedad Máxima"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,next_5,processed:0
+#: view:close.currency:0
+msgid "Processed"
+msgstr "Procesados"
+
+#. module: bias_account
+#: rml:fiscal_statements_balance:0
+msgid "Accrued"
+msgstr "Acumulado"
+
+#. module: bias_account
+#: wizard_view:account.close.currency,next_4:0
+msgid "Lines partial reconciled with some line in draft state"
+msgstr "Líneas conciliadas parcialmente con alguna línea en estado 'Borrador'"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "=Efectivo Disponilbe en Caja Chica"
+msgstr "=Efectivo Disponilbe en Caja Chica"
+
+#. module: bias_account
+#: wizard_field:account.account.balance.report.bias,account_selection,date_to:0
+#: wizard_field:account.account.balance.report.bias2,checktype,date_to:0
+#: wizard_field:account.third_party_ledger_bias.report,init,date2:0
+msgid "End date"
+msgstr "Fecha Final"
+
+#. module: bias_account
+#: model:ir.actions.report.xml,name:bias_account.account_petty_cash
+msgid "Reposicion de Caja Chica"
+msgstr "Reposicion de Caja Chica"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,next_5,line_id:0
+msgid "Account Move Lines"
+msgstr "Líneas de Pólizas"
+
+#. module: bias_account
+#: wizard_field:account.bias.report,init,period_id:0
+#: wizard_field:account.close.currency,init,period_id:0
+#: wizard_field:account.close.currency,next_5,period_id:0
+#: wizard_field:account.invoice.pay.bias,init,period_id:0
+#: wizard_field:account.invoice.tool,init,period_id:0
+#: field:close.currency,period_id:0
+#: wizard_field:fiscal.statements,init,period_id:0
+#: rml:fiscal_statements_balance:0
+#: rml:fiscal_statements_income:0
+#: field:petty.cash,period_id:0
+msgid "Period"
+msgstr "Período"
+
+#. module: bias_account
+#: wizard_view:account.pretty.tool,init:0
+msgid "Actual Pretty Cash Information"
+msgstr "Información Actual de Caja Chica"
+
+#. module: bias_account
+#: wizard_field:account.third_party_ledger_bias.report,account,page_split:0
+#: wizard_field:account.third_party_ledger_bias.report,init,page_split:0
+msgid "One Partner Per Page"
+msgstr "Una Empresa por Página"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Importe"
+msgstr "Importe"
+
+#. module: bias_account
+#: wizard_field:account.aged.trial.balance.bias,init,cxc:0
+msgid "Incluir CxC"
+msgstr "Incluir CxC"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,init,amount:0
+msgid "Amount paid"
+msgstr "Cantidad Pagada"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,next_2,sign_id:0
+msgid "Lines w sign error"
+msgstr "Lineas con eror en signo"
+
+#. module: bias_account
+#: wizard_field:account.aged.trial.balance.bias,init,cxp:0
+msgid "Incluir CxP"
+msgstr "Incluir CxP"
+
+#. module: bias_account
+#: rml:account.reporte.ventas.minerales:0
+#: rml:account.reporte.ventas.producto.minerales:0
+msgid "Fecha Factura (MM/DD/AAAA)"
+msgstr "Fecha Factura (MM/DD/AAAA)"
+
+#. module: bias_account
+#: field:account.tax.code,account_debit_id:0
+msgid "Model Acc. debit"
+msgstr "Modelo Debito"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Estatus:"
+msgstr "Estatus:"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_balance_bias:0
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+msgid "Date Range:"
+msgstr "Rango de Fechas:"
+
+#. module: bias_account
+#: field:fiscal.statements,format:0
+msgid "Format"
+msgstr "Formato"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,factoring,factor_amount:0
+#: wizard_field:account.invoice.pay.bias,init,org_inv_amount:0
+#: wizard_field:account.invoice.tool,init,amount_total:0
+#: wizard_field:account.invoice.tool,init,invoice_amount:0
+msgid "Invoice Amount"
+msgstr "Monto Factura"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,init,journal_id:0
+#: wizard_field:account.invoice.tool,init,journal_id:0
+#: field:petty.cash,journal_id:0
+msgid "Journal"
+msgstr "Diario"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,company_currency_id:0
+#: wizard_field:account.chek.currency.rate,init,company_currency_id_1:0
+#: wizard_field:account.chek.currency.rate,init,company_currency_id_2:0
+msgid "Company Currency"
+msgstr "Moneda de Compañía"
+
+#. module: bias_account
+#: code:addons/bias_account/invoice.py:0
+#, python-format
+msgid "The refence already exist for this partner invoices !"
+msgstr "La referencia está duplicada en las facturas de esta empresa"
+
+#. module: bias_account
+#: wizard_button:account.move.line.reconcile.bias,init_partial,addendum:0
+msgid "Reconcile With Write-Off"
+msgstr "Conciliación con ajuste"
+
+#. module: bias_account
+#: field:close.currency,ignored:0
+msgid "Lines Ignored"
+msgstr "Líneas Ignoradas"
+
+#. module: bias_account
+#: wizard_field:account.third_party_ledger_bias.report,account,acc_count:0
+msgid "Number of Accounts"
+msgstr "Número de cuentas"
+
+#. module: bias_account
+#: wizard_button:account.move.line.reconcile.bias,init_partial,partial:0
+msgid "Partial Reconcile"
+msgstr "Conciliación Parcial"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,init,pay_inv_amount:0
+msgid "To Pay Amount"
+msgstr "Cantidad a Pagar"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,date_1:0
+msgid "date"
+msgstr "Fecha"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,addendum,writeoff_acc_id:0
+#: wizard_field:account.move.line.reconcile.bias,addendum,writeoff_acc_id:0
+msgid "Write-Off account"
+msgstr "Cuenta de Ajuste"
+
+#. module: bias_account
+#: selection:account.account.balance.report.bias,checktype,display_account:0
+#: selection:account.account.balance.report.bias2,checktype,display_account:0
+msgid "All"
+msgstr "Todo"
+
+#. module: bias_account
+#: wizard_view:account.account.balance.report.bias,report_selection:0
+msgid "Select a Report Type"
+msgstr "Seleccion de Tipo de Reporte"
+
+#. module: bias_account
+#: wizard_view:account.move.unreconcile,init:0
+msgid "If you unreconciliate transactions, you must also verify all the actions that are linked to those transactions because they will not be disable"
+msgstr "Si rompes la conciliación de transacciones, debes también verificar todas las acciones que esta ligadas a estas transacciones porque eta ación no las va a deshacer"
+
+#. module: bias_account
+#: field:close.currency,created:0
+msgid "Lines Created"
+msgstr "Líneas Creadas"
+
+#. module: bias_account
+#: wizard_view:account.close.currency,create:0
+msgid "Exchange Rate Differential Entry Result"
+msgstr "Resultado del Proceso de Fluctuación Cambiaria"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_balance_bias:0
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+#: rml:fiscal_statements_balance:0
+#: rml:fiscal_statements_income:0
+msgid "Printing Date:"
+msgstr "Fecha de Impresión"
+
+#. module: bias_account
+#: wizard_field:fiscal.statements,init,fiscal_statements_id:0
+msgid "Fiscal Statement"
+msgstr "Estados Financieros"
+
+#. module: bias_account
+#: wizard_view:account.account.balance.report.bias,report_csv:0
+#: wizard_field:account.account.balance.report.bias,report_csv,file:0
+#: wizard_view:account.third_party_ledger_bias.report,report_csv:0
+#: wizard_field:account.third_party_ledger_bias.report,report_csv,file:0
+#: wizard_view:fiscal.statements,report_csv:0
+#: wizard_field:fiscal.statements,report_csv,file:0
+msgid "File"
+msgstr "Archivo"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+msgid "LID"
+msgstr "LID"
+
+#. module: bias_account
+#: wizard_view:account.move.line.reconcile.bias,init_full:0
+#: wizard_view:account.move.line.reconcile.bias,init_partial:0
+msgid "Reconciliation"
+msgstr "Conciliación"
+
+#. module: bias_account
+#: wizard_field:account.third_party_ledger_bias.report,init,date1:0
+msgid "        Start date"
+msgstr "        Fecha Inicial"
+
+#. module: bias_account
+#: wizard_field:account.account.balance.report.bias,checktype,display_account:0
+#: wizard_field:account.account.balance.report.bias2,checktype,display_account:0
+msgid "Display accounts "
+msgstr "Cuentas Mostradas"
+
+#. module: bias_account
+#: wizard_view:account.close.currency,next_2:0
+msgid "Lines With Different Sign in Secondary Currency, if press Next it will be automaticaly corrected"
+msgstr "Líneas con signo diferente en la moneda secundaria, si precionas Siguiente se corregira automáticamente"
+
+#. module: bias_account
+#: wizard_view:account.invoice.tool,init:0
+msgid "Actual Invoice Information"
+msgstr "Información Actual de Factura"
+
+#. module: bias_account
+#: wizard_view:account.move.line.reconcile.bias,init_full:0
+#: wizard_view:account.move.line.reconcile.bias,init_partial:0
+#: view:petty.cash.statement.reconcile:0
+#: field:petty.cash.statement.reconcile,line_new_ids:0
+msgid "Write-Off"
+msgstr "Ajuste"
+
+#. module: bias_account
+#: rml:account.reporte.ventas.minerales:0
+#: rml:account.reporte.ventas.producto.minerales:0
+msgid "Imp. Factura"
+msgstr "Imp. Factura"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+msgid "MID"
+msgstr "PID"
+
+#. module: bias_account
+#: field:fiscal.statements.lines,income:0
+msgid "Income"
+msgstr "Indicador del 100%"
+
+#. module: bias_account
+#: selection:petty.cash.line,type:0
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.wizard_bias_account_balance_report2
+#: model:ir.ui.menu,name:bias_account.menu_bias_account_balance_report2
+msgid "Bias Account Balance PDF"
+msgstr "Bias Balance Contable PDF"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,factoring,factoring_id:0
+#: view:factoring.partner:0
+#: model:ir.actions.act_window,name:bias_account.action_factoring_partner_form
+#: model:ir.model,name:bias_account.model_factoring_partner
+#: model:ir.ui.menu,name:bias_account.menu_factoring_partner_tree
+msgid "Factoring Partner"
+msgstr "Empresa de Factoraje"
+
+#. module: bias_account
+#: code:addons/bias_account/wizard/wizard_invoice_tool.py:0
+#, python-format
+msgid "Can not use Invoice Tool in draft or canceled Invoices."
+msgstr "No se puede utilizar Herramientas in facturas en estado borrador o canceladas"
+
+#. module: bias_account
+#: code:addons/bias_account/account_petty_cash.py:0
+#: code:addons/bias_account/petty_cash.py:0
+#, python-format
+msgid "The statement balance is incorrect !\n"
+msgstr ""
+
+#. module: bias_account
+#: rml:account.invoice.minerales:0
+msgid ","
+msgstr ","
+
+#. module: bias_account
+#: rml:account.nota.credito.minerales:0
+msgid "Numero"
+msgstr "Número"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Nombre y Firma"
+msgstr "Nombre y Firma"
+
+#. module: bias_account
+#: rml:account.invoice.minerales:0
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#. module: bias_account
+#: selection:account.third_party_ledger_bias.report,account,result_selection:0
+#: selection:account.third_party_ledger_bias.report,init,result_selection:0
+msgid "Receivable and Payable Accounts"
+msgstr "Cuentas por Cobrar y Pagar"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Total Moneda"
+msgstr "Total Moneda"
+
+#. module: bias_account
+#: code:addons/bias_account/account_move_line.py:0
+#, python-format
+msgid "There are more then one Payment line in transaction ID%s "
+msgstr "Hay mas de una línea de pago en la transacción ID%s "
+
+#. module: bias_account
+#: field:petty.cash,balance_start:0
+msgid "Starting Balance"
+msgstr "Saldo incial"
+
+#. module: bias_account
+#: wizard_view:account.chek.currency.rate,init:0
+#: model:ir.actions.wizard,name:bias_account.wizard_check_currency_rate
+msgid "Check Currency Rate"
+msgstr "Revisar Tipo de Cambio"
+
+#. module: bias_account
+#: code:addons/bias_account/petty_cash.py:0
+#, python-format
+msgid "The tax line \"%s\" has no relation"
+msgstr "Linea de impuesto \"%s\" no tiene relación"
+
+#. module: bias_account
+#: code:addons/bias_account/invoice.py:0
+#, python-format
+msgid "The invoice do not have account move."
+msgstr "La factura no tiene Póliza Contable"
+
+#. module: bias_account
+#: code:addons/bias_account/wizard/wizard_account_balance_report.py:0
+#: code:addons/bias_account/wizard/wizard_account_balance_report2.py:0
+#: code:addons/bias_account/wizard/wizard_third_party_ledger.py:0
+#, python-format
+msgid "UserError"
+msgstr "Error de Usuario"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.bias_period_statements
+msgid "Print Statement by Period"
+msgstr "Imprimir Estados por Período"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Times-BoldItalic"
+msgstr "Times-BoldItalic"
+
+#. module: bias_account
+#: selection:account.third_party_ledger_bias.report,account,result_selection:0
+#: selection:account.third_party_ledger_bias.report,init,result_selection:0
+msgid "Receivable Accounts"
+msgstr "Cuentas por Cobrar"
+
+#. module: bias_account
+#: wizard_field:account.move.line.reconcile.bias,init_full,simple:0
+#: wizard_field:account.move.line.reconcile.bias,init_partial,simple:0
+msgid "Simple"
+msgstr "Simple"
+
+#. module: bias_account
+#: rml:account.reporte.ventas.minerales:0
+#: rml:account.reporte.ventas.producto.minerales:0
+msgid "Reporte Diario de Facturación"
+msgstr "Reporte Diario de Facturación"
+
+#. module: bias_account
+#: wizard_view:account.invoice.pay.bias,init:0
+msgid "Payment Information"
+msgstr "Información de Pago"
+
+#. module: bias_account
+#: view:res.currency:0
+msgid "Rates"
+msgstr "Tasas"
+
+#. module: bias_account
+#: field:factoring.partner,commission:0
+msgid "Commission ( < 0)"
+msgstr "Comisión ( < 0)"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Elaboro:"
+msgstr "Elaboró"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,factoring,tax_id:0
+#: field:factoring.partner,tax_id:0
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "........."
+msgstr "........."
+
+#. module: bias_account
+#: code:addons/bias_account/invoice.py:0
+#, python-format
+msgid "! Error !"
+msgstr "! Error !"
+
+#. module: bias_account
+#: view:close.currency:0
+msgid "More Info."
+msgstr "Mas Info."
+
+#. module: bias_account
+#: code:addons/bias_account/account_move_line.py:0
+#, python-format
+msgid "Entries are not of the same account or already reconciled ! "
+msgstr "Entrada no es de la misma cuenta o reconciliación ya existe"
+
+#. module: bias_account
+#: wizard_field:account.move.line.reconcile.bias,init_full,debit:0
+#: wizard_field:account.move.line.reconcile.bias,init_partial,debit:0
+msgid "Debit amount"
+msgstr "Monto Debito"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,date:0
+msgid "Line date"
+msgstr "Fecha de Línea"
+
+#. module: bias_account
+#: wizard_button:account.account.balance.report.bias2,checktype,report_choice:0
+#: wizard_button:account.third_party_ledger_bias.report,account,checkreport:0
+#: wizard_button:fiscal.statements,init,checkreport:0
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: bias_account
+#: wizard_field:account.account.balance.report.bias,account_selection,date_from:0
+#: wizard_field:account.account.balance.report.bias2,checktype,date_from:0
+msgid "Start date"
+msgstr "Fecha Inicial"
+
+#. module: bias_account
+#: field:petty.cash.line,type:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: bias_account
+#: wizard_button:account.move.unreconcile,init,delete:0
+msgid "Unreconcile & Delete"
+msgstr "Desconciliar y Borrar"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "- Comprobantes o notas por reponer no inclidas en esta caja"
+msgstr "- Comprobantes o notas por reponer no inclidas en esta caja"
+
+#. module: bias_account
+#: selection:account.account.balance.report.bias2,checktype,state:0
+#: selection:account.third_party_ledger_bias.report,init,state:0
+msgid "No Filter"
+msgstr "Sin Filtro"
+
+#. module: bias_account
+#: wizard_field:account.account.balance.report.bias,report_csv,view:0
+msgid "File Preview"
+msgstr "Vista Previa de Archivo"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Tipo:"
+msgstr "Tipo:"
+
+#. module: bias_account
+#: wizard_view:account.move.unreconcile,init:0
+msgid "Unreconciliation"
+msgstr "Romper Conciliación"
+
+#. module: bias_account
+#: model:ir.model,name:bias_account.model_wizard_account_invoice_tool
+msgid "wizard.account.invoice.tool"
+msgstr "wizard.account.invoice.tool"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.wizard_pretty_tool
+msgid "Pretty Cash Tool"
+msgstr "Herramientas"
+
+#. module: bias_account
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "| Status:"
+msgstr "| Status:"
+
+#. module: bias_account
+#: selection:account.account.balance.report.bias,report_selection,report_kind:0
+#: selection:account.account.balance.report.bias2,checktype,detailed:0
+msgid "Auxiliar de Movimientos"
+msgstr "Auxiliar de Movimientos"
+
+#. module: bias_account
+#: wizard_field:account.invoice.tool,init,rate:0
+msgid "New Invoice Rate"
+msgstr "Nueva Tasa"
+
+#. module: bias_account
+#: field:account.tax.code,account_credit_id:0
+msgid "Model Acc. credit"
+msgstr "Modelo Credito"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Fecha:"
+msgstr "Fecha:"
+
+#. module: bias_account
+#: wizard_view:account.close.currency,init:0
+msgid "Select Permitted Parity Range "
+msgstr "Selecciona el rango de paridad permitido"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Times-Roman"
+msgstr "Times-Roman"
+
+#. module: bias_account
+#: rml:account.reporte.ventas.minerales:0
+#: rml:account.reporte.ventas.producto.minerales:0
+msgid "Codig Cliente"
+msgstr "Codig Cliente"
+
+#. module: bias_account
+#: model:ir.model,name:bias_account.model_wizard_account_invoice_pay
+msgid "wizard.account.invoice.pay"
+msgstr "wizard.cuenta.factura.pay"
+
+#. module: bias_account
+#: wizard_field:account.pretty.tool,init,pretty_id:0
+msgid "Pretty Cash Order"
+msgstr "Caja Chica"
+
+#. module: bias_account
+#: model:ir.actions.act_window,name:bias_account.action_account_cost_center_form
+#: model:ir.ui.menu,name:bias_account.menu_account_cost_cente_tree
+msgid "Cost Centers"
+msgstr "Centro de Costos"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,factoring,currency_id:0
+#: wizard_field:account.invoice.pay.bias,factoring,factor_currency_id:0
+#: wizard_field:account.invoice.pay.bias,init,currency_id:0
+#: wizard_field:account.invoice.pay.bias,init,inv_currency_id:0
+#: wizard_field:account.invoice.pay.bias,init,pay_currency_id:0
+#: wizard_field:account.invoice.tool,init,company_currency_id:0
+#: wizard_field:account.invoice.tool,init,currency_id:0
+#: wizard_field:account.invoice.tool,init,inv_currency_id:0
+#: field:factoring.partner,currency_id:0
+#: field:petty.cash,currency:0
+#: field:petty.cash.statement.reconcile,total_currency:0
+#: field:petty.cash.statement.reconcile,total_second_currency:0
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: bias_account
+#: wizard_field:account.third_party_ledger_bias.report,account,result_selection:0
+#: wizard_field:account.third_party_ledger_bias.report,init,result_selection:0
+msgid "Select"
+msgstr "Selección"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Fecha"
+msgstr "Fecha"
+
+#. module: bias_account
+#: code:addons/bias_account/close_currency.py:0
+#, python-format
+msgid "Set the fluctuation account in Invoice Journal \"%s\". Line Description \"%s\" ID \"%s\""
+msgstr "Selecciona la cuenta de fluctuación cambiaria en el Diario de la Factura \"%s\". Nombre de Linea \"%s\" ID \"%s\""
+
+#. module: bias_account
+#: code:addons/bias_account/account_petty_cash.py:0
+#: code:addons/bias_account/petty_cash.py:0
+#, python-format
+msgid "Configration Error !"
+msgstr "Error de configuración"
+
+#. module: bias_account
+#: wizard_view:account.close.currency,init:0
+msgid "These process take long time to complete, so yow can select a small number of lines to process, so it will run faster,"
+msgstr "Este Proceso toma tiempo, seleccionando un menor numero de líneas a procesar terminara mas rápido"
+
+#. module: bias_account
+#: code:addons/bias_account/invoice.py:0
+#, python-format
+msgid "! Aviso !"
+msgstr "! Aviso !"
+
+#. module: bias_account
+#: wizard_field:account.aged.trial.balance.bias,init,deudores:0
+msgid "deudores diversos?"
+msgstr "deudores diversos?"
+
+#. module: bias_account
+#: rml:fiscal_statements_income:0
+msgid "(Accrued)"
+msgstr "Acumulado"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Courier"
+msgstr "Courier"
+
+#. module: bias_account
+#: help:account.account.balance.report.bias,account_selection,periods:0
+#: help:account.account.balance.report.bias2,checktype,periods:0
+#: help:account.bias.costcenter.report,init,period_id:0
+#: help:account.third_party_ledger_bias.report,init,periods:0
+msgid "All periods if empty"
+msgstr "En blanco todos los períodos"
+
+#. module: bias_account
+#: code:addons/bias_account/wizard/wizard_pay_invoice.py:0
+#, python-format
+msgid "Your journal must have a default credit and debit account."
+msgstr "Tu diario debe de tener una cuenta de cargo y credito por default."
+
+#. module: bias_account
+#: help:account.account.balance.report.bias,account_selection,cost_center:0
+#: help:account.account.balance.report.bias2,account_selection,cost_center:0
+#: help:account.bias.costcenter.report,init,cost_center:0
+msgid "All Cost Centers if empty"
+msgstr "en blanco, todos los centros de costo"
+
+#. module: bias_account
+#: help:account.tax.code,account_debit_id:0
+msgid "The account debit in the extra lines created after a reconcile."
+msgstr "La cuenta de débito de las líneas extras de IVA creadas tras la conciliación"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+#: field:petty.cash,date:0
+#: field:petty.cash.line,date:0
+#: field:petty.cash.statement.reconcile,name:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: bias_account
+#: wizard_button:account.move.unreconcile,init,unrec:0
+msgid "Unreconcile"
+msgstr "Desconciliar"
+
+#. module: bias_account
+#: help:account.third_party_ledger_bias.report,report_csv,file:0
+#: help:fiscal.statements,report_csv,file:0
+msgid "File created for this report"
+msgstr "Archivo creado para este reporte"
+
+#. module: bias_account
+#: code:addons/bias_account/account_move_line.py:0
+#, python-format
+msgid "Some entries are already reconciled !"
+msgstr "Algunas entrads ya están conciliadas"
+
+#. module: bias_account
+#: field:close.currency,balance:0
+msgid "Total Fluctuation balance"
+msgstr "Balance en Fluctuación"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Courier-Bold"
+msgstr "Courier-Bold"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,addendum,comment:0
+#: wizard_field:account.invoice.pay.bias,init,name:0
+msgid "Entry Name"
+msgstr "Asiento"
+
+#. module: bias_account
+#: help:account.move.line,move_origin_id:0
+msgid "The move origin of this entry line."
+msgstr "La Póliza de origen de esta línea de póliza"
+
+#. module: bias_account
+#: wizard_button:account.account.balance.report.bias,account_selection,report_pdf:0
+#: wizard_button:account.account.balance.report.bias,checktype,report_pdf:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: bias_account
+#: field:account.cost.center,code:0
+#: field:fiscal.statements.lines,code:0
+msgid "Code"
+msgstr "Codigo"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Folio:"
+msgstr "Folio:"
+
+#. module: bias_account
+#: wizard_view:account.invoice.pay.bias,addendum:0
+#: wizard_view:account.move.line.reconcile.bias,addendum:0
+msgid "Information addendum"
+msgstr "Información de adendum"
+
+#. module: bias_account
+#: wizard_field:account.account.balance.report.bias,checktype,fiscalyear:0
+#: wizard_field:account.account.balance.report.bias2,checktype,fiscalyear:0
+#: wizard_field:account.aged.trial.balance.bias,init,fiscalyear:0
+#: wizard_field:account.bias.costcenter.report,init,fiscalyear:0
+#: wizard_field:account.third_party_ledger_bias.report,init,fiscalyear:0
+#: wizard_field:fiscal.statements,init,fiscalyear:0
+msgid "Fiscal year"
+msgstr "Año Fiscal"
+
+#. module: bias_account
+#: field:petty.cash,balance_end_real_cash:0
+msgid "Ending Balance Cash"
+msgstr "Saldo Final Caja Chica"
+
+#. module: bias_account
+#: rml:account.invoice.minerales:0
+#: rml:account.nota.credito.minerales:0
+msgid "/100"
+msgstr "/100"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,factoring,interest:0
+msgid "Interest"
+msgstr "Interes"
+
+#. module: bias_account
+#: model:ir.actions.report.xml,name:bias_account.account_nota_credito_minerales
+msgid "Nota de Credito"
+msgstr "Nota de Credito"
+
+#. module: bias_account
+#: wizard_field:account.mask,init,segment3:0
+msgid "Segment 3"
+msgstr "Segmento 3"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.wizard_reconcile_bias
+msgid "Reconcile Entries Complete"
+msgstr "Conciliación de Asientos con Opciones"
+
+#. module: bias_account
+#: wizard_field:account.mask,init,segment4:0
+msgid "Segment 4"
+msgstr "Segmento 4"
+
+#. module: bias_account
+#: field:factoring.partner,interest:0
+msgid "Interest ( < 0)"
+msgstr "Interes ( < 0)"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_balance_bias:0
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+msgid "-"
+msgstr "-"
+
+#. module: bias_account
+#: selection:fiscal.statements,format:0
+#: model:ir.actions.report.xml,name:bias_account.fiscal_statements_income
+msgid "Income statement / Statement of earnings"
+msgstr "Estado de Resultados"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,difference:0
+msgid "Difference"
+msgstr "Differencia"
+
+#. module: bias_account
+#: field:factoring.partner,name:0
+#: field:fiscal.statements,name:0
+#: field:fiscal.statements.lines,name:0
+#: field:petty.cash,name:0
+#: field:petty.cash.line,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,factoring,factor:0
+#: view:factoring.partner:0
+msgid "Factor"
+msgstr "Factor"
+
+#. module: bias_account
+#: code:addons/bias_account/invoice.py:0
+#, python-format
+msgid "La referencia ya existe en otra factura de esta empresa"
+msgstr "La referencia ya existe en otra factura de esta empresa"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,amount_currency:0
+msgid "Line Currency"
+msgstr "Monede de Línea"
+
+#. module: bias_account
+#: view:account.move.line:0
+msgid "Total credit"
+msgstr "Total haber"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,rev_amount:0
+msgid "Revaluated Amount"
+msgstr "Monto Revaluado"
+
+#. module: bias_account
+#: code:addons/bias_account/wizard/wizard_third_party_ledger.py:0
+#, python-format
+msgid "No records found for your selection!"
+msgstr "No hay registros para la selección"
+
+#. module: bias_account
+#: code:addons/bias_account/account_petty_cash.py:0
+#: code:addons/bias_account/petty_cash.py:0
+#, python-format
+msgid "The account entries lines are not in valid state."
+msgstr "Las entradas de las lineas contables no son validas"
+
+#. module: bias_account
+#: help:account.cost.center,name:0
+msgid "Determines multiple cost center of a company, like a brach, cetain office or a city"
+msgstr "Determina el centro de coste múltiple de una compañía, como una rama, cierta oficina o una ciudad"
+
+#. module: bias_account
+#: field:fiscal.statements.lines,display_label:0
+msgid "Display label"
+msgstr "Mostrar Nombre"
+
+#. module: bias_account
+#: field:account.tax.code,tax_code_id:0
+msgid "Tax Destination"
+msgstr "Impuesto Destino"
+
+#. module: bias_account
+#: help:account.journal,credit_fluc_acc:0
+msgid "Used as write off account when the currency fluctuation result in loss."
+msgstr "Usado como cuenta de ajuste cuando la fluctuación cambiaria resulta en perdida."
+
+#. module: bias_account
+#: wizard_view:account.move.unreconcile,init:0
+msgid "Unreconciliation transactions"
+msgstr "Transacciones para Desconciliar"
+
+#. module: bias_account
+#: field:petty.cash,move_line_ids:0
+msgid "Entry lines"
+msgstr "Lineas de Poliza"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.wizard_account_mask
+#: model:ir.ui.menu,name:bias_account.menu_account_mask
+msgid "Account Mask"
+msgstr "Mascara de Código de Cuentas"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Helvetica"
+msgstr "Helvetica"
+
+#. module: bias_account
+#: code:addons/bias_account/wizard/wizard_account_balance_report.py:0
+#: code:addons/bias_account/wizard/wizard_account_balance_report2.py:0
+#: code:addons/bias_account/wizard/wizard_third_party_ledger.py:0
+#, python-format
+msgid "Date to must be set between %s and %s"
+msgstr "La Fecha debe estar entre %s y %s"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "- Monto de esta reposición de Caja Chica"
+msgstr "- Monto de esta reposición de Caja Chica"
+
+#. module: bias_account
+#: selection:account.account.balance.report.bias,checktype,display_account:0
+#: selection:account.account.balance.report.bias2,checktype,display_account:0
+msgid "With balance is not equal to 0"
+msgstr "Con Balance diferente de 0"
+
+#. module: bias_account
+#: wizard_field:account.move.line.reconcile.bias,init_full,trans_nbr:0
+#: wizard_field:account.move.line.reconcile.bias,init_partial,trans_nbr:0
+msgid "# of Transaction"
+msgstr "No. de Transacción"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+msgid "Entry Label"
+msgstr "Nombre"
+
+#. module: bias_account
+#: rml:account.invoice.minerales:0
+#: rml:account.nota.credito.minerales:0
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+msgid "("
+msgstr "("
+
+#. module: bias_account
+#: field:res.currency.rate,rate_inv:0
+msgid "Rate Inverse"
+msgstr "Tasa Inversa"
+
+#. module: bias_account
+#: wizard_field:account.account.balance.report.bias,account_selection,Account_list:0
+#: wizard_field:account.account.balance.report.bias2,account_selection,Account_list:0
+#: selection:account.third_party_ledger_bias.report,account,result_selection:0
+#: wizard_field:account.third_party_ledger_bias.report,init,account_id:0
+#: selection:account.third_party_ledger_bias.report,init,group_by:0
+#: selection:account.third_party_ledger_bias.report,init,result_selection:0
+#: field:petty.cash.line,account_id:0
+#: field:petty.cash.statement.reconcile.line,account_id:0
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: bias_account
+#: selection:account.account.balance.report.bias2,checktype,state:0
+#: selection:account.third_party_ledger_bias.report,init,state:0
+msgid "By Date and Period"
+msgstr "Por Fecha y Período"
+
+#. module: bias_account
+#: view:account.cost.center:0
+#: view:fiscal.statements.lines:0
+#: view:petty.cash:0
+#: field:petty.cash.line,note:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: bias_account
+#: view:close.currency:0
+msgid "Processed Entry Lines"
+msgstr "Líneas Procesadas"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Haber"
+msgstr "Haber"
+
+#. module: bias_account
+#: wizard_field:account.aged.trial.balance.bias,init,pronostico:0
+msgid "Pronostico"
+msgstr "Pronostico"
+
+#. module: bias_account
+#: code:addons/bias_account/account_petty_cash.py:0
+#, python-format
+msgid "Unable to reconcile entry \"%s\": %.2f"
+msgstr "no disponible entrada de conciliación"
+
+#. module: bias_account
+#: wizard_field:account.account.balance.report.bias2,checktype,detailed:0
+msgid "Report Type "
+msgstr "Tipo de Reporte"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Proveedor"
+msgstr "Proveedor"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_balance_bias:0
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+msgid "Balance Brought Forward"
+msgstr "Balance Total"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,addendum,writeoff_journal_id:0
+msgid "Write-Off journal"
+msgstr "Diario de Ajuste"
+
+#. module: bias_account
+#: view:account.move.line:0
+msgid "Total debit"
+msgstr "Total debito"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,report_type:0
+msgid "Report Objects With Accounts and child of Accounts"
+msgstr "Report Objects With Accounts and child of Accounts"
+
+#. module: bias_account
+#: code:addons/bias_account/account_move_line.py:0
+#, python-format
+msgid "Entry \"%s\" is not valid !"
+msgstr "Entrada \"%s\" no es valida !"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_balance_bias:0
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+msgid "Report Type:"
+msgstr "Tipo de Reporte:"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,next_3,range_id:0
+msgid "Lines out of range"
+msgstr "Líneas Fuera de Rango"
+
+#. module: bias_account
+#: code:addons/bias_account/close_currency.py:0
+#, python-format
+msgid "The line name \"%s\" ID \"%s\" is not reconcile but complete"
+msgstr "La línea nombre: \"%s\" ID \"%s\" no está conciliada pero la suma de debitos y créditos de las lineas con conciliación parcial es cero."
+
+#. module: bias_account
+#: view:petty.cash:0
+msgid "Real Entries"
+msgstr "Entradas Reales"
+
+#. module: bias_account
+#: code:addons/bias_account/account_move_line.py:0
+#, python-format
+msgid "You have to provide an account for the write off entry for lines ID %s!"
+msgstr "Tienes que indicar la cuenta de ajuste para las líneas ID %s!"
+
+#. module: bias_account
+#: help:res.currency,rate_inverse:0
+#: help:res.currency.rate,rate_inv:0
+msgid "The rate inverse of the currency to the currency of rate 1"
+msgstr "La tasa inversa de esta moneda a la moneda con taza 1"
+
+#. module: bias_account
+#: wizard_view:account.account.balance.report.bias2,checktype:0
+#: wizard_view:account.third_party_ledger_bias.report,init:0
+msgid "Filter on Periods"
+msgstr "Filrear por Períodos"
+
+#. module: bias_account
+#: wizard_button:account.invoice.pay.bias,addendum,reconcile:0
+msgid "Pay and reconcile"
+msgstr "Pagar y Conciliar"
+
+#. module: bias_account
+#: wizard_view:account.move.line.reconcile.bias,init_full:0
+#: wizard_view:account.move.line.reconcile.bias,init_partial:0
+msgid "Reconciliation transactions"
+msgstr "Conciliación de Transacciones"
+
+#. module: bias_account
+#: code:addons/bias_account/account_petty_cash.py:0
+#: code:addons/bias_account/close_currency.py:0
+#: code:addons/bias_account/petty_cash.py:0
+#: code:addons/bias_account/wizard/wizard_close_currency_rate.py:0
+#: code:addons/bias_account/wizard/wizard_invoice_tool.py:0
+#: code:addons/bias_account/wizard/wizard_pay_invoice.py:0
+#, python-format
+msgid "Error !"
+msgstr "Proveedor"
+
+#. module: bias_account
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "¡El nombre del objeto debe empezar con x_ y no contener ningún carácter especial!"
+
+#. module: bias_account
+#: wizard_field:account.third_party_ledger_bias.report,init,group_by:0
+msgid "Group By"
+msgstr "Agrupar Por"
+
+#. module: bias_account
+#: wizard_view:account.close.currency,next_5:0
+msgid "WARNING"
+msgstr "Advertencia!"
+
+#. module: bias_account
+#: wizard_field:account.mask,init,segment2:0
+msgid "Segment 2"
+msgstr "Segmento 2"
+
+#. module: bias_account
+#: help:petty.cash.statement.reconcile,total_second_amount:0
+msgid "The amount in the currency of the journal"
+msgstr "El importe en la moneda del diario"
+
+#. module: bias_account
+#: help:account.tax.code,tax_code_id:0
+msgid "If set, the reconcile process will create two extra line in bank entry to move tax from one account to the other."
+msgstr "Si se pone, el proceso de conciliación va a crear dos asientos adicionales en la poliza de pago en banco para trasladar el IVA de no pagado a pagado"
+
+#. module: bias_account
+#: view:petty.cash:0
+msgid "Compute Taxes"
+msgstr "Calculo de Impuestos"
+
+#. module: bias_account
+#: wizard_field:account.move.line.reconcile.bias,addendum,period_id:0
+msgid "Write-Off Period"
+msgstr "Periodo de Ajuste"
+
+#. module: bias_account
+#: wizard_button:account.account.balance.report.bias,account_selection,end:0
+#: wizard_button:account.account.balance.report.bias,checktype,end:0
+#: wizard_button:account.account.balance.report.bias,report_selection,end:0
+#: wizard_button:account.account.balance.report.bias2,account_selection,end:0
+#: wizard_button:account.account.balance.report.bias2,checktype,end:0
+#: wizard_button:account.aged.trial.balance.bias,init,end:0
+#: wizard_button:account.bias.costcenter.report,init,end:0
+#: wizard_button:account.bias.report,init,end:0
+#: wizard_button:account.bias.report2,init,end:0
+#: wizard_button:account.close.currency,init,end:0
+#: wizard_button:account.close.currency,next_1,end:0
+#: wizard_button:account.close.currency,next_2,end:0
+#: wizard_button:account.close.currency,next_3,end:0
+#: wizard_button:account.close.currency,next_4,end:0
+#: wizard_button:account.close.currency,next_5,end:0
+#: wizard_button:account.invoice.pay.bias,addendum,end:0
+#: wizard_button:account.invoice.pay.bias,factoring,end:0
+#: wizard_button:account.invoice.pay.bias,init,end:0
+#: wizard_button:account.invoice.tool,init,end:0
+#: wizard_button:account.mask,init,end:0
+#: wizard_button:account.move.line.reconcile.bias,addendum,end:0
+#: wizard_button:account.move.line.reconcile.bias,init_full,end:0
+#: wizard_button:account.move.line.reconcile.bias,init_partial,end:0
+#: wizard_button:account.move.unreconcile,init,end:0
+#: wizard_button:account.pretty.tool,init,end:0
+#: wizard_button:account.third_party_ledger_bias.report,account,end:0
+#: wizard_button:account.third_party_ledger_bias.report,init,end:0
+#: wizard_button:fiscal.statements,init,end:0
+#: view:petty.cash:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bias_account
+#: field:fiscal.statements.lines,invert_sign:0
+msgid "Invert Sign"
+msgstr "Invertir Signo"
+
+#. module: bias_account
+#: code:addons/bias_account/wizard/wizard_pay_invoice.py:0
+#, python-format
+msgid "The invoice is open but without account entry."
+msgstr "La factura esta abierta pero no tiene póliza contable"
+
+#. module: bias_account
+#: view:petty.cash:0
+msgid "Entry encoding"
+msgstr "Codificación de entrada"
+
+#. module: bias_account
+#: model:ir.actions.report.xml,name:bias_account.account_invoices_minerales
+msgid "Factural Minerales"
+msgstr "Factura Minerales"
+
+#. module: bias_account
+#: wizard_view:account.close.currency,next_5:0
+msgid "THIS PERIOD HAS BEEN PROCESSED ALREADY"
+msgstr "ESTE PERÍODO YA HA SIDO PROCESADO"
+
+#. module: bias_account
+#: wizard_view:account.close.currency,init:0
+msgid "any way, the result wil be sent to your message tool in the lower rigth corner of your OpenERP client"
+msgstr "de cualquier manera, el resultado de enviará a tu centro de mensajes "
+
+#. module: bias_account
+#: field:petty.cash,week_day_end:0
+msgid "Day To"
+msgstr "Hasta día"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,calc_amount_currency:0
+msgid "Calc Amount Currency"
+msgstr "Monto Secundario Calc."
+
+#. module: bias_account
+#: wizard_view:account.mask,next:0
+#: wizard_field:account.mask,next,issues_account_id:0
+msgid "Issues Account"
+msgstr "Revisar estos Asientos"
+
+#. module: bias_account
+#: help:account.third_party_ledger_bias.report,init,partner_id:0
+msgid "Keep empty for all partners"
+msgstr "En blanco para todos las empresas"
+
+#. module: bias_account
+#: model:ir.model,name:bias_account.model_petty_cash_statement_reconcile_line
+msgid "Petty Cash Statement reconcile line"
+msgstr "Linea de conciliación de Caja Chica"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Debe"
+msgstr "Debe"
+
+#. module: bias_account
+#: selection:account.account.balance.report.bias,report_selection,report_kind:0
+#: selection:account.account.balance.report.bias2,checktype,detailed:0
+msgid "Balanza de Comprobacion"
+msgstr "Balanza de Comprobacion"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_balance_bias:0
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+msgid "Initial"
+msgstr "Inicial"
+
+#. module: bias_account
+#: rml:account.reporte.ventas.minerales:0
+#: rml:account.reporte.ventas.producto.minerales:0
+msgid "IVA Retenido"
+msgstr "IVA Retenido"
+
+#. module: bias_account
+#: field:fiscal.statements.lines,note:0
+msgid "Note"
+msgstr "Nota"
+
+#. module: bias_account
+#: wizard_view:account.invoice.pay.bias,addendum:0
+#: wizard_view:account.move.line.reconcile.bias,addendum:0
+msgid "Write-Off Move"
+msgstr "Asiento de Ajuste"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.wizard_third_party_ledger_bias
+#: model:ir.ui.menu,name:bias_account.menu_third_party_ledger_bias
+msgid "General Ledger"
+msgstr "Libro mayor"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Formato General para Reposicón de Caja Chica"
+msgstr "Formato General para Reposicón de Caja Chica"
+
+#. module: bias_account
+#: selection:account.account.balance.report.bias2,checktype,state:0
+#: selection:account.third_party_ledger_bias.report,init,state:0
+msgid "By Period"
+msgstr "Por Período"
+
+#. module: bias_account
+#: model:ir.module.module,description:bias_account.module_meta_information
+msgid "."
+msgstr "."
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Periodo de Reposición:"
+msgstr "Periodo de Reposición:"
+
+#. module: bias_account
+#: field:account.move.line,move_origin_id:0
+msgid "Move Origin"
+msgstr "Póliza Origen"
+
+#. module: bias_account
+#: field:petty.cash.statement.reconcile,total_entry:0
+msgid "Total entries"
+msgstr "Total de las entradas"
+
+#. module: bias_account
+#: field:account.cost.center,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+#: rml:account.reporte.ventas.minerales:0
+msgid "Impreso por:"
+msgstr "Impreso por:"
+
+#. module: bias_account
+#: code:addons/bias_account/close_currency.py:0
+#, python-format
+msgid "The line name \"%s\" ID \"%s\" has not Cost Center"
+msgstr "La Línea Nombre: \"%s\" ID \"%s\" no tiene Centro de Costo"
+
+#. module: bias_account
+#: wizard_field:account.invoice.tool,init,inv_rate:0
+msgid "Invoice Rate"
+msgstr "Tasa de Factura"
+
+#. module: bias_account
+#: wizard_field:account.mask,init,segment1:0
+msgid "Segment 1"
+msgstr "Segmento 1"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Autorizo:"
+msgstr "Autorizo:"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.account_bias_costcenter_report
+msgid "Print Statement by Cost Center"
+msgstr "Imprimir Estados por Centro de Costo"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_balance_bias:0
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+msgid "Credit"
+msgstr "Crédito"
+
+#. module: bias_account
+#: model:ir.module.module,shortdesc:bias_account.module_meta_information
+msgid "Bias Account"
+msgstr "Bias Account"
+
+#. module: bias_account
+#: view:petty.cash:0
+#: field:petty.cash,line_ids:0
+msgid "Statement lines"
+msgstr "Lineas de declaración"
+
+#. module: bias_account
+#: view:close.currency:0
+msgid "Created Entry Lines"
+msgstr "Asientos Creados"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Poliza Contable"
+msgstr "Poliza Contable"
+
+#. module: bias_account
+#: field:petty.cash,petty_cash_fund:0
+msgid "Petty Cash Fund"
+msgstr "Fondo caja chica"
+
+#. module: bias_account
+#: wizard_field:account.third_party_ledger_bias.report,account,reconcil:0
+#: wizard_field:account.third_party_ledger_bias.report,init,reconcil:0
+msgid "       Include Reconciled Entries"
+msgstr "       Incluir asientos Conciliados"
+
+#. module: bias_account
+#: wizard_field:account.move.line.reconcile.bias,init_full,writeoff:0
+#: wizard_field:account.move.line.reconcile.bias,init_partial,writeoff:0
+msgid "Write-Off amount"
+msgstr "Cantidad de Ajuste"
+
+#. module: bias_account
+#: wizard_field:account.account.balance.report.bias2,checktype,state:0
+#: wizard_field:account.third_party_ledger_bias.report,init,state:0
+msgid "Date/Period Filter"
+msgstr "Filtro Fecha/Período"
+
+#. module: bias_account
+#: view:fiscal.statements.lines:0
+#: selection:petty.cash.line,type:0
+msgid "General"
+msgstr "General"
+
+#. module: bias_account
+#: help:petty.cash.statement.reconcile,total_second_currency:0
+msgid "The currency of the journal"
+msgstr "La moneda del diario"
+
+#. module: bias_account
+#: wizard_field:account.account.balance.report.bias,account_selection,periods:0
+#: wizard_field:account.account.balance.report.bias2,checktype,periods:0
+#: wizard_field:account.bias.costcenter.report,init,period_id:0
+#: wizard_field:account.third_party_ledger_bias.report,init,periods:0
+msgid "Periods"
+msgstr "Períodos"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,next_5,invoice_ids:0
+#: wizard_field:account.invoice.pay.bias,init,invoice_id:0
+#: wizard_field:account.invoice.tool,init,invoice_id:0
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Periodo: Semana del"
+msgstr "Periodo: Semana del"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,rate_1:0
+#: wizard_field:account.invoice.pay.bias,factoring,rate:0
+#: wizard_field:account.invoice.pay.bias,init,inv_rate:0
+#: wizard_field:account.invoice.pay.bias,init,rate:0
+msgid "Currency Rate"
+msgstr "Paridad"
+
+#. module: bias_account
+#: wizard_field:account.third_party_ledger_bias.report,account,balance:0
+#: wizard_field:account.third_party_ledger_bias.report,init,balance:0
+msgid "Only balances"
+msgstr "Sin Detalle"
+
+#. module: bias_account
+#: help:account.move.line,petty_cash_id:0
+msgid "The Petty Cash"
+msgstr "La caja chica"
+
+#. module: bias_account
+#: field:res.currency,rate_inverse:0
+msgid "Current Rate"
+msgstr "Tasa Actual"
+
+#. module: bias_account
+#: wizard_view:account.close.currency,next_1:0
+msgid "Lines in Bank Journals not Reconciled"
+msgstr "Asientos en Diarios de Bancos no Conciliados"
+
+#. module: bias_account
+#: wizard_view:account.invoice.tool,init:0
+msgid "New Invoice Information"
+msgstr "Nueva Información de Factura"
+
+#. module: bias_account
+#: rml:account.reporte.ventas.minerales:0
+#: rml:account.reporte.ventas.producto.minerales:0
+msgid "Tipo Cambio"
+msgstr "Tipo Cambio"
+
+#. module: bias_account
+#: wizard_field:account.move.line.reconcile.bias,init_full,credit:0
+#: wizard_field:account.move.line.reconcile.bias,init_partial,credit:0
+msgid "Credit amount"
+msgstr "Monto Crédito"
+
+#. module: bias_account
+#: field:account.journal,reconcile_tolerance:0
+msgid "Reconcile Tolerance"
+msgstr "Tolerancia en Conciliación"
+
+#. module: bias_account
+#: rml:account.invoice.minerales:0
+#: rml:account.nota.credito.minerales:0
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+msgid ")"
+msgstr ")"
+
+#. module: bias_account
+#: wizard_field:account.third_party_ledger_bias.report,init,soldeinit:0
+msgid "Include initial balances"
+msgstr "Incluir Saldo Anterior"
+
+#. module: bias_account
+#: wizard_button:account.chek.currency.rate,init,write_amount_currency:0
+msgid "Write Amount Currency"
+msgstr "Escribir Monto de Moneda Secundaria"
+
+#. module: bias_account
+#: wizard_field:account.aged.trial.balance.bias,init,period_length:0
+msgid "Period length (days)"
+msgstr "Rango de Fechas: "
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,addendum,gain_loss:0
+msgid "Gain/Loss"
+msgstr "Utilidad/Perdida"
+
+#. module: bias_account
+#: view:fiscal.statements:0
+msgid "Lines"
+msgstr "Líneas"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,revaluated:0
+msgid "Reconcile Partial"
+msgstr "Conciliación Parcial"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Times-Italic"
+msgstr "Times-Italic"
+
+#. module: bias_account
+#: model:ir.actions.report.xml,name:bias_account.account_3rdparty_ledger_balance
+#: model:ir.actions.report.xml,name:bias_account.account_3rdparty_ledger_other
+msgid "Partner Other Ledger"
+msgstr "Ausiliar Cliente / Proveedor"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+msgid "JNRL"
+msgstr "Libro"
+
+#. module: bias_account
+#: model:ir.model,name:bias_account.model_petty_cash_statement_reconcile
+msgid "Petty Cash Statement reconcile"
+msgstr "Conciliación de Caja Chica"
+
+#. module: bias_account
+#: rml:account.invoice.minerales:0
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+#: rml:account.petty.cash:0
+msgid "Total"
+msgstr "Total"
+
+#. module: bias_account
+#: wizard_button:account.invoice.tool,init,correct:0
+msgid "Correct Invoice"
+msgstr "Corregir Factura"
+
+#. module: bias_account
+#: code:addons/bias_account/account_move_line.py:0
+#, python-format
+msgid "There are not payment line"
+msgstr "No hay líneas de pago"
+
+#. module: bias_account
+#: field:account.journal,credit_fluc_acc:0
+msgid "Credit Fluctuation Acc."
+msgstr "Cuenta Credito de Fluc."
+
+#. module: bias_account
+#: wizard_button:account.invoice.pay.bias,init,factoring:0
+msgid "Factoring Payment"
+msgstr "Factoraje"
+
+#. module: bias_account
+#: field:close.currency,debit:0
+msgid "Total Fluctuation Debit"
+msgstr "Fluctuación Total en Debito"
+
+#. module: bias_account
+#: wizard_button:account.pretty.tool,init,write:0
+msgid "Write"
+msgstr "Escribir"
+
+#. module: bias_account
+#: view:petty.cash:0
+#: field:petty.cash.line,statement_id:0
+msgid "Statement"
+msgstr "Declaración"
+
+#. module: bias_account
+#: field:account.move.line,petty_cash_id:0
+#: model:ir.model,name:bias_account.model_petty_cash
+msgid "Petty Cash"
+msgstr "Caja Chica"
+
+#. module: bias_account
+#: code:addons/bias_account/wizard/wizard_invoice_tool.py:0
+#, python-format
+msgid "The Invoice should have account entry but it is not present."
+msgstr "La factura debería de tener póliza pero no esta presente"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Nombre:"
+msgstr "Nombre:"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Compania :"
+msgstr "Compañía"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Courier-BoldOblique"
+msgstr "Courier-BoldOblique"
+
+#. module: bias_account
+#: wizard_field:account.account.balance.report.bias,checktype,company_id:0
+#: wizard_field:account.account.balance.report.bias2,checktype,company_id:0
+#: wizard_field:account.aged.trial.balance.bias,init,company_id:0
+#: wizard_field:account.bias.costcenter.report,init,company_id:0
+#: wizard_field:account.close.currency,init,company_id:0
+#: wizard_field:account.mask,init,company_id:0
+#: wizard_field:account.third_party_ledger_bias.report,account,account_ids:0
+#: wizard_field:account.third_party_ledger_bias.report,account,company_id:0
+#: wizard_field:account.third_party_ledger_bias.report,init,company_id:0
+#: wizard_field:fiscal.statements,init,company_id:0
+msgid "Company"
+msgstr "Compañía"
+
+#. module: bias_account
+#: wizard_view:account.invoice.pay.bias,factoring:0
+msgid "Invoice Data"
+msgstr "Datos de Factura"
+
+#. module: bias_account
+#: wizard_button:account.chek.currency.rate,init,end:0
+#: wizard_button:account.mask,next,end:0
+msgid "ok"
+msgstr "ok"
+
+#. module: bias_account
+#: field:fiscal.statements,fiscal_statements_line_id:0
+#: view:fiscal.statements.lines:0
+#: model:ir.actions.act_window,name:bias_account.action_fiscal_statements_line_form
+#: model:ir.model,name:bias_account.model_fiscal_statements_lines
+msgid "Fiscal Statements Lines"
+msgstr "Líneas de Estados Financieros"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,report_type:0
+msgid "Report Objects With Accounts"
+msgstr "Report Objects With Accounts"
+
+#. module: bias_account
+#: wizard_button:account.account.balance.report.bias,report_csv,end:0
+#: wizard_button:account.third_party_ledger_bias.report,report_csv,end:0
+#: wizard_button:fiscal.statements,report_csv,end:0
+msgid "Ok"
+msgstr "Ok"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Tipo de Comprobante"
+msgstr "Tipo de Comprobante"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,init,journal_id:0
+msgid "Journal/Payment Mode"
+msgstr "Modo de Pago"
+
+#. module: bias_account
+#: wizard_button:account.aged.trial.balance.bias,init,print:0
+msgid "Print Aged Trial Balance"
+msgstr "Imprimir Antiguedad de Saldos"
+
+#. module: bias_account
+#: wizard_view:account.mask,next:0
+msgid "This Accounts dos not apply for modification"
+msgstr "Estas Cuentas no aplican para modificaciones"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,next_5,date:0
+msgid "Close Date"
+msgstr "Fecha de Cierre"
+
+#. module: bias_account
+#: field:factoring.partner,factor:0
+msgid "Factor ( < 0)"
+msgstr "Factor ( < 0)"
+
+#. module: bias_account
+#: wizard_view:account.account.balance.report.bias,checktype:0
+msgid "Select `Details"
+msgstr "Seleciona Detalles"
+
+#. module: bias_account
+#: selection:account.account.balance.report.bias2,checktype,state:0
+#: selection:account.third_party_ledger_bias.report,init,state:0
+msgid "By Date"
+msgstr "Por Fecha"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,section:0
+msgid "Column 2"
+msgstr "Columna 2"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,report_type:0
+msgid "Report Objects Only"
+msgstr "Report Objects Only"
+
+#. module: bias_account
+#: rml:account.reporte.ventas.minerales:0
+#: rml:account.reporte.ventas.producto.minerales:0
+msgid "Importe Neto"
+msgstr "Importe Neto"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Cuenta Afectada"
+msgstr "Cuenta Afectada"
+
+#. module: bias_account
+#: wizard_button:account.close.currency,create,ok:0
+msgid "OK"
+msgstr "OK"
+
+#. module: bias_account
+#: wizard_view:account.pretty.tool,init:0
+msgid "Work Area Information"
+msgstr "Información de Area de Trabajo"
+
+#. module: bias_account
+#: code:addons/bias_account/wizard/wizard_account_balance_report.py:0
+#: code:addons/bias_account/wizard/wizard_account_balance_report2.py:0
+#: code:addons/bias_account/wizard/wizard_third_party_ledger.py:0
+#, python-format
+msgid "Date not in a defined fiscal year"
+msgstr "Fecha fuera de año fiscal definido"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,section:0
+msgid "Column 1"
+msgstr "Columna 1"
+
+#. module: bias_account
+#: wizard_view:account.close.currency,create:0
+#: wizard_view:account.close.currency,init:0
+#: wizard_view:account.close.currency,next_1:0
+#: wizard_view:account.close.currency,next_2:0
+#: wizard_view:account.close.currency,next_3:0
+#: wizard_view:account.close.currency,next_4:0
+#: wizard_view:account.close.currency,next_5:0
+#: wizard_view:account.mask,init:0
+#: view:close.currency:0
+#: model:ir.actions.act_window,name:bias_account.action_close_currency_form
+#: model:ir.model,name:bias_account.model_close_currency
+#: model:ir.ui.menu,name:bias_account.menu_close_currency_tree
+msgid "Exchange Rate Differential"
+msgstr "Períodos con Fluctuación Cambiaria Procesada"
+
+#. module: bias_account
+#: code:addons/bias_account/account_move_line.py:0
+#, python-format
+msgid "Warning"
+msgstr "Precaución"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Libro:"
+msgstr "Libro:"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,create,result:0
+#: field:close.currency,documents:0
+msgid "Lines Processed"
+msgstr "Líneas Procesadas"
+
+#. module: bias_account
+#: field:fiscal.statements.lines,font_style:0
+msgid "Font"
+msgstr "on"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Folio"
+msgstr "Folio"
+
+#. module: bias_account
+#: wizard_view:account.account.balance.report.bias,report_csv:0
+#: wizard_view:account.third_party_ledger_bias.report,report_csv:0
+#: wizard_view:fiscal.statements,report_csv:0
+msgid "Export Report"
+msgstr "Exportar Reporte"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.wizard_close_currency_rate
+#: model:ir.ui.menu,name:bias_account.menu_close_currency_rate
+msgid "Close Currency Rate"
+msgstr "Proceso de Fluctuación Cambiaria"
+
+#. module: bias_account
+#: view:petty.cash:0
+#: selection:petty.cash,state:0
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: bias_account
+#: wizard_view:account.account.balance.report.bias,account_selection:0
+#: wizard_view:account.account.balance.report.bias2,account_selection:0
+msgid "Select parent account"
+msgstr "Selecciona cuenta padre"
+
+#. module: bias_account
+#: field:fiscal.statements.lines,section:0
+msgid "Section"
+msgstr "Sección"
+
+#. module: bias_account
+#: field:petty.cash.statement.reconcile,total_amount:0
+#: field:petty.cash.statement.reconcile,total_second_amount:0
+msgid "Payment amount"
+msgstr "Importe del pago"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,factoring,commission:0
+msgid "Commission"
+msgstr "Comisión"
+
+#. module: bias_account
+#: code:addons/bias_account/account_petty_cash.py:0
+#: code:addons/bias_account/petty_cash.py:0
+#, python-format
+msgid "Please verify that an account is defined in the journal."
+msgstr "Por favor verifica que cuenta este definida en el diario"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_balance_bias:0
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+msgid "Debit"
+msgstr "Debito"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Fondo Fijo"
+msgstr "Fondo Fijo"
+
+#. module: bias_account
+#: model:ir.actions.act_window,name:bias_account.action_petty_cash_draft_tree
+#: model:ir.ui.menu,name:bias_account.menu_petty_cash_draft_tree
+msgid "Draft Petty Cash statements"
+msgstr "Caja Chica Borrador"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+#: rml:account.petty.cash:0
+#: rml:account.reporte.ventas.minerales:0
+#: rml:account.reporte.ventas.producto.minerales:0
+msgid "/"
+msgstr "/"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,rate:0
+msgid "Date Rate"
+msgstr "Pariedad a la Fecha"
+
+#. module: bias_account
+#: field:petty.cash.statement.reconcile,total_new:0
+msgid "Total write-off"
+msgstr "Total de Ajuste"
+
+#. module: bias_account
+#: view:res.company:0
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: bias_account
+#: wizard_field:account.move.unreconcile,init,line_id:0
+msgid "Account Lines"
+msgstr "Líneas Contables"
+
+#. module: bias_account
+#: code:addons/bias_account/account_move_line.py:0
+#, python-format
+msgid "Entry is already reconciled"
+msgstr "Entrada ya reconciliada"
+
+#. module: bias_account
+#: model:ir.model,name:bias_account.model_petty_cash_line
+#: field:petty.cash.statement.reconcile,statement_line:0
+msgid "Petty Cash Statement Line"
+msgstr "Linea de la caja chica"
+
+#. module: bias_account
+#: wizard_view:account.close.currency,init:0
+msgid "Select Pariod for Exchange Rate Differential Entry"
+msgstr "Seleciona el Período para Procesar la Fluctuación Cambiaria"
+
+#. module: bias_account
+#: wizard_button:account.invoice.pay.bias,factoring,applay:0
+msgid "Applay"
+msgstr "Aplicar"
+
+#. module: bias_account
+#: wizard_view:account.close.currency,create:0
+msgid "ERROR"
+msgstr "ERROR"
+
+#. module: bias_account
+#: wizard_button:account.invoice.pay.bias,init,reconcile:0
+msgid "Partial Payment"
+msgstr "Pago Parcial"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,create,not_processed_id:0
+msgid "Not Processed Account Lines"
+msgstr "Asientos no Procesados"
+
+#. module: bias_account
+#: code:addons/bias_account/wizard/wizard_third_party_ledger.py:0
+#, python-format
+msgid "No Data Available"
+msgstr "No hay datos disponibles"
+
+#. module: bias_account
+#: field:close.currency,created_line_id:0
+msgid "Created Lines"
+msgstr "Líneas Creadas"
+
+#. module: bias_account
+#: selection:account.third_party_ledger_bias.report,account,result_selection:0
+#: selection:account.third_party_ledger_bias.report,init,result_selection:0
+msgid "Payable Accounts"
+msgstr "Cuentas por Pagar"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "Moneda:"
+msgstr "Moneda:"
+
+#. module: bias_account
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Times-Bold"
+msgstr "Times-Bold"
+
+#. module: bias_account
+#: field:close.currency,not_processed_id:0
+msgid "Not Processed Lines"
+msgstr "Asientos no Procesados"
+
+#. module: bias_account
+#: wizard_button:account.invoice.pay.bias,init,writeoff_check:0
+msgid "Full Payment"
+msgstr "Pago Completo"
+
+#. module: bias_account
+#: field:close.currency,move_id:0
+msgid "Last Entry"
+msgstr "Última Póliza"
+
+#. module: bias_account
+#: wizard_view:account.account.balance.report.bias2,account_selection:0
+msgid "(Keep empty for all cost centers)"
+msgstr "(En blanco para todos los centros de costo)"
+
+#. module: bias_account
+#: rml:account.nota.credito.minerales:0
+msgid "13.27"
+msgstr "13.27"
+
+#. module: bias_account
+#: wizard_field:account.invoice.tool,init,new_invoice_amount:0
+msgid "New Invoice Amount"
+msgstr "Nuevo Monto de Factura"
+
+#. module: bias_account
+#: wizard_field:account.account.balance.report.bias,account_selection,cost_center:0
+#: wizard_field:account.account.balance.report.bias2,account_selection,cost_center:0
+#: field:account.bank.statement.line,cost_center_id:0
+#: wizard_field:account.bias.costcenter.report,init,cost_center:0
+#: view:account.cost.center:0
+#: field:account.cost.center,name:0
+#: field:account.invoice,cost_center_id:0
+#: field:account.invoice.line,cost_center_id:0
+#: wizard_field:account.invoice.pay.bias,init,cost_center_id:0
+#: wizard_field:account.invoice.tool,init,cost_center_id:0
+#: field:account.move.line,cost_center_id:0
+#: field:petty.cash.line,cost_center_id:0
+#: view:res.company:0
+#: field:res.company,cost_center_id:0
+#: field:sale.shop,cost_center_id:0
+msgid "Cost Center"
+msgstr "Centro de Costos"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Cuenta"
+msgstr "Cuenta"
+
+#. module: bias_account
+#: wizard_view:account.account.balance.report.bias2,checktype:0
+#: wizard_view:account.third_party_ledger_bias.report,init:0
+msgid "Date Filter"
+msgstr "Filtro por Fecha"
+
+#. module: bias_account
+#: selection:petty.cash,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,create,processed_line_id:0
+msgid "Processed Account Lines"
+msgstr "Asientos Procesados"
+
+#. module: bias_account
+#: wizard_view:account.chek.currency.rate,init:0
+#: wizard_field:account.chek.currency.rate,init,reconciled_lines_ids:0
+msgid "Reconciled Lines"
+msgstr "Líneas Conciliadas"
+
+#. module: bias_account
+#: wizard_view:account.mask,init:0
+msgid "Select Mask for Accounts"
+msgstr "Seleccion de Mascara de Código de Cuentas"
+
+#. module: bias_account
+#: help:account.cost.center,active:0
+msgid "Actives / Deactives The Cost Center"
+msgstr "Centros de Costos Activos / Inactivos"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,create,processed_invoice_ids:0
+msgid "Processed Invoices"
+msgstr "Facturas Procesadas"
+
+#. module: bias_account
+#: model:ir.model,name:bias_account.model_wizard_account_invoice_pay_bias
+msgid "wizard.account.invoice.pay.bias"
+msgstr "wizard.cuenta.factura.pay.bias"
+
+#. module: bias_account
+#: wizard_field:account.pretty.tool,init,calc_balance_start:0
+msgid "Calculated Starting Balance"
+msgstr "Balance Inicial Calculado"
+
+#. module: bias_account
+#: model:ir.actions.report.xml,name:bias_account.account_reporte_ventas_minerales
+msgid "Reporte Diario de Ventas"
+msgstr "Reporte Diario de Ventas"
+
+#. module: bias_account
+#: field:petty.cash.line,reconcile_amount:0
+msgid "Amount reconciled"
+msgstr "Importe conciliado"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,next_4,draft_id:0
+msgid "Lines Draft"
+msgstr "Líneas en Borrador"
+
+#. module: bias_account
+#: view:petty.cash:0
+#: view:petty.cash.statement.reconcile:0
+msgid "Compute"
+msgstr "Calcular"
+
+#. module: bias_account
+#: wizard_button:account.third_party_ledger_bias.report,account,report_csv:0
+#: wizard_button:fiscal.statements,init,report_csv:0
+msgid "Excel"
+msgstr "Excel"
+
+#. module: bias_account
+#: wizard_view:account.invoice.pay.bias,init:0
+#: wizard_view:account.invoice.tool,init:0
+#: wizard_view:account.pretty.tool,init:0
+msgid "Pay invoice"
+msgstr "Pagar Factura"
+
+#. module: bias_account
+#: rml:account.reporte.ventas.minerales:0
+#: rml:account.reporte.ventas.producto.minerales:0
+msgid "Num. Factura"
+msgstr "Num. Factura"
+
+#. module: bias_account
+#: rml:account.nota.credito.minerales:0
+msgid "567"
+msgstr "567"
+
+#. module: bias_account
+#: field:petty.cash,week_day_start:0
+msgid "Day From"
+msgstr "De día"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,create,error:0
+#: wizard_field:account.close.currency,next_5,error:0
+#: code:addons/bias_account/account_move_line.py:0
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Diario:"
+msgstr "Diario:"
+
+#. module: bias_account
+#: help:account.account.balance.report.bias,report_csv,file:0
+#: help:account.account.balance.report.bias,report_csv,view:0
+msgid "File created for this payment"
+msgstr "Archivo creado para este pago"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_balance_bias:0
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+#: field:petty.cash,balance_end:0
+#: field:petty.cash.statement.reconcile,total_balance:0
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,init,rate_min:0
+msgid "Minimal Rate"
+msgstr "Pariedad Mínima"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+#: rml:account.reporte.ventas.minerales:0
+#: rml:account.reporte.ventas.producto.minerales:0
+msgid "Moneda"
+msgstr "Moneda"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,init,secondary:0
+msgid "Only Secondary Currency"
+msgstr "Solo Moneda Secundaria"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Referencia"
+msgstr "Referencia"
+
+#. module: bias_account
+#: wizard_field:account.invoice.pay.bias,init,date:0
+#: wizard_field:account.invoice.tool,init,date:0
+msgid "Payment date"
+msgstr "Fecha de pago"
+
+#. module: bias_account
+#: model:ir.actions.act_window,name:bias_account.action_petty_cash_tree
+#: model:ir.ui.menu,name:bias_account.menu_petty_cash_tree
+msgid "Entries by Petty Cash"
+msgstr "Entrada por Caja Chica"
+
+#. module: bias_account
+#: rml:account.petty.cash:0
+msgid "al"
+msgstr "al"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_balance_bias:0
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+#: rml:fiscal_statements_balance:0
+#: rml:fiscal_statements_income:0
+msgid "at"
+msgstr "al"
+
+#. module: bias_account
+#: code:addons/bias_account/wizard/wizard_invoice_tool.py:0
+#, python-format
+msgid "Can not find rate for this date."
+msgstr "No se encuentra tasa de camnbio para este día"
+
+#. module: bias_account
+#: rml:fiscal_statements_balance:0
+#: rml:fiscal_statements_income:0
+msgid "%"
+msgstr "%"
+
+#. module: bias_account
+#: field:account.cost.center,note:0
+#: field:petty.cash.statement.reconcile.line,name:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: bias_account
+#: code:addons/bias_account/account_move_line.py:0
+#, python-format
+msgid "The journal \"%s\" have not set default fluctuation accounts !"
+msgstr "El Diario \"%s\" no tiene configurada las cuentas de fluctuación !"
+
+#. module: bias_account
+#: selection:account.account.balance.report.bias2,checktype,detailed:0
+msgid "General Balance"
+msgstr "Balance General"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,line_rate:0
+msgid "Line Rate"
+msgstr "Pariedad de Línea"
+
+#. module: bias_account
+#: wizard_button:account.account.balance.report.bias,account_selection,report_csv:0
+#: wizard_button:account.account.balance.report.bias,checktype,report_csv:0
+msgid "Excell"
+msgstr "Excel"
+
+#. module: bias_account
+#: rml:account.third_party_ledger_bias:0
+#: rml:account.third_party_ledger_other_bias:0
+#: field:close.currency,ref:0
+#: field:petty.cash.line,ref:0
+msgid "Ref."
+msgstr "Ref."
+
+#. module: bias_account
+#: selection:petty.cash.line,type:0
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+#: rml:account.petty.cash:0
+#: rml:account.reporte.ventas.minerales:0
+msgid "Fecha Impresión:"
+msgstr "Fecha Impresión:"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.wizard_invoice_tool
+msgid "Invoice Tool"
+msgstr "Herramienta"
+
+#. module: bias_account
+#: field:petty.cash,balance_end_real_notes:0
+msgid "Ending Balance Notes"
+msgstr "Notas saldo final"
+
+#. module: bias_account
+#: wizard_view:account.third_party_ledger_bias.report,account:0
+#: wizard_view:account.third_party_ledger_bias.report,init:0
+msgid "Select Date-Period"
+msgstr "Selección Fecha-Período"
+
+#. module: bias_account
+#: wizard_field:account.bias.report2,init,year_id:0
+#: wizard_field:account.close.currency,init,fiscalyear_id:0
+msgid "Fiscal Year"
+msgstr "Año Fiscal"
+
+#. module: bias_account
+#: wizard_field:account.invoice.tool,init,move_id:0
+#: model:ir.actions.report.xml,name:bias_account.account_move_invoice_print
+#: model:ir.actions.report.xml,name:bias_account.account_move_print
+msgid "Entry"
+msgstr "Entrada"
+
+#. module: bias_account
+#: field:fiscal.statements.lines,sequence:0
+msgid "Sequence"
+msgstr "Sequencia"
+
+#. module: bias_account
+#: wizard_field:account.close.currency,init,to_process:0
+msgid "Limit Process to"
+msgstr "Limitar Líneas a"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,other_currency_id:0
+#: wizard_field:account.chek.currency.rate,init,other_currency_id_1:0
+msgid "Other Currency"
+msgstr "Moneda Secundaria"
+
+#. module: bias_account
+#: wizard_view:account.account.balance.report.bias2,checktype:0
+#: wizard_view:account.third_party_ledger_bias.report,init:0
+msgid "Filters"
+msgstr "Filtros"
+
+#. module: bias_account
+#: rml:account.move.invoice.print:0
+#: rml:account.move.print:0
+msgid "Periodo:"
+msgstr "Período"
+
+#. module: bias_account
+#: wizard_field:account.chek.currency.rate,init,calc_amount:0
+msgid "Date Amount"
+msgstr "Monto en Fecha"
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!--
+            Apply Product Relation
+        -->
+
+        <record id="aaia_applications_xml_wizard_view" model="ir.ui.view">
+            <field name="name">aaia.applications.xml.wizard.view</field>
+            <field name="model">aaia.applications.xml.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Applications XML">
+                    <field name="state" invisible="1"/>
+                    <group colspan="4">
+                        <field name="partner_id"/>
+                        <button string="Load categ." type="object" name="load_categ"/>
+                    </group>
+                    <group colspan="4">
+                        <field name="categ_ids"/>
+                    </group>
+                    <group colspan="4">
+                         <button string="Create XML" type="object" name="create_xml_file"/>
+                    </group>
+                    <group states="attach,done" colspan="4" >
+                        <group colspan="4">
+                          <field name="xmldata" nolabel="1" readonly="1"/>
+                        </group>
+                    </group>
+                    <group states="attach" colspan="4" >
+                        <group colspan="4">
+                            <button string="Attach File" type="object" name="attach_xml_file"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_aaia_applications_xml_wizard" model="ir.actions.act_window">
+            <field name="name">action.aaia.applications.xml.wizard</field>
+            <field name="res_model">aaia.applications.xml.wizard</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="aaia_applications_xml_wizard_view"/>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</openerp>

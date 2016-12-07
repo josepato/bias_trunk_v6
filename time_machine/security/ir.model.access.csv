@@ -1,0 +1,5 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"time_machine_configuration","time.machine.configuration","model_time_machine_configuration","time_machine.group_time_machine",1,1,1,1
+"time_machine","time.machine","model_time_machine","time_machine.group_time_machine",2,2,2,2
+"time_machine_date","time.machine.date","model_time_machine_date","time_machine.group_time_machine",3,3,3,3
+"time_machine_hour","time.machine.hour","model_time_machine_hour","time_machine.group_time_machine",4,4,4,4

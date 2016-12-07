@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="account.t4" model="workflow.transition">
+          <!--  <field name="inherit_id" ref="account.t4"/>-->
+            <field name="act_from" ref="account.act_draft"/>
+            <field name="act_to" ref="account.act_open"/>
+            <field name="signal">invoice_open</field>
+            <field name="condition">test_open()</field>
+        </record>
+
+
+
+        <record id="account.act_open" model="workflow.activity">
+            <!--<field name="inherit_id" ref="account.act_open"/>-->
+            <field name="wkf_id" ref="account.wkf"/>
+            <field name="name">open</field>
+            <field name="action">write({'state':'open'})</field>
+            <field name="kind">function</field>
+        </record>
+
+    </data>
+</openerp>

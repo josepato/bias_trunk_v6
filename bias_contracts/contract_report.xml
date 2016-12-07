@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<terp>
+<data>
+	<!-- 
+	Custom Sale Order Report
+	-->
+	<report
+		id="report_service_order"
+		string="Print Service Order"
+		model="service.order"
+		name="service.order"
+		rml="bias_contracts/report/order.rml"
+		auto="False"
+		header="False"/>
+
+	<report
+	       id="report_service_order_hand"
+	       string="Print Service Order By Hand"
+	       model="service.order"
+	       name="service.order.hand"
+	       rml="bias_contracts/report/order_by_hand.rml"
+	       auto="False"
+		header="False"/>
+ 
+	<report
+	       id="report_service_order_equipment"
+	       string="Print Equipment Report"
+	       model="service.order"
+	       name="equipment.report"
+	       rml="bias_contracts/report/equipment_report.rml"
+	       auto="False"
+		header="False"/>
+
+	<report
+	       id="report_service_order_activity"
+	       string="Print Activity Report"
+	       model="contracts.order"
+	       name="activity.report"
+	       rml="bias_contracts/report/activity_report.rml"
+	       auto="False"
+	       header="False"/>
+
+
+	<report
+	       id="report_service_order_aplication"
+	       string="Print Aplication Report"
+	       model="contracts.order"
+	       name="aplication.report"
+	       rml="bias_contracts/report/aplication_report.rml"
+	       auto="False"
+	       header="False"/>
+
+
+</data>
+</terp>

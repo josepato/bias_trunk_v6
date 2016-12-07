@@ -1,0 +1,932 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_query
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-06-10 16:39+0000\n"
+"PO-Revision-Date: 2011-06-10 16:39+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_query
+#: selection:query.label,backcolor:0
+#: selection:query.label,textcolor:0
+#: selection:query.style.condition,backcolor:0
+#: selection:query.style.condition,textcolor:0
+msgid "Blue"
+msgstr "Blue"
+
+#. module: bias_query
+#: field:query.label,name:0
+msgid "Query Select"
+msgstr "Select de Consulta"
+
+#. module: bias_query
+#: selection:query.label,fontname:0
+#: selection:query.style.condition,fontname:0
+msgid "Helvetica-Bold"
+msgstr "Helvetica-Bold"
+
+#. module: bias_query
+#: wizard_view:wizard.query.import.export,export:0
+msgid "Save the data on wanted file"
+msgstr "Salvar datos en archivo"
+
+#. module: bias_query
+#: selection:query.label,f_type:0
+#: selection:query.tool.line,f_type:0
+msgid "Character"
+msgstr "Character"
+
+#. module: bias_query
+#: code:addons/bias_query/wizard/wizard_run_query.py:194
+#: code:addons/bias_query/wizard/wizard_run_query.py:307
+#, python-format
+msgid "Not Result Query !"
+msgstr "La consulta no tiene resultados !"
+
+#. module: bias_query
+#: model:ir.actions.wizard,name:bias_query.wizard_update_module
+msgid "Update Module"
+msgstr "Actualizar Módulo"
+
+#. module: bias_query
+#: selection:query.label,backcolor:0
+#: selection:query.label,textcolor:0
+#: selection:query.style.condition,backcolor:0
+#: selection:query.style.condition,textcolor:0
+msgid "White"
+msgstr "White"
+
+#. module: bias_query
+#: model:ir.model,name:bias_query.model_query_label
+msgid "Query Label"
+msgstr "Etiquetas de Consulta"
+
+#. module: bias_query
+#: selection:query.tool.line,f_type:0
+msgid "New Line"
+msgstr "Nueva Línea"
+
+#. module: bias_query
+#: help:wizard.update.module,update,module:0
+msgid "Update the sql files of the selected Module. You need to crear a folder with the name sql on the root of the module. Inside of that folder place all the fiel.sql files"
+msgstr "Actualiza los archivos SQL del módulo seleccionado. Debes crear un folder con el nombre 'sql' en el la raíz del módulo. Dentro de este folder coloca todos los archivos con extención .sql "
+
+#. module: bias_query
+#: selection:query.label,fontname:0
+#: selection:query.style.condition,fontname:0
+msgid "Courier-BoldOblique"
+msgstr "Courier-BoldOblique"
+
+#. module: bias_query
+#: selection:query.label,fontname:0
+#: selection:query.style.condition,fontname:0
+msgid "Helvetica-BoldOblique"
+msgstr "Helvetica-BoldOblique"
+
+#. module: bias_query
+#: wizard_button:wizard.query.import.export,init,export:0
+msgid "Export Object"
+msgstr "Exportar Objetos"
+
+#. module: bias_query
+#: model:ir.actions.act_window,name:bias_query.query_category_action_form
+#: model:ir.ui.menu,name:bias_query.menu_query_category_action_form
+msgid "Querys Categories"
+msgstr "Querys Categories"
+
+#. module: bias_query
+#: selection:query.tool,rotation:0
+msgid "0"
+msgstr "0"
+
+#. module: bias_query
+#: help:query.tool.line,selection:0
+msgid "If parameter type = selection then set the selection options in the form [('code1','Label1'),('code2','Label2')...]"
+msgstr "Si el parámetro Tipo = Selección entonces debes llenar el campo Selección, ejemplo [('code1','Label1'),('code2','Label2')...]"
+
+#. module: bias_query
+#: wizard_view:wizard.query.import.export,start_import:0
+msgid "Import Data Done!"
+msgstr "Importación de datos realizada!"
+
+#. module: bias_query
+#: selection:query.tool.line,f_type:0
+msgid "order by"
+msgstr "Ordenar Por"
+
+#. module: bias_query
+#: selection:query.style.condition,name:0
+msgid "<"
+msgstr "<"
+
+#. module: bias_query
+#: wizard_button:wizard.run.query,error,end:0
+#: wizard_button:wizard.run.query,open,end:0
+#: wizard_button:wizard.run.query,report_csv,end:0
+#: wizard_button:wizard.run.query,report_csv_2,end:0
+msgid "Ok"
+msgstr "Ok"
+
+#. module: bias_query
+#: selection:query.label,fontname:0
+#: selection:query.style.condition,fontname:0
+msgid "Helvetica"
+msgstr "Helvetica"
+
+#. module: bias_query
+#: code:addons/bias_query/wizard/wizard_run_query.py:179
+#: code:addons/bias_query/wizard/wizard_run_query.py:300
+#, python-format
+msgid "Not Query Defined !"
+msgstr "Not Query Defined !"
+
+#. module: bias_query
+#: selection:query.label,f_type:0
+#: selection:query.tool.line,f_type:0
+msgid "many2many"
+msgstr "many2many"
+
+#. module: bias_query
+#: field:query.label,textcolor:0
+#: field:query.style.condition,textcolor:0
+msgid "Text Color"
+msgstr "Text Color"
+
+#. module: bias_query
+#: model:ir.actions.wizard,name:bias_query.wizard_query_import_export
+msgid "Import/Export"
+msgstr "Importar/Exportar"
+
+#. module: bias_query
+#: model:ir.actions.wizard,name:bias_query.wizard_my_query_tool
+#: model:ir.ui.menu,name:bias_query.menu_wizard_my_query_tool
+msgid "My Querys"
+msgstr "Mis Consultas"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "Eleven Seventeen"
+msgstr "Eleven Seventeen"
+
+#. module: bias_query
+#: wizard_button:wizard.run.query,manager,open:0
+msgid "Display"
+msgstr "Desplegar"
+
+#. module: bias_query
+#: wizard_field:wizard.query.import.export,export,object_information:0
+#: wizard_field:wizard.query.import.export,import,object_information:0
+msgid "Object Information"
+msgstr "Información de Objeto"
+
+#. module: bias_query
+#: selection:query.label,f_type:0
+msgid "Porcentage"
+msgstr "Porcentage"
+
+#. module: bias_query
+#: selection:query.label,fontname:0
+#: selection:query.style.condition,fontname:0
+msgid "Times-BoldItalic"
+msgstr "Times-BoldItalic"
+
+#. module: bias_query
+#: selection:query.label,align:0
+#: selection:query.style.condition,align:0
+msgid "Right"
+msgstr "Derecha"
+
+#. module: bias_query
+#: wizard_view:wizard.update.module,succes:0
+msgid "Liquidation"
+msgstr "Liquidación"
+
+#. module: bias_query
+#: selection:query.label,backcolor:0
+#: selection:query.label,textcolor:0
+#: selection:query.style.condition,backcolor:0
+#: selection:query.style.condition,textcolor:0
+msgid "Alice Blue"
+msgstr "Alice Blue"
+
+#. module: bias_query
+#: constraint:query.category:0
+msgid "Error ! You can not create recursive categories."
+msgstr "Error ! No puedes crear categor'ias recursivas."
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "B4"
+msgstr "B4"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "B5"
+msgstr "B5"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "B6"
+msgstr "B6"
+
+#. module: bias_query
+#: code:addons/bias_query/wizard/wizard_run_query.py:179
+#: code:addons/bias_query/wizard/wizard_run_query.py:194
+#: code:addons/bias_query/wizard/wizard_run_query.py:300
+#: code:addons/bias_query/wizard/wizard_run_query.py:307
+#, python-format
+msgid "Warning"
+msgstr "Precaución"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "B0"
+msgstr "B0"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "B1"
+msgstr "B1"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "B2"
+msgstr "B2"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "B3"
+msgstr "B3"
+
+#. module: bias_query
+#: selection:query.label,fontname:0
+#: selection:query.style.condition,fontname:0
+msgid "Times-Roman"
+msgstr "Times-Roman"
+
+#. module: bias_query
+#: wizard_button:wizard.run.query,manager,label:0
+msgid "Load Label"
+msgstr "Cargar Etiquetas"
+
+#. module: bias_query
+#: wizard_view:wizard.query.import.export,import:0
+msgid "Import Data"
+msgstr "Importar Datos"
+
+#. module: bias_query
+#: view:query.tool:0
+#: field:query.tool,parameters_ids:0
+msgid "Parameters"
+msgstr "Parámetros"
+
+#. module: bias_query
+#: field:query.label,sum:0
+msgid "Sum"
+msgstr "Suma"
+
+#. module: bias_query
+#: field:query.category,child_id:0
+msgid "Child Categories"
+msgstr "Categorias Hijas"
+
+#. module: bias_query
+#: view:query.category:0
+msgid "Puery Categories"
+msgstr "Categorías de Consulta"
+
+#. module: bias_query
+#: selection:query.tool,rotation:0
+msgid "270"
+msgstr "270"
+
+#. module: bias_query
+#: field:query.label,fontname:0
+#: field:query.style.condition,fontname:0
+msgid "Font Name"
+msgstr "Font Name"
+
+#. module: bias_query
+#: wizard_button:wizard.run.query,manager,print:0
+#: wizard_button:wizard.run.query,open,print:0
+#: wizard_button:wizard.run.query,user,print:0
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: bias_query
+#: help:query.tool,no_result:0
+msgid "Select when expect no result from query "
+msgstr "Selecciona cuando no esperes recibir resultados de la consulta"
+
+#. module: bias_query
+#: wizard_view:wizard.update.module,succes:0
+msgid "Liquidation Stored Succesfully!"
+msgstr "Almacenado Exitosamente!"
+
+#. module: bias_query
+#: selection:query.label,backcolor:0
+#: selection:query.label,textcolor:0
+#: selection:query.style.condition,backcolor:0
+#: selection:query.style.condition,textcolor:0
+msgid "Red"
+msgstr "Red"
+
+#. module: bias_query
+#: field:query.tool.line,python:0
+msgid "Paython Code"
+msgstr "Código Python"
+
+#. module: bias_query
+#: field:query.tool.line,name:0
+msgid "String"
+msgstr "Etiqueta"
+
+#. module: bias_query
+#: help:query.tool,text2fields:0
+msgid "Convert the query result text to colums using csv format"
+msgstr "Convierte el resultado en formato de texto a columnas usando el formato csv."
+
+#. module: bias_query
+#: view:query.tool:0
+msgid "Python Examples"
+msgstr "Ejemplos con Python"
+
+#. module: bias_query
+#: field:query.label,label:0
+msgid "label"
+msgstr "Etiqueta"
+
+#. module: bias_query
+#: selection:query.label,fontname:0
+#: selection:query.style.condition,fontname:0
+msgid "ZapfDingbats"
+msgstr "ZapfDingbats"
+
+#. module: bias_query
+#: field:query.label,label_new:0
+msgid "New label"
+msgstr "Nueva Etiqueta"
+
+#. module: bias_query
+#: field:query.tool,rotation:0
+msgid "Rotation"
+msgstr "Rotation"
+
+#. module: bias_query
+#: field:query.tool,margin_y:0
+msgid "Top Margin"
+msgstr "Top Margin"
+
+#. module: bias_query
+#: field:query.tool,categ_id:0
+msgid "Categories"
+msgstr "Categorias"
+
+#. module: bias_query
+#: wizard_button:wizard.update.module,succes,end:0
+msgid "Thanks"
+msgstr "Gracias"
+
+#. module: bias_query
+#: field:query.tool.line,localdic:0
+msgid "Localdic"
+msgstr "Localdic"
+
+#. module: bias_query
+#: field:query.style.condition,value:0
+msgid "Value"
+msgstr "Valor"
+
+#. module: bias_query
+#: selection:query.label,f_type:0
+#: selection:query.tool.line,f_type:0
+msgid "one2many"
+msgstr "one2many"
+
+#. module: bias_query
+#: selection:query.label,backcolor:0
+#: selection:query.label,textcolor:0
+#: selection:query.style.condition,backcolor:0
+#: selection:query.style.condition,textcolor:0
+msgid "Green"
+msgstr "Green"
+
+#. module: bias_query
+#: wizard_view:wizard.update.module,update:0
+msgid "Update Module Querys"
+msgstr "Actualizar Consultas de Módulo"
+
+#. module: bias_query
+#: field:query.category,parent_id:0
+msgid "Parent Category"
+msgstr "Categoría Padre"
+
+#. module: bias_query
+#: selection:query.label,align:0
+#: selection:query.style.condition,align:0
+msgid "Justify"
+msgstr "Justificado"
+
+#. module: bias_query
+#: selection:query.label,f_type:0
+#: selection:query.tool.line,f_type:0
+#: field:query.tool.line,selection:0
+msgid "Selection"
+msgstr "Selección"
+
+#. module: bias_query
+#: field:query.style.condition,lable_id:0
+msgid "Conditioning Style"
+msgstr "Conditioning Style"
+
+#. module: bias_query
+#: selection:query.style.condition,name:0
+msgid "NOT IN"
+msgstr "NOT IN"
+
+#. module: bias_query
+#: selection:query.label,fontname:0
+#: selection:query.style.condition,fontname:0
+msgid "Times-Bold"
+msgstr "Times-Bold"
+
+#. module: bias_query
+#: field:query.tool,portrait:0
+msgid "Portrait"
+msgstr "Portada"
+
+#. module: bias_query
+#: selection:query.label,fontname:0
+#: selection:query.style.condition,fontname:0
+msgid "Helvetica-Oblique"
+msgstr "Helvetica-Oblique"
+
+#. module: bias_query
+#: field:query.label,align:0
+#: field:query.style.condition,align:0
+msgid "Alignment"
+msgstr "Alineación"
+
+#. module: bias_query
+#: selection:query.style.condition,name:0
+msgid ">="
+msgstr ">="
+
+#. module: bias_query
+#: selection:query.label,fontname:0
+#: selection:query.style.condition,fontname:0
+msgid "Times-Italic"
+msgstr "Times-Italic"
+
+#. module: bias_query
+#: wizard_button:wizard.update.module,update,update_action:0
+msgid "Update"
+msgstr "Actualizar"
+
+#. module: bias_query
+#: selection:query.label,backcolor:0
+#: selection:query.label,textcolor:0
+#: selection:query.style.condition,backcolor:0
+#: selection:query.style.condition,textcolor:0
+msgid "Black"
+msgstr "Black"
+
+#. module: bias_query
+#: view:query.tool:0
+msgid "Local Dictionary"
+msgstr "Diccionario Local"
+
+#. module: bias_query
+#: model:ir.actions.wizard,name:bias_query.wizard_run_query
+#: view:query.tool:0
+#: wizard_view:wizard.run.query,error:0
+#: wizard_view:wizard.run.query,report_csv:0
+#: wizard_view:wizard.run.query,report_csv_2:0
+msgid "Run Query"
+msgstr "Correr Consulta"
+
+#. module: bias_query
+#: selection:query.label,fontname:0
+#: selection:query.style.condition,fontname:0
+msgid "Symbol"
+msgstr "Symbol"
+
+#. module: bias_query
+#: wizard_view:wizard.query.import.export,import:0
+msgid "Select the data File and click on Import"
+msgstr "Selecciona el archivo de datos y da clic en Importar."
+
+#. module: bias_query
+#: selection:query.tool,rotation:0
+msgid "180"
+msgstr "180"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "Letter"
+msgstr "Carta"
+
+#. module: bias_query
+#: selection:query.label,f_type:0
+#: selection:query.tool.line,f_type:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: bias_query
+#: selection:query.label,f_type:0
+#: selection:query.tool.line,f_type:0
+msgid "Integer"
+msgstr "Entero"
+
+#. module: bias_query
+#: model:ir.model,name:bias_query.model_query_tool_line
+msgid "Query Tool Line"
+msgstr "Parámetros de Consulta"
+
+#. module: bias_query
+#: wizard_view:wizard.query.import.export,init:0
+msgid "Restart"
+msgstr "Reiniciar"
+
+#. module: bias_query
+#: selection:query.style.condition,name:0
+msgid ">"
+msgstr ">"
+
+#. module: bias_query
+#: selection:query.label,fontname:0
+#: selection:query.style.condition,fontname:0
+msgid "Courier-Oblique"
+msgstr "Courier-Oblique"
+
+#. module: bias_query
+#: selection:query.label,align:0
+#: selection:query.style.condition,align:0
+msgid "Center"
+msgstr "Centro"
+
+#. module: bias_query
+#: field:query.tool,page_size:0
+msgid "Paper Size"
+msgstr "Tamaño del Papel"
+
+#. module: bias_query
+#: field:query.tool.line,default:0
+msgid "Default"
+msgstr "Por Defecto"
+
+#. module: bias_query
+#: field:query.tool.line,required:0
+msgid "Required"
+msgstr "Requerido"
+
+#. module: bias_query
+#: wizard_button:wizard.run.query,manager,report_csv:0
+#: wizard_button:wizard.run.query,open,report_csv_2:0
+#: wizard_button:wizard.run.query,user,report_csv:0
+msgid "CSV File"
+msgstr "Archivo CSV"
+
+#. module: bias_query
+#: selection:query.label,fontname:0
+#: selection:query.style.condition,fontname:0
+msgid "Courier-Bold"
+msgstr "Courier-Bold"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "Legal"
+msgstr "Legal"
+
+#. module: bias_query
+#: selection:query.tool,rotation:0
+msgid "90"
+msgstr "90"
+
+#. module: bias_query
+#: selection:query.label,align:0
+#: selection:query.style.condition,align:0
+msgid "Left"
+msgstr "Izquierda"
+
+#. module: bias_query
+#: field:query.tool.line,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: bias_query
+#: selection:query.label,backcolor:0
+#: selection:query.label,textcolor:0
+#: selection:query.style.condition,backcolor:0
+#: selection:query.style.condition,textcolor:0
+msgid "Gold"
+msgstr "Gold"
+
+#. module: bias_query
+#: view:query.tool:0
+msgid "Python Code"
+msgstr "Código Paython"
+
+#. module: bias_query
+#: field:query.tool,text2fields:0
+msgid "Text to Fields"
+msgstr "Texto a Campos"
+
+#. module: bias_query
+#: wizard_field:wizard.run.query,report_csv,file.csv:0
+#: wizard_field:wizard.run.query,report_csv_2,file.csv:0
+msgid "File (.csv Format)"
+msgstr "Archivo (Formato .csv)"
+
+#. module: bias_query
+#: field:query.tool.line,relation:0
+msgid "Relation"
+msgstr "Relación"
+
+#. module: bias_query
+#: wizard_button:wizard.query.import.export,import,end:0
+#: wizard_button:wizard.query.import.export,init,end:0
+#: wizard_button:wizard.query.import.export,start_import,end:0
+#: wizard_button:wizard.run.query,manager,end:0
+#: wizard_button:wizard.run.query,no_result,end:0
+#: wizard_button:wizard.run.query,user,end:0
+#: wizard_button:wizard.update.module,update,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bias_query
+#: model:ir.model,name:bias_query.model_query_style_condition
+msgid "Query Style Condition"
+msgstr "Query Style Condition"
+
+#. module: bias_query
+#: view:query.tool:0
+msgid "Report Users"
+msgstr "Usuarios del Reporte"
+
+#. module: bias_query
+#: field:query.label,size:0
+msgid "Size"
+msgstr "Tamaño"
+
+#. module: bias_query
+#: model:ir.actions.act_window,name:bias_query.query_normal_action_tree
+msgid "Querys"
+msgstr "Querys"
+
+#. module: bias_query
+#: field:query.tool,count_pages:0
+msgid "Count Pages"
+msgstr "Count Pages"
+
+#. module: bias_query
+#: selection:query.style.condition,name:0
+msgid "<="
+msgstr "<="
+
+#. module: bias_query
+#: wizard_view:wizard.query.import.export,start_import:0
+msgid "Succesful Importation!!!!"
+msgstr "Importación Exitosa!!!!"
+
+#. module: bias_query
+#: wizard_view:wizard.query.import.export,init:0
+msgid "Do you Want to Import or Export information?"
+msgstr "Quieres Inportar o Exportar Información?"
+
+#. module: bias_query
+#: selection:query.label,f_type:0
+#: selection:query.tool.line,f_type:0
+msgid "many2one"
+msgstr "many2one"
+
+#. module: bias_query
+#: field:query.tool,python_examples:0
+msgid "python_examples"
+msgstr "Ejemplos con Paython"
+
+#. module: bias_query
+#: help:wizard.run.query,report_csv,file.csv:0
+#: help:wizard.run.query,report_csv_2,file.csv:0
+msgid "File created for this query, save it with .csv extension"
+msgstr "Archivo creado por la consulta, salvalo en formato .csv"
+
+#. module: bias_query
+#: view:query.category:0
+msgid "Query Categories"
+msgstr "Categorías de Consultas"
+
+#. module: bias_query
+#: field:query.label,backcolor:0
+#: field:query.style.condition,backcolor:0
+msgid "BackGround Color"
+msgstr "BackGround Color"
+
+#. module: bias_query
+#: field:query.tool,user_ids:0
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: bias_query
+#: field:query.label,f_type:0
+#: field:query.tool.line,f_type:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: bias_query
+#: model:ir.actions.act_window,name:bias_query.action_query_tool_new
+#: model:ir.ui.menu,name:bias_query.menu_action_query_new
+msgid "New query"
+msgstr "Nueva Consulta"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "A1"
+msgstr "A1"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "A0"
+msgstr "A0"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "A3"
+msgstr "A3"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "A2"
+msgstr "A2"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "A5"
+msgstr "A5"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "A4"
+msgstr "A4"
+
+#. module: bias_query
+#: selection:query.tool,page_size:0
+msgid "A6"
+msgstr "A6"
+
+#. module: bias_query
+#: field:query.label,invisible:0
+msgid "Invisible"
+msgstr "Invisible"
+
+#. module: bias_query
+#: selection:query.style.condition,name:0
+msgid "="
+msgstr "="
+
+#. module: bias_query
+#: model:ir.actions.act_window,name:bias_query.query_category_action
+#: model:ir.ui.menu,name:bias_query.menu_query_category_action
+msgid "Querys by Category"
+msgstr "Consultas por Categoría"
+
+#. module: bias_query
+#: field:query.category,complete_name:0
+#: field:query.category,name:0
+#: field:query.tool,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bias_query
+#: wizard_button:wizard.query.import.export,import,start_import:0
+#: wizard_button:wizard.query.import.export,init,import:0
+msgid "Import Object"
+msgstr "Importar Objeto"
+
+#. module: bias_query
+#: wizard_view:wizard.run.query,error:0
+msgid "User has no permitions to run this Query. Check with system Administrator!"
+msgstr "El usuario no tiene permiso para ejecutar esta consulta. Revisa esto con el Administrador!"
+
+#. module: bias_query
+#: field:query.tool,margin_x:0
+msgid "Left Margin"
+msgstr "Margen Izquierdo"
+
+#. module: bias_query
+#: field:query.label,fontsize:0
+#: field:query.style.condition,fontsize:0
+msgid "Font Size"
+msgstr "Tamaño de Fuente"
+
+#. module: bias_query
+#: view:query.tool:0
+#: field:query.tool,desing_ids:0
+#: field:query.tool,label_ids:0
+msgid "Query Labels"
+msgstr "Etiquetas de Query"
+
+#. module: bias_query
+#: selection:query.style.condition,name:0
+msgid "IN"
+msgstr "IN"
+
+#. module: bias_query
+#: model:ir.actions.act_window,name:bias_query.action_query_tool_form
+#: model:ir.model,name:bias_query.model_query_tool
+#: model:ir.ui.menu,name:bias_query.menu_action_query_tool_form
+#: model:ir.ui.menu,name:bias_query.menu_query_tool
+#: view:query.tool:0
+msgid "Query Tool"
+msgstr "Herranienta para Querys"
+
+#. module: bias_query
+#: wizard_button:wizard.run.query,no_result,open:0
+msgid "Run"
+msgstr "Ejecutar"
+
+#. module: bias_query
+#: field:query.label,query_id:0
+#: view:query.tool:0
+#: field:query.tool,query:0
+#: field:query.tool,u_id:0
+#: field:query.tool.line,query_id:0
+msgid "Query"
+msgstr "Consulta"
+
+#. module: bias_query
+#: field:query.tool.line,line_query:0
+msgid "Line Query"
+msgstr "Pámetros de Consulta"
+
+#. module: bias_query
+#: view:query.tool:0
+msgid "PDF Design"
+msgstr "PDF Design"
+
+#. module: bias_query
+#: field:query.style.condition,name:0
+msgid "IF"
+msgstr "IF"
+
+#. module: bias_query
+#: field:query.category,sequence:0
+#: field:query.label,sequence:0
+#: field:query.style.condition,sequence:0
+#: field:query.tool.line,sequence:0
+msgid "Sequence"
+msgstr "Sequencia"
+
+#. module: bias_query
+#: selection:query.label,f_type:0
+#: selection:query.tool.line,f_type:0
+msgid "Float"
+msgstr "Real"
+
+#. module: bias_query
+#: model:ir.model,name:bias_query.model_query_category
+msgid "Query Category"
+msgstr "Categoría de Consulta"
+
+#. module: bias_query
+#: wizard_field:wizard.update.module,update,module:0
+msgid "Module"
+msgstr "Módulo"
+
+#. module: bias_query
+#: selection:query.label,f_type:0
+#: selection:query.tool.line,f_type:0
+msgid "Boolean"
+msgstr "Booleano"
+
+#. module: bias_query
+#: wizard_view:wizard.query.import.export,export:0
+#: wizard_button:wizard.query.import.export,export,end:0
+msgid "Export"
+msgstr "Exportar"
+
+#. module: bias_query
+#: field:query.label,style_ids:0
+msgid "Query Styles"
+msgstr "Query Styles"
+
+#. module: bias_query
+#: wizard_view:wizard.run.query,report_csv:0
+#: wizard_view:wizard.run.query,report_csv_2:0
+msgid "File"
+msgstr "Archivo"
+
+#. module: bias_query
+#: field:query.tool,no_result:0
+msgid "No Result"
+msgstr "Sin Resultados"
+

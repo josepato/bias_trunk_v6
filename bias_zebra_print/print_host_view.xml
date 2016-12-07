@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!--
+          Print host view
+        -->
+
+        <record id="print_host_form_view" model="ir.ui.view">
+            <field name="name">print.host.form.view</field>
+            <field name="model">print.host</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Printer host">
+                    <field name="fname" required="True"/>
+                    <group col="4" colspan="2">
+                       <field name="name" required="True"/>
+                       <field name="port"/>
+                    </group>
+                    <field name="user"/>
+                    <field name="passwd" password="True"/>
+                    <field name="object_name" required="1" on_change="change_model(object_name)"/>
+                    <field name="model_int_name" invisible="1" />
+
+                                <group colspan="2" col="2">
+                                    <separator string="Actions" colspan="2"/>
+                                    <button name="create_action" string="Create Action" type="object" icon="gtk-execute"  colspan="2" attrs="{'invisible':[('ref_ir_act_window','!=',False), ('ref_ir_value','!=',False)]}"/>
+                                    <field name="ref_ir_act_window"/>
+                                    <field name="ref_ir_value"/>
+                                    <button name="delete_action" string="Delete Action" type="object" icon="gtk-delete" colspan="2" attrs="{'invisible':[('ref_ir_act_window','=',False), ('ref_ir_value','=',False)]}"/>
+                                </group>
+                    <separator colspan="4" string="Lable Config"/>
+
+                    <field name="lable" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record id="print_host_tree_view" model="ir.ui.view">
+            <field name="name">print.host.tree.view</field>
+            <field name="model">print.host</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Printer host">
+                    <field name="fname"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_print_host_form" model="ir.actions.act_window">
+            <field name="name">Printer host</field>
+            <field name="res_model">print.host</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="print_host_tree_view"/>
+            <field name="help">Define your printer hosts</field>
+        </record>
+
+        <menuitem id="menu_action_print_host_form" parent="stock.next_id_61" action="action_print_host_form" 
+            groups="base.group_sale_manager"/>
+
+
+    </data>
+</openerp>

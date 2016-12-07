@@ -1,0 +1,8 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_migrate_migrate","migrate.migrate","model_migrate_migrate","base.group_erp_manager",1,1,1,1
+"access_migrate_migrate_module","migrate.migrate.module","model_migrate_migrate_module","base.group_erp_manager",1,1,1,1
+"access_migrate_migrate_field","migrate.migrate.field","model_migrate_migrate_field","base.group_erp_manager",1,1,1,1
+"access_migrate_migrate_script","migrate.migrate.script","model_migrate_migrate_script","base.group_erp_manager",1,1,1,1
+"access_migrate_migrate_utilities","migrate.migrate.utilities","model_migrate_migrate_utilities","base.group_erp_manager",1,1,1,1
+"access_migrate_utilities","migrate.utilities","model_migrate_utilities","base.group_erp_manager",1,1,1,1
+"access_migrate_python_utilities","migrate.python.utilities","model_migrate_python_utilities","base.group_erp_manager",1,1,1,1

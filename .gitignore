@@ -1,0 +1,7 @@
+*.pyc
+*.bak
+*.sublime*
+*.tags
+*.sql
+*.zip
+

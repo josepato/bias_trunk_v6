@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+        <wizard id="wizard_field_definition" model="catalog.import.file" name="catalog.fields.definition" string="Field Definition" groups="base.group_user" />
+    
+    <menuitem icon="STOCK_CONVERT" action="wizard_field_definition" id="menu_wizard_field_definition" parent="menu_catalog_import_root" type="wizard"/>
+<!--
+      <record id="wizard_time_machine" model="ir.actions.wizard">
+            <field name="name">Data Base Recover</field>
+            <field name="wiz_name">data.base.recover</field>
+        </record>
+        <menuitem action="wizard_update" icon="STOCK_CONVERT" id="menu_module_update" parent="menu_management" type="wizard"/>-->
+ 
+    </data>
+</openerp>

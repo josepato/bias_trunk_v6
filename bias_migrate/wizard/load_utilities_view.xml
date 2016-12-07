@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_load_utilities" model="ir.ui.view">
+            <field name="name">migrate.load.utilities.form</field>
+            <field name="model">migrate.load.utilities</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+		<form string="Select Utility">
+		    <separator string="___________________________________________________________________________________________________" colspan="4"/>
+		    <field name="script_id" readonly="1"/>
+		    <field name="object_id" readonly="1"/>
+		    <field name="utility" />
+		    <field name="field" />
+		    <field name="related_id"/>
+		    <field name="related_field_id" domain="[('module_id','=',related_id)]"/>
+                    <separator colspan="4"/>
+                    <group colspan="2" col="4">
+                        <button special="cancel" string="Cancel"  icon="terp-gtk-stop"/>
+                        <button name="load_utility" string="Convert" type="object" icon="terp-camera_test"/>
+                    </group>
+		</form>
+            </field>
+        </record>
+
+        <record id="action_load_utilities" model="ir.actions.act_window">
+            <field name="name">Load Utilities</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">migrate.load.utilities</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_load_utilities"/>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</openerp>

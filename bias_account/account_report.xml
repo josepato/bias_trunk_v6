@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<openerp>
+<data>
+<!--	Print Entry	-->
+	<report id="account_move_print"
+		string="Entry" 
+		model="account.move"
+		name="account.move.print" 
+		rml="bias_account/report/account_move.rml"
+		auto="False"
+                header ="False"/>	
+
+</data>
+</openerp>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!--  Make Procurement -->
+
+        <record id="view_label_print_wizard" model="ir.ui.view">
+            <field name="name">print_lable.send.lable.form</field>
+            <field name="model">print.label</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Print Labels">
+                    <field name="state" invisible="1"/>
+                    <group colspan="4" states="start">
+                        <field name="host_id" required="1"/>
+                        <field name="copys" />
+                        <field name="lable_file" />
+                        <group col="2" colspan="4">
+                            <button icon="gtk-cancel" special="cancel"
+                                string="Cancel" />
+                            <button name="make_file" string="Get File"
+                                colspan="1" type="object" icon="gtk-ok" />
+                            <button name="printLabels" string="Print"
+                                colspan="1" type="object" icon="gtk-ok" />
+                        </group>
+                    </group>
+
+                    <group colspan="4" states="done">
+                        <label colspan="4" string="Labels successfully sent to printer !"/>
+                        <button icon="gtk-cancel" special="cancel"
+                            string="OK" />
+                    </group>
+
+                </form>
+            </field>
+        </record>
+
+<!--
+        <act_window
+            id="act_wizard_print_label"
+            name="Print Labels"
+            res_model="print.label"
+            src_model="stock.picking"
+            view_mode="form"
+            target="new"/> -->
+
+    </data>
+</openerp>

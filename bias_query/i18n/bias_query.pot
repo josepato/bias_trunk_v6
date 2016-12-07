@@ -1,0 +1,100 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_query
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-05-25 18:07:26+0000\n"
+"PO-Revision-Date: 2010-05-25 18:07:26+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_query
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: bias_query
+#: wizard_button:wizard.run.query,create,end:0
+msgid "OK"
+msgstr ""
+
+#. module: bias_query
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo inválido en definición de acción"
+
+#. module: bias_query
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "¡El nombre del objeto debe empezar con x_ y no contener ningún carácter especial!"
+
+#. module: bias_query
+#: model:ir.actions.act_window,name:bias_query.action_query_tool_new
+#: model:ir.ui.menu,name:bias_query.menu_action_query_new
+msgid "New query"
+msgstr ""
+
+#. module: bias_query
+#: model:ir.actions.act_window,name:bias_query.action_query_tool_form
+#: model:ir.model,name:bias_query.model_query_tool
+#: model:ir.module.module,shortdesc:bias_query.module_meta_information
+#: model:ir.ui.menu,name:bias_query.menu_action_query_tool_form
+#: model:ir.ui.menu,name:bias_query.menu_query_tool
+#: view:query.tool:0
+msgid "Query Tool"
+msgstr ""
+
+#. module: bias_query
+#: wizard_button:wizard.run.query,init,create:0
+msgid "Create File"
+msgstr ""
+
+#. module: bias_query
+#: wizard_view:wizard.run.query,create:0
+#: wizard_field:wizard.run.query,create,file:0
+#: wizard_view:wizard.run.query,init:0
+#: wizard_field:wizard.run.query,init,file:0
+msgid "File"
+msgstr ""
+
+#. module: bias_query
+#: wizard_button:wizard.run.query,init,end:0
+msgid "Cancel"
+msgstr ""
+
+#. module: bias_query
+#: field:query.tool,query:0
+msgid "Query"
+msgstr ""
+
+#. module: bias_query
+#: help:wizard.run.query,create,file:0
+#: help:wizard.run.query,init,file:0
+msgid "File created for this payment"
+msgstr ""
+
+#. module: bias_query
+#: model:ir.module.module,description:bias_query.module_meta_information
+msgid " Add toll module to create save and run querys."
+msgstr ""
+
+#. module: bias_query
+#: model:ir.actions.wizard,name:bias_query.wizard_run_query
+#: view:query.tool:0
+#: wizard_view:wizard.run.query,create:0
+#: wizard_view:wizard.run.query,init:0
+msgid "Run Query"
+msgstr ""
+
+#. module: bias_query
+#: field:query.tool,name:0
+msgid "Name"
+msgstr ""
+

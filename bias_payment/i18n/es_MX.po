@@ -1,0 +1,1463 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_payment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-09-16 16:02:57+0000\n"
+"PO-Revision-Date: 2010-09-16 16:02:57+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "HECHO POR"
+msgstr "HECHO POR"
+
+#. module: bias_payment
+#: rml:global.treasury:0
+#: rml:treasury:0
+msgid "Disponible"
+msgstr "Disponible"
+
+#. module: bias_payment
+#: wizard_field:payment.create.cheque,create,name:0
+#: wizard_field:payment.create.cheque,init,name:0
+#: wizard_field:payment.create.export,create,name:0
+#: wizard_field:payment.create.export,init,name:0
+msgid "Entry Name"
+msgstr "Nombre de Asiento"
+
+#. module: bias_payment
+#: selection:payment.export.line,type:0
+msgid "Character"
+msgstr "Caracter"
+
+#. module: bias_payment
+#: view:payment.cheque:0
+#: view:payment.order:0
+msgid "Total in Company Currency"
+msgstr "Total en moneda de la compañía"
+
+#. module: bias_payment
+#: help:account.treasury.account,mode:0
+#: help:payment.cheque,mode:0
+msgid "Select the Payment Mode to be applied."
+msgstr "Selecciona la forma de pago"
+
+#. module: bias_payment
+#: field:payment.mode,gain_acc_id:0
+msgid "Gain Account"
+msgstr "Ganancia Cambiaria"
+
+#. module: bias_payment
+#: view:account.global.treasury:0
+#: view:account.treasury:0
+msgid "States"
+msgstr "Estado"
+
+#. module: bias_payment
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo inválido en definición de acción"
+
+#. module: bias_payment
+#: wizard_view:account.payment.tool,init:0
+msgid "Actual Order Information"
+msgstr "Información Actual de la Orden"
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "Helvetica-Oblique"
+msgstr "Helvetica-Oblique"
+
+#. module: bias_payment
+#: field:account.global.line,port:0
+#: wizard_field:search.global.treasury,connect,port:0
+#: wizard_field:search.global.treasury,init,port:0
+msgid "Port"
+msgstr "Puerto"
+
+#. module: bias_payment
+#: selection:report.cheque.line,method:0
+msgid "Amount to Text"
+msgstr "Monto a Texto"
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "Helvetica-Bold"
+msgstr "Helvetica-Bold"
+
+#. module: bias_payment
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+#: field:payment.line,code_id:0
+msgid "Code ID"
+msgstr "ID Código"
+
+#. module: bias_payment
+#: rml:global.treasury:0
+#: rml:treasury:0
+msgid "En Tránsito"
+msgstr "En Tránsito"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "A LA ORDEN DE:"
+msgstr "A LA ORDEN DE:"
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "Courier-BoldOblique"
+msgstr "Courier-BoldOblique"
+
+#. module: bias_payment
+#: selection:payment.export.line,zero:0
+msgid "Add Zero Right"
+msgstr "Ceros Derecha"
+
+#. module: bias_payment
+#: field:account.global.treasury,company_id:0
+#: field:account.treasury,company_id:0
+msgid "Company"
+msgstr "Compañía"
+
+#. module: bias_payment
+#: field:account.global.line,statement_amount:0
+#: field:account.global.treasury,statement_amount:0
+#: field:account.treasury,statement_amount:0
+#: field:account.treasury.account,statement_amount:0
+msgid "Cash in Bank"
+msgstr "Saldo en Banco"
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "Helvetica-BoldOblique"
+msgstr "Helvetica-BoldOblique"
+
+#. module: bias_payment
+#: view:payment.cheque:0
+msgid "Set to Draft"
+msgstr "Cambiar a Draft"
+
+#. module: bias_payment
+#: field:account.global.line,login:0
+#: wizard_field:search.global.treasury,connect,login:0
+#: wizard_field:search.global.treasury,init,login:0
+msgid "User Name"
+msgstr "Usuario"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "PÓLIZA DE CHEQUE"
+msgstr "PÓLIZA DE CHEQUE"
+
+#. module: bias_payment
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "VAT"
+msgstr "RFC"
+
+#. module: bias_payment
+#: wizard_field:import_invoice,search,entries:0
+msgid "Entries"
+msgstr "Póliza"
+
+#. module: bias_payment
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Dscription"
+msgstr "Descripción"
+
+#. module: bias_payment
+#: selection:payment.export.line,operator:0
+msgid "<"
+msgstr "<"
+
+#. module: bias_payment
+#: wizard_button:account.payment.tool,init,cancel:0
+msgid "Cancel Order"
+msgstr "Cancelar Orden"
+
+#. module: bias_payment
+#: selection:payment.cheque,state:0
+msgid "Printed"
+msgstr "Impreso"
+
+#. module: bias_payment
+#: field:payment.line,account_id:0
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: bias_payment
+#: field:payment.export.file,same_bnk:0
+msgid "Same Bank Code"
+msgstr "El mismo Banco"
+
+#. module: bias_payment
+#: wizard_field:import_invoice,init,duedate:0
+#: wizard_field:populate_pay,init,duedate:0
+msgid "Due Date"
+msgstr "Fecha de Pago"
+
+#. module: bias_payment
+#: wizard_field:payment.create.cheque,create,journal_id:0
+#: wizard_field:payment.create.cheque,init,journal_id:0
+#: wizard_field:payment.create.export,create,journal_id:0
+#: wizard_field:payment.create.export,init,journal_id:0
+msgid "Journal/Payment Mode"
+msgstr "Forma de Pago"
+
+#. module: bias_payment
+#: selection:payment.export.line,operator:0
+msgid "=="
+msgstr "=="
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "Helvetica"
+msgstr "Helvetica"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "DEBE"
+msgstr "DEBE"
+
+#. module: bias_payment
+#: wizard_button:import_invoice,search,create:0
+#: wizard_button:populate_pay,search,create:0
+msgid "_Add to payment order"
+msgstr "_Añadir a Orden"
+
+#. module: bias_payment
+#: field:payment.export.line,value:0
+msgid "Value"
+msgstr "Valor"
+
+#. module: bias_payment
+#: wizard_field:populate_pay,search,entries:0
+msgid "Entries "
+msgstr "Póliza"
+
+#. module: bias_payment
+#: view:payment.cheque:0
+#: field:payment.cheque,amount:0
+#: field:payment.export.file,number:0
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+#: view:payment.order:0
+msgid "Amount"
+msgstr "Monto Doc."
+
+#. module: bias_payment
+#: view:account.treasury.account:0
+#: model:ir.actions.act_window,name:bias_payment.action_account_treasury_account_form
+msgid "Treasury Account"
+msgstr "Tesorería"
+
+#. module: bias_payment
+#: wizard_view:populate_pay,init:0
+msgid "Select specific Journals or NON for all"
+msgstr "Selecciiona diario o en blanco para todos"
+
+#. module: bias_payment
+#: selection:report.cheque.line,method:0
+msgid "None"
+msgstr "Ninguno"
+
+#. module: bias_payment
+#: wizard_field:search.global.treasury,connect,password:0
+#: wizard_field:search.global.treasury,init,password:0
+msgid "password"
+msgstr "Clave"
+
+#. module: bias_payment
+#: selection:payment.export.file,number:0
+msgid "#####000"
+msgstr "#####000"
+
+#. module: bias_payment
+#: selection:payment.export.file,date:0
+msgid "DDMMYYYY"
+msgstr "DDMMYYYY"
+
+#. module: bias_payment
+#: selection:search.global.treasury,select,treasury:0
+msgid "Double V Holding S.A. de C.V."
+msgstr "Double V Holding S.A. de C.V."
+
+#. module: bias_payment
+#: wizard_button:payment.create.cheque,init,create:0
+msgid "Create Cheque"
+msgstr "Crear Cheque"
+
+#. module: bias_payment
+#: view:account.treasury:0
+#: field:account.treasury.account,treasury_id:0
+#: model:ir.actions.act_window,name:bias_payment.action_account_treasury_form
+#: model:ir.ui.menu,name:bias_payment.menu_action_account_treasury_form
+msgid "Treasury"
+msgstr "Tesorería"
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "Times-BoldItalic"
+msgstr "Times-BoldItalic"
+
+#. module: bias_payment
+#: model:ir.actions.wizard,name:bias_payment.wizard_create_export
+msgid "Create Export"
+msgstr "Crear Archivo"
+
+#. module: bias_payment
+#: wizard_button:payment.create.cheque,create,end:0
+#: wizard_button:payment.create.export,create,end:0
+msgid "OK"
+msgstr "OK"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "PÓLIZA No."
+msgstr "PÓLIZA No."
+
+#. module: bias_payment
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: bias_payment
+#: wizard_field:search.global.treasury,select,selection:0
+msgid "Selection"
+msgstr "Selección"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "MONTO"
+msgstr "MONTO"
+
+#. module: bias_payment
+#: view:account.global.treasury:0
+#: view:account.treasury:0
+msgid "Total Amount in Transit"
+msgstr "Monto Total en Tránsito"
+
+#. module: bias_payment
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "PAGESE EL CHEQUE"
+msgstr "PAGESE EL CHEQUE"
+
+#. module: bias_payment
+#: view:payment.cheque:0
+#: view:payment.order:0
+msgid "Payment"
+msgstr "Pago"
+
+#. module: bias_payment
+#: field:payment.mode,loss_acc_id:0
+msgid "Loss Account"
+msgstr "Perdida Cambiaria"
+
+#. module: bias_payment
+#: field:account.global.line,transit_amount:0
+#: field:account.global.treasury,transit_amount:0
+#: field:account.treasury,transit_amount:0
+#: field:account.treasury.account,transit_amount:0
+msgid "Transit Payments"
+msgstr "Pagos en Tránsito"
+
+#. module: bias_payment
+#: wizard_button:import_invoice,init,end:0
+#: wizard_button:import_invoice,search,end:0
+#: wizard_button:populate_pay,init,end:0
+#: wizard_button:populate_pay,search,end:0
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#. module: bias_payment
+#: view:payment.cheque:0
+#: view:payment.order:0
+msgid "Payment Information"
+msgstr "Información del Pago"
+
+#. module: bias_payment
+#: field:payment.export.line,operator:0
+msgid "Operator"
+msgstr "Operador"
+
+#. module: bias_payment
+#: field:payment.cheque,partner_id:0
+#: wizard_field:populate_pay,init,partner_id:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: bias_payment
+#: wizard_field:populate_pay,search,result:0
+msgid "Lines Processed"
+msgstr "Líneas Procesadas"
+
+#. module: bias_payment
+#: field:report.cheque.line,font:0
+msgid "Font"
+msgstr "Fuente"
+
+#. module: bias_payment
+#: selection:payment.export.file,number:0
+msgid "###00000"
+msgstr "###00000"
+
+#. module: bias_payment
+#: rml:global.treasury:0
+#: rml:treasury:0
+msgid "TOTAL"
+msgstr "TOTAL"
+
+#. module: bias_payment
+#: selection:payment.cheque,state:0
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: bias_payment
+#: field:payment.export.line,end:0
+msgid "End"
+msgstr "Fin"
+
+#. module: bias_payment
+#: model:ir.actions.report.xml,name:bias_payment.print_cheque
+#: wizard_view:payment.create.cheque,create:0
+#: wizard_view:payment.create.cheque,init:0
+#: wizard_view:payment.create.export,create:0
+#: wizard_view:payment.create.export,init:0
+msgid "Print Cheque"
+msgstr "Imprimir Cheque"
+
+#. module: bias_payment
+#: view:payment.cheque:0
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: bias_payment
+#: field:payment.export.line,std_field:0
+msgid "Standar Field"
+msgstr "Campo Estandar"
+
+#. module: bias_payment
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: bias_payment
+#: model:ir.actions.report.xml,name:bias_payment.print_global_treasury
+#: model:ir.actions.report.xml,name:bias_payment.print_treasury
+msgid "Print Treasury"
+msgstr "Imprimir Resumen"
+
+#. module: bias_payment
+#: wizard_view:search.global.treasury,connect:0
+#: wizard_view:search.global.treasury,init:0
+msgid "Search Global Bank Accounts"
+msgstr "Buscar Cuentas Bancarias Globales"
+
+#. module: bias_payment
+#: selection:payment.export.file,number:0
+msgid "##000000"
+msgstr "##000000"
+
+#. module: bias_payment
+#: view:payment.cheque:0
+#: view:payment.order:0
+msgid "Transaction Information"
+msgstr "Informe de Transacción"
+
+#. module: bias_payment
+#: field:account.global.line,db:0
+msgid "Data Base"
+msgstr "Base de Datos"
+
+#. module: bias_payment
+#: view:payment.order:0
+msgid "Owner Account"
+msgstr "Cuentahabiente"
+
+#. module: bias_payment
+#: field:account.global.line,reg_id:0
+msgid "Register ID"
+msgstr "Registro ID"
+
+#. module: bias_payment
+#: field:payment.line,calc_amount:0
+msgid "Calc Amount"
+msgstr "A Pagar"
+
+#. module: bias_payment
+#: field:payment.export.file,date:0
+#: field:payment.export.line,type:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: bias_payment
+#: field:account.global.treasury,name:0
+#: field:account.treasury,name:0
+#: field:account.treasury.account,name:0
+#: field:payment.export.file,name:0
+#: field:payment.export.line,name:0
+#: field:report.cheque,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bias_payment
+#: field:payment.mode,available_account_id:0
+msgid "Available Account"
+msgstr "Monto Disponible"
+
+#. module: bias_payment
+#: selection:payment.export.file,date:0
+msgid "MMDDYYYY"
+msgstr "MMDDYYYY"
+
+#. module: bias_payment
+#: rml:global.treasury:0
+#: rml:treasury:0
+msgid "Saldo en Banco"
+msgstr "Saldo en Banco"
+
+#. module: bias_payment
+#: field:account.treasury.account,journal_id_statement:0
+msgid "Bank Statement Journal"
+msgstr "Diario de Estado de Cuenta"
+
+#. module: bias_payment
+#: wizard_view:search.global.treasury,select:0
+msgid "Select Global Bank Accounts"
+msgstr "Seleccionar Cuentas Bancarias Globales"
+
+#. module: bias_payment
+#: field:payment.cheque,reconciled:0
+msgid "Paid/Reconciled"
+msgstr "Pagado/Conciliado"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "SUMAS IGUALES"
+msgstr "SUMAS IGUALES"
+
+#. module: bias_payment
+#: wizard_button:payment.create.export,init,create:0
+msgid "Create File"
+msgstr "Crear Archivo"
+
+#. module: bias_payment
+#: wizard_field:payment.create.export,create,view:0
+#: wizard_field:payment.create.export,init,view:0
+msgid "File Preview"
+msgstr "Previsualizar Archivo"
+
+#. module: bias_payment
+#: help:payment.line,reconciled:0
+msgid "The account moves of the invoice have been reconciled with account moves of the payment(s)."
+msgstr "La factura ha sido conciliada con el pago"
+
+#. module: bias_payment
+#: view:payment.order:0
+msgid "Desitination Account"
+msgstr "Cuenta de destino"
+
+#. module: bias_payment
+#: model:ir.actions.wizard,name:bias_payment.wizard_change
+msgid "Change"
+msgstr "Cambiar"
+
+#. module: bias_payment
+#: model:ir.module.module,description:bias_payment.module_meta_information
+msgid " Modify account payment module adding cheque printing."
+msgstr " Agrega funcionalidad de pago con cheque y transferencia bancaria, crea polizas y agrega menus para configurar la impresión de cheque y el archivo de carga."
+
+#. module: bias_payment
+#: field:payment.mode,transit_account_id:0
+msgid "Transit Account"
+msgstr "Cuenta de Tránsito"
+
+#. module: bias_payment
+#: field:payment.mode,payment_export_id:0
+msgid "Export File"
+msgstr "Archivo de Carga"
+
+#. module: bias_payment
+#: wizard_button:import_invoice,init,search:0
+#: wizard_button:populate_pay,init,search:0
+msgid "_Search"
+msgstr "Buscar"
+
+#. module: bias_payment
+#: view:payment.cheque:0
+#: view:payment.order:0
+msgid "Select Invoices to Pay"
+msgstr "Seleccion de Facturas a Pagar"
+
+#. module: bias_payment
+#: wizard_field:payment.create.cheque,create,date:0
+#: wizard_field:payment.create.cheque,init,date:0
+#: wizard_field:payment.create.export,create,date:0
+#: wizard_field:payment.create.export,init,date:0
+msgid "Payment date"
+msgstr "Fecha de Pago"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "CONCEPTO DEL PAGO"
+msgstr "CONCEPTO DEL PAGO"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "HABER"
+msgstr "HABER"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "/100"
+msgstr "/100"
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "Times-Roman"
+msgstr "Times-Roman"
+
+#. module: bias_payment
+#: view:payment.cheque:0
+#: view:payment.order:0
+msgid "Entry Information"
+msgstr "Información de Asiento"
+
+#. module: bias_payment
+#: selection:payment.export.line,zero:0
+msgid "Add Zero Left"
+msgstr "Ceros Izquierda"
+
+#. module: bias_payment
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Efective Date"
+msgstr "Fecha Efectiva"
+
+#. module: bias_payment
+#: field:payment.cheque,concept:0
+msgid "Concept"
+msgstr "Concepto"
+
+#. module: bias_payment
+#: field:payment.line,partial:0
+msgid "Partial"
+msgstr "Parcial"
+
+#. module: bias_payment
+#: field:report.cheque.line,y:0
+msgid "Vertical"
+msgstr "Vertical"
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "Times-Bold"
+msgstr "Times-Bold"
+
+#. module: bias_payment
+#: field:account.global.line,server:0
+#: field:account.global.line,url:0
+#: wizard_field:search.global.treasury,connect,server:0
+#: wizard_field:search.global.treasury,init,server:0
+msgid "Server"
+msgstr "Servidor"
+
+#. module: bias_payment
+#: field:payment.cheque,currency_id:0
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: bias_payment
+#: field:payment.export.line,zero:0
+msgid "Zero/Space"
+msgstr "Cero/Espacio"
+
+#. module: bias_payment
+#: field:payment.cheque,user_id:0
+msgid "User"
+msgstr "Usuario"
+
+#. module: bias_payment
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Currency Dest."
+msgstr "Moneda Dest."
+
+#. module: bias_payment
+#: model:ir.actions.wizard,name:bias_payment.wizard_create_cheque
+#: view:payment.cheque:0
+msgid "Create Cheques"
+msgstr "Crear Cheque"
+
+#. module: bias_payment
+#: field:report.cheque.line,size:0
+msgid "Size"
+msgstr "Tamaño"
+
+#. module: bias_payment
+#: model:ir.actions.wizard,name:bias_payment.wizard_print_entries
+msgid "Print Entries"
+msgstr "Imprimir Pólizas"
+
+#. module: bias_payment
+#: field:payment.line,reconciled:0
+msgid "Reconciled"
+msgstr "Conciliado"
+
+#. module: bias_payment
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+#: field:payment.line,operation:0
+msgid "Operation"
+msgstr "Operación"
+
+#. module: bias_payment
+#: view:payment.cheque:0
+#: view:payment.order:0
+msgid "Information"
+msgstr "Información"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "NOMBRE O CONCEPTO"
+msgstr "NOMBRE O CONCEPTO"
+
+#. module: bias_payment
+#: field:payment.mode,statement_account_id:0
+msgid "Statement Account"
+msgstr "Cuenta de Estado"
+
+#. module: bias_payment
+#: field:payment.line,cost_center_id:0
+msgid "Cost Center"
+msgstr "Centro de Costo"
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "Symbol"
+msgstr "Symbol"
+
+#. module: bias_payment
+#: field:payment.export.line,start:0
+msgid "Start"
+msgstr "Inicio"
+
+#. module: bias_payment
+#: selection:account.global.treasury,state:0
+#: selection:account.treasury,state:0
+#: selection:payment.cheque,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: bias_payment
+#: wizard_field:search.global.treasury,connect,url:0
+#: wizard_field:search.global.treasury,init,url:0
+msgid "url"
+msgstr "url"
+
+#. module: bias_payment
+#: selection:payment.export.file,date:0
+msgid "YYYYMMDD"
+msgstr "YYYYMMDD"
+
+#. module: bias_payment
+#: field:payment.export.file,other_bnk:0
+msgid "Other Bank Code"
+msgstr "Otro Banco"
+
+#. module: bias_payment
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "¡El nombre del objeto debe empezar con x_ y no contener ningún carácter especial!"
+
+#. module: bias_payment
+#: model:ir.actions.wizard,name:bias_payment.wizard_import_invoice
+msgid "Import Supplier Invoice"
+msgstr "Importar Facturas de Proveedor"
+
+#. module: bias_payment
+#: field:report.cheque.line,method:0
+msgid "Method"
+msgstr "Método"
+
+#. module: bias_payment
+#: field:account.global.treasury,state:0
+#: field:account.treasury,state:0
+#: field:payment.cheque,state:0
+msgid "Status"
+msgstr "Estado"
+
+#. module: bias_payment
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Payment Instruction"
+msgstr "Instrucciones de Pago"
+
+#. module: bias_payment
+#: field:payment.line,pay_rate:0
+msgid "Payment Rate"
+msgstr "Tasa de Pago"
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "Courier"
+msgstr "Courier"
+
+#. module: bias_payment
+#: field:payment.cheque,writeoff_journal_id:0
+#: field:payment.mode,writeoff_journal_id:0
+msgid "Writeoff Journal"
+msgstr "Diario de Ajuste"
+
+#. module: bias_payment
+#: rml:global.treasury:0
+#: rml:treasury:0
+msgid "Resumen de Cuentas Bancarias"
+msgstr "Resumen de Cuentas Bancarias"
+
+#. module: bias_payment
+#: view:report.cheque:0
+msgid "Cheque Line"
+msgstr "Líneas d eCheque"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "]"
+msgstr "]"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "CUENTA"
+msgstr "CUENTA"
+
+#. module: bias_payment
+#: help:report.cheque.line,report_id:0
+msgid "."
+msgstr "."
+
+#. module: bias_payment
+#: model:ir.actions.wizard,name:bias_payment.wizard_payment_tool
+msgid "payment Tool"
+msgstr "Herramienta"
+
+#. module: bias_payment
+#: model:ir.actions.wizard,name:bias_payment.wizard_populate_pay
+msgid "Populate payment"
+msgstr "Meter en Pago"
+
+#. module: bias_payment
+#: model:ir.model,name:bias_payment.model_report_cheque_line
+msgid "Report Cheque Line"
+msgstr "Report Cheque Line"
+
+#. module: bias_payment
+#: model:ir.actions.act_window,name:bias_payment.action_cheque_form
+#: model:ir.ui.menu,name:bias_payment.menu_action_cheque_form
+#: field:payment.line,cheque_id:0
+msgid "Cheque"
+msgstr "Cheque"
+
+#. module: bias_payment
+#: field:payment.cheque,date:0
+#: selection:payment.export.line,type:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: bias_payment
+#: selection:payment.export.line,type:0
+msgid "Integer"
+msgstr "Entero"
+
+#. module: bias_payment
+#: field:report.cheque.line,x:0
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#. module: bias_payment
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Currency Source"
+msgstr "Moneda Fuente"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "FECHA"
+msgstr "FECHA"
+
+#. module: bias_payment
+#: field:payment.export.line,condition:0
+msgid "Condition"
+msgstr "Condición"
+
+#. module: bias_payment
+#: selection:payment.export.line,operator:0
+msgid ">"
+msgstr ">"
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "Courier-Oblique"
+msgstr "Courier-Oblique"
+
+#. module: bias_payment
+#: model:ir.actions.act_window,name:bias_payment.action_report_cheque_form
+#: model:ir.model,name:bias_payment.model_report_cheque
+#: model:ir.ui.menu,name:bias_payment.menu_action_report_cheque_form
+#: field:payment.mode,report_cheque_id:0
+#: view:report.cheque:0
+#: field:report.cheque.line,report_id:0
+msgid "Report Cheque"
+msgstr "Formato de Cheque"
+
+#. module: bias_payment
+#: wizard_field:account.payment.tool,init,payment_id:0
+#: field:payment.cheque,payment_order_id:0
+msgid "Payment Order"
+msgstr "Orden de Pago"
+
+#. module: bias_payment
+#: model:ir.model,name:bias_payment.model_payment_cheque
+#: view:payment.cheque:0
+msgid "Payment cheque"
+msgstr "Pago Cheque"
+
+#. module: bias_payment
+#: model:ir.actions.report.xml,name:bias_payment.print_cheque_entry
+msgid "Print Entry"
+msgstr "Imprimir Póliza"
+
+#. module: bias_payment
+#: field:payment.export.line,required:0
+msgid "Required"
+msgstr "Requerido"
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "Courier-Bold"
+msgstr "Courier-Bold"
+
+#. module: bias_payment
+#: help:payment.line,partial:0
+msgid "Check this for partial payments."
+msgstr "Marca esta casilla para pagos parciales"
+
+#. module: bias_payment
+#: field:payment.cheque,writeoff_acc_id:0
+#: field:payment.mode,writeoff_acc_id:0
+msgid "Writeoff Account"
+msgstr "Cuenta de Ajuste"
+
+#. module: bias_payment
+#: help:payment.create.export,create,file:0
+#: help:payment.create.export,create,view:0
+#: help:payment.create.export,init,file:0
+#: help:payment.create.export,init,view:0
+msgid "File created for this payment"
+msgstr "Archivo de Carga"
+
+#. module: bias_payment
+#: wizard_field:payment.create.cheque,create,balance:0
+#: wizard_field:payment.create.cheque,init,balance:0
+#: wizard_field:payment.create.export,create,balance:0
+#: wizard_field:payment.create.export,init,balance:0
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: bias_payment
+#: selection:report.cheque.line,method:0
+msgid "Mx Date Format"
+msgstr "Formato de Fecha MX"
+
+#. module: bias_payment
+#: wizard_button:search.global.treasury,connect,select:0
+msgid "Select Global Treasury"
+msgstr "Seleccionar Tesoreria Global"
+
+#. module: bias_payment
+#: field:payment.export.file,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: bias_payment
+#: wizard_field:payment.create.cheque,create,amount:0
+#: wizard_field:payment.create.cheque,init,amount:0
+#: wizard_field:payment.create.export,create,amount:0
+#: wizard_field:payment.create.export,init,amount:0
+msgid "Amount to paid"
+msgstr "Monto a Pagar"
+
+#. module: bias_payment
+#: selection:payment.export.file,number:0
+msgid "######00"
+msgstr "######00"
+
+#. module: bias_payment
+#: field:account.treasury.account,mode:0
+#: field:payment.cheque,mode:0
+msgid "Payment mode"
+msgstr "Forma de Pago"
+
+#. module: bias_payment
+#: field:account.treasury,line_ids:0
+msgid "Bank Accounts"
+msgstr "Cuentas Bancarias"
+
+#. module: bias_payment
+#: rml:global.treasury:0
+#: rml:treasury:0
+msgid "Cuentas"
+msgstr "Cuentas"
+
+#. module: bias_payment
+#: field:payment.cheque,period_id:0
+#: wizard_field:payment.create.cheque,create,period_id:0
+#: wizard_field:payment.create.cheque,init,period_id:0
+#: wizard_field:payment.create.export,create,period_id:0
+#: wizard_field:payment.create.export,init,period_id:0
+msgid "Period"
+msgstr "Período"
+
+#. module: bias_payment
+#: model:ir.actions.act_window,name:bias_payment.action_cheque_form_unreconcile
+#: model:ir.ui.menu,name:bias_payment.menu_action_cheque_form_unreconcile
+msgid "Cheques To Print"
+msgstr "Cheques a Imprimir"
+
+#. module: bias_payment
+#: view:payment.cheque:0
+#: view:payment.order:0
+msgid "General Information"
+msgstr "Información General"
+
+#. module: bias_payment
+#: selection:account.global.treasury,state:0
+#: selection:account.treasury,state:0
+#: selection:payment.cheque,state:0
+msgid "Done"
+msgstr "Hecho"
+
+#. module: bias_payment
+#: wizard_button:search.global.treasury,init,connect:0
+msgid "Connect"
+msgstr "Conectar"
+
+#. module: bias_payment
+#: rml:global.treasury:0
+#: rml:treasury:0
+msgid "Fecha de Impresión:"
+msgstr "Fecha de Impresión:"
+
+#. module: bias_payment
+#: view:account.global.treasury:0
+#: wizard_button:account.payment.tool,init,end:0
+#: view:account.treasury:0
+#: view:payment.cheque:0
+#: selection:payment.cheque,state:0
+#: wizard_button:payment.create.cheque,init,end:0
+#: wizard_button:payment.create.export,init,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bias_payment
+#: wizard_button:search.global.treasury,connect,end:0
+#: wizard_button:search.global.treasury,init,end:0
+#: wizard_button:search.global.treasury,select,end:0
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: bias_payment
+#: model:ir.model,name:bias_payment.model_account_global_line
+msgid "Global Treasury Line"
+msgstr "Líneas de Tesorería Global"
+
+#. module: bias_payment
+#: field:account.global.line,global_id:0
+#: view:account.global.treasury:0
+#: model:ir.actions.act_window,name:bias_payment.action_account_global_treasury_form
+#: model:ir.ui.menu,name:bias_payment.menu_action_account_global_treasury_form
+msgid "Global Treasury"
+msgstr "Resumen Global de Cuentas Bancarias"
+
+#. module: bias_payment
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Destiny Account"
+msgstr "Cuenta Destino"
+
+#. module: bias_payment
+#: field:report.cheque.line,angle:0
+msgid "Angle"
+msgstr "Angulo"
+
+#. module: bias_payment
+#: wizard_field:payment.create.cheque,create,grouped:0
+#: wizard_field:payment.create.cheque,init,grouped:0
+#: wizard_field:payment.create.export,create,grouped:0
+#: wizard_field:payment.create.export,init,grouped:0
+msgid "Group by Partner"
+msgstr "Agrupar por Empresa"
+
+#. module: bias_payment
+#: selection:payment.export.line,operator:0
+msgid "Not In"
+msgstr "No En"
+
+#. module: bias_payment
+#: view:account.global.treasury:0
+#: view:account.treasury:0
+#: view:account.treasury.account:0
+msgid "Total Amount Available"
+msgstr "Monto Total Disponible"
+
+#. module: bias_payment
+#: selection:payment.export.line,zero:0
+msgid "Add Space Right"
+msgstr "Espacios Derecha"
+
+#. module: bias_payment
+#: view:account.global.treasury:0
+msgid "Global Bank Accounts"
+msgstr "Cuentas Bancarias Globales"
+
+#. module: bias_payment
+#: field:report.cheque.line,field_id:0
+msgid "Field"
+msgstr "Campo"
+
+#. module: bias_payment
+#: wizard_view:import_invoice,init:0
+#: wizard_view:populate_pay,init:0
+msgid "Search Payment lines"
+msgstr "Buscar Líneas de Pago"
+
+#. module: bias_payment
+#: model:ir.model,name:bias_payment.model_account_treasury_account
+msgid "Account Treasury Account"
+msgstr "Cuentas Bancarias"
+
+#. module: bias_payment
+#: wizard_field:account.payment.tool,init,lines_error:0
+msgid "Lines Partial"
+msgstr "Líneas Parcial"
+
+#. module: bias_payment
+#: selection:payment.export.file,number:0
+msgid "#0000000"
+msgstr "#0000000"
+
+#. module: bias_payment
+#: view:account.global.treasury:0
+#: model:ir.actions.wizard,name:bias_payment.wizard_search_global_treasury
+msgid "Search Global Treasury"
+msgstr "Busqueda Global de Cuentas"
+
+#. module: bias_payment
+#: view:payment.cheque:0
+#: field:payment.cheque,partial_line_id:0
+msgid "Partial Payed Lines"
+msgstr "Líneas de Pagos Parciales"
+
+#. module: bias_payment
+#: wizard_field:account.payment.tool,init,lines:0
+msgid "Order Lines"
+msgstr "Líneas de Orden"
+
+#. module: bias_payment
+#: help:payment.cheque,reconciled:0
+msgid "The account moves of the cheque have been reconciled with account moves of the invoice(s)."
+msgstr "El cheque fue conciliado con la factura"
+
+#. module: bias_payment
+#: help:payment.create.cheque,create,cheque:0
+#: help:payment.create.cheque,init,cheque:0
+msgid "Cheques of this payment"
+msgstr "Cheques de este pago"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "FIRMA CHEQUE RECIBIDO"
+msgstr "FIRMA CHEQUE RECIBIDO"
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "Times-Italic"
+msgstr "Times-Italic"
+
+#. module: bias_payment
+#: wizard_view:payment.create.cheque,create:0
+#: wizard_field:payment.create.cheque,create,cheque:0
+#: wizard_view:payment.create.cheque,init:0
+#: wizard_field:payment.create.cheque,init,cheque:0
+msgid "Cheques"
+msgstr "Cheques"
+
+#. module: bias_payment
+#: wizard_field:populate_pay,init,journal_id:0
+msgid "Journal"
+msgstr "Diario"
+
+#. module: bias_payment
+#: view:account.global.treasury:0
+#: view:account.treasury:0
+msgid "Total Amount in Bank"
+msgstr "Monto Total en Bancos"
+
+#. module: bias_payment
+#: field:report.cheque,adjustment_y:0
+msgid "Adjustment y"
+msgstr "Ajuste y"
+
+#. module: bias_payment
+#: field:report.cheque,adjustment_x:0
+msgid "Adjustment x"
+msgstr "Ajuste x"
+
+#. module: bias_payment
+#: model:ir.actions.act_window,name:bias_payment.action_cheque_new
+#: model:ir.ui.menu,name:bias_payment.menu_action_cheque_new
+msgid "New Cheque"
+msgstr "Nuevo Cheque"
+
+#. module: bias_payment
+#: wizard_view:account.payment.tool,init:0
+msgid "Payment Lines with not entry, not reconciled or partial reconcile"
+msgstr "Líneas de pago sin póliza, no conciliada o pago parcial"
+
+#. module: bias_payment
+#: selection:report.cheque.line,font:0
+msgid "ZapfDingbats"
+msgstr "ZapfDingbats"
+
+#. module: bias_payment
+#: field:payment.line,calc_currency:0
+msgid "Company Currency"
+msgstr "Moneda de Compañia"
+
+#. module: bias_payment
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Partner email"
+msgstr "Correo de Empresa"
+
+#. module: bias_payment
+#: view:payment.cheque:0
+#: view:payment.order:0
+msgid "Payment Line"
+msgstr "Línea de Pago"
+
+#. module: bias_payment
+#: selection:report.cheque.line,method:0
+msgid "Money Format"
+msgstr "Formato Moneda"
+
+#. module: bias_payment
+#: field:account.global.line,password:0
+msgid "Password"
+msgstr "Clave"
+
+#. module: bias_payment
+#: field:payment.export.line,notes:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: bias_payment
+#: wizard_field:search.global.treasury,select,treasury:0
+msgid "Company Treasury"
+msgstr "Tesorería de la Compañía"
+
+#. module: bias_payment
+#: wizard_view:payment.create.export,create:0
+#: wizard_field:payment.create.export,create,file:0
+#: wizard_view:payment.create.export,init:0
+#: wizard_field:payment.create.export,init,file:0
+msgid "File"
+msgstr "Archivo"
+
+#. module: bias_payment
+#: field:account.global.line,name:0
+msgid "Line Name"
+msgstr "Nombre"
+
+#. module: bias_payment
+#: wizard_field:account.payment.tool,init,line_id:0
+msgid "Payment With Reconcile Partial"
+msgstr "Pago con consiliación parcial"
+
+#. module: bias_payment
+#: field:payment.export.file,line_id:0
+msgid "Fields"
+msgstr "Campos"
+
+#. module: bias_payment
+#: view:account.global.treasury:0
+#: view:account.treasury:0
+msgid "Bank Account"
+msgstr "Cuentas Bancarias"
+
+#. module: bias_payment
+#: field:payment.cheque,line_id:0
+#: field:report.cheque,line_id:0
+msgid "Lines"
+msgstr "Líneas"
+
+#. module: bias_payment
+#: field:payment.mode,gain_loss_journal_id:0
+msgid "Gain/Loss Journal"
+msgstr "Diario de Perdida/Ganancia"
+
+#. module: bias_payment
+#: wizard_field:payment.create.cheque,create,auto:0
+#: wizard_field:payment.create.cheque,init,auto:0
+#: wizard_field:payment.create.export,create,auto:0
+#: wizard_field:payment.create.export,init,auto:0
+msgid "Autovalidate"
+msgstr "Autovalidar"
+
+#. module: bias_payment
+#: wizard_view:account.payment.tool,init:0
+msgid "Payment Tool"
+msgstr "Herramienta"
+
+#. module: bias_payment
+#: wizard_button:search.global.treasury,select,create:0
+msgid "Create Line"
+msgstr "Crear Línea"
+
+#. module: bias_payment
+#: field:payment.export.line,length:0
+msgid "Length"
+msgstr "Longitud"
+
+#. module: bias_payment
+#: wizard_field:account.payment.tool,init,lines_ok:0
+msgid "Lines OK"
+msgstr "Lineas OK"
+
+#. module: bias_payment
+#: model:ir.model,name:bias_payment.model_account_treasury
+msgid "Account Treasury"
+msgstr "Tesorería"
+
+#. module: bias_payment
+#: field:payment.cheque,move_id:0
+#: field:payment.line,move_id:0
+msgid "Entry"
+msgstr "Póliza"
+
+#. module: bias_payment
+#: wizard_view:populate_pay,init:0
+msgid "Select specific Partners or NON for all"
+msgstr "Selección de Empresa o en blanco para todas"
+
+#. module: bias_payment
+#: selection:payment.export.file,number:0
+msgid "####0000"
+msgstr "####0000"
+
+#. module: bias_payment
+#: field:account.global.line,available_amount:0
+#: field:account.global.treasury,available_amount:0
+#: field:account.treasury,available_amount:0
+#: field:account.treasury.account,available_amount:0
+msgid "Cash Available"
+msgstr "Saldo Disponible"
+
+#. module: bias_payment
+#: model:ir.module.module,shortdesc:bias_payment.module_meta_information
+msgid "Cheque Payments"
+msgstr "Pago Cheque"
+
+#. module: bias_payment
+#: field:payment.export.line,sequence:0
+msgid "Sequence"
+msgstr "Consecutivo"
+
+#. module: bias_payment
+#: selection:payment.export.line,zero:0
+msgid "Add Space Left"
+msgstr "Espacios Izquierda"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid "DIARIO"
+msgstr "DIARIO"
+
+#. module: bias_payment
+#: selection:payment.export.line,type:0
+msgid "With Decimals"
+msgstr "Con Decimales"
+
+#. module: bias_payment
+#: model:ir.model,name:bias_payment.model_account_global_treasury_line
+msgid "Account Global Treasury Line"
+msgstr "Cuentas Bancarias Globales"
+
+#. module: bias_payment
+#: view:account.treasury:0
+msgid "Create Accounts"
+msgstr "Crear Cuentas"
+
+#. module: bias_payment
+#: field:account.global.treasury,line_ids:0
+msgid "Bank Company Accounts"
+msgstr "Cuentas Bancarias Globales"
+
+#. module: bias_payment
+#: field:payment.cheque,number:0
+msgid "Cheque Number"
+msgstr "Número de Cheque"
+
+#. module: bias_payment
+#: field:payment.line,rate:0
+msgid "Rate"
+msgstr "Tasa"
+
+#. module: bias_payment
+#: field:payment.export.line,export_id:0
+msgid "Export"
+msgstr "Exportar"
+
+#. module: bias_payment
+#: model:ir.model,name:bias_payment.model_account_global_treasury
+msgid "Account Global Treasury"
+msgstr "Cuentas Bancarias Globales"
+
+#. module: bias_payment
+#: selection:payment.export.line,operator:0
+msgid "In"
+msgstr "En"
+
+#. module: bias_payment
+#: model:ir.model,name:bias_payment.model_payment_export_file
+#: model:ir.model,name:bias_payment.model_payment_export_line
+msgid "Payment Export File"
+msgstr "Archivo de Carga"
+
+#. module: bias_payment
+#: rml:payment.cheque.entry:0
+msgid ", [ID:"
+msgstr ", [ID:"
+
+#. module: bias_payment
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Origin Account"
+msgstr "Cuenta de Origen"
+

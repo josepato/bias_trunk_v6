@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+       <record id="catalog_import_file_form" model="ir.ui.view">
+            <field name="name">catalog.import.file.form</field>
+            <field name="model">catalog.import.file</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Catalog Import File">
+                    <field name="name" select="1" />
+                    <field name="active" select="1" />
+                    <field name="model" select="1" />
+                    <field name="user_id" select="1" />
+                    <field name="path"/>
+                </form>
+            </field>
+        </record>
+
+       <record id="catalog_import_tree" model="ir.ui.view">
+            <field name="name">catalog.import.file.tree</field>
+            <field name="model">catalog.import.file</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Catalog Import File">
+                    <field name="name"  />
+                    <field name="model"/>
+                    <field name="active" />
+                    <field name="user_id" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_catalog_import_file_form" model="ir.actions.act_window">
+            <field name="name">Catalgo File Import</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">catalog.import.file</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="catalog_import_tree"/>
+        </record>
+        
+        <menuitem  id="menu_catalog_import_root" name="Import Catalogs" parent="base.menu_administration"/>
+
+        <menuitem action="action_catalog_import_file_form" id="menu_catalog_import_file" parent="menu_catalog_import_root" sequence="2"/>
+
+
+
+    </data>
+</openerp>

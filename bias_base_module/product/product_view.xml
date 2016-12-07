@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+	=============================
+	Add fields to Product 
+	=============================
+
+
+        <record id="product_normal_form_inherit_view" model="ir.ui.view">
+            <field name="name">product.normal.inherit.form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+      	        <xpath expr="/form/notebook/page[@string='Information']" position="after">
+                   <page string="Attributs">
+                       <separator string="Product Brand" colspan="4"/>
+                        <field name="product_brand_id" select="1" />
+                        <field name="product_type_id"  select="2" />
+                        <field name="product_colection_id"  select="1" />
+                        <field name="product_line_id"  select="1" />
+                       <separator string="Product Writing Features" colspan="4"/>
+                        <field name="product_writing_kind_id"   />
+                        <field name="product_writing_type_id"   />
+                        <field name="product_writing_metaerial_id"  />
+                        <newline/>
+                       <separator string="Product Top Features" colspan="4"/>
+                        <field name="product_top_color_ids"   />
+                        <field name="product_top_material_ids"  />
+                       <separator string="Product Bottom Features" colspan="4"/>
+                        <field name="product_bottom_color_ids"   />
+                        <field name="product_bottom_material_ids"  />
+                       <separator string="Product Extras" colspan="4"/>
+                        <field name="product_hardware_ids"   />
+                        <field name="product_consumable_ids"  domain="[('categ_id','=',2)]" />
+                        <field name="product_observations_ids"   />
+                   </page>
+
+                </xpath>
+                </field>
+
+        </record>
+
+
+        <record id="product_search_form_view_inherit2" model="ir.ui.view">
+            <field name="name">product.search.form.inherit2</field>
+            <field name="model">product.product</field>
+            <field name="type">search</field>
+            <field name="inherit_id" ref="product.product_search_form_view"/>
+            <field name="arch" type="xml">
+                  <xpath expr="/search/field[@name='name']" position="after">
+                   <field name="product_brand_id"  />
+                   <field name="product_colection_id"/>
+                   <field name="product_line_id"  />
+                  </xpath>
+                </field>
+        </record>
+
+
+        <record id="product_normal_form_inherit_view2" model="ir.ui.view">
+            <field name="name">product.normal.inherit.form2</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+      	        <xpath expr="/form/notebook[@colspan='4']" position="before">
+                        <field name="picture"   widget="image"  colspan="2" img_height="200" img_width="300"/>
+
+                </xpath>
+                </field>
+
+        </record>
+
+
+
+
+
+        <record id="product_product_tree_view_inherit" model="ir.ui.view">
+            <field name="name">product.product.tree.inherit</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_product_tree_view"/>
+            <field name="arch" type="xml">
+         	<field name="uom_id" position="after">
+                    <field name="product_brand_id"/>
+                        <field name="product_top_color_ids" invisible="1"/>
+                        <field name="product_top_material_ids" invisible="1"/>
+                        <field name="product_bottom_color_ids" invisible="1"/>
+                        <field name="product_bottom_material_ids" invisible="1"/>
+                        <field name="product_colection_id" />
+                        <field name="product_line_id" />
+                        <field name="product_writing_type_id" />
+                        <field name="product_writing_metaerial_id" />
+                        <field name="product_writing_kind_id" />
+
+                </field>
+            </field>
+
+        </record>
+
+
+
+        <record id="product_search_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.serch.from.inherit</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_search_form_view"/>
+            <field name="arch" type="xml">
+      	        <xpath expr="/search/group/filter[@string='Type']" position="after">
+                       <separator orientation="vertical"/>
+                       <filter string='Brand' icon="terp-stock_symbol-selection" domain="[]" context="{'group_by' : 'product_brand_id'}" />
+                       <filter string='Colection' icon="terp-stock_symbol-selection" domain="[]" context="{'group_by' : 'product_colection_id'}" />
+                       <filter string='Linea' icon="terp-stock_symbol-selection" domain="[]" context="{'group_by' : 'product_line_id'}" />
+                       <separator orientation="vertical"/>
+                       <filter string='Kind' icon="terp-stock_symbol-selection" domain="[]" context="{'group_by' : 'product_writing_kind_id'}" />
+                       <filter string='Type' icon="terp-stock_symbol-selection" domain="[]" context="{'group_by' : 'product_writing_type_id'}" />
+                       <filter string='Material' icon="terp-stock_symbol-selection" domain="[]" context="{'group_by' : 'product_writing_metaerial_id'}" />
+
+                </xpath>
+                </field>
+
+        </record>
+
+        <record id="product_search_form_view_inherit_extended" model="ir.ui.view">
+            <field name="name">product.serch.from.extended.inherit</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_search_form_view"/>
+            <field name="arch" type="xml">
+      	        <xpath expr="/search/group/field[@name='pricelist_id']" position="after">
+                       <separator orientation="vertical"/>
+                           <field name="product_top_color_ids" widget="selection" context="{'product_top_color_ids': self}" />
+                           <field name="product_bottom_color_ids" widget="selection" context="{'product_bottom_color_ids': self}" />
+                       <separator orientation="vertical"/>
+                           <field name="product_top_material_ids" widget="selection" context="{'product_top_material_ids': self}" />
+                           <field name="product_bottom_material_ids" widget="selection" context="{'product_bottom_material_ids': self}" />
+
+
+
+                </xpath>
+                </field>
+
+        </record>
+
+
+
+
+	=============================
+	Product Brand
+	=============================
+
+        <record id="product_brand_form_view" model="ir.ui.view">
+            <field name="name">product.brand.form.view</field>
+            <field name="model">product.brand</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Brand">
+                    <field name="name" select="1"/>
+                    <field name="code"/>
+                    <field name="type_ids"/>
+                    <field name="colection_ids"/>
+                    <newline/>
+                </form>
+            </field>
+        </record>
+        <record id="product_brand_list_view" model="ir.ui.view">
+            <field name="name">product.brand.list.view</field>
+            <field name="model">product.brand</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Product Categories">
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="product_brand_action" model="ir.actions.act_window">
+            <field name="name">Products Brands</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.brand</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product_brand_list_view"/>
+        </record>
+        
+
+        <menuitem action="product_brand_action" id="menu_products_brand" parent="product.prod_config_main" sequence="90"/>
+
+
+	=============================
+	Product Type
+	=============================
+
+        <record id="product_type_form_view" model="ir.ui.view">
+            <field name="name">product.type.form.view</field>
+            <field name="model">product.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Type">
+                    <field name="name" select="1"/>
+                    <field name="code"/>
+                </form>
+            </field>
+        </record>
+        <record id="product_type_list_view" model="ir.ui.view">
+            <field name="name">product.type.list.view</field>
+            <field name="model">product.type</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Product Type">
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="product_type_action" model="ir.actions.act_window">
+            <field name="name">Products Type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.type</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product_type_list_view"/>
+        </record>
+        
+        <menuitem action="product_type_action" id="menu_products_type" parent="product.prod_config_main" sequence="91"/>
+
+	=============================
+	Product Colection
+	=============================
+
+        <record id="product_colection_form_view" model="ir.ui.view">
+            <field name="name">product.colection.form.view</field>
+            <field name="model">product.colection</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Colection">
+                    <field name="name" select="1"/>
+                    <field name="code"/>
+                    <field name="line_ids"/>
+                </form>
+            </field>
+        </record>
+        <record id="product_colection_list_view" model="ir.ui.view">
+            <field name="name">product.colection.list.view</field>
+            <field name="model">product.colection</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Product Colection">
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="product_colection_action" model="ir.actions.act_window">
+            <field name="name">Products Colection</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.colection</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product_colection_list_view"/>
+        </record>
+        
+        <menuitem action="product_colection_action" id="menu_products_colection" parent="product.prod_config_main" sequence="93"/>
+
+	=============================
+	Product Line
+	=============================
+
+        <record id="product_line_form_view" model="ir.ui.view">
+            <field name="name">product.line.form.view</field>
+            <field name="model">product.line</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Line">
+                    <field name="name" select="1"/>
+                    <field name="code"/>
+                </form>
+            </field>
+        </record>
+        <record id="product_line_list_view" model="ir.ui.view">
+            <field name="name">product.line.list.view</field>
+            <field name="model">product.line</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Product Line">
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="product_line_action" model="ir.actions.act_window">
+            <field name="name">Products Line</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.line</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product_line_list_view"/>
+        </record>
+        
+        <menuitem action="product_line_action" id="menu_products_line" parent="product.prod_config_main" sequence="94"/>
+        
+        
+
+
+	=============================
+	Product Material
+	=============================
+
+        <record id="product_material_form_view" model="ir.ui.view">
+            <field name="name">product.material.form.view</field>
+            <field name="model">product.material</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Material">
+                    <field name="name" select="1"/>
+                    <newline/>
+                </form>
+            </field>
+        </record>
+        <record id="product_material_list_view" model="ir.ui.view">
+            <field name="name">product.material.list.view</field>
+            <field name="model">product.material</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Product Categories">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="product_material_action" model="ir.actions.act_window">
+            <field name="name">Products Material</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.material</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product_material_list_view"/>
+        </record>
+        
+        <menuitem action="product_material_action" id="menu_products_material" parent="product.prod_config_main" sequence="91"/>
+
+	=============================
+	Product Color
+	=============================
+
+        <record id="product_color_form_view" model="ir.ui.view">
+            <field name="name">product.color.form.view</field>
+            <field name="model">product.color</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Color">
+                    <field name="name" select="1"/>
+                    <newline/>
+                </form>
+            </field>
+        </record>
+        <record id="product_color_list_view" model="ir.ui.view">
+            <field name="name">product.color.list.view</field>
+            <field name="model">product.color</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Product Categories">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="product_color_action" model="ir.actions.act_window">
+            <field name="name">Products Color</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.color</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product_color_list_view"/>
+        </record>
+        
+        <menuitem action="product_color_action" id="menu_products_color" parent="product.prod_config_main" sequence="92"/>
+
+	=============================
+	Product Hardware
+	=============================
+
+        <record id="product_hardware_form_view" model="ir.ui.view">
+            <field name="name">product.hardware.form.view</field>
+            <field name="model">product.hardware</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Hardware">
+                    <field name="name" select="1"/>
+                    <newline/>
+                </form>
+            </field>
+        </record>
+        <record id="product_hardware_list_view" model="ir.ui.view">
+            <field name="name">product.hardware.list.view</field>
+            <field name="model">product.hardware</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Product Categories">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="product_hardware_action" model="ir.actions.act_window">
+            <field name="name">Products Hardware</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.hardware</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product_hardware_list_view"/>
+        </record>
+        
+        <menuitem action="product_hardware_action" id="menu_products_hardware" parent="product.prod_config_main" sequence="92"/>
+
+	=============================
+	Product Kind
+	=============================
+
+        <record id="product_writing_kind_form_view" model="ir.ui.view">
+            <field name="name">product.writing.kind.form.view</field>
+            <field name="model">product.writing.kind</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Writing Kind">
+                    <field name="name" select="1"/>
+                    <newline/>
+                </form>
+            </field>
+        </record>
+        <record id="product_writing_kind_list_view" model="ir.ui.view">
+            <field name="name">product.writing.kind.list.view</field>
+            <field name="model">product.writing.kind</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Product Writing Kind">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="product_writing_kind_action" model="ir.actions.act_window">
+            <field name="name">Products Writing Kind</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.writing.kind</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product_writing_kind_list_view"/>
+        </record>
+        
+        <menuitem action="product_writing_kind_action" id="menu_products_writing_kind" parent="product.prod_config_main" sequence="92"/>
+
+	=============================
+	Product Type
+	=============================
+
+        <record id="product_writing_type_form_view" model="ir.ui.view">
+            <field name="name">product.writing.type.form.view</field>
+            <field name="model">product.writing.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Writing Type">
+                    <field name="name" select="1"/>
+                    <newline/>
+                </form>
+            </field>
+        </record>
+        <record id="product_writing_type_list_view" model="ir.ui.view">
+            <field name="name">product.writing.type.list.view</field>
+            <field name="model">product.writing.type</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Product Writing Type">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="product_writing_type_action" model="ir.actions.act_window">
+            <field name="name">Products Writing Type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.writing.type</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product_writing_type_list_view"/>
+        </record>
+        
+        <menuitem action="product_writing_type_action" id="menu_products_writing_type" parent="product.prod_config_main" sequence="92"/>
+
+	=============================
+	Product Material
+	=============================
+
+        <record id="product_writing_material_form_view" model="ir.ui.view">
+            <field name="name">product.writing.material.form.view</field>
+            <field name="model">product.writing.material</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Writing Material">
+                    <field name="name" select="1"/>
+                    <newline/>
+                </form>
+            </field>
+        </record>
+        <record id="product_writing_material_list_view" model="ir.ui.view">
+            <field name="name">product.writing.material.list.view</field>
+            <field name="model">product.writing.material</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Product Writing Material">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="product_writing_material_action" model="ir.actions.act_window">
+            <field name="name">Products Writing Material</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.writing.material</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product_writing_material_list_view"/>
+        </record>
+        
+        <menuitem action="product_writing_material_action" id="menu_products_writing_material" parent="product.prod_config_main" sequence="92"/>
+
+
+	=============================
+	Product Hardware
+	=============================
+
+        <record id="product_hardware_form_view" model="ir.ui.view">
+            <field name="name">product.hardware.form.view</field>
+            <field name="model">product.hardware</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Hardware">
+                    <field name="name" select="1"/>
+                    <newline/>
+                </form>
+            </field>
+        </record>
+        <record id="product_hardware_list_view" model="ir.ui.view">
+            <field name="name">product.hardware.list.view</field>
+            <field name="model">product.hardware</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Product Categories">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="product_hardware_action" model="ir.actions.act_window">
+            <field name="name">Products Hardware</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.hardware</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product_hardware_list_view"/>
+        </record>
+        
+        <menuitem action="product_hardware_action" id="menu_products_hardware" parent="product.prod_config_main" sequence="92"/>	
+
+        =============================
+	Product Observations
+	=============================
+
+        <record id="product_observations_form_view" model="ir.ui.view">
+            <field name="name">product.observations.form.view</field>
+            <field name="model">product.observations</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Observations">
+                    <field name="name" select="1"/>
+                    <newline/>
+                </form>
+            </field>
+        </record>
+        <record id="product_observations_list_view" model="ir.ui.view">
+            <field name="name">product.observations.list.view</field>
+            <field name="model">product.observations</field>
+            <field name="type">tree</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <tree string="Product Categories">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="product_observations_action" model="ir.actions.act_window">
+            <field name="name">Products Observations</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.observations</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="product_observations_list_view"/>
+        </record>
+        
+        <menuitem action="product_observations_action" id="menu_products_observations" parent="product.prod_config_main" sequence="92"/>
+
+
+    </data>
+</openerp>

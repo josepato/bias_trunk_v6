@@ -1,0 +1,346 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_fiscal_v6
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-05-27 22:54+0000\n"
+"PO-Revision-Date: 2011-05-27 22:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_fiscal_v6
+#: field:res.partner,curp:0
+msgid "CURP"
+msgstr "CURP"
+
+#. module: bias_fiscal_v6
+#: constraint:account.move:0
+msgid "You cannot create entries on different periods/journals in the same move"
+msgstr "No puede crear asientos con movimientos en distintos periodos/diarios"
+
+#. module: bias_fiscal_v6
+#: selection:account.move.fiscal,state:0
+msgid "Transfer"
+msgstr "Transferido"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+#: field:account.move.fiscal,retained_isr:0
+msgid "Retained ISR"
+msgstr "Retensión ISR"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+msgid "Tax Untransfer"
+msgstr "Des-Transferir"
+
+#. module: bias_fiscal_v6
+#: view:res.partner.operation.type:0
+msgid "Accounts Where Operation Apply"
+msgstr "Cuentas donde aplica este modelo"
+
+#. module: bias_fiscal_v6
+#: field:account.move.fiscal,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: bias_fiscal_v6
+#: selection:res.partner.operation.tax,tax_type:0
+msgid "Transfer IVA"
+msgstr "IVA Tranferido"
+
+#. module: bias_fiscal_v6
+#: field:res.partner.operation.type,account_ids:0
+msgid "Cash Journal Account"
+msgstr "Cuenta del Diario de Banco"
+
+#. module: bias_fiscal_v6
+#: field:account.move.fiscal,operation_type_id:0
+#: model:ir.actions.act_window,name:bias_fiscal_v6.res_partner_operation_type_form_action
+#: model:ir.model,name:bias_fiscal_v6.model_res_partner_operation_type
+#: model:ir.ui.menu,name:bias_fiscal_v6.menu_res_partner_operation_type_form_action
+#: field:res.partner,operation_type_id:0
+#: view:res.partner.operation.type:0
+msgid "Operation Type"
+msgstr "Tipo de Operación"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+msgid "Tax Transfer Entries"
+msgstr "Transferencia de Impuestos"
+
+#. module: bias_fiscal_v6
+#: model:ir.actions.act_window,name:bias_fiscal_v6.res_partner_operation_tax_form_action
+#: model:ir.model,name:bias_fiscal_v6.model_res_partner_operation_tax
+#: view:res.partner.operation.tax:0
+msgid "Operation Tax"
+msgstr "Modelo de Impuestos"
+
+#. module: bias_fiscal_v6
+#: code:addons/bias_fiscal_v6/account.py:118
+#, python-format
+msgid "Error !"
+msgstr "Error !"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+#: field:account.move.fiscal,iva_payed_na:0
+msgid "IVA Payed not accredited"
+msgstr "IVA Pagado No Acreditable"
+
+#. module: bias_fiscal_v6
+#: field:res.partner.operation.tax,from_account_id:0
+msgid "From Account"
+msgstr "De la Cuenta"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+#: field:account.move.fiscal,other:0
+msgid "Other Expenses"
+msgstr "Otros Gastos"
+
+#. module: bias_fiscal_v6
+#: help:account.move.fiscal,move_id:0
+msgid "The move of this entry line."
+msgstr "El asiento de esta línea."
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+#: field:account.move.fiscal,base:0
+msgid "Base"
+msgstr "Base"
+
+#. module: bias_fiscal_v6
+#: field:account.move.fiscal,line_id:0
+msgid "Entries"
+msgstr "Asientos"
+
+#. module: bias_fiscal_v6
+#: model:ir.model,name:bias_fiscal_v6.model_account_move_line
+msgid "Journal Items"
+msgstr "Registros del diario"
+
+#. module: bias_fiscal_v6
+#: field:account.move.fiscal,ietu:0
+msgid "IETU"
+msgstr "IETU"
+
+#. module: bias_fiscal_v6
+#: constraint:account.move.line:0
+msgid "Company must be same for its related account and period."
+msgstr "La compañía debe ser la misma para la cuenta y periodo relacionados."
+
+#. module: bias_fiscal_v6
+#: selection:res.partner.operation.tax,tax_type:0
+msgid "Retention IVA"
+msgstr "Retención IVA"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+msgid "Change"
+msgstr "Change"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+msgid "Fiscal"
+msgstr "Fiscal"
+
+#. module: bias_fiscal_v6
+#: field:res.partner.operation.tax,to_account_id:0
+msgid "To Account"
+msgstr "A la Cuenta"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+msgid "Compute"
+msgstr "Calcular"
+
+#. module: bias_fiscal_v6
+#: field:account.move.ietu.concept,name:0
+#: field:res.partner.operation.type,name:0
+#: field:res.partner.type,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+#: field:account.move.fiscal,retained_iva:0
+msgid "Retained IVA"
+msgstr "Rención IVA"
+
+#. module: bias_fiscal_v6
+#: field:account.move.fiscal,xfer_ids:0
+msgid "Tax Transfer Lines"
+msgstr "Impuestos Transferidos"
+
+#. module: bias_fiscal_v6
+#: constraint:account.move.line:0
+msgid "You can not create move line on closed account."
+msgstr "No puede crear una línea de movimiento en una cuenta cerrada."
+
+#. module: bias_fiscal_v6
+#: constraint:account.move:0
+msgid "You cannot create more than one move per period on centralized journal"
+msgstr "No puede crear más de un movimiento por periodo en un diario centralizado"
+
+#. module: bias_fiscal_v6
+#: field:res.partner.operation.type,tax_ids:0
+msgid "Tax Application"
+msgstr "Impuestos Aplicados"
+
+#. module: bias_fiscal_v6
+#: field:account.move,fiscal_ids:0
+#: model:ir.model,name:bias_fiscal_v6.model_account_move_fiscal
+msgid "Fiscal Entries"
+msgstr "Asientos Fiscales"
+
+#. module: bias_fiscal_v6
+#: code:addons/bias_fiscal_v6/account.py:118
+#, python-format
+msgid "You can not add/modify entries in a closed journal."
+msgstr "No puedes añadir/modificar asientos en un diario cerrado."
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+#: field:account.move.fiscal,amount:0
+msgid "Amount"
+msgstr "Importe"
+
+#. module: bias_fiscal_v6
+#: selection:res.partner.operation.tax,tax_type:0
+msgid "Transfer IEPS"
+msgstr "Transferencia IEPS"
+
+#. module: bias_fiscal_v6
+#: field:account.move.fiscal,rate_id:0
+msgid "IVA Rate"
+msgstr "Tasa de IVA"
+
+#. module: bias_fiscal_v6
+#: model:ir.actions.act_window,name:bias_fiscal_v6.res_partner_type_form_action
+#: model:ir.model,name:bias_fiscal_v6.model_res_partner_type
+#: model:ir.ui.menu,name:bias_fiscal_v6.menu_res_partner_type_form_action
+#: field:res.partner,partner_type_id:0
+#: view:res.partner.type:0
+msgid "Partner Type"
+msgstr "Tipo de Empresa"
+
+#. module: bias_fiscal_v6
+#: sql_constraint:account.move.line:0
+msgid "Wrong credit or debit value in accounting entry !"
+msgstr "¡Valor haber o debe erróneo en el asiento contable!"
+
+#. module: bias_fiscal_v6
+#: view:res.partner.operation.type:0
+msgid "Tax Transfer Detail"
+msgstr "Detalle de la Transferencia de Impuestos"
+
+#. module: bias_fiscal_v6
+#: selection:res.partner.operation.tax,tax_type:0
+msgid "Retention ISR"
+msgstr "Retención ISR"
+
+#. module: bias_fiscal_v6
+#: field:account.move.fiscal,applies:0
+msgid "Applies to IVA Control"
+msgstr "Aplica para control de IVA"
+
+#. module: bias_fiscal_v6
+#: selection:account.move.fiscal,state:0
+msgid "Untransfer"
+msgstr "Des-Transferir"
+
+#. module: bias_fiscal_v6
+#: field:account.move.ietu.concept,code:0
+#: field:res.partner.operation.type,code:0
+#: field:res.partner.type,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: bias_fiscal_v6
+#: model:ir.model,name:bias_fiscal_v6.model_account_move
+msgid "Account Entry"
+msgstr "Asiento contable"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+#: field:account.move.fiscal,iva:0
+msgid "IVA"
+msgstr "IVA"
+
+#. module: bias_fiscal_v6
+#: field:res.partner.operation.type,auto:0
+msgid "Auto Tax Transfer"
+msgstr "Transferencia Automática "
+
+#. module: bias_fiscal_v6
+#: field:account.move.fiscal,ietu_concept_id:0
+#: view:account.move.ietu.concept:0
+#: view:account.move.ietu.concept.rate:0
+#: model:ir.actions.act_window,name:bias_fiscal_v6.account_move_ietu_concept_form_action
+#: model:ir.model,name:bias_fiscal_v6.model_account_move_ietu_concept
+#: model:ir.ui.menu,name:bias_fiscal_v6.menu_account_move_ietu_concept_form_action
+#: field:res.partner,ietu_concept_id:0
+msgid "IETU Concept"
+msgstr "Concepto de IETU"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+#: field:account.move.fiscal,amount_before_retension:0
+msgid "Amount Before Retension"
+msgstr "Monto antes de Retenciones"
+
+#. module: bias_fiscal_v6
+#: field:account.move.fiscal,move_id:0
+msgid "Move"
+msgstr "Asiento"
+
+#. module: bias_fiscal_v6
+#: field:res.partner.operation.tax,tax_id:0
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: bias_fiscal_v6
+#: field:res.partner.operation.tax,tax_type:0
+msgid "Tax Type"
+msgstr "Tipo Impuesto"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+msgid "Base IETU"
+msgstr "Base IETU"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+msgid "Tax Transfer"
+msgstr "Transferencia de Impuestos"
+
+#. module: bias_fiscal_v6
+#: field:account.move.fiscal,partner_id:0
+#: model:ir.model,name:bias_fiscal_v6.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: bias_fiscal_v6
+#: field:res.partner.operation.tax,operation_id:0
+msgid "Operation"
+msgstr "Operación"
+
+#. module: bias_fiscal_v6
+#: view:account.move:0
+#: field:account.move.fiscal,total:0
+msgid "Total"
+msgstr "Total"
+
+#. module: bias_fiscal_v6
+#: constraint:account.move.line:0
+msgid "You can not create move line on view account."
+msgstr "No puede crear una línea de movimiento en una cuenta de tipo vista."
+

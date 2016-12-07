@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+	=========================================================
+	 Invoice Printing Configuration View
+	=========================================================
+	<record model="ir.ui.view" id="view_invoice_printing_form">
+		<field name="name">invoice.printing.form</field>
+		<field name="model">invoice.printing</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+		    <form string="Invoice Printing">
+                    	<notebook colspan="4">
+                            <page string="Invoice">
+				<field name="name" />
+				<field name="page" />
+				<field name="adjustment_x" />
+				<field name="adjustment_y" />
+                            	<field colspan="4" name="line_id" nolabel="1" />
+			    </page>
+                            <page string="Help">
+				<field name="help" />
+			    </page>
+                    	</notebook>
+		    </form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="view_invoice_printing_tree">
+		<field name="name">invoice.printing.tree</field>
+		<field name="model">invoice.printing</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Invoice Printing">
+				<field name="name" />
+			</tree>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_invoice_printing_form">
+		<field name="name">Invoice Printing</field>
+		<field name="res_model">invoice.printing</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	<menuitem name="Invoice Printing" id="menu_invoice_printing" parent="account.menu_finance_configuration" sequence="9"/>
+	<menuitem parent="menu_invoice_printing" id="menu_action_invoice_printing_form" action="action_invoice_printing_form"/>
+
+	=========================================================
+	 Invoice Printing Line View
+	=========================================================
+	<record model="ir.ui.view" id="view_invoice_printing_line_form">
+		<field name="name">invoice.printing.line.form</field>
+		<field name="model">invoice.printing.line</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+                		        
+		    <form string="Invoice Printing Line">
+                    	<notebook colspan="4">
+                            <page string="Line">
+                       	        	    <field name="field"/>
+                       	        	    <field name="domain"/>
+                       	        	    <field name="ttype"/>
+                            		    <field name="field_id" on_change="onchange_field_id(field,field_id)" domain="[('model','=',domain)]"/>
+                       	        	    <field name="x"/>
+                       	        	    <field name="y"/>
+                       	        	    <field name="method"/>
+                       	        	    <field name="size"/>
+                       	        	    <field name="font"/>
+                       	        	    <field name="field_name"/>
+		                            <field colspan="4" name="line_id" height="200" nolabel="1"
+						default_get="{'domain': domain, 'x':x, 'y':y}" />
+			    </page>
+                            <page string="Python Code">
+                            		    <field colspan="4" name="python_compute" nolabel="1" attrs="{'readonly':[('method','!=','code')]}"/>
+			    </page>
+<!--                            <page string="Function">
+                       	        	   <field colspan="4" name="function_id" nolabel="1" />
+			    </page>
+-->                    	</notebook>
+		    </form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="view_invoice_printing_line_tree">
+		<field name="name">invoice.printing.line.tree</field>
+		<field name="model">invoice.printing.line</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+                        		<tree editable="bottom" string="Invoice Printing Line"> 
+                       	        	    <field name="sequence"/>
+                            		    <field name="field_id" on_change="onchange_field_id(field,field_id)" domain="[('model','=',domain)]"/>
+                       	        	    <field name="domain"/>
+                       	        	    <field name="ttype"/>
+                       	        	    <field name="field"/>
+                       	        	    <field name="method"/>
+                       	        	    <field name="x"/>
+                       	        	    <field name="y"/>
+                       	        	    <field name="size"/>
+                       	        	    <field name="font"/>
+                       	        	    <field name="field_name"/>
+                       			</tree>
+		</field>
+	</record>
+
+	=========================================================
+	 Invoice Print Function
+	=========================================================
+	<record model="ir.ui.view" id="view_invoice_printing_function_form">
+		<field name="name">invoice.printing.function.form</field>
+		<field name="model">invoice.printing.function</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+                		        
+		    <form string="Invoice Printing Function">
+                    	<notebook colspan="4">
+                            <page string="Line">
+                       	        	    <field name="field"/>
+                       	        	    <field name="domain"/>
+                       	        	    <field name="ttype"/>
+                            		    <field name="field_id" on_change="onchange_field_id(field,field_id)" domain="[('model','=',domain)]"/>
+                       	        	    <field name="function"/>
+                       	        	    <field name="field_name"/>
+			    </page>
+                    	</notebook>
+		    </form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="view_invoice_printing_function_tree">
+		<field name="name">invoice.printing.function.tree</field>
+		<field name="model">invoice.printing.function</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+                        		<tree editable="bottom" string="Invoice Printing Function"> 
+                            		    <field name="field_id" on_change="onchange_field_id(field,field_id)" domain="[('model','=',domain)]"/>
+                       	        	    <field name="domain"/>
+                       	        	    <field name="ttype"/>
+                       	        	    <field name="field"/>
+                       	        	    <field name="function"/>
+                       	        	    <field name="field_name"/>
+                       			</tree>
+		</field>
+	</record>
+
+    </data>
+</openerp>

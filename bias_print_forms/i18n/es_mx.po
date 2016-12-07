@@ -1,0 +1,645 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_print_forms
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-09-19 16:21+0000\n"
+"PO-Revision-Date: 2011-09-19 16:21+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Fecha Aprobación"
+msgstr "Fecha Aprobación"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "No. Of Cycles"
+msgstr "Num. de Ciclos"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Work Orders"
+msgstr "Ordenes de Trabajo"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Datos Proveedor :"
+msgstr "Datos Proveedor :"
+
+#. module: bias_print_forms
+#: view:bias.print.installer:0
+msgid "title"
+msgstr "Titulo"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid ","
+msgstr ","
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Delivery Order:"
+msgstr "Orden de Entrega:"
+
+#. module: bias_print_forms
+#: report:sale.order.bias:0
+msgid "C.P.:"
+msgstr "C.P.:"
+
+#. module: bias_print_forms
+#: report:sale.order.bias:0
+msgid "Invoice address :"
+msgstr "Direccion de Facturacion :"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "Unidad"
+msgstr "Unidad"
+
+#. module: bias_print_forms
+#: model:ir.actions.report.xml,name:bias_print_forms.report_mrp_production_order_bias
+msgid "Production Order"
+msgstr "Orden de producción"
+
+#. module: bias_print_forms
+#: report:stock.inventory.bias:0
+msgid "Producto"
+msgstr "Producto"
+
+#. module: bias_print_forms
+#: view:bias.print.installer:0
+msgid "Configure Print Reports Application with Bias Reports."
+msgstr "Aplicacion que Imprime Reporte de Impresion con Bias Reports."
+
+#. module: bias_print_forms
+#: model:ir.actions.report.xml,name:bias_print_forms.report_stock_picking_bias
+msgid "Packing list"
+msgstr "Albarán"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Consumed Products"
+msgstr "Productos Consumidos"
+
+#. module: bias_print_forms
+#: model:ir.model,name:bias_print_forms.model_bias_print_installer
+msgid "bias.print.installer"
+msgstr "bias.print.installer"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "No. Of Hours"
+msgstr "Num. de Horas"
+
+#. module: bias_print_forms
+#: report:stock.inventory.bias:0
+msgid "Firma de responsable de"
+msgstr "Firma de responsable de"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Reception:"
+msgstr "Recepcion:"
+
+#. module: bias_print_forms
+#: model:ir.actions.report.xml,name:bias_print_forms.report_sale_order_bias
+msgid "Quotation / Order"
+msgstr "Presupuesto / Pedido"
+
+#. module: bias_print_forms
+#: report:sale.order.bias:0
+msgid "Fax :"
+msgstr "Fax :"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Embarcar a :"
+msgstr "Embarcar a :"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "End Date"
+msgstr "Fecha Final"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "IVA :"
+msgstr "IVA :"
+
+#. module: bias_print_forms
+#: constraint:res.company:0
+msgid "Error! You can not create recursive companies."
+msgstr "¡Error! No se pueden crear compañías recursivas."
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Priority"
+msgstr "Prioridad"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "State"
+msgstr "Estado"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Origen"
+msgstr "Origen"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Location"
+msgstr "Ubicacion"
+
+#. module: bias_print_forms
+#: report:sale.order.bias:0
+msgid "Order N°"
+msgstr "Num. de Orden"
+
+#. module: bias_print_forms
+#: report:stock.inventory.bias:0
+msgid "Version 2.0"
+msgstr "Version 2.0"
+
+#. module: bias_print_forms
+#: report:stock.inventory.bias:0
+msgid "Código"
+msgstr "Código"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Production Order N° :"
+msgstr "Num. de Orden de Produccion :"
+
+#. module: bias_print_forms
+#: report:sale.order.bias:0
+msgid "Shipping address :"
+msgstr "Datos de Proveedor  :"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Picking List:"
+msgstr "Albaran:"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "Total :"
+msgstr "Total :"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Fecha Planif."
+msgstr "Fecha Planif."
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid ", Col."
+msgstr ", Col."
+
+#. module: bias_print_forms
+#: field:bias.print.installer,rml_header:0
+msgid "RML Header"
+msgstr "Cabecera RML"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Condiciones de Pago"
+msgstr "Condiciones de Pago"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Purchase Order N°"
+msgstr "Num. de Orden de Compra"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Via de Embarque"
+msgstr "Via de Embarque"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Backorder"
+msgstr "Albaran Pendiente"
+
+#. module: bias_print_forms
+#: field:bias.print.installer,progress:0
+msgid "Configuration Progress"
+msgstr "Progreso de la Configuracion"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Almacen"
+msgstr "Almacen"
+
+#. module: bias_print_forms
+#: report:sale.order.bias:0
+msgid "Quotation Date"
+msgstr "Fecha Presupuesto"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Destination Location"
+msgstr "Ubicacion Destino"
+
+#. module: bias_print_forms
+#: field:bias.print.installer,config_logo:0
+msgid "Image"
+msgstr "Imagen"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "WorkCenter"
+msgstr "Centro de Trabajo"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Order(Origin)"
+msgstr "Orden(Origen)"
+
+#. module: bias_print_forms
+#: field:bias.print.installer,rml_header2:0
+msgid "RML Internal Header"
+msgstr "RML Cabecera Interna"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Start Date"
+msgstr "Fecha Inicio"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Partner Ref"
+msgstr "Ref Empresa"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Referencia del Proveedor"
+msgstr "Referencia del Proveedor"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "RFC:"
+msgstr "RFC:"
+
+#. module: bias_print_forms
+#: report:stock.inventory.bias:0
+msgid "Firma de responsable del Almacen"
+msgstr "Firma de responsable del Almacen"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Shipping Address :"
+msgstr "Datos de Proveedor :"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "Importe con Letra"
+msgstr "Importe con Letra"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid ")*"
+msgstr ")*"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "C.P. :"
+msgstr "C.P. :"
+
+#. module: bias_print_forms
+#: report:stock.inventory.bias:0
+msgid "........."
+msgstr "........."
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "Sub Total :"
+msgstr "Sub Total :"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Status"
+msgstr "Estado"
+
+#. module: bias_print_forms
+#: view:bias.print.installer:0
+msgid "Configure Print Reports Headers"
+msgstr "Configurar Cabeceras de Impresion de Reportes"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Contact Address :"
+msgstr "Direccion de Contacto :"
+
+#. module: bias_print_forms
+#: report:sale.order.bias:0
+msgid "Our Salesman"
+msgstr "Nuestro Vendedor"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "Col."
+msgstr "Col."
+
+#. module: bias_print_forms
+#: report:stock.inventory.bias:0
+msgid "Dif."
+msgstr "Dif."
+
+#. module: bias_print_forms
+#: field:bias.print.installer,rml_header3:0
+msgid "RML Internal Header3"
+msgstr "RML Cabecera Interna 3"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "Modelo"
+msgstr "Modelo"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Invoice Control"
+msgstr "Control de Factura"
+
+#. module: bias_print_forms
+#: report:stock.inventory.bias:0
+msgid "Almacen :"
+msgstr "Almacen :"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Recipient"
+msgstr "Recipiente"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Fax :"
+msgstr "Fax :"
+
+#. module: bias_print_forms
+#: model:ir.actions.report.xml,name:bias_print_forms.report_stock_inventory_bias
+msgid "Imprimir Inventario Físico"
+msgstr "Imprimir Inventario Físico"
+
+#. module: bias_print_forms
+#: model:ir.model,name:bias_print_forms.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Extra Information"
+msgstr "Informacion Extra"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+#: report:stock.picking.bias:0
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Bill of Materials"
+msgstr "Lista de Materiales"
+
+#. module: bias_print_forms
+#: report:sale.order.bias:0
+msgid "Your Reference"
+msgstr "Su Referencia"
+
+#. module: bias_print_forms
+#: view:bias.print.installer:0
+msgid "Configure"
+msgstr "Configurar"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "SO Number"
+msgstr "Num. Ord. Vta"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Source Location"
+msgstr "Ubicacion Fuente"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Fecha Ordenada"
+msgstr "Fecha Ordenada"
+
+#. module: bias_print_forms
+#: report:stock.inventory.bias:0
+msgid "Sucursal:"
+msgstr "Sucursal:"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Request for Quotation N°"
+msgstr "Solicitud de Presupuesto Num."
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "/100"
+msgstr "/100"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Creada por:"
+msgstr "Creada por:"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "Importe"
+msgstr "Importe"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Source Document"
+msgstr "Documento Fuente"
+
+#. module: bias_print_forms
+#: model:ir.actions.act_window,name:bias_print_forms.action_print_install_module
+msgid "Bias Print Application Configuration"
+msgstr "Configuracion de Aplicacion de Bias Print"
+
+#. module: bias_print_forms
+#: view:bias.print.installer:0
+msgid "Bias Print Configuration"
+msgstr "Configuracion de Bias"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Tél. :"
+msgstr "Tél. :"
+
+#. module: bias_print_forms
+#: report:stock.inventory.bias:0
+msgid "Real"
+msgstr "Real"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Scheduled Date"
+msgstr "Fecha Programada"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Description"
+msgstr "Descripcion"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Aprobado por"
+msgstr "Aprobado por"
+
+#. module: bias_print_forms
+#: report:sale.order.bias:0
+msgid "Tel. :"
+msgstr "Tel. :"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Expected Shipping Date"
+msgstr "Fecha de envío prevista"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Bill Of Material"
+msgstr "Lista de Material"
+
+#. module: bias_print_forms
+#: report:sale.order.bias:0
+msgid "RFC :"
+msgstr "RFC :"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "Cant."
+msgstr "Cant."
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Esta Orden de Compra es un contrato comercial que nos compromete a nosotros y a usted a cumplir con lo convenido en lo antes expuesto."
+msgstr "Esta Orden de Compra es un contrato comercial que nos compromete a nosotros y a usted a cumplir con lo convenido en lo antes expuesto."
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "Precio Unit."
+msgstr "Precio Unit."
+
+#. module: bias_print_forms
+#: report:stock.inventory.bias:0
+msgid "Fecha Impresión:"
+msgstr "Fecha Impresión:"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+msgid "Purchase Order Confirmation N°"
+msgstr "Confirmacion de Orden de Compra Num."
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "Contacto:"
+msgstr "Contacto:"
+
+#. module: bias_print_forms
+#: report:sale.order.bias:0
+msgid "Date Ordered"
+msgstr "Fecha Ordenada"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Routing"
+msgstr "Proceso productivo"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "*("
+msgstr "*("
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+#: report:stock.picking.bias:0
+msgid "Model"
+msgstr "Modelo"
+
+#. module: bias_print_forms
+#: model:ir.actions.report.xml,name:bias_print_forms.report_purchase_order_bias
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: bias_print_forms
+#: report:purchase.order.bias:0
+#: report:sale.order.bias:0
+msgid "Descripción"
+msgstr "Descripción"
+
+#. module: bias_print_forms
+#: report:sale.order.bias:0
+msgid "Payment Terms"
+msgstr "Condiciones de Pago"
+
+#. module: bias_print_forms
+#: report:stock.inventory.bias:0
+msgid "Reporte de Inventario de Producto por Almacen"
+msgstr "Reporte de Inventario de Producto por Almacen"
+
+#. module: bias_print_forms
+#: report:stock.inventory.bias:0
+msgid "Cantidad"
+msgstr "Cantidad"
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: bias_print_forms
+#: report:sale.order.bias:0
+msgid "Quotation N°"
+msgstr "Presupuesto Num."
+
+#. module: bias_print_forms
+#: report:mrp.production.order.bias:0
+msgid "Products to Consume"
+msgstr "Productos a Consumir"
+
+#. module: bias_print_forms
+#: report:stock.picking.bias:0
+msgid "Total"
+msgstr "Total"
+

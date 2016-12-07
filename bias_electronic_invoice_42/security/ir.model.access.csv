@@ -1,0 +1,5 @@
+"id";"name";"model_id:id";"group_id:id";"perm_read";"perm_write";"perm_create";"perm_unlink"
+"access_account_invoice_adenda";"account.invoice.adenda";"model_account_invoice_adenda";"group_electronic_invoice_user";1;1;0;0
+"access_account_invoice_adenda_lines";"account.invoice.adenda.lines";"model_account_invoice_adenda_lines";"group_electronic_invoice_user";1;1;0;0
+"access_account_invoice_adenda";"account.invoice.adenda";"model_account_invoice_adenda";"group_electronic_invoice_manager";1;1;1;1
+"access_account_invoice_adenda_lines";"account.invoice.adenda.lines";"model_account_invoice_adenda_lines";"group_electronic_invoice_manager";1;1;1;1

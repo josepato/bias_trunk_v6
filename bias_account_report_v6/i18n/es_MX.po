@@ -1,0 +1,1261 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_account_report_v6
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-05-27 22:02+0000\n"
+"PO-Revision-Date: 2011-05-27 22:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_other:0
+msgid "LID"
+msgstr "LID"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,init:0
+msgid "Partner Category Selection"
+msgstr "Sección de Categoría de Empresa"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,new:0
+msgid "Select Report Users"
+msgstr "Selecciona a los Usuarios del Reporte"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,currency:0
+#: selection:financial.reports.aged.all,init,currency:0
+#: selection:financial.reports.aged.client.mn,init,currency:0
+#: selection:financial.reports.aged.client.usd,init,currency:0
+#: selection:financial.reports.aged.creditor,init,currency:0
+#: selection:financial.reports.aged.supplier,init,currency:0
+#: selection:financial.reports.balance,init,currency:0
+#: selection:financial.reports.balance.partner,init,currency:0
+#: selection:financial.reports.other,init,currency:0
+msgid "PESOS"
+msgstr "Pesos"
+
+#. module: bias_account_report_v6
+#: sql_constraint:financial.reports:0
+msgid "The Report Configuration must be unique per company !"
+msgstr "La configuraci'on de reportes debe ser unica por compañía !"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,currency:0
+#: selection:financial.reports.aged.all,init,currency:0
+#: selection:financial.reports.aged.client.mn,init,currency:0
+#: selection:financial.reports.aged.client.usd,init,currency:0
+#: selection:financial.reports.aged.creditor,init,currency:0
+#: selection:financial.reports.aged.supplier,init,currency:0
+#: selection:financial.reports.balance,init,currency:0
+#: selection:financial.reports.balance.partner,init,currency:0
+#: selection:financial.reports.other,init,currency:0
+msgid "DOLARES"
+msgstr "Dólares"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,partner_type:0
+#: selection:financial.reports.aged.all,init,customer_supplier:0
+#: selection:financial.reports.aged.all,init,partner_type:0
+#: selection:financial.reports.aged.client.mn,init,partner_type:0
+#: selection:financial.reports.aged.client.usd,init,partner_type:0
+#: selection:financial.reports.aged.creditor,init,partner_type:0
+#: selection:financial.reports.aged.supplier,init,partner_type:0
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: bias_account_report_v6
+#: code:addons/bias_account_report_v6/wizard/wizard_account_custom_report.py:563
+#, python-format
+msgid "Date to must be set between %s and %s"
+msgstr "La fecha debe estar entre %s y %s"
+
+#. module: bias_account_report_v6
+#: selection:financial.reports.aged.client.mn,init,currency:0
+#: selection:financial.reports.aged.client.usd,init,currency:0
+#: selection:financial.reports.aged.creditor,init,currency:0
+#: selection:financial.reports.aged.supplier,init,currency:0
+#: selection:financial.reports.balance,init,currency:0
+#: selection:financial.reports.balance.partner,init,currency:0
+#: selection:financial.reports.other,init,currency:0
+msgid " "
+msgstr " "
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,new,company_id:0
+#: field:financial.reports,company_id:0
+#: wizard_field:fiscal.statements.balance,init,company_id:0
+#: wizard_field:fiscal.statements.income,init,company_id:0
+msgid "Company"
+msgstr "Compañía"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_other:0
+msgid "PID"
+msgstr "PID"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,report_zero:0
+#: selection:financial.reports.aged.all,init,report_zero:0
+#: selection:financial.reports.aged.client.mn,init,report_zero:0
+#: selection:financial.reports.aged.client.usd,init,report_zero:0
+#: selection:financial.reports.aged.creditor,init,report_zero:0
+#: selection:financial.reports.aged.supplier,init,report_zero:0
+#: selection:financial.reports.other,init,report_zero:0
+msgid "Not"
+msgstr "No"
+
+#. module: bias_account_report_v6
+#: wizard_button:account.custom.report,init,new:0
+msgid "New/Edit"
+msgstr "Nuevo/Editar"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,result_selection:0
+#: selection:account.custom.report,new,result_selection:0
+msgid "Receivable and Payable Accounts"
+msgstr "Cuentas por Cobrar y Pagar"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,new,reconcil:0
+#: field:account.custom.report,reconcil:0
+msgid "Entries to Include"
+msgstr "Asientos a Incluir"
+
+#. module: bias_account_report_v6
+#: model:ir.actions.wizard,name:bias_account_report_v6.wizard_fianancial_report_general_income
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_financial_report_general_income
+msgid "Income Outcome Statement"
+msgstr "Estado de Resultados"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_balance:0
+msgid "By:"
+msgstr "Por:"
+
+#. module: bias_account_report_v6
+#: wizard_field:fiscal.statements.balance,init,level:0
+#: wizard_field:fiscal.statements.income,init,level:0
+msgid "Level"
+msgstr "Nivel"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,new,payment:0
+msgid "Exclude Payment Order Entries"
+msgstr "Excluir Asientos de Ordenes de Pago"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,account,acc_count:0
+msgid "Number of Accounts"
+msgstr "Número de cuentas"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,result_selection:0
+#: selection:account.custom.report,new,result_selection:0
+#: selection:financial.reports.aged.all,init,result_selection:0
+#: selection:financial.reports.aged.client.mn,init,result_selection:0
+#: selection:financial.reports.aged.client.usd,init,result_selection:0
+#: selection:financial.reports.aged.creditor,init,result_selection:0
+#: selection:financial.reports.aged.supplier,init,result_selection:0
+#: selection:financial.reports.balance,init,result_selection:0
+#: selection:financial.reports.balance.partner,init,result_selection:0
+#: selection:financial.reports.other,init,result_selection:0
+msgid "Aged Trial Balance"
+msgstr "Antigüedad de Saldos"
+
+#. module: bias_account_report_v6
+#: model:ir.model,name:bias_account_report_v6.model_wizard_account_custom_report
+msgid "wizard_account_custom_report"
+msgstr "wizard_account_custom_report"
+
+#. module: bias_account_report_v6
+#: selection:financial.reports.aged.all,init,detail:0
+#: wizard_field:financial.reports.aged.all,init,detail:0
+#: selection:financial.reports.aged.client.mn,init,detail:0
+#: wizard_field:financial.reports.aged.client.mn,init,detail:0
+#: selection:financial.reports.aged.client.usd,init,detail:0
+#: wizard_field:financial.reports.aged.client.usd,init,detail:0
+#: selection:financial.reports.aged.creditor,init,detail:0
+#: wizard_field:financial.reports.aged.creditor,init,detail:0
+#: selection:financial.reports.aged.supplier,init,detail:0
+#: wizard_field:financial.reports.aged.supplier,init,detail:0
+msgid "Detail"
+msgstr "Detalle"
+
+#. module: bias_account_report_v6
+#: model:ir.actions.report.xml,name:bias_account_report_v6.account_custom_report
+msgid "Partner Ledger"
+msgstr "Libro mayor de empresa"
+
+#. module: bias_account_report_v6
+#: field:financial.reports,mn_customer_account_id:0
+msgid "Customer Account MN"
+msgstr "Cuenta de Clientes M.N."
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,state:0
+#: selection:account.custom.report,new,state:0
+msgid "By Date"
+msgstr "Por Fecha"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_aged:0
+#: report:financial.reports_other:0
+msgid "Opciones:"
+msgstr "Opciones:"
+
+#. module: bias_account_report_v6
+#: help:financial.reports.other,init,journal_ids:0
+#: help:fiscal.statements.balance,init,journal_ids:0
+#: help:fiscal.statements.income,init,journal_ids:0
+msgid "Keep empty for all journals"
+msgstr "En blanco para todos los Diarios"
+
+#. module: bias_account_report_v6
+#: wizard_button:account.custom.report,account,checkopen:0
+#: wizard_button:account.custom.report,init,checkopen:0
+msgid "Display"
+msgstr "Abrir"
+
+#. module: bias_account_report_v6
+#: code:addons/bias_account_report_v6/wizard/wizard_account_custom_report.py:412
+#: code:addons/bias_account_report_v6/wizard/wizard_account_custom_report.py:563
+#: code:addons/bias_account_report_v6/wizard/wizard_account_custom_report.py:567
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_all.py:122
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_client.py:100
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_client_mn.py:100
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_client_usd.py:100
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_creditor.py:100
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_supplier.py:100
+#, python-format
+msgid "UserError"
+msgstr "ErrorUsuario"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_other:0
+msgid "Rango de Fecha:"
+msgstr "Rango de Fecha:"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,result_selection:0
+#: selection:account.custom.report,new,result_selection:0
+msgid "Receivable Accounts"
+msgstr "Cuentas por Cobrar"
+
+#. module: bias_account_report_v6
+#: code:addons/bias_account_report_v6/wizard/wizard_account_custom_report.py:567
+#, python-format
+msgid "Date not in a defined fiscal year"
+msgstr "La fecha esta fuera del rango del año fiscal"
+
+#. module: bias_account_report_v6
+#: model:ir.actions.report.xml,name:bias_account_report_v6.financial_reports_balance
+#: model:ir.actions.wizard,name:bias_account_report_v6.wizard_fianancial_report_balance
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_financial_report_balance
+msgid "Account Balance"
+msgstr "Balanza de Comprobación"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,account,account_ids:0
+#: field:account.custom.report,account_ids:0
+msgid "Accounts"
+msgstr "Cuentas"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,result_selection:0
+#: selection:account.custom.report,new,result_selection:0
+msgid "Bank"
+msgstr "Tránsito Bancos"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_other:0
+msgid "Inicial"
+msgstr "Inicial"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_balance:0
+msgid "Report Type:"
+msgstr "Tipo de Reporte:"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,group_by:0
+#: selection:financial.reports.aged.all,init,group_by:0
+#: selection:financial.reports.aged.client.mn,init,group_by:0
+#: selection:financial.reports.aged.client.usd,init,group_by:0
+#: selection:financial.reports.aged.creditor,init,group_by:0
+#: selection:financial.reports.aged.supplier,init,group_by:0
+#: selection:financial.reports.balance.partner,init,group_by:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,init,stage:0
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,init,result_selection:0
+#: wizard_field:account.custom.report,new,result_selection:0
+#: field:account.custom.report,result_selection:0
+#: wizard_field:financial.reports.aged.all,init,result_selection:0
+#: wizard_field:financial.reports.aged.client.mn,init,result_selection:0
+#: wizard_field:financial.reports.aged.client.usd,init,result_selection:0
+#: wizard_field:financial.reports.aged.creditor,init,result_selection:0
+#: wizard_field:financial.reports.aged.supplier,init,result_selection:0
+#: wizard_field:financial.reports.balance,init,result_selection:0
+#: wizard_field:financial.reports.balance.partner,init,result_selection:0
+#: wizard_field:financial.reports.other,init,result_selection:0
+msgid "Select"
+msgstr "Selección"
+
+#. module: bias_account_report_v6
+#: help:account.custom.report,init,account_id:0
+#: help:financial.reports.aged.all,init,account_id:0
+#: help:financial.reports.aged.client.mn,init,account_id:0
+#: help:financial.reports.aged.client.usd,init,account_id:0
+#: help:financial.reports.aged.creditor,init,account_id:0
+#: help:financial.reports.aged.supplier,init,account_id:0
+#: help:financial.reports.balance,init,account_id:0
+#: help:financial.reports.balance.partner,init,account_id:0
+#: help:financial.reports.other,init,account_id:0
+msgid "This account and childs"
+msgstr "Esta cuenta y sus hijas"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,init:0
+#: wizard_field:account.custom.report,init,partner_ids:0
+#: field:account.custom.report,partner_ids:0
+#: field:account.custom.report,user_ids:0
+#: wizard_field:financial.reports.aged.all,init,partner_ids:0
+#: wizard_field:financial.reports.other,init,partner_ids:0
+msgid "Partners"
+msgstr "Empresas"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,report_csv:0
+#: wizard_view:financial.reports.aged.all,csv:0
+#: wizard_view:financial.reports.aged.client.mn,csv:0
+#: wizard_view:financial.reports.aged.client.usd,csv:0
+#: wizard_view:financial.reports.aged.creditor,csv:0
+#: wizard_view:financial.reports.aged.supplier,csv:0
+#: wizard_view:financial.reports.balance,csv:0
+#: wizard_view:financial.reports.balance.partner,csv:0
+#: wizard_view:financial.reports.other,csv:0
+#: wizard_view:fiscal.statements.balance,report_csv:0
+#: wizard_view:fiscal.statements.income,report_csv:0
+msgid "Export Report"
+msgstr "Exportar Reporte"
+
+#. module: bias_account_report_v6
+#: wizard_view:financial.reports.aged.all,init:0
+#: wizard_view:financial.reports.aged.client.mn,init:0
+#: wizard_view:financial.reports.aged.client.usd,init:0
+#: wizard_view:financial.reports.aged.creditor,init:0
+#: wizard_view:financial.reports.aged.supplier,init:0
+#: wizard_view:financial.reports.balance,init:0
+#: wizard_view:financial.reports.balance.partner,init:0
+#: wizard_view:financial.reports.other,init:0
+msgid "Parameters"
+msgstr "Parámetros"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,account:0
+msgid "Selected Account"
+msgstr "Cuentas Seleccionadas"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,new,journal_type:0
+msgid "Only Cash Journals"
+msgstr "Solo Diarios de Efectivo"
+
+#. module: bias_account_report_v6
+#: wizard_button:account.custom.report,account,checkcsv:0
+#: wizard_button:account.custom.report,init,checkcsv:0
+#: wizard_button:financial.reports.aged.all,init,csv:0
+#: wizard_button:financial.reports.aged.client.mn,init,csv:0
+#: wizard_button:financial.reports.aged.client.usd,init,csv:0
+#: wizard_button:financial.reports.aged.creditor,init,csv:0
+#: wizard_button:financial.reports.aged.supplier,init,csv:0
+#: wizard_button:financial.reports.balance,init,csv:0
+#: wizard_button:financial.reports.balance.partner,init,csv:0
+#: wizard_button:financial.reports.other,init,csv:0
+#: wizard_button:fiscal.statements.balance,init,report_csv:0
+#: wizard_button:fiscal.statements.income,init,report_csv:0
+msgid "Excel"
+msgstr "Excel"
+
+#. module: bias_account_report_v6
+#: wizard_view:fiscal.statements.balance,init:0
+#: wizard_view:fiscal.statements.income,init:0
+msgid "Fiscal Statements"
+msgstr "Estados Financieros"
+
+#. module: bias_account_report_v6
+#: wizard_button:account.custom.report,new,account:0
+msgid "Next"
+msgstr "Siguiente"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_balance:0
+msgid "Debit"
+msgstr "Debit"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,init:0
+msgid "Custom Report"
+msgstr "Reporte Configurable"
+
+#. module: bias_account_report_v6
+#: field:account.custom.report,date1:0
+#: wizard_field:account.custom.report,init,date1:0
+#: wizard_field:financial.reports.aged.all,init,date1:0
+#: wizard_field:financial.reports.aged.client.mn,init,date1:0
+#: wizard_field:financial.reports.aged.client.usd,init,date1:0
+#: wizard_field:financial.reports.aged.creditor,init,date1:0
+#: wizard_field:financial.reports.aged.supplier,init,date1:0
+#: wizard_field:financial.reports.balance,init,date1:0
+#: wizard_field:financial.reports.balance.partner,init,date1:0
+#: wizard_field:financial.reports.other,init,date1:0
+msgid "Start date"
+msgstr "Fecha Inicial"
+
+#. module: bias_account_report_v6
+#: wizard_button:account.custom.report,account,save:0
+msgid "Save"
+msgstr "Salvar"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,new:0
+msgid "(This account and childs)"
+msgstr "(Esta cuenta y sus hijos)"
+
+#. module: bias_account_report_v6
+#: field:financial.reports,mn_supplier_account_id:0
+msgid "Supplier Account MN"
+msgstr "Cuenta de Proveedores M.N."
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,state:0
+#: selection:account.custom.report,new,state:0
+msgid "No Filter"
+msgstr "Sin Filtro"
+
+#. module: bias_account_report_v6
+#: field:account.custom.report,group_by:0
+#: wizard_field:account.custom.report,init,group_by:0
+#: wizard_field:financial.reports.aged.all,init,group_by:0
+#: wizard_field:financial.reports.aged.client.mn,init,group_by:0
+#: wizard_field:financial.reports.aged.client.usd,init,group_by:0
+#: wizard_field:financial.reports.aged.creditor,init,group_by:0
+#: wizard_field:financial.reports.aged.supplier,init,group_by:0
+#: wizard_field:financial.reports.balance.partner,init,group_by:0
+msgid "Group By"
+msgstr "Agrupar Por"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_other:0
+msgid "Saldo"
+msgstr "Saldo"
+
+#. module: bias_account_report_v6
+#: wizard_view:financial.reports.other,init:0
+msgid "Libros a Incluir"
+msgstr "Libros a Incluir"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,init:0
+#: wizard_view:financial.reports.aged.all,init:0
+#: wizard_view:financial.reports.other,init:0
+msgid "Partner Selection"
+msgstr "Selección de Empresas"
+
+#. module: bias_account_report_v6
+#: model:ir.actions.wizard,name:bias_account_report_v6.wizard_fianancial_report_aged_client_mn
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_financial_report_aged_client_mn
+msgid "Aged client MN"
+msgstr "Antigüedad de Saldos Clientes MN"
+
+#. module: bias_account_report_v6
+#: code:addons/bias_account_report_v6/wizard/wizard_account_custom_report.py:473
+#, python-format
+msgid "Account Lines"
+msgstr "Líneas Contables"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,partner_type:0
+#: selection:financial.reports.aged.all,init,partner_type:0
+#: selection:financial.reports.aged.client.mn,init,partner_type:0
+#: selection:financial.reports.aged.client.usd,init,partner_type:0
+#: selection:financial.reports.aged.creditor,init,partner_type:0
+#: selection:financial.reports.aged.supplier,init,partner_type:0
+msgid "None"
+msgstr "Ninguno"
+
+#. module: bias_account_report_v6
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_report_configuration
+msgid "Report Configuration"
+msgstr "Configuración de Reportes"
+
+#. module: bias_account_report_v6
+#: model:ir.actions.report.xml,name:bias_account_report_v6.account_custom_report_aged
+#: model:ir.actions.report.xml,name:bias_account_report_v6.financial_reports_aged
+msgid "Aged Partner Balance"
+msgstr "Antigüedad de Saldos"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_other:0
+msgid "Diario"
+msgstr "Diario"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,new,journal_type:0
+msgid "All Journals"
+msgstr "Todos los Diarios"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_other:0
+msgid "Crédito"
+msgstr "Crédito"
+
+#. module: bias_account_report_v6
+#: wizard_field:financial.reports.aged.all,init,customer_supplier:0
+msgid "Customer/Supplier"
+msgstr "Cliente/Proveedor"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_aged:0
+msgid "Días de Crédito"
+msgstr "Días de Crédito"
+
+#. module: bias_account_report_v6
+#: wizard_button:account.custom.report,account,delete:0
+msgid "Delete"
+msgstr "Borrar"
+
+#. module: bias_account_report_v6
+#: field:financial.reports,creditor_account_id:0
+msgid "Creditor Account"
+msgstr "Cuenta de Acredor"
+
+#. module: bias_account_report_v6
+#: help:account.custom.report,init,cost_center_id:0
+#: help:fiscal.statements.balance,init,cost_center_id:0
+#: help:fiscal.statements.income,init,cost_center_id:0
+msgid "Keep empty for all cost centers"
+msgstr "En blanco para todos los centros de costo"
+
+#. module: bias_account_report_v6
+#: code:addons/bias_account_report_v6/wizard/wizard_account_custom_report.py:553
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_all.py:118
+#, python-format
+msgid "No Data Available"
+msgstr "No hay datos para la consulta"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_aged:0
+msgid "Ranfo de Fecha:"
+msgstr "Rango de Fecha:"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,result_selection:0
+#: selection:account.custom.report,new,result_selection:0
+msgid "Payable Accounts"
+msgstr "Cuentas por Pagar"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,new,direction_selection:0
+msgid "Past"
+msgstr "Antigüedad"
+
+#. module: bias_account_report_v6
+#: field:account.custom.report,currency:0
+#: wizard_field:account.custom.report,init,currency:0
+#: wizard_field:financial.reports.aged.all,init,currency:0
+#: wizard_field:financial.reports.aged.client.mn,init,currency:0
+#: wizard_field:financial.reports.aged.client.usd,init,currency:0
+#: wizard_field:financial.reports.aged.creditor,init,currency:0
+#: wizard_field:financial.reports.aged.supplier,init,currency:0
+#: wizard_field:financial.reports.balance,init,currency:0
+#: wizard_field:financial.reports.balance.partner,init,currency:0
+#: wizard_field:financial.reports.other,init,currency:0
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: bias_account_report_v6
+#: help:account.custom.report,init,partner_ids:0
+#: help:financial.reports.aged.all,init,partner_ids:0
+#: help:financial.reports.other,init,partner_ids:0
+msgid "Keep empty for all partners"
+msgstr "Dejar en blanco para todos las empresas"
+
+#. module: bias_account_report_v6
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_all.py:118
+#, python-format
+msgid "Set accounts in Financial Managements/configuration/Report Configuration!"
+msgstr "Configura la cuenta en Contabilidad/Configuración/Configuración de Reporte!"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,init,null:0
+msgid "Null"
+msgstr "Ninguno"
+
+#. module: bias_account_report_v6
+#: view:account.custom.report:0
+#: model:ir.actions.act_window,name:bias_account_report_v6.action_account_custom_report_form
+#: model:ir.actions.wizard,name:bias_account_report_v6.wizard_account_custom_report
+#: model:ir.model,name:bias_account_report_v6.model_account_custom_report
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_account_custom_report
+msgid "Account Custom Report"
+msgstr "Reporte Configurable"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,new,payment:0
+#: selection:account.custom.report,new,reconcil:0
+msgid "All Entries"
+msgstr "Todos"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_other:0
+msgid "Débito"
+msgstr "Débito"
+
+#. module: bias_account_report_v6
+#: field:account.custom.report,category_ids:0
+msgid "Category"
+msgstr "Categoría"
+
+#. module: bias_account_report_v6
+#: selection:financial.reports.aged.creditor,init,partner_type:0
+msgid "Creditor"
+msgstr "Acredor"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,init,partner_type:0
+#: field:account.custom.report,partner_type:0
+#: wizard_field:financial.reports.aged.all,init,partner_type:0
+#: wizard_field:financial.reports.aged.client.mn,init,partner_type:0
+#: wizard_field:financial.reports.aged.client.usd,init,partner_type:0
+#: wizard_field:financial.reports.aged.creditor,init,partner_type:0
+#: wizard_field:financial.reports.aged.supplier,init,partner_type:0
+msgid "Partner Type"
+msgstr "Tipo de Empresa"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_aged:0
+#: report:financial.reports_other:0
+msgid "Fecha"
+msgstr "Fecha"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_balance:0
+msgid "Initial"
+msgstr "Initial"
+
+#. module: bias_account_report_v6
+#: field:account.custom.report,cost_center_id:0
+#: wizard_field:account.custom.report,init,cost_center_id:0
+#: wizard_field:fiscal.statements.balance,init,cost_center_id:0
+#: wizard_field:fiscal.statements.income,init,cost_center_id:0
+msgid "Cost Center"
+msgstr "Centro de Costos"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,new,journal_type:0
+msgid "Purchase Journals"
+msgstr "Diarios de Compras"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,new,journal_type:0
+msgid "Witout Cash Journals"
+msgstr "Sin diarios de Efectivo"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,init:0
+#: wizard_view:financial.reports.aged.client.mn,init:0
+#: wizard_view:financial.reports.aged.client.usd,init:0
+#: wizard_view:financial.reports.aged.creditor,init:0
+#: wizard_view:financial.reports.aged.supplier,init:0
+#: wizard_view:financial.reports.balance,init:0
+#: wizard_view:financial.reports.balance.partner,init:0
+#: wizard_view:financial.reports.other,init:0
+msgid "Date Filter"
+msgstr "Filtro por Fecha"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,new,journal_type:0
+msgid "Sale Journals"
+msgstr "Diarios de Ventas"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,init,text1:0
+#: wizard_field:account.custom.report,init,text2:0
+#: wizard_field:account.custom.report,new,text:0
+msgid "Nota"
+msgstr "Nota"
+
+#. module: bias_account_report_v6
+#: field:account.custom.report,balance:0
+#: wizard_field:account.custom.report,init,balance:0
+#: wizard_field:account.custom.report,new,balance:0
+#: wizard_field:financial.reports.aged.all,init,balance:0
+#: wizard_field:financial.reports.aged.client.mn,init,balance:0
+#: wizard_field:financial.reports.aged.client.usd,init,balance:0
+#: wizard_field:financial.reports.aged.creditor,init,balance:0
+#: wizard_field:financial.reports.aged.supplier,init,balance:0
+#: wizard_field:financial.reports.balance,init,balance:0
+#: wizard_field:financial.reports.balance.partner,init,balance:0
+#: wizard_field:financial.reports.other,init,balance:0
+msgid "Only balances"
+msgstr "Sin Detalle"
+
+#. module: bias_account_report_v6
+#: field:account.custom.report,fiscalyear:0
+msgid "Fiscalyear"
+msgstr "Año Fiscal"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,init,category_ids:0
+msgid "Categoria"
+msgstr "Categoría"
+
+#. module: bias_account_report_v6
+#: field:financial.reports,supplier_account_id:0
+msgid "Supplier Account"
+msgstr "Cuenta de Proveedores"
+
+#. module: bias_account_report_v6
+#: field:financial.reports,usd_customer_account_id:0
+msgid "Customer Account USD"
+msgstr "Cuenta de Clientes USD"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,init:0
+msgid "(Keep empty for all open fiscal years)"
+msgstr "(en blanco para todos los años fiscales)"
+
+#. module: bias_account_report_v6
+#: model:ir.actions.wizard,name:bias_account_report_v6.wizard_fianancial_report_aged_all
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_financial_report_aged_all
+msgid "Aged All"
+msgstr "Antigüedad de Saldos General"
+
+#. module: bias_account_report_v6
+#: help:account.custom.report,init,periods_ids:0
+msgid "All periods if empty"
+msgstr "En blanco todos los períodos"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_aged:0
+msgid "+ de"
+msgstr "+ de"
+
+#. module: bias_account_report_v6
+#: help:account.custom.report,report_csv,file:0
+#: help:financial.reports.aged.all,csv,file:0
+#: help:financial.reports.aged.client.mn,csv,file:0
+#: help:financial.reports.aged.client.usd,csv,file:0
+#: help:financial.reports.aged.creditor,csv,file:0
+#: help:financial.reports.aged.supplier,csv,file:0
+#: help:financial.reports.balance,csv,file:0
+#: help:financial.reports.balance.partner,csv,file:0
+#: help:financial.reports.other,csv,file:0
+#: help:fiscal.statements.balance,report_csv,file:0
+#: help:fiscal.statements.income,report_csv,file:0
+msgid "File created for this report"
+msgstr "Archivo creado para este reporte"
+
+#. module: bias_account_report_v6
+#: field:financial.reports,statement_income_id:0
+msgid "Income Statement"
+msgstr "Estado de Resultados"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,new,reconcil:0
+msgid "In Range Reconciled"
+msgstr "Conciliados en el Rango"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_balance:0
+msgid "Credit"
+msgstr "Credito"
+
+#. module: bias_account_report_v6
+#: model:ir.actions.wizard,name:bias_account_report_v6.wizard_fianancial_report_aged_client_usd
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_financial_report_aged_client_usd
+msgid "Aged client USD"
+msgstr "Antigüedad de Saldos Clientes USD"
+
+#. module: bias_account_report_v6
+#: selection:financial.reports.aged.all,init,detail:0
+#: selection:financial.reports.aged.client.mn,init,detail:0
+#: selection:financial.reports.aged.client.usd,init,detail:0
+#: selection:financial.reports.aged.creditor,init,detail:0
+#: selection:financial.reports.aged.supplier,init,detail:0
+#: report:financial.reports_balance:0
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,init,report_zero:0
+#: field:account.custom.report,report_zero:0
+#: wizard_field:financial.reports.aged.all,init,report_zero:0
+#: wizard_field:financial.reports.aged.client.mn,init,report_zero:0
+#: wizard_field:financial.reports.aged.client.usd,init,report_zero:0
+#: wizard_field:financial.reports.aged.creditor,init,report_zero:0
+#: wizard_field:financial.reports.aged.supplier,init,report_zero:0
+#: wizard_field:financial.reports.other,init,report_zero:0
+msgid "Report Zeros"
+msgstr "Reportar Ceros"
+
+#. module: bias_account_report_v6
+#: field:account.custom.report,date2:0
+#: wizard_field:account.custom.report,init,date2:0
+#: wizard_field:financial.reports.balance,init,date2:0
+#: wizard_field:financial.reports.balance.partner,init,date2:0
+#: wizard_field:financial.reports.other,init,date2:0
+msgid "End date"
+msgstr "Fecha Final"
+
+#. module: bias_account_report_v6
+#: selection:financial.reports.aged.all,init,currency:0
+msgid "ALL"
+msgstr "Todas"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,init:0
+msgid "Select Custom Report"
+msgstr "Selección de Reporte"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,init,state:0
+#: wizard_field:account.custom.report,new,state:0
+#: field:account.custom.report,state:0
+msgid "Date/Period Filter"
+msgstr "Filtro Fecha/Período"
+
+#. module: bias_account_report_v6
+#: wizard_field:fiscal.statements.balance,init,period_id:0
+#: wizard_field:fiscal.statements.income,init,period_id:0
+msgid "Period"
+msgstr "Período"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,init,fiscalyear:0
+#: wizard_field:fiscal.statements.balance,init,fiscalyear:0
+#: wizard_field:fiscal.statements.income,init,fiscalyear:0
+msgid "Fiscal year"
+msgstr "Año Fiscal"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_other:0
+msgid "Nombre"
+msgstr "Nombre"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,init,periods_ids:0
+#: field:account.custom.report,periods_ids:0
+msgid "Periods"
+msgstr "Períodos"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_aged:0
+#: report:financial.reports_other:0
+msgid "Fecha de Impresión:"
+msgstr "Fecha de Impresión:"
+
+#. module: bias_account_report_v6
+#: wizard_button:account.custom.report,account,end:0
+#: wizard_button:account.custom.report,init,end:0
+#: wizard_button:account.custom.report,new,end:0
+#: wizard_button:financial.reports.aged.all,init,end:0
+#: wizard_button:financial.reports.aged.client.mn,init,end:0
+#: wizard_button:financial.reports.aged.client.usd,init,end:0
+#: wizard_button:financial.reports.aged.creditor,init,end:0
+#: wizard_button:financial.reports.aged.supplier,init,end:0
+#: wizard_button:financial.reports.balance,init,end:0
+#: wizard_button:financial.reports.balance.partner,init,end:0
+#: wizard_button:financial.reports.other,init,end:0
+#: wizard_button:fiscal.statements.balance,init,end:0
+#: wizard_button:fiscal.statements.income,init,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,new,page_split:0
+#: field:account.custom.report,page_split:0
+msgid "One Partner Per Page"
+msgstr "Una Empresa por Página"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_aged:0
+#: report:financial.reports_balance:0
+#: report:financial.reports_other:0
+msgid "at"
+msgstr "a las"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_aged:0
+msgid "Referencia"
+msgstr "Referencia"
+
+#. module: bias_account_report_v6
+#: model:ir.actions.wizard,name:bias_account_report_v6.wizard_fianancial_report_aged_supplier
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_financial_report_aged_supplier
+msgid "Aged Supplier"
+msgstr "Antigüedad de Saldos Proveedores"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,new,payment:0
+#: field:account.custom.report,payment:0
+msgid "Payment Order"
+msgstr "Ordenes de Pago"
+
+#. module: bias_account_report_v6
+#: field:account.custom.report,account_id:0
+#: wizard_field:account.custom.report,init,account_id:0
+#: selection:account.custom.report,init,group_by:0
+#: selection:account.custom.report,init,result_selection:0
+#: wizard_field:account.custom.report,new,account_id:0
+#: selection:account.custom.report,new,result_selection:0
+#: wizard_field:financial.reports.aged.all,init,account_id:0
+#: selection:financial.reports.aged.all,init,group_by:0
+#: selection:financial.reports.aged.all,init,result_selection:0
+#: wizard_field:financial.reports.aged.client.mn,init,account_id:0
+#: selection:financial.reports.aged.client.mn,init,group_by:0
+#: selection:financial.reports.aged.client.mn,init,result_selection:0
+#: wizard_field:financial.reports.aged.client.usd,init,account_id:0
+#: selection:financial.reports.aged.client.usd,init,group_by:0
+#: selection:financial.reports.aged.client.usd,init,result_selection:0
+#: wizard_field:financial.reports.aged.creditor,init,account_id:0
+#: selection:financial.reports.aged.creditor,init,group_by:0
+#: selection:financial.reports.aged.creditor,init,result_selection:0
+#: wizard_field:financial.reports.aged.supplier,init,account_id:0
+#: selection:financial.reports.aged.supplier,init,group_by:0
+#: selection:financial.reports.aged.supplier,init,result_selection:0
+#: wizard_field:financial.reports.balance,init,account_id:0
+#: selection:financial.reports.balance,init,result_selection:0
+#: wizard_field:financial.reports.balance.partner,init,account_id:0
+#: selection:financial.reports.balance.partner,init,group_by:0
+#: selection:financial.reports.balance.partner,init,result_selection:0
+#: wizard_field:financial.reports.other,init,account_id:0
+#: selection:financial.reports.other,init,result_selection:0
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: bias_account_report_v6
+#: wizard_button:account.custom.report,account,checkreport:0
+#: wizard_button:account.custom.report,init,checkreport:0
+#: wizard_button:financial.reports.aged.all,init,print:0
+#: wizard_button:financial.reports.aged.client.mn,init,print:0
+#: wizard_button:financial.reports.aged.client.usd,init,print:0
+#: wizard_button:financial.reports.aged.creditor,init,print:0
+#: wizard_button:financial.reports.aged.supplier,init,print:0
+#: wizard_button:financial.reports.balance,init,print:0
+#: wizard_button:financial.reports.balance.partner,init,print:0
+#: wizard_button:financial.reports.other,init,print:0
+#: wizard_button:fiscal.statements.balance,init,checkreport:0
+#: wizard_button:fiscal.statements.income,init,checkreport:0
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_other:0
+msgid "Póliza"
+msgstr "Póliza"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,new:0
+msgid "Select Parameters"
+msgstr "Selección de Parámetros"
+
+#. module: bias_account_report_v6
+#: wizard_button:account.custom.report,report_csv,end:0
+#: wizard_button:financial.reports.aged.all,csv,end:0
+#: wizard_button:financial.reports.aged.client.mn,csv,end:0
+#: wizard_button:financial.reports.aged.client.usd,csv,end:0
+#: wizard_button:financial.reports.aged.creditor,csv,end:0
+#: wizard_button:financial.reports.aged.supplier,csv,end:0
+#: wizard_button:financial.reports.balance,csv,end:0
+#: wizard_button:financial.reports.balance.partner,csv,end:0
+#: wizard_button:financial.reports.other,csv,end:0
+#: wizard_button:fiscal.statements.balance,report_csv,end:0
+#: wizard_button:fiscal.statements.income,report_csv,end:0
+msgid "Ok"
+msgstr "Ok"
+
+#. module: bias_account_report_v6
+#: field:financial.reports,customer_account_id:0
+msgid "Customer Account"
+msgstr "Cuenta de Clientes"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_balance:0
+msgid "Date Range:"
+msgstr "Date Range:"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_aged:0
+msgid "Días Vencidos"
+msgstr "Días Vencidos"
+
+#. module: bias_account_report_v6
+#: model:ir.actions.report.xml,name:bias_account_report_v6.financial_reports_other
+msgid "Account Ledger"
+msgstr "Auxiliar de Cuenta"
+
+#. module: bias_account_report_v6
+#: model:ir.actions.wizard,name:bias_account_report_v6.wizard_fianancial_report_aged_creditor
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_financial_report_aged_creditor
+msgid "Aged Creditor"
+msgstr "Antigüedad de Saldos de Acredores"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,new,user_ids:0
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: bias_account_report_v6
+#: wizard_field:financial.reports.other,init,journal_ids:0
+#: wizard_field:fiscal.statements.balance,init,journal_ids:0
+#: wizard_field:fiscal.statements.income,init,journal_ids:0
+msgid "Journal"
+msgstr "Diario"
+
+#. module: bias_account_report_v6
+#: field:financial.reports,statement_balance_id:0
+#: model:ir.actions.wizard,name:bias_account_report_v6.wizard_fianancial_report_general_balance
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_financial_report_general_balance
+msgid "General Balance"
+msgstr "Balance General"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_balance:0
+#: report:financial.reports_other:0
+msgid "-"
+msgstr "-"
+
+#. module: bias_account_report_v6
+#: model:ir.actions.wizard,name:bias_account_report_v6.wizard_fianancial_report_other
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_financial_report_other
+msgid "Auxiliar"
+msgstr "Auxiliar de Cuenta"
+
+#. module: bias_account_report_v6
+#: wizard_field:financial.reports.aged.all,init,date2:0
+#: wizard_field:financial.reports.aged.client.mn,init,date2:0
+#: wizard_field:financial.reports.aged.client.usd,init,date2:0
+#: wizard_field:financial.reports.aged.creditor,init,date2:0
+#: wizard_field:financial.reports.aged.supplier,init,date2:0
+msgid "To date"
+msgstr "Al Día"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_aged:0
+#: report:financial.reports_other:0
+msgid "Por:"
+msgstr "Por:"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_other:0
+msgid "Ref."
+msgstr "Ref."
+
+#. module: bias_account_report_v6
+#: view:financial.reports:0
+#: model:ir.actions.act_window,name:bias_account_report_v6.action_financial_reports_form
+#: model:ir.model,name:bias_account_report_v6.model_financial_reports
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_action_financial_reports_form
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_report_root
+msgid "Financial Reports"
+msgstr "Reportes Financieros"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,new,reconcil:0
+msgid "In Range Unreconciled"
+msgstr "No Conciliados en el Rango"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,partner_type:0
+#: selection:financial.reports.aged.all,init,customer_supplier:0
+#: selection:financial.reports.aged.all,init,partner_type:0
+#: selection:financial.reports.aged.client.mn,init,partner_type:0
+#: selection:financial.reports.aged.client.usd,init,partner_type:0
+#: selection:financial.reports.aged.creditor,init,partner_type:0
+#: selection:financial.reports.aged.supplier,init,partner_type:0
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,new,period_length:0
+#: field:account.custom.report,period_length:0
+#: wizard_field:financial.reports.aged.all,init,period_length:0
+#: wizard_field:financial.reports.aged.client.mn,init,period_length:0
+#: wizard_field:financial.reports.aged.client.usd,init,period_length:0
+#: wizard_field:financial.reports.aged.creditor,init,period_length:0
+#: wizard_field:financial.reports.aged.supplier,init,period_length:0
+msgid "Period length (days)"
+msgstr "Período (días)"
+
+#. module: bias_account_report_v6
+#: wizard_field:account.custom.report,init,report_id:0
+#: wizard_field:account.custom.report,new,name:0
+msgid "Report Name"
+msgstr "Nombre del Reporte"
+
+#. module: bias_account_report_v6
+#: field:account.custom.report,name:0
+#: wizard_field:financial.reports.aged.all,init,name:0
+#: wizard_field:financial.reports.aged.client.mn,init,name:0
+#: wizard_field:financial.reports.aged.client.usd,init,name:0
+#: wizard_field:financial.reports.aged.creditor,init,name:0
+#: wizard_field:financial.reports.aged.supplier,init,name:0
+#: wizard_field:financial.reports.balance,init,name:0
+#: wizard_field:financial.reports.balance.partner,init,name:0
+#: wizard_field:financial.reports.other,init,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_aged:0
+msgid "Por Vencer"
+msgstr "Por Vencer"
+
+#. module: bias_account_report_v6
+#: field:account.custom.report,direction_selection:0
+#: wizard_field:account.custom.report,new,direction_selection:0
+msgid "Analysis Direction"
+msgstr "Dirección de Análisis"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_aged:0
+msgid "Saldo."
+msgstr "Saldo."
+
+#. module: bias_account_report_v6
+#: field:financial.reports,usd_supplier_account_id:0
+msgid "Supplier Account USD"
+msgstr "Cuenta de Proveedores USD"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,new,direction_selection:0
+msgid "Future"
+msgstr "Pronóstico"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,new,reconcil:0
+msgid "Up Today Unreconciled"
+msgstr "No Conciliados Hasta la Fecha"
+
+#. module: bias_account_report_v6
+#: help:fiscal.statements.balance,init,fiscalyear:0
+#: help:fiscal.statements.income,init,fiscalyear:0
+msgid "Keep empty for all open fiscal year"
+msgstr "Dejar en blanco para todos los años fiscales"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,new,payment:0
+msgid "Only Payment Order Entries"
+msgstr "Solo asientos de ordenes de pago"
+
+#. module: bias_account_report_v6
+#: selection:account.custom.report,init,report_zero:0
+#: selection:financial.reports.aged.all,init,report_zero:0
+#: selection:financial.reports.aged.client.mn,init,report_zero:0
+#: selection:financial.reports.aged.client.usd,init,report_zero:0
+#: selection:financial.reports.aged.creditor,init,report_zero:0
+#: selection:financial.reports.aged.supplier,init,report_zero:0
+#: selection:financial.reports.other,init,report_zero:0
+msgid "Yes"
+msgstr "Si"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_other:0
+msgid "Empresa"
+msgstr "Empresa"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,account:0
+msgid "Select Action"
+msgstr "Selección de Acción"
+
+#. module: bias_account_report_v6
+#: field:account.custom.report,journal_type:0
+#: wizard_field:account.custom.report,new,journal_type:0
+msgid "Select Journal Type"
+msgstr "Seleccion de Tipo de Diario"
+
+#. module: bias_account_report_v6
+#: code:addons/bias_account_report_v6/wizard/wizard_account_custom_report.py:553
+#, python-format
+msgid "No records found for your selection!"
+msgstr "No se encontraron registros con esta selección!"
+
+#. module: bias_account_report_v6
+#: model:ir.actions.report.xml,name:bias_account_report_v6.account_custom_report_balance
+#: model:ir.actions.report.xml,name:bias_account_report_v6.account_custom_report_other
+msgid "Partner Other Ledger"
+msgstr "Asociar Otro Libro Mayor"
+
+#. module: bias_account_report_v6
+#: report:financial.reports_balance:0
+msgid "Printing Date:"
+msgstr "Fecha de Impresión:"
+
+#. module: bias_account_report_v6
+#: wizard_field:fiscal.statements.balance,init,fiscal_statements_id:0
+#: wizard_field:fiscal.statements.income,init,fiscal_statements_id:0
+msgid "Fiscal Statement"
+msgstr "Estados Financieros"
+
+#. module: bias_account_report_v6
+#: wizard_view:account.custom.report,report_csv:0
+#: wizard_field:account.custom.report,report_csv,file:0
+#: wizard_view:financial.reports.aged.all,csv:0
+#: wizard_field:financial.reports.aged.all,csv,file:0
+#: wizard_view:financial.reports.aged.client.mn,csv:0
+#: wizard_field:financial.reports.aged.client.mn,csv,file:0
+#: wizard_view:financial.reports.aged.client.usd,csv:0
+#: wizard_field:financial.reports.aged.client.usd,csv,file:0
+#: wizard_view:financial.reports.aged.creditor,csv:0
+#: wizard_field:financial.reports.aged.creditor,csv,file:0
+#: wizard_view:financial.reports.aged.supplier,csv:0
+#: wizard_field:financial.reports.aged.supplier,csv,file:0
+#: wizard_view:financial.reports.balance,csv:0
+#: wizard_field:financial.reports.balance,csv,file:0
+#: wizard_view:financial.reports.balance.partner,csv:0
+#: wizard_field:financial.reports.balance.partner,csv,file:0
+#: wizard_view:financial.reports.other,csv:0
+#: wizard_field:financial.reports.other,csv,file:0
+#: wizard_view:fiscal.statements.balance,report_csv:0
+#: wizard_field:fiscal.statements.balance,report_csv,file:0
+#: wizard_view:fiscal.statements.income,report_csv:0
+#: wizard_field:fiscal.statements.income,report_csv,file:0
+msgid "File"
+msgstr "Archivo"
+
+#. module: bias_account_report_v6
+#: model:ir.actions.wizard,name:bias_account_report_v6.wizard_fianancial_report_balance_partner
+#: model:ir.ui.menu,name:bias_account_report_v6.menu_financial_report_balance_partner
+msgid "Balance by Partner"
+msgstr "Estado de Cuenta"
+
+#. module: bias_account_report_v6
+#: code:addons/bias_account_report_v6/wizard/wizard_account_custom_report.py:412
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_all.py:122
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_client.py:100
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_client_mn.py:100
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_client_usd.py:100
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_creditor.py:100
+#: code:addons/bias_account_report_v6/wizard/wizard_financial_reports_aged_supplier.py:100
+#, python-format
+msgid "You must enter a period length that cannot be 0 or below !"
+msgstr "Debes seleccionar un periodo mayor a 0 !"
+

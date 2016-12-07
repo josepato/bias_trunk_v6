@@ -1,0 +1,10 @@
+### Agregar al archivo /etc/bash.bashrc
+
+
+JARDIR="/home/josepato/erp/addons_all/bias_trunk/bias_electronic_invoice"
+CLASSDIR="/home/josepato/erp/addons_all/bias_trunk/bias_electronic_invoice"
+
+export CLASSPATH="."
+for item in $(ls ${JARDIR}/*.jar ${CLASSDIR}/*.class); do
+    export CLASSPATH=${CLASSPATH}:$item
+done

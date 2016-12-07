@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+
+
+	# ------------------------------------------------------
+	# Add Field to Tax Code
+	# ------------------------------------------------------
+	# ------------------------------------------------------
+	# Tax Code
+	# ------------------------------------------------------
+	<record model="ir.ui.view" id="view_tax_code_form_inherit">
+		<field name="name">view.tax.code.form.inherit</field>
+		<field name="model">account.tax.code</field>
+		<field name="inherit_id" ref="account.view_tax_code_form"/>
+		<field name="arch" type="xml">
+      			<field name="company_id" position="after">
+	                        <field name="tax_type" />
+         		</field>
+         	</field>
+	</record>
+
+	# ------------------------------------------------------
+	# Account Journal
+	# ------------------------------------------------------
+	<record model="ir.ui.view" id="view_account_journal_form_inherit">
+		<field name="name">account.journal.form.inherit</field>
+		<field name="model">account.journal</field>
+		<field name="inherit_id" ref="account.view_account_journal_form"/>
+		<field name="arch" type="xml">
+      			<field name="name" position="after">
+	                        <field name="e_invoice" />
+         		</field>
+         	</field>
+
+	</record>
+
+	</data>
+</openerp>

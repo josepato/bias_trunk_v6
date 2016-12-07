@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+        <!-- Stock Move Cost -->
+
+        <record model="ir.ui.view" id="search_stock_move_cost">
+            <field name="name">Move Cost Search</field>
+            <field name="model">stock.move.cost</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Stock Move Cost">
+                    <group col="10" colspan="4">
+		    <filter icon="terp-go-month" string="Month"
+                            domain="[('date','&lt;=', time.strftime('%%Y-%%m-%%d')),('date','&gt;=',time.strftime('%%Y-%%m-01'))]"/>
+		    <separator orientation="vertical"/>
+                    <field name="date"/>
+                    <field name="product_id"/>
+		    <field name="name"/>
+                    <field name="move_id"/>
+                    </group>
+                    <newline/>
+                   <group  expand='0' string='Group by...' groups="base.group_extended">
+                       <filter string='Product' icon="terp-accessories-archiver" domain="[]" context="{'group_by':'product_id'}"/>
+                       <separator orientation="vertical"/>
+                       <filter string="Month" help="Creation Month" icon="terp-go-month" domain="[]" context="{'group_by':'date'}"/>
+                   </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="stock_move_cost_tree_view" model="ir.ui.view">
+            <field name="name">stock.move.cost.tree</field>
+            <field name="model">stock.move.cost</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Partner Related Cost">
+                    <field name="date"/>
+                    <field name="product_id"/>
+		    <field name="name" invisible="1"/>
+                    <field name="move_id" invisible="1"/>
+                    <field name="extra_cost"/>
+                    <field name="related_cost"/>
+                    <field name="purchase_standard_price"/>
+                    <field name="standard_price"/>
+                    <field name="last_cost"/>
+                    <field name="product_stock_qty"/>
+                    <field name="product_purchase_qty"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="stock_move_cost_form_view" model="ir.ui.view">
+            <field name="name">stock.move.cost.form</field>
+            <field name="model">stock.move.cost</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Stock Move Costs">
+                    <field name="date"/>
+                    <field name="product_id"/>
+		    <field name="name"/>
+                    <field name="move_id"/>
+                    <field name="extra_cost"/>
+                    <field name="related_cost"/>
+                    <field name="purchase_standard_price"/>
+                    <field name="standard_price"/>
+                    <field name="last_cost"/>
+                    <field name="product_stock_qty"/>
+                    <field name="product_purchase_qty"/>
+                </form>
+            </field>
+        </record>
+        <record id="stock_move_cost_form_action" model="ir.actions.act_window">
+            <field name="name">Stock Move Costs</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">stock.move.cost</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="stock_move_cost_tree_view"/>
+        </record>
+        <menuitem action="stock_move_cost_form_action" id="menu_stock_move_cost_form_action" parent="stock.menu_traceability"/>
+
+    </data>
+</openerp>

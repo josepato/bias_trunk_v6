@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+        <!--
+    =====================
+    Partner CURP field and ID Fiscal
+    =====================
+    -->
+        <record id="view_partner_form_curp" model="ir.ui.view">
+            <field name="name">res.partner.vat.curp</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="account.view_partner_property_form"/>
+            <field name="arch" type="xml">
+                <field name="property_account_payable" position="after">
+                    <field name="curp" select="2"/>
+                    <field name="id_fiscal" />
+                    <field name="third_party_type" />
+                    <field name="third_party_operation" />
+                </field>
+            </field>
+        </record>
+
+        <record id="view_partner_form" model="ir.ui.view">
+            <field name="name">res.partner.vat.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="account.view_partner_property_form"/>
+            <field name="arch" type="xml">
+                <field name="property_account_position" position="after">
+                    <field name="vat" select="2"/>
+                </field>
+            </field>
+        </record>
+
+        <!--
+    ================================
+    third_party_type
+    ================================
+    -->
+        <record id="view_third_party_type_form" model="ir.ui.view">
+            <field name="name">third.party.type.form</field>
+            <field name="model">third.party.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Third Party Type">
+                    <field name="name" select="1"/>
+                    <field name="code" select="1"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_third_party_type_tree" model="ir.ui.view">
+            <field name="name">third.party.type.tree</field>
+            <field name="model">third.party.type</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Third Party Type">
+                    <field name="code"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_third_party_type_form" model="ir.actions.act_window">
+            <field name="name">Third Party Type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">third.party.type</field>
+            <field name="view_type">form</field>
+        </record>
+<!--        <menuitem action="action_third_party_type_form" id="menu_third_party_type_form" parent="base.menu_base_config"/>-->
+
+        <!--
+    ================================
+    third_party_operation
+    ================================
+    -->
+        <record id="view_third_party_operation_form" model="ir.ui.view">
+            <field name="name">third.party.operation.form</field>
+            <field name="model">third.party.operation</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Third Party Operation">
+                    <field name="name" select="1"/>
+                    <field name="code" select="1"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_third_party_operation_tree" model="ir.ui.view">
+            <field name="name">third.party.operation.tree</field>
+            <field name="model">third.party.operation</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Third Party Operation">
+                    <field name="code"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_third_party_operation_form" model="ir.actions.act_window">
+            <field name="name">Third Party Operation</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">third.party.operation</field>
+            <field name="view_type">form</field>
+        </record>
+<!--        <menuitem action="action_third_party_operation_form" id="menu_third_party_operation_form" parent="base.menu_base_config"/>-->
+
+    </data>
+</openerp>

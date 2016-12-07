@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <wizard id="wizard_populate_pay" menu="False" model="payment.order" name="populate_pay" string="Populate payment"/>
+        <wizard id="wizard_import_invoice" menu="False" model="payment.cheque" name="import_invoice" string="Import Supplier Invoice"/>
+        <wizard id="wizard_create_cheque" menu="False" model="payment.order" name="payment.create.cheque" string="Create Cheques"/>
+        <wizard id="wizard_create_export" menu="True" model="payment.order" name="payment.create.export" string="Create Export"/>
+        <wizard id="wizard_payment_tool" model="payment.order" name="account.payment.tool" string="payment Tool"/>
+        <wizard id="wizard_print_entries" model="payment.order" name="payment.print.entries" string="Print Entries"/>
+        <wizard id="wizard_search_global_treasury" menu="False" model="account.global.treasury" name="search.global.treasury" string="Search Global Treasury"/>
+        <wizard id="wizard_change" menu="False" model="account.global.line" name="wizard.change" string="Change"/>
+
+		<!--  Invoices Report -->
+<!--		<wizard 
+			string="Invoice Report"
+			model="account.invoice"
+			name="account.invoice.report"
+			menu="False"
+			id="wizard_invoice_report"/>
+		<menuitem
+			parent="account.menu_finance_reporting"
+			action="wizard_invoice_report"
+			type="wizard"
+			id="menu_invoice_report"/>
+-->
+
+<!--        <wizard id="wizard_print_cheque" menu="True" model="payment.order" name="payment.print.cheque" string="Print Cheques"/>-->
+<!--        <wizard string="Import invoices" model="account.bank.statement" name="populate_statement_from_invoice" menu="False" id="wizard_populate_statement_from_invoice"/> -->
+
+
+
+    </data>
+</openerp>

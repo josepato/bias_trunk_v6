@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_import_file","import.file","model_import_files","account.group_erp_manager",1,1,1,1
+"access_import_fiels_colums","import.file.columns","model_import_file_columns","account.group_erp_manager",1,1,1,1
+"access_file_description","file.description","model_file_description","account.group_erp_manager",1,1,1,1

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        =============================
+        Stock Picking
+        =============================
+
+        <record id="view_picking_form_inherit_2" model="ir.ui.view">
+            <field name="name">stock.picking.form</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+		<field name="date_planned" position="after">
+			<field name="cost_center_id" required="1"/>
+		</field>
+            </field>
+        </record>
+
+
+        <record id="view_move_line_tree_cc" model="ir.ui.view">
+            <field name="name">account.move.line.tree_cc</field>
+            <field name="model">account.move.line</field>
+            <field name="inherit_id" ref="account.view_move_line_tree"/>
+            <field name="arch" type="xml">
+		<field name="account_id" position="after">
+			<field name="cost_center_id" required="1"/>
+		</field>
+            </field>
+        </record>
+
+        <record id="view_move_line_tax_tree_cc" model="ir.ui.view">
+            <field name="name">account.move.line.tree_cc</field>
+            <field name="model">account.move.line</field>
+            <field name="inherit_id" ref="account.view_move_line_tax_tree"/>
+            <field name="arch" type="xml">
+		<field name="account_id" position="after">
+			<field name="cost_center_id" required="1" select="2"/>
+		</field>
+            </field>
+        </record>
+
+        
+    </data>
+</openerp>

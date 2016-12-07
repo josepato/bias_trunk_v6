@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data noupdate="0">
+
+    <record id="group_query_manager" model="res.groups">
+        <field name="name">Query / Manager</field>
+    </record>
+    <record id="group_query_user" model="res.groups">
+        <field name="name">Query / User</field>
+    </record>
+    <record model='ir.ui.menu' id='menu_query_tool'>
+	<field name="groups_id" eval="[(6,0,[ref('group_query_manager')])]"/>
+    </record>
+
+</data>
+</openerp>

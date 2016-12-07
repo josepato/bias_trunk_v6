@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+       <record id="import_file_form" model="ir.ui.view">
+            <field name="name">import.file.form</field>
+            <field name="model">import.file</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Import File">
+                    <group  col="12" colspan="4">
+                       <field name="name" select="1" />
+                       <field name="active" select="1" />
+                       <field name="record_per_line"  />
+                       <field name="update"  />
+                    </group>
+                    <field name="model" select="1" />
+                    <field name="user_id" select="1" />
+                    <field name="path"/>
+                    <button name="button_get_columns" string="Get File Columns" type="object"/>
+                    <button name="button_importe_data" string="Import Data" type="object"/>
+                    <field colspan="4" name="field_ids" nolabel="1" widget="one2many_list" />
+                    <field name="state" select="1" />
+                    <button name="button_get_file_data" string="Get File Data" type="object"/>
+                </form>
+            </field>
+        </record>
+
+       <record id="import_file_tree" model="ir.ui.view">
+            <field name="name">import.file.tree</field>
+            <field name="model">import.file</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Import File">
+                    <field name="name"  />
+                    <field name="model"/>
+                    <field name="active" />
+                    <field name="user_id" />
+                    <field name="state" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_import_file_form" model="ir.actions.act_window">
+            <field name="name">File Import</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">import.file</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="import_file_tree"/>
+        </record>
+        
+        <menuitem  id="menu_import_file_root" name="Import Files" parent="base.menu_administration"/>
+
+        <menuitem action="action_import_file_form" id="menu_import_file" parent="menu_import_file_root" sequence="2"/>
+
+ ----------------
+Columns
+------------------
+
+
+       <record id="import_file_columns_form" model="ir.ui.view">
+            <field name="name">import.file.columns.form</field>
+            <field name="model">import.file.columns</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Import Columns">
+                    <group  col="12" colspan="4">
+                         <field name="name" select="1" />
+                         <field name="active" select="1" />
+                         <field name="required"  />
+                         <field name="update"  />
+                         <field name="update_value"  />
+
+                    </group>
+                    <field name="file_id" select="1" />
+                    <field name="model"  />
+                    <field name="field_id"  domain="[('model_id','=',model)]"  />
+                    <field name="value" select="1" />
+                    <field name="alter_value" />
+                    <field name="altre_value_type" />
+                    <button name="button_confiugre_column" string="Configure Column" type="object"/>
+                         <field colspan="4" name="field_ids" nolabel="1" widget="one2many_list"/>
+                </form>
+            </field>
+        </record>
+
+       <record id="import_file_columns_tree" model="ir.ui.view">
+            <field name="name">import.file.columns.tree</field>
+            <field name="model">import.file.columns</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree editable="top" string="Import File">
+                    <field name="name" select="1" />
+                    <field name="file_id"  />
+                    <field name="model"  />
+                    <field name="field_id" domain="[('model_id','=',model)]" />
+                    <field name="value" select="1" />
+                    <field name="alter_value" />
+                    <field name="altre_value_type" />
+                    <field name="myself_id" select="1" />
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_import_file_columns_form" model="ir.actions.act_window">
+            <field name="name">File Columns</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">import.file.columns</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="import_file_columns_tree"/>
+        </record>
+        
+        <menuitem action="action_import_file_columns_form" id="menu_import_columns_file" parent="menu_import_file_root" sequence="2"/>
+
+
+
+ ----------------
+File Data
+------------------
+
+
+       <record id="file_description_form" model="ir.ui.view">
+            <field name="name">file.description.form</field>
+            <field name="model">file.description</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="File Description">
+                    <field name="row_number" select="1" />
+                    <field name="name" select="1" />
+                    <field name="column_name" select="1" />
+                    <field name="file_id" select="1" />
+                </form>
+            </field>
+        </record>
+
+       <record id="file_description_tree" model="ir.ui.view">
+            <field name="name">file.description.tree</field>
+            <field name="model">file.description</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree editable="top" string="File Description">
+                    <field name="row_number"  />
+                    <field name="name"  />
+                    <field name="column_name" />
+                    <field name="file_id"  />
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_file_description_form" model="ir.actions.act_window">
+            <field name="name">File Description</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">file.description</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="file_description_tree" />
+        </record>
+        
+        <menuitem action="action_file_description_form" id="menu_file_description" parent="menu_import_file" sequence="2"/>
+
+
+
+
+
+    </data>
+</openerp>
+

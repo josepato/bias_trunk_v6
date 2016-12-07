@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+        <wizard id="wizard_export_configuration" model="import.file" name="import.file" string="Export Configuration" />
+        <wizard id="wizard_get_configuration" model="import.file" name="get.configuration" string="Get Configuration" />
+
+ 
+    </data>
+</openerp>

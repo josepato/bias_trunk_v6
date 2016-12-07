@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record forcecreate="1" id="seq_type_cheque_a" model="ir.sequence.type">
+            <field name="name">Cheque A</field>
+            <field name="code">cheque.a</field>
+        </record>
+        
+        <record forcecreate="1" id="seq_cheque_a" model="ir.sequence">
+            <field name="name">Cheque A</field>
+            <field name="code">cheque.a</field>
+            <field name="padding">7</field>
+            <field name="prefix"/>
+        </record>
+        
+        <record forcecreate="1" id="seq_type_cheque_b" model="ir.sequence.type">
+            <field name="name">Cheque B</field>
+            <field name="code">cheque.b</field>
+        </record>
+        
+        <record forcecreate="1" id="seq_cheque_b" model="ir.sequence">
+            <field name="name">Cheque B</field>
+            <field name="code">cheque.b</field>
+            <field name="padding">7</field>
+            <field name="prefix"/>
+        </record>
+        <record forcecreate="1" id="seq_type_cheque_c" model="ir.sequence.type">
+            <field name="name">Cheque C</field>
+            <field name="code">cheque.c</field>
+        </record>
+        
+        <record forcecreate="1" id="seq_cheque_c" model="ir.sequence">
+            <field name="name">Cheque C</field>
+            <field name="code">cheque.c</field>
+            <field name="padding">7</field>
+            <field name="prefix"/>
+        </record>
+        <record forcecreate="1" id="seq_type_cheque_d" model="ir.sequence.type">
+            <field name="name">Cheque D</field>
+            <field name="code">cheque.d</field>
+        </record>
+        
+        <record forcecreate="1" id="seq_cheque_d" model="ir.sequence">
+            <field name="name">Cheque D</field>
+            <field name="code">cheque.d</field>
+            <field name="padding">7</field>
+            <field name="prefix"/>
+        </record>
+        <record forcecreate="1" id="seq_type_cheque_e" model="ir.sequence.type">
+            <field name="name">Cheque E</field>
+            <field name="code">cheque.e</field>
+        </record>
+        
+        <record forcecreate="1" id="seq_cheque_e" model="ir.sequence">
+            <field name="name">Cheque E</field>
+            <field name="code">cheque.e</field>
+            <field name="padding">7</field>
+            <field name="prefix"/>
+        </record>
+        <record forcecreate="1" id="seq_type_cheque_f" model="ir.sequence.type">
+            <field name="name">Cheque F</field>
+            <field name="code">cheque.f</field>
+        </record>
+        
+        <record forcecreate="1" id="seq_cheque_f" model="ir.sequence">
+            <field name="name">Cheque F</field>
+            <field name="code">cheque.f</field>
+            <field name="padding">7</field>
+            <field name="prefix"/>
+        </record>
+        <record forcecreate="1" id="seq_type_cheque_g" model="ir.sequence.type">
+            <field name="name">Cheque G</field>
+            <field name="code">cheque.g</field>
+        </record>
+        
+        <record forcecreate="1" id="seq_cheque_g" model="ir.sequence">
+            <field name="name">Cheque G</field>
+            <field name="code">cheque.g</field>
+            <field name="padding">7</field>
+            <field name="prefix"/>
+        </record>
+        <record forcecreate="1" id="seq_type_cheque_h" model="ir.sequence.type">
+            <field name="name">Cheque H</field>
+            <field name="code">cheque.h</field>
+        </record>
+        
+        <record forcecreate="1" id="seq_cheque_h" model="ir.sequence">
+            <field name="name">Cheque H</field>
+            <field name="code">cheque.h</field>
+            <field name="padding">7</field>
+            <field name="prefix"/>
+        </record>
+        <record forcecreate="1" id="seq_type_cheque_i" model="ir.sequence.type">
+            <field name="name">Cheque I</field>
+            <field name="code">cheque.i</field>
+        </record>
+        
+        <record forcecreate="1" id="seq_cheque_i" model="ir.sequence">
+            <field name="name">Cheque I</field>
+            <field name="code">cheque.i</field>
+            <field name="padding">7</field>
+            <field name="prefix"/>
+        </record>
+        <record forcecreate="1" id="seq_type_cheque_j" model="ir.sequence.type">
+            <field name="name">Cheque J</field>
+            <field name="code">cheque.j</field>
+        </record>
+        
+        <record forcecreate="1" id="seq_cheque_j" model="ir.sequence">
+            <field name="name">Cheque J</field>
+            <field name="code">cheque.j</field>
+            <field name="padding">7</field>
+            <field name="prefix"/>
+        </record>
+        
+        
+    </data>
+</openerp>

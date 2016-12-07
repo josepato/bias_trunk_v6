@@ -1,0 +1,11 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_payment_cheque","payment.cheque","model_payment_cheque","bias_payment_v6.group_cheque_manager",1,1,1,1
+"access_payment_cheque_user","payment.cheque","model_payment_cheque","bias_payment_v6.group_cheque_user",1,1,1,0
+"access_payment_cheque_line","payment.cheque.line","model_payment_cheque_line","bias_payment_v6.group_cheque_manager",1,1,1,1
+"access_payment_cheque_line_user","payment.cheque.line","model_payment_cheque_line","bias_payment_v6.group_cheque_user",1,1,1,0
+"access_payment_export_line","payment.export.line","model_payment_export_line","bias_payment_v6.group_cheque_manager",1,1,1,1
+"access_payment_export_file","payment.export.file","model_payment_export_file","bias_payment_v6.group_cheque_manager",1,1,1,1
+"access_report_cheque","report.cheque","model_report_cheque","bias_payment_v6.group_cheque_manager",1,1,1,1
+"access_report_cheque_user","report.cheque","model_report_cheque","bias_payment_v6.group_cheque_user",1,0,0,0
+"access_report_cheque_line","report.cheque.line","model_report_cheque_line","bias_payment_v6.group_cheque_manager",1,1,1,1
+"access_report_cheque_line_user","report.cheque.line","model_report_cheque_line","bias_payment_v6.group_cheque_user",1,0,0,0

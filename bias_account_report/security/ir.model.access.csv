@@ -1,0 +1,5 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_account_custom_report","account.custom.report","model_account_custom_report","base.group_system",1,1,1,1
+"access_wizard_account_custom_report","wizard.account.custom.report","model_wizard_account_custom_report","base.group_system",1,1,1,1
+"access_financial_reports","financial.reports","model_financial_reports","account.group_account_manager",1,1,1,1
+"access_financial_reports_user","financial.reports","model_financial_reports","account.group_account_user",1,0,0,0

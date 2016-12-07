@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <menuitem icon="terp-sale" id="menu_report_root" name="Financial Reports" groups="account.group_account_user"/>
+
+        <wizard id="wizard_fianancial_report_other" menu="False" model="res.partner" name="financial.reports.other" string="Auxiliar"/>
+        <menuitem icon="STOCK_PRINT" action="wizard_fianancial_report_other" id="menu_financial_report_other" parent="menu_report_root" type="wizard"  sequence="2"/>
+
+        <wizard id="wizard_fianancial_report_balance" menu="False" model="res.partner" name="financial.reports.balance" string="Account Balance"/>
+        <menuitem icon="STOCK_PRINT" action="wizard_fianancial_report_balance" id="menu_financial_report_balance" parent="menu_report_root" type="wizard" sequence="4"/>
+
+        <wizard id="wizard_fianancial_report_balance_partner" menu="False" model="res.partner" name="financial.reports.balance.partner" string="Balance by Partner"/>
+        <menuitem icon="STOCK_PRINT" action="wizard_fianancial_report_balance_partner" id="menu_financial_report_balance_partner" parent="menu_report_root" type="wizard" sequence="6"/>
+
+        <wizard id="wizard_fianancial_report_aged_all" menu="False" model="res.partner" name="financial.reports.aged.all" string="Aged All"/>
+        <menuitem icon="STOCK_PRINT" action="wizard_fianancial_report_aged_all" id="menu_financial_report_aged_all" parent="menu_report_root" type="wizard" sequence="8"/>
+
+        <wizard id="wizard_fianancial_report_aged_client_mn" menu="False" model="res.partner" name="financial.reports.aged.client.mn" string="Aged client MN"/>
+        <menuitem icon="STOCK_PRINT" action="wizard_fianancial_report_aged_client_mn" id="menu_financial_report_aged_client_mn" parent="menu_report_root" type="wizard" sequence="10"/>
+
+        <wizard id="wizard_fianancial_report_aged_client_usd" menu="False" model="res.partner" name="financial.reports.aged.client.usd" string="Aged client USD"/>
+        <menuitem icon="STOCK_PRINT" action="wizard_fianancial_report_aged_client_usd" id="menu_financial_report_aged_client_usd" parent="menu_report_root" type="wizard" sequence="12"/>
+
+        <wizard id="wizard_fianancial_report_aged_supplier" menu="False" model="res.partner" name="financial.reports.aged.supplier" string="Aged Supplier"/>
+        <menuitem icon="STOCK_PRINT" action="wizard_fianancial_report_aged_supplier" id="menu_financial_report_aged_supplier" parent="menu_report_root" type="wizard" sequence="14"/>
+
+        <wizard id="wizard_fianancial_report_aged_creditor" menu="False" model="res.partner" name="financial.reports.aged.creditor" string="Aged Creditor"/>
+        <menuitem icon="STOCK_PRINT" action="wizard_fianancial_report_aged_creditor" id="menu_financial_report_aged_creditor" parent="menu_report_root" type="wizard" sequence="16"/>
+
+        <wizard id="wizard_fianancial_report_general_balance" menu="False" model="res.partner" name="fiscal.statements.balance" string="General Balance"/>
+        <menuitem icon="STOCK_PRINT" action="wizard_fianancial_report_general_balance" id="menu_financial_report_general_balance" parent="menu_report_root" type="wizard" sequence="18"/>
+
+        <wizard id="wizard_fianancial_report_general_income" menu="False" model="res.partner" name="fiscal.statements.income" string="Income Outcome Statement"/>
+        <menuitem icon="STOCK_PRINT" action="wizard_fianancial_report_general_income" id="menu_financial_report_general_income" parent="menu_report_root" type="wizard" sequence="20"/>
+
+    </data>
+</openerp>

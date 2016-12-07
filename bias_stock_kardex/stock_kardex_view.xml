@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        =============================
+        Location Kardex
+        =============================
+
+         <menuitem groups="base.group_extended" id="menu_stock_kardex" parent="stock.menu_traceability" sequence="7" name="Stock Kardex"/>
+
+        <record id="view_location_kardex_form" model="ir.ui.view">
+            <field name="name">location.kardex.form</field>
+            <field name="model">location.kardex</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Location Kardex">
+                    <group col="6" colspan="4">
+                    	<field name="name"/>
+		    	<newline/>
+		    	<field name="from_date"/>
+		    	<field name="to_date"/>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Location Stock Kardex">
+				<field colspan="4" name="product_ids" nolabel="1" widget="one2many_list" readonly="1">
+			                <tree color="grey:state=='cancel'" string="Moves">
+                    				<field name="name" select="1"/>
+                    				<field name="stock_from_date" select="1"/>
+                    				<field name="stock_move_in" select="1"/>
+                    				<field name="stock_move_out" select="1"/>
+                    				<field name="stock_to_date" select="1"/>
+                    				<field name="cost_from_date" select="1"/>
+                    				<field name="cost_move_in" select="1"/>
+                    				<field name="cost_move_out" select="1"/>
+                    				<field name="cost_to_date" select="1"/>
+                			</tree>
+				</field>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_location_kardex_tree" model="ir.ui.view">
+            <field name="name">location.kardex.tree</field>
+            <field name="model">location.kardex</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Location Stock Kardex">
+                    <field name="name" select="1"/>
+                </tree>
+            </field>
+        </record>
+
+	<record model="ir.actions.act_window" id="action_location_kardex_view">
+		<field name="name">Location Stock Kardex</field>
+		<field name="res_model">location.kardex</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+
+         <menuitem action="action_location_kardex_view" id="menu_location_kardex_form" parent="menu_stock_kardex"/>
+
+        =============================
+        Stock Kardex
+        =============================
+
+        <record id="view_stock_kardex_form" model="ir.ui.view">
+            <field name="name">stock.kardex.form</field>
+            <field name="model">stock.kardex</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Stock Kardex">
+                    <group col="6" colspan="4">
+                    <field name="name" colspan="4"/>
+		    <newline/>
+		    <field name="from_date" />
+                    <field name="kardex_from_date" readonly="1"/>
+                    <field name="cost_from_date" readonly="1"/>
+               <!--     <field name="code" readonly="1" colspan="4"/> -->
+		    <field name="to_date" />
+                    <field name="kardex_move_in" readonly="1"/>
+                    <field name="cost_move_in" readonly="1"/>
+                    <field name="kardex_location"/>
+                    <field name="kardex_move_out" readonly="1"/>
+                    <field name="cost_move_out" readonly="1"/>
+		    <button name="button_dummy" string="Compute" type="object" colspan="2"/>
+                    <field name="kardex_to_date" readonly="1"/>
+                    <field name="cost_to_date" readonly="1"/>
+                    </group>
+		    <newline/>
+
+
+                    <notebook colspan="4">
+                        <page string="Stock Moves Kardex">
+				<field colspan="4" name="stock_move_ids" nolabel="1" widget="one2many_list" readonly="1">
+			                <tree color="grey:state=='cancel'" string="Moves">
+                    				<field name="product_uom" select="1" string="UOM"/>
+                    				<field name="picking_id"/>
+            					<field name="location_id" select="1"/>
+                    				<field name="location_dest_id" select="1"/>
+                    				<field name="date_planned" select="1" string="Date"/>
+                    				<field name="move_id"/>
+						<field name="kardex_qty" sum="Total Kardex Qty"/>
+						<field name="kardex_move_cost" sum="Total Kardex Move Cost"/>
+                			</tree>
+				</field>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="view_stock_kardex_tree" model="ir.ui.view">
+            <field name="name">stock.kardex.tree</field>
+            <field name="model">stock.kardex</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Product Stock Kardex">
+                    <field name="name" select="1"/>
+                </tree>
+            </field>
+        </record>
+
+	<record model="ir.actions.act_window" id="action_stock_kardex_view">
+		<field name="name">Product Stock Kardex</field>
+		<field name="res_model">stock.kardex</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+
+         <menuitem action="action_stock_kardex_view" id="menu_stock_kardex_form" parent="menu_stock_kardex"/>
+
+        =============================
+        Move
+        =============================
+
+        <record id="view_move_form" model="ir.ui.view">
+            <field name="name">stock.move.form</field>
+            <field name="model">stock.move</field>
+            <field name="inherit_id" ref="stock.view_move_form"/>
+            <field name="arch" type="xml">
+		<field name="tracking_id" position="after">
+			<field name="move_id"/>
+		</field>
+            </field>
+        </record>
+
+        
+    </data>
+</openerp>

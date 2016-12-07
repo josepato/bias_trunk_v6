@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_print_install_module_form" model="ir.ui.view">
+            <field name="name">Bias Report Print Installer Configuration</field>
+            <field name="model">bias.print.installer</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.res_config_installer"/>
+            <field name="arch" type="xml">
+              <data>
+              <form position="attributes"  >
+                <attribute name="string">Bias Print Configuration</attribute>
+              </form>
+              <xpath expr='//separator[@string="vsep"]' position='attributes'>
+                    <attribute name='string'></attribute>
+                  </xpath>
+              <separator string="title" position="attributes">
+                <attribute name="string">Configure Print Reports Headers</attribute>
+              </separator>
+              <xpath expr="//label[@string='description']"
+                     position="attributes">
+                <attribute name="string">Configure Print Reports Application with Bias Reports.</attribute>
+              </xpath>
+              <xpath expr="//button[@string='Install Modules']" position="attributes">
+                   <attribute name="string">Configure</attribute>
+               </xpath>
+                <group colspan="8">
+                  <field name="rml_header" width="300" height="200" colspan="8"/>
+                  <field name="rml_header2" width="300" height="200" colspan="8"/>
+                  <field name="rml_header3" width="300" height="200" colspan="8"/>
+                </group>
+              </data>
+            </field>
+        </record>
+
+        <record id="action_print_install_module" model="ir.actions.act_window">
+            <field name="name">Bias Print Application Configuration</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">bias.print.installer</field>
+            <field name="view_id" ref="view_print_install_module_form"/>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+    <record id="print_installer_todo" model="ir.actions.todo">
+      <field name="action_id" ref="action_print_install_module"/>
+      <field name="sequence">2</field>
+      <field name="restart">always</field>
+      <field name="groups_id" eval="[(6,0,[ref('base.group_extended')])]"/>
+    </record>
+    </data>
+</openerp>

@@ -1,0 +1,12 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"product_brand","product.brand","model_product_brand","base.group_user",1,0,0,0
+"product_colection","product.colection","model_product_colection","base.group_user",1,0,0,0
+"product_color","product.color","model_product_color","base.group_user",1,0,0,0
+"product_hardware","product.hardware","model_product_hardware","base.group_user",1,0,0,0
+"product_line","product.line","model_product_line","base.group_user",1,0,0,0
+"product_material","product.material","model_product_material","base.group_user",1,0,0,0
+"product_observations","product.observations","model_product_observations","base.group_user",1,0,0,0
+"product_type","product.type","model_product_type","base.group_user",1,0,0,0
+"product_writing_kind","product.writing.kind","model_product_writing_kind","base.group_user",1,0,0,0
+"product_writing_material","product.writing.material","model_product_writing_material","base.group_user",1,0,0,0
+"product_writing_type","product.writing.type","model_product_writing_type","base.group_user",1,0,0,0

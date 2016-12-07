@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+<!-- 		<wizard -->
+<!-- 			string="Application file" -->
+<!-- 			model="aaia.applications.xml" -->
+<!-- 			name="aaia.product.apply.line.wizard" -->
+<!-- 			menu="False" -->
+<!-- 			id="wizard_application_file"/> -->
+		<menuitem
+			parent="base.menu_product"
+                        name="Applications file"
+			action="action_aaia_applications_xml_wizard"
+			id="menu_application_file"/>
+	</data>
+
+
+</openerp>

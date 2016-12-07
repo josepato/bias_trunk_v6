@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <report 
+	    auto="False"
+	    id="print_cheque_entry" 
+	    menu="True" 
+	    model="payment.cheque" 
+	    name="payment.cheque.entry" 
+	    rml="bias_payment/report/print_entry.rml" 
+	    header="False"
+	    string="Print Entry"/>
+
+        <report 
+	    auto="False"
+	    id="print_cheque" 
+	    menu="True" 
+	    model="payment.cheque" 
+	    name="payment.cheque.print" 
+ 	    keyword="client_print_multi"
+	    multi="False"
+	    string="Print Cheque"/>
+
+        <report 
+	    auto="False"
+	    id="print_treasury" 
+	    menu="True" 
+	    model="account.treasury" 
+	    name="treasury" 
+	    rml="bias_payment/report/treasury.rml" 
+	    header="True"
+	    string="Print Treasury"/>
+
+        <report 
+	    auto="False"
+	    id="print_global_treasury" 
+	    menu="True" 
+	    model="account.global.treasury" 
+	    name="global.treasury" 
+	    rml="bias_payment/report/treasury.rml" 
+	    header="True"
+	    string="Print Treasury"/>
+
+<!--        <report 
+	    auto="False"
+	    id="print_export" 
+	    menu="False" 
+	    model="payment.order" 
+	    name="print.export" 
+	    rml="bias_payment/report/print_export.rml" 
+	    header="False"
+	    string="Print Entry"/>
+
+        <report auto="False" header="False" id="payment_entry_33" menu="True" model="payment.order" name="payment.print.entries" rml="addons/bias_account/report/account_move.rml" string="Print All Entries"/>
+
+        <report auto="True" id="payment_order_bias" model="payment.order" name="payment.order.bias" rml="bias_payment/report/order.rml" string="Payment Order"/>
+-->
+    </data>
+</openerp>

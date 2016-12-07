@@ -1,0 +1,341 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_invoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-03-05 13:01:43+0000\n"
+"PO-Revision-Date: 2010-03-05 13:01:43+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_invoice
+#: wizard_view:account.invoice.pay.bias,init:0
+msgid "Invoice Information"
+msgstr "Información de Factura"
+
+#. module: bias_invoice
+#: help:account.journal,loss_fluc_acc:0
+msgid "Used as write off account when the currency fluctuation result in loss."
+msgstr "Usado como cuenta de ajuste cuando la fluctuación resulta en perdida"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Referencia"
+msgstr "Referencia"
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,addendum,writeoff_acc_id:0
+msgid "Write-Off account"
+msgstr "Cuenta de Ajuste"
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,init,amount:0
+msgid "Amount paid"
+msgstr "Cantidad Pagada"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Referencia:"
+msgstr "Referencia"
+
+#. module: bias_invoice
+#: field:account.journal,gain_fluc_acc:0
+msgid "Gain Fluctuation Acc."
+msgstr "Cuenta Ganancia Camb."
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,init,cost_center_id:0
+msgid "Cost Center"
+msgstr "Centro de Costos"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Cuenta"
+msgstr "Cuenta"
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,addendum,writeoff_journal_id:0
+msgid "Write-Off journal"
+msgstr "Diario de Ajuste"
+
+#. module: bias_invoice
+#: field:account.journal,loss_fluc_acc:0
+msgid "Loss Fluctuation Acc."
+msgstr "Cuenta Perdida Cam."
+
+#. module: bias_invoice
+#: rml:account.custom.refound.dvh:0
+#: rml:account.invoice.dvh:0
+msgid ")*"
+msgstr ""
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Periodo:"
+msgstr "Período"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Compania :"
+msgstr "ompañia"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Diario:"
+msgstr "Diario"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Nombre"
+msgstr "Nombre"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Estatus:"
+msgstr "Estatus"
+
+#. module: bias_invoice
+#: model:ir.module.module,description:bias_invoice.module_meta_information
+msgid " Invoice modification cover:\n"
+"* Add custom invoice \n"
+"* Modify invoice lines adding field deductions, this lines will be printed in spetial place in the invoice\n"
+"* Modify paiment method adding capabilities of: \n"
+"    - Show the invoice amount y both currency\n"
+"    - Pay invoice with diffenet rate            \n"
+"    - Fill reference automaticaly"
+msgstr ""
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Nombre:"
+msgstr "Nombre"
+
+#. module: bias_invoice
+#: field:account.journal,reconcile_tolerance:0
+msgid "Reconcile Tolerance"
+msgstr "Tolerancia en Conciliación"
+
+#. module: bias_invoice
+#: help:account.journal,reconcile_tolerance:0
+msgid "Difference tolerated in payment transaction. "
+msgstr "Tolerancia en Pagos"
+
+#. module: bias_invoice
+#: wizard_view:account.invoice.pay.bias,init:0
+#: model:ir.actions.wizard,name:bias_invoice.wizard_invoice_pay
+msgid "Pay invoice"
+msgstr "Pagar Factura"
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,init,org_inv_amount:0
+#: wizard_field:account.invoice.pay.bias,init,org_inv_amount_local:0
+msgid "Invoice Amount"
+msgstr "Monto Factura"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Debe"
+msgstr "Debe"
+
+#. module: bias_invoice
+#: rml:account.custom.refound.dvh:0
+#: rml:account.invoice.dvh:0
+msgid ","
+msgstr ","
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,init,date:0
+msgid "Payment date"
+msgstr "Fecha de pago"
+
+#. module: bias_invoice
+#: rml:account.custom.refound.dvh:0
+#: rml:account.invoice.dvh:0
+msgid "."
+msgstr "."
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Total Moneda"
+msgstr "Total Moneda"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Impreso por:"
+msgstr "Impreso Por"
+
+#. module: bias_invoice
+#: model:ir.actions.report.xml,name:bias_invoice.account_invoices_dvh
+msgid "Invoice DVH"
+msgstr "Factura DVH"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Fecha Impresión:"
+msgstr "Fecha Impresión:"
+
+#. module: bias_invoice
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Ref. Empresa"
+msgstr "Ref. Empresa"
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,init,journal_id:0
+msgid "Journal/Payment Mode"
+msgstr "Modo de Pago"
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,addendum,gain_loss:0
+msgid "Gain/Loss"
+msgstr "Utilidad/Perdida"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Haber"
+msgstr "Haber"
+
+#. module: bias_invoice
+#: field:account.invoice.line,deduction:0
+msgid "Deduction"
+msgstr "Deducciones"
+
+#. module: bias_invoice
+#: rml:account.custom.refound.dvh:0
+#: rml:account.invoice.dvh:0
+msgid "/100"
+msgstr "/100"
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,init,pay_inv_amount:0
+msgid "To Pay Amount"
+msgstr "Cantidad a Pagar"
+
+#. module: bias_invoice
+#: rml:account.custom.refound.dvh:0
+#: rml:account.invoice.dvh:0
+msgid "*("
+msgstr ""
+
+#. module: bias_invoice
+#: model:ir.module.module,shortdesc:bias_invoice.module_meta_information
+msgid "Bias Invoice"
+msgstr "Bias Invoice"
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,addendum,comment:0
+#: wizard_field:account.invoice.pay.bias,init,name:0
+msgid "Entry Name"
+msgstr "Asiento"
+
+#. module: bias_invoice
+#: model:ir.actions.report.xml,name:bias_invoice.invoice_entry_print
+msgid "Entry"
+msgstr "Entrada"
+
+#. module: bias_invoice
+#: wizard_button:account.invoice.pay.bias,init,reconcile:0
+msgid "Partial Payment"
+msgstr "Pago Parcial"
+
+#. module: bias_invoice
+#: wizard_view:account.invoice.pay.bias,addendum:0
+msgid "Write-Off Move"
+msgstr "Asiento de Ajuste"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Poliza Contable"
+msgstr "Poliza Contable"
+
+#. module: bias_invoice
+#: help:account.journal,gain_fluc_acc:0
+msgid "Used as write off account when the currency fluctuation result in gain."
+msgstr "Usado como cuenta de ajuste cuando cuando la fluctuacion resulta en ganancia"
+
+#. module: bias_invoice
+#: model:ir.actions.report.xml,name:bias_invoice.account_custom_refound_dvh
+msgid "Custom Refound"
+msgstr "Nota de Crédito"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Fecha:"
+msgstr "Fecha:"
+
+#. module: bias_invoice
+#: wizard_button:account.invoice.pay.bias,addendum,reconcile:0
+msgid "Pay and reconcile"
+msgstr "Pagar y Conciliar"
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,init,period_id:0
+msgid "Period"
+msgstr "Período"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Factura"
+msgstr "Factura"
+
+#. module: bias_invoice
+#: wizard_view:account.invoice.pay.bias,addendum:0
+msgid "Information addendum"
+msgstr "Información de adendum"
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,init,currency_id:0
+#: wizard_field:account.invoice.pay.bias,init,inv_currency_id:0
+#: wizard_field:account.invoice.pay.bias,init,inv_currency_id_local:0
+#: wizard_field:account.invoice.pay.bias,init,pay_currency_id:0
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Moneda"
+msgstr "Moneda"
+
+#. module: bias_invoice
+#: wizard_button:account.invoice.pay.bias,init,writeoff_check:0
+msgid "Full Payment"
+msgstr "Pago Completo"
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,init,invoice_id:0
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: bias_invoice
+#: wizard_view:account.invoice.pay.bias,init:0
+msgid "Payment Information"
+msgstr "Información de Pago"
+
+#. module: bias_invoice
+#: wizard_button:account.invoice.pay.bias,addendum,end:0
+#: wizard_button:account.invoice.pay.bias,init,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bias_invoice
+#: rml:invoice.entry.print:0
+msgid "Total"
+msgstr "Total"
+
+#. module: bias_invoice
+#: wizard_field:account.invoice.pay.bias,init,inv_rate:0
+#: wizard_field:account.invoice.pay.bias,init,rate:0
+msgid "Currency Rate"
+msgstr "Paridad"
+

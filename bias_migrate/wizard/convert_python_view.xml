@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_convert_python" model="ir.ui.view">
+            <field name="name">migrate.convert.python.form</field>
+            <field name="model">migrate.convert.python</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+		<form string="Convert Python">
+		    <separator string="___________________________________________________________________________________________________________________" colspan="4"/>
+		    <field name="python_library" on_change="onchange_python_library(python_library)"/>
+		    <field name="type" invisible="1"/>
+		    <separator string="Write Python Code" colspan="4"/>
+		        <field name="python_code" width="450" height="500" colspan="4" nolabel="1"/>
+                    <separator colspan="4"/>
+                    <group colspan="2" col="4">
+                        <button special="cancel" string="Cancel"  icon="terp-gtk-stop"/>
+                        <button name="convert_python" string="Convert" type="object" icon="terp-camera_test"/>
+                    </group>
+		</form>
+            </field>
+        </record>
+
+        <record id="action_convert_python" model="ir.actions.act_window">
+            <field name="name">Convert Python</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">migrate.convert.python</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_convert_python"/>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,772 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(612.0,792.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="498" height="678"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Tableau1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="GRID" colorName="black"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="GRID" colorName="black"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="GRID" colorName="black"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table4">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="GRID" colorName="black"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table5">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="GRID" colorName="black"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica-Bold" fontSize="9.0" leading="11"/>
+    <paraStyle name="P2" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="CENTER"/>
+    <paraStyle name="P3" fontName="Helvetica" fontSize="9.0" leading="11"/>
+    <paraStyle name="P4" fontName="Helvetica" fontSize="9.0" leading="11"/>
+    <paraStyle name="P5" fontName="Helvetica-Bold" fontSize="7.0" leading="9" alignment="CENTER"/>
+    <paraStyle name="P6" fontName="Times-Roman" alignment="CENTER"/>
+    <paraStyle name="P7" fontName="Times-Roman" fontSize="9.0" leading="11"/>
+    <paraStyle name="P8" fontName="Helvetica" fontSize="7.0" leading="9" alignment="CENTER"/>
+    <paraStyle name="P9" fontName="Helvetica" fontSize="7.0" leading="9" alignment="LEFT"/>
+    <paraStyle name="P10" fontName="Helvetica" fontSize="7.0" leading="9" alignment="CENTER"/>
+    <paraStyle name="P11" fontName="Helvetica" fontSize="6.0" leading="8" alignment="LEFT"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Times-Roman" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Italic" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="Table Contents" fontName="Times-Roman"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER"/>
+  </stylesheet>
+  <story>
+    <para style="P7">[[ repeatIn(objects,'o') ]] <font face="Times-Roman">[[ setLang(o.partner_id.lang) ]]</font></para>
+    <blockTable colWidths="197.0,144.0,158.0" style="Tableau1">
+      <tr>
+        <td>
+          <para style="P1">Cliente:<font face="Times-Roman">[[ o.partner_id.name ]]</font></para>
+          <para style="P1">Contacto: <font face="Times-Roman">[[ o.partner_shipping_id.title or '' ]][[ o.partner_shipping_id.name ]]</font></para>
+          <para style="P1">Dirección:</para>
+          <para style="P3">[[ o.partner_shipping_id.street ]]</para>
+          <para style="P3">[[ o.partner_shipping_id.street2 or '' ]]</para>
+          <para style="P3">[[ o.partner_shipping_id.zip or '' ]] [[ o.partner_shipping_id.city or '' ]]</para>
+          <para style="P3">[[ o.partner_shipping_id.state_id and o.partner_shipping_id.state_id.name or '' ]]</para>
+          <para style="P1">Teléfono:<font face="Times-Roman">[[ o.partner_shipping_id.phone or '']]</font></para>
+          <para style="P1">Sucursal:<font face="Times-Roman">[[ o.partner_shipping_id.alias ]]</font></para>
+          <para style="P1">Determiante:<font face="Times-Roman">[[ o.partner_shipping_id.determinante ]]</font></para>
+          <para style="P4">
+            <font face="Times-Roman">Tipo Servicio:</font>
+            <font face="Times-Roman">[[o.contract_id.periodicity or '']]</font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">Tecnico:<font face="Times-Roman">[[o.technician_id.name]]</font></para>
+          <para style="P1">Ruta:<font face="Times-Roman">[[o.route_id.name]]</font></para>
+          <para style="P1">Fecha:<font face="Times-Roman">[[o.date_order]]</font></para>
+          <para style="P1">Fecha Realizada:_______________</para>
+          <para style="P1">Hora Entrada:__________________</para>
+          <para style="P1">Hora Salida:___________________</para>
+          <para style="P2">Fimra Cliente</para>
+        </td>
+        <td>
+          <para style="P1">Importe: </para>
+          <para style="P1">Pago Efectivo: _________________</para>
+          <para style="P1">Pago Cheque:__________________</para>
+          <para style="P1">Banco: ________________________</para>
+          <para style="P1">Fecha Pago: ___________________</para>
+          <para style="P1">Sello:</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P5">EL SERVICIO SE REALIZO EN LA DIRECCION ARRIBA MENCIONADA Y FUE SUPERVISADO POR LA PERSONA QUE FIRMA</para>
+    <para style="P5">Tabla de Aplicaciones</para>
+    <blockTable colWidths="83.0,83.0,83.0,83.0,83.0,83.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P8">Área</para>
+        </td>
+        <td>
+          <para style="P8">Prod. Aplicado</para>
+        </td>
+        <td>
+          <para style="P8">Método</para>
+        </td>
+        <td>
+          <para style="P8">Equipo</para>
+        </td>
+        <td>
+          <para style="P8">Dosis</para>
+        </td>
+        <td>
+          <para style="P8">Cantidad de Mezcla </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P5">Actividad de Plagas</para>
+    <blockTable colWidths="100.0,100.0,100.0,100.0,100.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P8">Área</para>
+        </td>
+        <td>
+          <para style="P8">Plaga Encontrada</para>
+        </td>
+        <td>
+          <para style="P8">Nivel de Infestación</para>
+        </td>
+        <td>
+          <para style="P8">Evidencias</para>
+        </td>
+        <td>
+          <para style="P8">Daños</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P5">Inventario de Equipo</para>
+    <blockTable colWidths="62.0,62.0,62.0,62.0,62.0,62.0,62.0,62.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P8">Equipo</para>
+        </td>
+        <td>
+          <para style="P8">Inventario Anterior</para>
+        </td>
+        <td>
+          <para style="P8">Inventario</para>
+          <para style="P8">Inicial</para>
+        </td>
+        <td>
+          <para style="P8">Repuesto Sin Costo</para>
+        </td>
+        <td>
+          <para style="P8">Repuesto Con Costo</para>
+        </td>
+        <td>
+          <para style="P8">Inventario Nuevo</para>
+        </td>
+        <td>
+          <para style="P8">Costo de Equipo</para>
+        </td>
+        <td>
+          <para style="P8">Comentarios</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">Cebaderos</para>
+        </td>
+        <td>
+          <para style="P11">[[ trampas(o.contract_id.id,1 ) ]]</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">Mecánicas</para>
+        </td>
+        <td>
+          <para style="P11">[[ trampas(o.contract_id.id,2) ]]</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">Voladores</para>
+        </td>
+        <td>
+          <para style="P11">[[ trampas(o.contract_id.id,3 ) ]]</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">Otros</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P5">Recomendaciones</para>
+    <blockTable colWidths="249.0,249.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P8">Recomendaciones de Servicios Anteriores sin Atender</para>
+        </td>
+        <td>
+          <para style="P8">Recomendaciones Actuales</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P5">Encuesta</para>
+    <blockTable colWidths="43.0,206.0,40.0,210.0" style="Table5">
+      <tr>
+        <td>
+          <para style="P8">Si/No/NA</para>
+        </td>
+        <td>
+          <para style="P8">Sanidad</para>
+        </td>
+        <td>
+          <para style="P8">Si/No/NA</para>
+        </td>
+        <td>
+          <para style="P8">Practicas de Almacenaje</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Áreas Libres De Humedad Y Desperdicios?</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Productos Almacenados Lejos Del Piso Y Pared?</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Contenedores De Basura Limpios Y Tapados?</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Enlatados Y Botellas Removidas De Su Empaque?</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Cubo Del Elevador Libre De Humedad Y Limpio De Desperdicios?</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Están Lo Bultos De Alimento En Contenedores Cerrados?</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Área De Preparación De Alimentos Y Almacén Libre De Desperdicios Alimenticios?</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">Plomería</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Trapeadores Y Escobas Almacenados Fuera Del Piso Sobre Racks?</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Coladeras Debidamente Tapadas Y En Buen Estado?</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Sanitarios Limpios Y Libres De Desperdicios?</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Tuberías Bien Selladas?</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Área De Comedores Y Lockers Limpios Y Accesibles?</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Tuberías Sin Fugas?</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Área De Almacén Limpio Y Ordenado?</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">Estructura</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">Control de Moscas</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Puertas Y Ventanas Interiores Y Exteriores A Prueba De Insectos Y Roedores?</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">El Control De Moscas Es El Adecuado?</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Extractores De Aire Cubiertos?</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">El Control De Olores Es El Adecuado?</para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Pisos Y Paredes Libres De Grietas, Hoyos, Etc.?</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">Hoyos Sellados De Paredes Tuberías, Conductos, Etc.?</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><openerp><data noupdate="0">
+
+    <record id="group_time_machine" model="res.groups">
+        <field name="name">Time Machine</field>
+    </record>
+
+	<record id="menu_time_machine_root" model="ir.ui.menu">
+		<field eval="[(6,0,[ref('group_time_machine')])]" name="groups_id"/>
+	</record>
+
+</data></openerp>

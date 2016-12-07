@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <report 
+	    auto="False"
+	    id="print_cheque_entry" 
+	    menu="True" 
+	    model="payment.cheque" 
+	    name="payment.cheque.entry" 
+	    rml="bias_payment_v6/report/print_cheque_entry.rml" 
+	    header="False"
+	    string="Print Entry"/>
+
+<!--        <report 
+	    auto="False"
+	    id="print_cheque" 
+	    menu="True" 
+	    model="payment.cheque" 
+	    name="payment.cheque.print" 
+ 	    keyword="client_print_multi"
+	    multi="False"
+	    string="Print Cheque"/>
+-->
+    </data>
+</openerp>

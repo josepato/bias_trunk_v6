@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        ========================================================================
+		Add fields balance_account_id reconcile to pyment mode view
+        ========================================================================
+        <record id="view_payment_mode_form_acc" model="ir.ui.view">
+            <field name="name">payment.mode.form.inherit</field>
+            <field name="model">payment.mode</field>
+            <field name="inherit_id" ref="account_payment.view_payment_mode_form"/>
+            <field name="arch" type="xml">
+                <field name="bank_id" position="after">
+                    <field name="writeoff_journal_id" />
+                    <field name="writeoff_acc_id" domain="[('type','!=','view') ]"/>
+                    <field name="gain_loss_journal_id" />
+		    <newline/>
+                    <field name="gain_acc_id" domain="[('type','!=','view') ]"/>
+                    <field name="loss_acc_id" domain="[('type','!=','view') ]"/>
+                    <field name="available_account_id" domain="[('type','=','view') ]"/>
+		    <newline/>
+                    <field name="statement_account_id" domain="[('type','=','other') ]"/>
+                    <field name="transit_account_id" domain="[('type','=','other') ]"/>
+                    <field name="payment_export_id"/>
+                    <field name="report_cheque_id"/>
+		    <newline/>
+               </field>
+            </field>
+        </record>
+
+        ========================================================================
+		Inherit to Payment Oprder to change wizard populate payment
+        ========================================================================
+        <record id="view_payment_order_form_button_wizard" model="ir.ui.view">
+            <field name="name">payment.order.form.button</field>
+            <field name="model">payment.order</field>
+            <field name="inherit_id" ref="account_payment.view_payment_order_form"/>
+            <field name="arch" type="xml">
+                <button name="%(account_payment.wizard_populate_payment)d" position="replace">
+                    <button colspan="2" name="%(wizard_populate_pay)d" string="Select Invoices to Pay" type="action" attrs="{'invisible':[('state','=','done')]}"/>
+               </button>
+            </field>
+        </record>
+        ========================================================================
+		Inherit to Payment Oprder field reference
+        ========================================================================
+        <record id="view_payment_order_form_wizard" model="ir.ui.view">
+            <field name="name">payment.order.form.inherit</field>
+            <field name="model">payment.order</field>
+            <field name="inherit_id" ref="account_payment.view_payment_order_form"/>
+            <field name="arch" type="xml">
+                <field name="reference" position="replace">
+                    <field name="reference" select="1"/>
+               </field>
+            </field>
+        </record>
+        ========================================================================
+		Inherit to Payment Order Line to add operation and code_id
+        ========================================================================
+        <record id="view_payment_order_form_mode" model="ir.ui.view">
+            <field name="name">payment.order.form.mode.inherit</field>
+            <field name="model">payment.order</field>
+            <field name="inherit_id" ref="account_payment.view_payment_order_form"/>
+            <field name="arch" type="xml">
+                <field name="mode" position="replace">
+                    <field name="mode" domain="[('report_cheque_id','=', False)]"/>
+               </field>
+            </field>
+        </record>
+
+        <record id="view_payment_order_form_balance" model="ir.ui.view">
+            <field name="name">payment.order.form.line.inherit</field>
+            <field name="model">payment.order</field>
+            <field name="inherit_id" ref="account_payment.view_payment_order_form"/>
+            <field name="arch" type="xml">
+                <field name="line_ids" position="replace">
+                    <field name="line_ids" colspan="4" widget="one2many_list" nolabel="1">
+                        <form string="Payment Line">
+                            <notebook>
+                                <page string="Payment">
+                                <separator colspan="4" string="Transaction Information"/>
+                                    <field name="move_line_id" 
+					on_change="onchange_move_line(move_line_id,parent.mode,parent.date_prefered,parent.date_planned,currency,company_currency)" select="1" domain="[('reconcile_id','=', False), ('credit', '>',0),('amount_to_pay','>',0)] "/>
+                                    <field name="rate" readonly="1"/>
+                                    <field name="currency" nolabel="0"/>
+                                    <field name="amount_currency" select="2" 
+					on_change="onchange_amount(amount_currency,currency,company_currency, pay_rate)"/>
+                                <separator colspan="4" string="Payment Information"/>
+                                        <field name="company_currency" nolabel="0"/>
+                                        <field name="amount"/>
+                                        <field name="calc_currency" nolabel="0"/>
+                                        <field name="calc_amount"/>
+                                    	<field name="date"
+        on_change="onchange_rate(amount_currency, company_currency, currency, date, False)"/>
+                                    	<field name="pay_rate"
+        on_change="onchange_rate(amount_currency, company_currency, currency, date, pay_rate)"/>
+                                    <field name="cost_center_id"/>
+                                    <field name="account_id"/>
+                                    <field name="partner_id" select="1"/>
+                                    <field domain="[('partner_id','=',partner_id)]" name="bank_id"/>
+                                    <separator colspan="2" string="Owner Account"/>
+                                    <separator colspan="2" string="Desitination Account"/>
+                                    <field colspan="2" name="info_owner" nolabel="1"/>
+                                    <field colspan="2" name="info_partner" nolabel="1"/>
+                                    <field colspan="4" name="communication"/>
+                                    <field colspan="4" name="communication2"/>
+                                    <field name="name"/>
+                                     <field name="state"/>
+                                </page>
+                                <page string="Information">
+
+                                    <separator colspan="4" string="General Information"/>
+                                    <separator colspan="4" string="Entry Information"/>
+                                    <field name="create_date" readonly="1"/>
+                                    <field name="ml_maturity_date"/>
+                                    <field name="ml_inv_ref"/>
+                                </page>
+                            </notebook>
+                        </form>
+                        <tree string="Payment Line" editable="top"> 
+			    <field name="cost_center_id"/>
+                            <field name="ml_inv_ref" />
+                            <field name="partner_id" on_change="onchange_partner(partner_id,parent.mode)"/>
+                            <field name="bank_id" on_change="onchange_bank_id(partner_id,bank_id,parent.mode,move_line_id)" domain="[('partner_id', '=', partner_id)]" invisible="1"/>
+                            <field name="ml_maturity_date"/>
+                            <field name="date"/>
+                            <field name="partial"/>
+                            <field name="calc_amount" />
+                            <field name="amount_currency" select="2" string="Amount"
+					on_change="onchange_amount(amount_currency,currency,company_currency, pay_rate)"/>
+                            <field name="currency"/>
+                            <field name="name"/>
+                            <field name="amount" sum="Total in Company Currency" invisible="1"/>
+                            <field name="company_currency" invisible="1"/>
+                            <field name="pay_rate" invisible="1"/>
+                            <field name="communication"/>
+			    <field name="move_line_id" invisible="0"/>
+                        </tree>
+                    </field>
+		    <newline/>
+               </field>
+            </field>
+        </record>
+        
+<!-- **********************************************************************
+	Cheque 	
+     **********************************************************************-->
+        <record id="view_cheque_form" model="ir.ui.view">
+            <field name="name">payment.cheque.form</field>
+            <field name="model">payment.cheque</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Payment cheque">
+                    <field name="number" select="1"/>
+                    <field name="amount"/>
+                    <field name="partner_id" select="1"/>
+                    <field name="date" select="1"/>
+                    <field name="mode" select="1" on_change="onchange_mode(mode)"/>
+                    <field name="user_id"/>
+                    <field name="period_id"/>
+                    <field name="move_id" />
+                    <button colspan="2" name="%(wizard_import_invoice)d" string="Select Invoices to Pay" type="action" states="draft"/>
+                    <field name="currency_id" />
+                    <notebook colspan="4">
+	                <page string="Payment">
+                    <field name="concept"/>
+                    <field name="line_id" colspan="4" widget="one2many_list" nolabel="1" on_change="onchange_line_id(line_id)" context="partner_id=partner_id, date=date, concept=concept" default_get="{'partner_id': partner_id, 'date': date, 'concept': concept}">
+                        <form string="Payment Line">
+                            <notebook>
+                                <page string="Payment">
+                                <separator colspan="4" string="Transaction Information"/>
+                                    <field name="move_line_id" 
+					on_change="onchange_move_line(move_line_id,parent.mode,parent.date_prefered,parent.date_planned,currency,company_currency)" select="1" domain="[('reconcile_id','=', False), ('credit', '>',0),('amount_to_pay','>',0)] "/>
+                                    <field name="rate" readonly="1"/>
+                                    <field name="currency" nolabel="0"/>
+                                    <field name="amount_currency" select="2" 
+					on_change="onchange_amount(amount_currency,currency,company_currency, pay_rate)"/>
+                                <separator colspan="4" string="Payment Information"/>
+                                        <field name="company_currency" nolabel="0"/>
+                                        <field name="amount"/>
+                                        <field name="calc_currency" nolabel="0"/>
+                                        <field name="calc_amount"/>
+                                    	<field name="date"
+        on_change="onchange_rate(amount_currency, company_currency, currency, date, False)"/>
+                                    	<field name="pay_rate"
+        on_change="onchange_rate(amount_currency, company_currency, currency, date, pay_rate)"/>
+                                    <field name="cost_center_id" required="1"/>
+                                    <field name="account_id"/>
+                                    <field name="partner_id" select="1" invisible="1"/>
+                                    <field name="name"/>
+                                     <field name="state"/>
+                                </page>
+                                <page string="Information">
+                                    <separator colspan="4" string="General Information"/>
+                                    <separator colspan="4" string="Entry Information"/>
+                                    <field name="create_date" readonly="1"/>
+                                    <field name="ml_maturity_date"/>
+                                    <field name="ml_inv_ref"/>
+                                    <field name="communication"/>
+                                </page>
+                            </notebook>
+                        </form>
+                        <tree string="Payment Line" editable="top"> 
+			    <field name="cost_center_id" required="1"/>
+                            <field name="account_id" on_change="onchange_account_id(parent.concept)"/>
+                            <field name="partner_id" invisible="1"/>
+                            <field name="date" invisible="1"/>
+                            <field name="partial"/>
+                            <field name="calc_amount"/>
+                            <field name="amount_currency" select="2" string="Amount" invisible="1"/>
+                            <field name="currency" invisible="1"/>
+                            <field name="name"/>
+                            <field name="amount" sum="Total in Company Currency" invisible="1"/>
+                            <field name="company_currency" invisible="1"/>
+                            <field name="pay_rate" invisible="1"/>
+                            <field name="ml_inv_ref" />
+			    <field name="move_line_id"/>
+                            <field name="communication" invisible="1"/>
+                        </tree>
+                    </field>
+                        </page>
+	                <page string="Partial Payed Lines">
+			    <field name="partial_line_id" nolabel="1"/>
+                        </page>
+                    </notebook>
+                     <group col="8" colspan="4">
+	                <field name="state" readonly="1" select="1"/>
+                        <button name="action_cancel" states="draft,done,printed,confirm" string="Cancel" type="object"/>
+                        <button name="action_confirm" states="draft" string="Confirm" type="object"/>
+                        <button name="action_open" states="confirm" string="Create Cheques" type="object"/>
+                        <button name="action_draft" states="cancel" string="Set to Draft" type="object"/>
+		    </group>
+                </form>
+            </field>
+        </record>
+        <record id="view_cheque_tree" model="ir.ui.view">
+            <field name="name">payment.cheque.tree</field>
+            <field name="model">payment.cheque</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Payment cheque">
+                    <field name="number"/>
+                    <field name="amount"/>
+                    <field name="partner_id"/>
+                    <field name="date"/>
+                    <field name="move_id" />
+                    <field name="state"/>
+                    <field name="currency_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_cheque_form" model="ir.actions.act_window">
+            <field name="name">Cheque</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">payment.cheque</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_cheque_tree"/>
+        </record>
+       	<menuitem action="action_cheque_form" id="menu_action_cheque_form" parent="account_payment.menu_main" sequence="4"/>
+
+        <record id="action_cheque_form_unreconcile" model="ir.actions.act_window">
+            <field name="name">Cheques To Print</field>
+            <field name="res_model">payment.cheque</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','done')]</field>
+        </record>
+        <menuitem action="action_cheque_form_unreconcile" id="menu_action_cheque_form_unreconcile" parent="menu_action_cheque_form"/>
+
+        <record id="action_cheque_new" model="ir.actions.act_window">
+            <field name="name">New Cheque</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">payment.cheque</field>
+            <field name="view_mode">form,tree</field>
+        </record>
+        <menuitem action="action_cheque_new" id="menu_action_cheque_new" parent="account_payment.menu_main" sequence="7"/>
+
+
+	=========================================================
+	 Report Cheque View
+	=========================================================
+	<record model="ir.ui.view" id="view_report_cheque_form">
+		<field name="name">report.cheque.form</field>
+		<field name="model">report.cheque</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Report Cheque">
+				<field name="name" />
+				<newline/>
+				<field name="adjustment_x" />
+				<field name="adjustment_y" />
+		                    <field name="line_id" colspan="4" widget="one2many_list" nolabel="1">
+                		        <form string="Cheque Line">
+                       	        	    <field name="field_id" domain="[('model','=','payment.cheque')]"/>
+                       	        	    <field name="method"/>
+                       	        	    <field name="x"/>
+                       	        	    <field name="y"/>
+                       	        	    <field name="size"/>
+                       	        	    <field name="font"/>
+                        		</form>
+                        		<tree editable="top" string="Cheque Line"> 
+                       	        	    <field name="field_id" domain="[('model','=','payment.cheque')]"/>
+                       	        	    <field name="method"/>
+                       	        	    <field name="x"/>
+                       	        	    <field name="y"/>
+                       	        	    <field name="size"/>
+                       	        	    <field name="font"/>
+                       			</tree>
+                    		    </field>
+			</form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="view_report_cheque_tree">
+		<field name="name">report.cheque.tree</field>
+		<field name="model">report.cheque</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Report Cheque">
+				<field name="name" />
+			</tree>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_report_cheque_form">
+		<field name="name">Report Cheque</field>
+		<field name="res_model">report.cheque</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	<menuitem parent="account_payment.next_id_44" id="menu_action_report_cheque_form" action="action_report_cheque_form"/>
+<!--	<menuitem name="Financial Management/Payment/" id="menu_action_report_cheque_form" action="action_report_cheque_form"/>-->
+
+	# ------------------------------------------------------
+	# Account Teasury View
+	# ------------------------------------------------------
+	<record model="ir.ui.view" id="view_account_global_treasury_form">
+		<field name="name">account.global.treasury.form</field>
+		<field name="model">account.global.treasury</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+		    <form string="Global Treasury">
+			<field name="name"/>
+			<field name="company_id" on_change="onchange_company_id(company_id)"/>
+                    	<separator colspan="4" string="Global Bank Accounts"/>
+		                    <field name="line_ids" colspan="4" widget="one2many_list" nolabel="1"  attrs="{'readonly':[('state','=','done')]}">
+                		        <form string="Bank Account">
+					    <field name="name" select="1" />
+					    <separator colspan="4"/>
+					    <field name="global_id"/>
+					    <newline/>
+					    <field name="url" readonly="1"/>
+					    <field name="db"/>
+					    <newline/>
+					    <field name="login"/>
+					    <newline/>
+					    <field name="password" password="True"/>
+                        		</form>
+                        		<tree string="Bank Account"> 
+					    <field name="name" />
+					    <field name="statement_amount" sum="Total Amount in Bank"/>
+					    <field name="transit_amount" sum="Total Amount in Transit"/>
+					    <field name="available_amount" sum="Total Amount Available" />
+                       			</tree>
+                    		    </field>
+                        <separator colspan="4" string="States"/>
+                        <field name="state" select="1" readonly="1"/>
+                        <group col="2" colspan="2">
+			    <button name="%(wizard_search_global_treasury)d" string="Search Global Treasury" type="action" states="draft"/>
+                            <button name="cancel" states="done" string="Cancel" type="object"/>
+                    	</group>
+		    </form>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_account_global_treasury_tree">
+		<field name="name">account.global.treasury.tree</field>
+		<field name="model">account.global.treasury</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Global Treasury">
+				<field name="name"/>
+  			        <field name="statement_amount" />
+				<field name="transit_amount" />
+				<field name="available_amount"/>
+			</tree>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_account_global_treasury_form">
+		<field name="name">Global Treasury</field>
+		<field name="res_model">account.global.treasury</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	<menuitem id="menu_action_account_global_treasury_form" action="action_account_global_treasury_form" parent="account_payment.menu_main" sequence="10"/>
+
+	<record model="ir.ui.view" id="view_account_treasury_form">
+		<field name="name">account.treasury.form</field>
+		<field name="model">account.treasury</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+		    <form string="Treasury">
+			<field name="name"/>
+			<field name="company_id" on_change="onchange_company_id(company_id)"/>
+                    	<separator colspan="4"/>
+			    <field name="line_ids" colspan="4" widget="one2many_list" nolabel="1" readonly="1">
+                		<form string="Bank Account">
+				    <field name="mode" />
+				    <field name="statement_amount" />
+				    <field name="transit_amount" />
+				    <field name="available_amount"/>
+                        	</form>
+                        	<tree string="Bank Account"> 
+				    <field name="mode" />
+				    <field name="statement_amount" sum="Total Amount in Bank"/>
+				    <field name="transit_amount" sum="Total Amount in Transit"/>
+				    <field name="available_amount" sum="Total Amount Available" />
+                       		</tree>
+                    	    </field>
+                        <separator colspan="4" string="States"/>
+                        <field name="state" select="1" readonly="1"/>
+                        <group col="2" colspan="2">
+                            <button name="create_accounts" states="draft" string="Create Accounts" type="object"/>
+                            <button name="cancel" states="done" string="Cancel" type="object"/>
+                    	</group>
+		    </form>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_account_treasury_tree">
+		<field name="name">account.treasury.tree</field>
+		<field name="model">account.treasury</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Treasury">
+				<field name="name"/>
+				<field name="company_id"/>
+  			        <field name="statement_amount" />
+				<field name="transit_amount" />
+				<field name="available_amount"/>
+			</tree>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_account_treasury_form">
+		<field name="name">Treasury</field>
+		<field name="res_model">account.treasury</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	<menuitem id="menu_action_account_treasury_form" action="action_account_treasury_form" parent="account_payment.menu_main" sequence="8"/>
+
+	<record model="ir.ui.view" id="view_account_treasury_accouunt_form">
+		<field name="name">account.treasury.account.form</field>
+		<field name="model">account.treasury.account</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="Treasury Account">
+				<field name="mode" />
+				<field name="journal_id_statement" />
+				<field name="statement_amount" />
+				<field name="transit_amount" />
+				<field name="available_amount" />
+			</form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="view_account_treasury_account_tree">
+		<field name="name">account.treasury.account.tree</field>
+		<field name="model">account.treasury.account</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="Treasury Account">
+				<field name="mode" />
+				<field name="statement_amount" />
+				<field name="transit_amount" />
+				<field name="available_amount" sum="Total Amount Available" />
+			</tree>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_account_treasury_account_form">
+		<field name="name">Treasury Account</field>
+		<field name="res_model">account.treasury.account</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	=========================================================
+	  Payment Export File
+	=========================================================
+<!--	<record model="ir.ui.view" id="view_payment_export_file_form">
+		<field name="name">payment.export.file.form</field>
+		<field name="model">payment.export.file</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="File Export Fields">
+		                <separator colspan="4" string="General Information"/>
+				<field name="name" />
+				<field name="code" />
+		                <separator colspan="4" string="Formats"/>
+				<field name="date" />
+				<field name="number" />
+		                <separator colspan="4" string="Bank Codes"/>
+				<field name="same_bnk" />
+				<field name="other_bnk" />
+                    		<field name="line_id" colspan="4" widget="one2many_list" nolabel="1">
+                        		<form string="Export Fields">
+                                    		<field name="sequence"/>
+                                    		<field name="name"/>
+                                    		<field name="type"/>
+                                    		<field name="zero"/>
+                                    		<field name="length"/>
+                                    		<field name="start"/>
+                                    		<field name="end"/>
+                                    		<field name="required"/>
+				                <group colspan="2" col="3">
+                                    		    <field name="condition"/>
+                                    		    <field name="operator"/>
+                                    		    <field name="value"/>
+						</group>
+                                    		<field name="notes"/>
+                                    		<field name="std_field"/>
+                        		</form>
+                        		<tree editable="bottom" string="Cheque Line"> 
+                                    		<field name="sequence"/>
+                                    		<field name="name"/>
+                                    		<field name="zero"/>
+                                    		<field name="type"/>
+                                    		<field name="length"/>
+                                    		<field name="required"/>
+                                    		<field name="condition"/>
+                                    		<field name="operator"/>
+                                    		<field name="value"/>
+                                    		<field name="std_field"/>
+                       			</tree>
+                    		</field>
+			</form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="view_payment_export_file_tree">
+		<field name="name">payment.export.file.tree</field>
+		<field name="model">payment.export.file</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="File Export Fields">
+				<field name="name" />
+				<field name="code" />
+			</tree>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_payment_export_file_form">
+		<field name="name">File Export Fields</field>
+		<field name="res_model">payment.export.file</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	<menuitem  parent="account_payment.next_id_44" id="menu_action_payment_export_file_form" action="action_payment_export_file_form" />
+-->
+<!-- **********************************************************************
+	Add fields debit and credit reconcile account jounal view
+     **********************************************************************-->
+<!--        <record id="view_account_journal_2" model="ir.ui.view">
+            <field name="name">account.journal.form.2</field>
+            <field name="model">account.journal</field>
+            <field name="inherit_id" ref="account.view_account_journal_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="entry_posted" position="after">
+                    <field name="debit_rec_acc"/>
+                    <field name="credit_rec_acc"/>
+                </field>
+            </field>
+        </record>
+-->
+<!-- **********************************************************************
+	Inherit partner_id in statement view 	
+     **********************************************************************-->
+<!--        <record id="view_bank_statement_form_2" model="ir.ui.view">
+            <field name="name">account.bank.statement.form.2</field>
+            <field name="model">account.bank.statement</field>
+            <field name="inherit_id" ref="account.view_bank_statement_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="partner_id" position="replace">
+                    <field name="partner_id" on_change="onchange_partner_id(partner_id, type, parent.currency, parent.journal_id, account_id)"/>
+                </field>
+            </field>
+        </record>
+-->
+<!-- **********************************************************************
+	Inherit statement view button import invoice
+     **********************************************************************-->
+<!--        <record id="view_bank_statement_form_3" model="ir.ui.view">
+            <field name="name">account.bank.statement.form.3</field>
+            <field name="model">account.bank.statement</field>
+            <field name="inherit_id" ref="account.view_bank_statement_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <button name="%(account.wizard_populate_statement_from_inv)d" position="replace">
+			<button name="%(wizard_populate_statement_from_invoice)d"
+                            string="Import Invoice" type="action" attrs="{'invisible':[('state','=','confirm')]}"/>
+                </button>
+            </field>
+        </record>
+-->
+		<!--  Cheque Report -->
+<!--	<wizard
+		string="Unreconciled Cheque"
+		model="payment.cheque"
+		name="payment.cheque.unreconciled"
+		menu="False"
+		id="wizard_unreconciled_cheque"/>
+	<menuitem
+		parent="menu_action_cheque_form"
+		action="wizard_unreconciled_cheque"
+		type="wizard"
+		icon="STOCK_JUSTIFY_FILL"
+		sequence="5"
+		id="menu_unreconciled_cheque"/>
+-->
+
+    </data>
+</openerp>

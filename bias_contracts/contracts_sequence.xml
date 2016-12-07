@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<terp>
+<data><!-- noupdate="1">-->
+
+	#
+	# Sequences for contracts.order
+	#
+
+	<record model="ir.sequence.type" id="seq_type_contracts_order">
+		<field name="name">Contracts Order</field>
+		<field name="code">contracts.order</field>
+	</record>
+	<record model="ir.sequence" id="seq_contracts_order">
+		<field name="name">Contracts Order</field>
+		<field name="code">contracts.order</field>
+		<field name="prefix"></field>
+		<field name="padding">4</field>
+	</record>
+
+	#
+	# Sequences for service.order
+	#
+
+	<record model="ir.sequence.type" id="seq_type_service_order">
+		<field name="name">Service Order</field>
+		<field name="code">service.order</field>
+	</record>
+	<record model="ir.sequence" id="seq_service_order">
+		<field name="name">Service Order</field>
+		<field name="code">service.order</field>
+		<field name="prefix"></field>
+		<field name="padding">4</field>
+	</record>
+
+</data>
+</terp>

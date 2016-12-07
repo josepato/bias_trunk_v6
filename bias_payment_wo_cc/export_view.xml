@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+ 	=========================================================
+	  Payment Export File
+	=========================================================
+	<record model="ir.ui.view" id="view_payment_export_file_form">
+		<field name="name">payment.export.file.form</field>
+		<field name="model">payment.export.file</field>
+		<field name="type">form</field>
+		<field name="arch" type="xml">
+			<form string="File Export Fields">
+		                <separator colspan="4" string="General Information"/>
+				<field name="name" />
+				<field name="code" />
+		                <separator colspan="4" string="Formats"/>
+				<field name="date" />
+				<field name="number" />
+		                <separator colspan="4" string="Bank Codes"/>
+				<field name="same_bnk" />
+				<field name="other_bnk" />
+                    		<field name="line_id" colspan="4" widget="one2many_list" nolabel="1">
+                        		<form string="Export Fields">
+                                    		<field name="sequence"/>
+                                    		<field name="name"/>
+                                    		<field name="type"/>
+                                    		<field name="zero"/>
+                                    		<field name="length"/>
+                                    		<field name="start"/>
+                                    		<field name="end"/>
+                                    		<field name="required"/>
+				                <group colspan="2" col="3">
+                                    		    <field name="condition"/>
+                                    		    <field name="operator"/>
+                                    		    <field name="value"/>
+						</group>
+                                    		<field name="notes"/>
+                                    		<field name="std_field"/>
+                        		</form>
+                        		<tree editable="bottom" string="Cheque Line"> 
+                                    		<field name="sequence"/>
+                                    		<field name="name"/>
+                                    		<field name="zero"/>
+                                    		<field name="type"/>
+                                    		<field name="length"/>
+                                    		<field name="required"/>
+                                    		<field name="condition"/>
+                                    		<field name="operator"/>
+                                    		<field name="value"/>
+                                    		<field name="std_field"/>
+                       			</tree>
+                    		</field>
+			</form>
+		</field>
+	</record>
+	<record model="ir.ui.view" id="view_payment_export_file_tree">
+		<field name="name">payment.export.file.tree</field>
+		<field name="model">payment.export.file</field>
+		<field name="type">tree</field>
+		<field name="arch" type="xml">
+			<tree string="File Export Fields">
+				<field name="name" />
+				<field name="code" />
+			</tree>
+		</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_payment_export_file_form">
+		<field name="name">File Export Fields</field>
+		<field name="res_model">payment.export.file</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+<!--	<menuitem name="Payment Export" id="menu_action_payment_export_root" parent="account.menu_finance_configuration" sequence="8"/>
+	<menuitem id="menu_action_payment_export_file_form" action="action_payment_export_file_form" parent="menu_action_payment_export_root" />
+-->	<menuitem id="menu_action_payment_export_file_form" action="action_payment_export_file_form" parent="account_payment.next_id_44" />
+
+    </data>
+</openerp>

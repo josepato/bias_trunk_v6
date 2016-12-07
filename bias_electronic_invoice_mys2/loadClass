@@ -1,0 +1,7 @@
+#! /bin/sh
+
+export CLASSPATH=.
+for item in $(ls $1/*.jar); do
+	export CLASSPATH=${CLASSPATH}:$item
+done
+echo $CLASSPATH

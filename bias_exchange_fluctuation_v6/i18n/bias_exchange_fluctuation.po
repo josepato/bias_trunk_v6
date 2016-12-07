@@ -1,0 +1,123 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_exchange_fluctuation_v6
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-02 22:48+0000\n"
+"PO-Revision-Date: 2011-07-02 22:48+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,date:0
+msgid "End Date"
+msgstr "End Date"
+
+#. module: bias_exchange_fluctuation_v6
+#: view:exchange.fluctuation.account:0
+msgid "Account"
+msgstr "Account"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,name:0
+msgid "Name"
+msgstr "Name"
+
+#. module: bias_exchange_fluctuation_v6
+#: view:wizard.exchange.fluctuation:0
+msgid "Parameters"
+msgstr "Parameters"
+
+#. module: bias_exchange_fluctuation_v6
+#: model:ir.actions.act_window,name:bias_exchange_fluctuation_v6.action_exchange_fluctuation
+#: model:ir.model,name:bias_exchange_fluctuation_v6.model_exchange_fluctuation
+#: model:ir.model,name:bias_exchange_fluctuation_v6.model_wizard_exchange_fluctuation
+#: model:ir.ui.menu,name:bias_exchange_fluctuation_v6.menu_exchange_fluctuation_root
+#: model:ir.ui.menu,name:bias_exchange_fluctuation_v6.menu_reports_exchange_fluctuation
+msgid "Exchange Fluctuation"
+msgstr "Exchange Fluctuation"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:exchange.fluctuation.account,loss_fluc_acc:0
+msgid "Loss Account"
+msgstr "Loss Account"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:exchange.fluctuation.account,company_id:0
+msgid "Company"
+msgstr "Company"
+
+#. module: bias_exchange_fluctuation_v6
+#: selection:wizard.exchange.fluctuation,state:0
+msgid "get"
+msgstr "get"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,period_id:0
+msgid "Period"
+msgstr "Period"
+
+#. module: bias_exchange_fluctuation_v6
+#: view:wizard.exchange.fluctuation:0
+msgid "Print"
+msgstr "Print"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,file.csv:0
+msgid "File (.csv Format)"
+msgstr "File (.csv Format)"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,currency_id:0
+msgid "Currency"
+msgstr "Currency"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,rate:0
+msgid "Rate"
+msgstr "Rate"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:exchange.fluctuation.account,gain_fluc_acc:0
+msgid "Gain Account"
+msgstr "Gain Account"
+
+#. module: bias_exchange_fluctuation_v6
+#: selection:wizard.exchange.fluctuation,state:0
+msgid "choose"
+msgstr "choose"
+
+#. module: bias_exchange_fluctuation_v6
+#: view:wizard.exchange.fluctuation:0
+msgid "File"
+msgstr "File"
+
+#. module: bias_exchange_fluctuation_v6
+#: field:wizard.exchange.fluctuation,state:0
+msgid "unknown"
+msgstr "unknown"
+
+#. module: bias_exchange_fluctuation_v6
+#: view:wizard.exchange.fluctuation:0
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: bias_exchange_fluctuation_v6
+#: model:ir.actions.act_window,name:bias_exchange_fluctuation_v6.action_exchange_fluctuation_account
+#: model:ir.model,name:bias_exchange_fluctuation_v6.model_exchange_fluctuation_account
+#: model:ir.ui.menu,name:bias_exchange_fluctuation_v6.menu_reports_exchange_fluctuation_account
+msgid "Exchange Fluctuation Accounts"
+msgstr "Exchange Fluctuation Accounts"
+
+#. module: bias_exchange_fluctuation_v6
+#: view:wizard.exchange.fluctuation:0
+msgid "Excel (.csv)"
+msgstr "Excel (.csv)"
+

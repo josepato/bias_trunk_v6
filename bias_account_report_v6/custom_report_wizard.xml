@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Aged partner balance -->
+        <wizard id="wizard_account_custom_report" menu="False" model="res.partner" name="account.custom.report" string="Account Custom Report"/>
+
+<!-- Use this menu for version 4  -->
+<!--        <menuitem icon="STOCK_PRINT" action="wizard_account_custom_report" id="menu_account_custom_report" name="Financial Management/Reporting/Account Custom Report" sequence="8" type="wizard"/> -->
+
+<!-- Use this menu for version 5  -->
+        <menuitem icon="STOCK_PRINT" action="wizard_account_custom_report" id="menu_account_custom_report" parent="account.menu_finance_reporting" type="wizard"/>
+
+
+    </data>
+</openerp>

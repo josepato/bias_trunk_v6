@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="False">
+
+
+        <record id="main_header" model="res.company">
+            <field name="rml_header2">"<header> </header>"</field>
+            <field name="name">prueba</field>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+    </data>
+</openerp>

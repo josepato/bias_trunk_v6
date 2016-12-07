@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Fiscal Statemnts -->
+        <menuitem name="Fiscal Statements" id="menu_fiscal_statements" parent="account.menu_finance_legal_statement" sequence="7"/>
+        <wizard id="wizard_fiscal_statements" menu="True" model="fiscal.statements" name="fiscal.statements" string="Fiscal Statements"/>
+        <menuitem icon="STOCK_PRINT" action="wizard_fiscal_statements" id="menu_wizard_fiscal_statements" parent="menu_fiscal_statements" sequence="4" type="wizard"/>
+
+    </data>
+</openerp>

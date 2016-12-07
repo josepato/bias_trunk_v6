@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<openerp>
+<data>
+
+<!--	Print Entry Third Party Ledger	-->	
+        <report auto="False" 
+		id="financial_reports_aged" 
+		menu="False" 
+		model="financial.reports" 
+		name="financial.reports_aged"
+		rml="bias_account_report_v6/report/financial_reports_aged.rml" 
+                header ="False"
+		string="Aged Partner Balance"/>
+
+        <report auto="False" 
+		id="financial_reports_other" 
+		menu="False" 
+		model="financial.reports" 
+		name="financial.reports_other" 
+		rml="bias_account_report_v6/report/financial_reports_other.rml" 
+                header ="False"
+		string="Account Ledger"/>
+
+        <report auto="False" 
+		id="financial_reports_balance" 
+		menu="False" 
+		model="financial.reports" 
+		name="financial.reports_balance" 
+		rml="bias_account_report_v6/report/financial_reports_balance.rml" 
+                header ="False"
+		string="Account Balance"/>
+
+</data>
+</openerp>

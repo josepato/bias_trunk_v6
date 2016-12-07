@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <wizard id="wizard_run_query" menu="False" model="query.tool" name="wizard.run.query" string="Run Query"/>
+        <wizard id="wizard_update_module" menu="True" model="query.tool" name="wizard.update.module" string="Update Module"/>
+        <wizard id="wizard_query_import_export" menu="True" model="query.tool" name="wizard.query.import.export" string="Import/Export"/>
+
+
+    </data>
+</openerp>

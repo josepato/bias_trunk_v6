@@ -1,0 +1,651 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_tax_model
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-08-28 17:59:01+0000\n"
+"PO-Revision-Date: 2010-08-28 17:59:01+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,entry_partner_id:0
+#: wizard_field:account.entry_tax_info,unlink,entry_partner_id:0
+#: wizard_field:account.entry_tax_info,view,entry_partner_id:0
+msgid "Entry Partner"
+msgstr "Empresa Contable"
+
+#. module: bias_tax_model
+#: view:account.tax.parameters:0
+msgid "Accounts Type For Total"
+msgstr "Tipo de Cuentas para Total"
+
+#. module: bias_tax_model
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo inválido en definición de acción"
+
+#. module: bias_tax_model
+#: view:account.move:0
+#: model:ir.actions.wizard,name:bias_tax_model.entry_tax_info
+msgid "Tax Info"
+msgstr "Información Fiscal"
+
+#. module: bias_tax_model
+#: wizard_view:account.entry_tax_info,select:0
+#: wizard_field:account.entry_tax_info,select,total_lines:0
+#: wizard_view:account.entry_tax_info,unlink:0
+#: wizard_field:account.entry_tax_info,unlink,total_lines:0
+#: wizard_view:account.entry_tax_info,view:0
+#: wizard_field:account.entry_tax_info,view,total_lines:0
+msgid "Total Lines"
+msgstr "Líneas de Total"
+
+#. module: bias_tax_model
+#: wizard_view:account.entry_tax_info,select:0
+#: wizard_view:account.entry_tax_info,unlink:0
+#: wizard_view:account.entry_tax_info,view:0
+msgid "Total - (Base + Tax + Other)"
+msgstr "Total - (Base + Imp + Otros)"
+
+#. module: bias_tax_model
+#: field:account.tax.parameters,company_id:0
+msgid "Company"
+msgstr "Compañía"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,base:0
+#: wizard_field:account.entry_tax_info,unlink,base:0
+#: wizard_field:account.entry_tax_info,view,base:0
+#: field:account.tax.meta,base:0
+#: view:account.tax.parameters:0
+msgid "Base"
+msgstr "Base"
+
+#. module: bias_tax_model
+#: wizard_view:account.entry_tax_info,select:0
+#: wizard_field:account.entry_tax_info,select,entries:0
+#: wizard_view:account.entry_tax_info,unlink:0
+#: wizard_field:account.entry_tax_info,unlink,entries:0
+#: wizard_view:account.entry_tax_info,view:0
+#: wizard_field:account.entry_tax_info,view,entries:0
+msgid "Entries"
+msgstr "Polizas Conciliadas"
+
+#. module: bias_tax_model
+#: view:account.tax.parameters:0
+#: model:ir.actions.act_window,name:bias_tax_model.action_account_tax_parameters_form
+#: model:ir.ui.menu,name:bias_tax_model.menu_account_tax_parameters_form
+msgid "Tax Parameters"
+msgstr "Parámetros de Impuestos"
+
+#. module: bias_tax_model
+#: model:ir.model,name:bias_tax_model.model_account_tax_fiscal
+msgid "Account Tax Fiscal"
+msgstr "Contabilidad Fiscal"
+
+#. module: bias_tax_model
+#: field:account.tax.ietu,account_id:0
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: bias_tax_model
+#: model:ir.model,name:bias_tax_model.model_wizard_account_entry_tax_info
+msgid "wizard_account_entry_tax_info"
+msgstr "Wizard Account Entry Tax Info"
+
+#. module: bias_tax_model
+#: field:account.bank.entries,amount:0
+#: wizard_field:account.entry_tax_info,select,amount:0
+#: wizard_field:account.entry_tax_info,unlink,amount:0
+#: wizard_field:account.entry_tax_info,view,amount:0
+#: field:account.tax.fiscal,amount:0
+#: field:account.tax.ietu,amount:0
+#: field:account.tax.meta,amount:0
+#: view:account.tax.parameters:0
+msgid "Amount"
+msgstr "Importe"
+
+#. module: bias_tax_model
+#: wizard_view:account.entry_tax_info,select:0
+#: wizard_view:account.entry_tax_info,unlink:0
+#: wizard_view:account.entry_tax_info,view:0
+msgid "amount Lines"
+msgstr "Líneas de Importe"
+
+#. module: bias_tax_model
+#: field:account.bank.entries,vat:0
+#: wizard_field:account.entry_tax_info,select,entry_vat:0
+#: wizard_field:account.entry_tax_info,select,tax_vat:0
+#: wizard_field:account.entry_tax_info,unlink,entry_vat:0
+#: wizard_field:account.entry_tax_info,unlink,tax_vat:0
+#: wizard_field:account.entry_tax_info,view,entry_vat:0
+#: wizard_field:account.entry_tax_info,view,tax_vat:0
+msgid "VAT"
+msgstr "R.F.C."
+
+#. module: bias_tax_model
+#: wizard_view:account.entry_tax_info,select:0
+#: wizard_view:account.entry_tax_info,unlink:0
+#: wizard_view:account.entry_tax_info,view:0
+msgid "***** SAVED ******"
+msgstr "***** SALVADO ******"
+
+#. module: bias_tax_model
+#: model:ir.model,name:bias_tax_model.model_account_tax_parameters
+msgid "Account Tax Parameters"
+msgstr "Parámetros de Impuestos"
+
+#. module: bias_tax_model
+#: field:account.tax.meta,reference:0
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,period_id:0
+#: wizard_field:account.entry_tax_info,unlink,period_id:0
+#: wizard_field:account.entry_tax_info,view,period_id:0
+msgid "Fiscal Period"
+msgstr "Periodo Fiscal"
+
+#. module: bias_tax_model
+#: field:account.tax.parameters,third_party_operation_ids:0
+#: model:ir.actions.act_window,name:bias_tax_model.action_third_party_operation_form
+#: field:res.partner,third_party_operation:0
+#: view:third.party.operation:0
+msgid "Third Party Operation"
+msgstr "Tipo de Operación"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,tax:0
+#: wizard_field:account.entry_tax_info,unlink,tax:0
+#: wizard_field:account.entry_tax_info,view,tax:0
+#: field:account.tax.fiscal,tax:0
+#: field:account.tax.model,tax:0
+#: view:account.tax.parameters:0
+msgid "Tax"
+msgstr "Impuestos"
+
+#. module: bias_tax_model
+#: model:ir.module.module,description:bias_tax_model.module_meta_information
+msgid " Tax Model Functions cover:\n"
+"* Create additional lines in payment entry capabilities for tax tranlate\n"
+"    "
+msgstr ""
+
+#. module: bias_tax_model
+#: field:account.bank.entries,partner_id:0
+#: field:account.tax.meta,partner_id:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: bias_tax_model
+#: field:account.tax.parameters,total:0
+msgid "Total Accounts Types"
+msgstr "Tipo de Cuentas de Total"
+
+#. module: bias_tax_model
+#: model:ir.model,name:bias_tax_model.model_account_tax_model
+msgid "Account Tax Model"
+msgstr "Modelo Fiscal"
+
+#. module: bias_tax_model
+#: view:account.tax.parameters:0
+msgid "Partners"
+msgstr "Empresas"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,folio:0
+#: wizard_field:account.entry_tax_info,unlink,folio:0
+#: wizard_field:account.entry_tax_info,view,folio:0
+msgid "Folio"
+msgstr "Folio"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,reference:0
+#: wizard_field:account.entry_tax_info,unlink,reference:0
+#: wizard_field:account.entry_tax_info,view,reference:0
+msgid "reference"
+msgstr "Referencia"
+
+#. module: bias_tax_model
+#: view:account.tax.ietu:0
+#: model:ir.actions.act_window,name:bias_tax_model.action_account_tax_ietu_form
+msgid "IETU Information"
+msgstr "Información de IETU"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,state:0
+#: wizard_field:account.entry_tax_info,unlink,state:0
+#: wizard_field:account.entry_tax_info,view,state:0
+#: field:account.tax.meta,state:0
+msgid "State"
+msgstr "Estado"
+
+#. module: bias_tax_model
+#: wizard_view:account.entry_tax_info,select:0
+#: wizard_field:account.entry_tax_info,select,other_lines:0
+#: wizard_view:account.entry_tax_info,unlink:0
+#: wizard_field:account.entry_tax_info,unlink,other_lines:0
+#: wizard_view:account.entry_tax_info,view:0
+#: wizard_field:account.entry_tax_info,view,other_lines:0
+msgid "Other Lines"
+msgstr "Otras Erogaciones"
+
+#. module: bias_tax_model
+#: wizard_view:account.entry_tax_info,select:0
+#: wizard_view:account.entry_tax_info,unlink:0
+#: wizard_view:account.entry_tax_info,view:0
+msgid "***** UNSAVED ******"
+msgstr "***** NO SALVADO ******"
+
+#. module: bias_tax_model
+#: wizard_field:wizard.account.bank.entries,select,date_start:0
+msgid "Start date"
+msgstr "Fecha Inicial"
+
+#. module: bias_tax_model
+#: wizard_button:account.entry_tax_info,select,save:0
+#: wizard_button:account.entry_tax_info,unlink,save:0
+msgid "Save"
+msgstr "Salvar"
+
+#. module: bias_tax_model
+#: view:account.tax.parameters:0
+msgid "Accounts Type For IETU"
+msgstr "Tipo de Cuentas para IETU"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,ietu_lines:0
+#: wizard_field:account.entry_tax_info,unlink,ietu_lines:0
+#: wizard_field:account.entry_tax_info,view,ietu_lines:0
+msgid "Total IETU"
+msgstr "Total de IETU"
+
+#. module: bias_tax_model
+#: field:account.tax.fiscal,line_id:0
+#: field:account.tax.ietu,line_id:0
+msgid "Line"
+msgstr "Línea"
+
+#. module: bias_tax_model
+#: field:account.tax.fiscal,xfer:0
+msgid "Xfer"
+msgstr "xfer"
+
+#. module: bias_tax_model
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,diot:0
+#: wizard_field:account.entry_tax_info,unlink,diot:0
+#: wizard_field:account.entry_tax_info,view,diot:0
+#: field:account.tax.meta,diot:0
+msgid "DIOT"
+msgstr "DIOT"
+
+#. module: bias_tax_model
+#: model:ir.model,name:bias_tax_model.model_account_tax_ietu
+msgid "Account Tax IETU"
+msgstr "Contabilidad de IETU"
+
+#. module: bias_tax_model
+#: view:account.tax.parameters:0
+msgid "Accounts Type For Other"
+msgstr "Tipos de Cuenta para Otras Erogaciones"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,amount_lines:0
+#: wizard_field:account.entry_tax_info,unlink,amount_lines:0
+#: wizard_field:account.entry_tax_info,view,amount_lines:0
+msgid "Amount Lines"
+msgstr "Líneas de Importe"
+
+#. module: bias_tax_model
+#: model:ir.module.module,shortdesc:bias_tax_model.module_meta_information
+msgid "Bias Tax Model"
+msgstr "Bias Tax Model"
+
+#. module: bias_tax_model
+#: view:account.bank.entries:0
+#: model:ir.actions.act_window,name:bias_tax_model.action_account_bank_entries_form
+#: model:ir.actions.wizard,name:bias_tax_model.wizard_account_bank_entries
+#: model:ir.ui.menu,name:bias_tax_model.menu_wizard_account_bank_entries
+#: wizard_view:wizard.account.bank.entries,select:0
+msgid "Bank Entries"
+msgstr "Póliza de Banco"
+
+#. module: bias_tax_model
+#: wizard_view:account.entry_tax_info,select:0
+#: wizard_view:account.entry_tax_info,unlink:0
+#: wizard_view:account.entry_tax_info,view:0
+msgid "IETU Lines"
+msgstr "Líneas de IETU"
+
+#. module: bias_tax_model
+#: wizard_button:account.entry_tax_info,select,unlink:0
+#: wizard_button:account.entry_tax_info,unlink,unlink:0
+msgid "Delete"
+msgstr "Borrar"
+
+#. module: bias_tax_model
+#: field:account.tax.parameters,ietu:0
+msgid "IETU Accounts Types"
+msgstr "Typo de Cuentas de IETU"
+
+#. module: bias_tax_model
+#: field:account.tax.parameters,amount:0
+msgid "Amount Accounts Types"
+msgstr "Tipo de Cuentas de Importe"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,serial:0
+#: wizard_field:account.entry_tax_info,unlink,serial:0
+#: wizard_field:account.entry_tax_info,view,serial:0
+#: field:account.tax.meta,serial:0
+msgid "Serial"
+msgstr "Serie"
+
+#. module: bias_tax_model
+#: view:account.tax.ietu.concept:0
+#: model:ir.actions.act_window,name:bias_tax_model.action_account_tax_ietu_concept_form
+#: model:ir.model,name:bias_tax_model.model_account_tax_ietu_concept
+msgid "Tax IETU Concept"
+msgstr "Conceptos de IETU"
+
+#. module: bias_tax_model
+#: wizard_view:account.entry_tax_info,select:0
+#: wizard_view:account.entry_tax_info,unlink:0
+#: wizard_view:account.entry_tax_info,view:0
+msgid "Tax Information"
+msgstr "Información Fiscal"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,dif_amount:0
+#: wizard_field:account.entry_tax_info,select,dif_total:0
+#: wizard_field:account.entry_tax_info,unlink,dif_amount:0
+#: wizard_field:account.entry_tax_info,unlink,dif_total:0
+#: wizard_field:account.entry_tax_info,view,dif_amount:0
+#: wizard_field:account.entry_tax_info,view,dif_total:0
+msgid "Diference"
+msgstr "Diferencias"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,third_party_type:0
+#: wizard_field:account.entry_tax_info,unlink,third_party_type:0
+#: wizard_field:account.entry_tax_info,view,third_party_type:0
+#: field:account.tax.meta,third_party_type:0
+#: field:account.tax.parameters,third_party_type_ids:0
+#: model:ir.actions.act_window,name:bias_tax_model.action_third_party_type_form
+#: model:ir.model,name:bias_tax_model.model_third_party_type
+#: field:res.partner,third_party_type:0
+#: view:third.party.type:0
+msgid "Third Party Type"
+msgstr "Tipo de Tercero"
+
+#. module: bias_tax_model
+#: field:account.tax.parameters,base:0
+msgid "Base Accounts Types"
+msgstr "Tipo de Cuentas para Base"
+
+#. module: bias_tax_model
+#: field:account.bank.entries,bank_move_id:0
+msgid "Bank Entry"
+msgstr "Póliza de Banco"
+
+#. module: bias_tax_model
+#: view:account.tax.model:0
+#: view:account.tax.parameters:0
+#: field:account.tax.parameters,tax_model:0
+#: model:ir.actions.act_window,name:bias_tax_model.action_account_tax_model_form
+msgid "Tax Model"
+msgstr "Modelo Fiscal"
+
+#. module: bias_tax_model
+#: wizard_view:wizard.account.bank.entries,select:0
+msgid "Select Date Period"
+msgstr "Selección de Rango de Fechas"
+
+#. module: bias_tax_model
+#: wizard_view:account.entry_tax_info,select:0
+#: wizard_field:account.entry_tax_info,select,tax_lines:0
+#: wizard_view:account.entry_tax_info,unlink:0
+#: wizard_field:account.entry_tax_info,unlink,tax_lines:0
+#: wizard_view:account.entry_tax_info,view:0
+#: wizard_field:account.entry_tax_info,view,tax_lines:0
+msgid "Tax Lines"
+msgstr "Líneas de Impuestos"
+
+#. module: bias_tax_model
+#: model:ir.model,name:bias_tax_model.model_account_tax_meta
+msgid "Account Tax Meta"
+msgstr "Meta datos Fiscales"
+
+#. module: bias_tax_model
+#: field:account.tax.fiscal,active:0
+#: field:account.tax.ietu,active:0
+#: field:account.tax.model,active:0
+msgid "Active"
+msgstr "Activa"
+
+#. module: bias_tax_model
+#: field:account.tax.model,xfer:0
+msgid "Tranfer"
+msgstr "Transfer"
+
+#. module: bias_tax_model
+#: field:account.tax.meta,ietu:0
+#: view:account.tax.parameters:0
+msgid "IETU"
+msgstr "IETU"
+
+#. module: bias_tax_model
+#: view:account.tax.parameters:0
+msgid "Accounts Type For Tax"
+msgstr "Tipo de Cuentas para Impuestos"
+
+#. module: bias_tax_model
+#: view:account.tax.fiscal:0
+#: model:ir.actions.act_window,name:bias_tax_model.action_account_tax_fiscal_form
+msgid "Fiscal Information"
+msgstr "Información Fiscal"
+
+#. module: bias_tax_model
+#: field:account.tax.ietu.concept,tax_parameters_id:0
+#: field:account.tax.model,tax_parameters_id:0
+#: field:third.party.operation,tax_parameters_id:0
+#: field:third.party.type,tax_parameters_id:0
+msgid "Tax Parameter"
+msgstr "Parámetros de Impuestos"
+
+#. module: bias_tax_model
+#: field:account.bank.entries,date:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: bias_tax_model
+#: wizard_view:account.entry_tax_info,select:0
+#: wizard_view:account.entry_tax_info,unlink:0
+#: wizard_view:account.entry_tax_info,view:0
+msgid "Amount - (Base - Tax)"
+msgstr "Importe - (Base + Impuesto)"
+
+#. module: bias_tax_model
+#: wizard_field:wizard.account.bank.entries,select,date_stop:0
+msgid "End date"
+msgstr "Fecha Final"
+
+#. module: bias_tax_model
+#: field:account.tax.ietu.concept,code:0
+#: field:third.party.operation,code:0
+#: field:third.party.type,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,ietu_concept:0
+#: wizard_field:account.entry_tax_info,unlink,ietu_concept:0
+#: wizard_field:account.entry_tax_info,view,ietu_concept:0
+#: field:account.tax.meta,ietu_concept:0
+#: field:account.tax.parameters,account_tax_ietu_ids:0
+msgid "IETU Concept"
+msgstr "Conceptos de IETU"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,ietu:0
+#: wizard_field:account.entry_tax_info,unlink,ietu:0
+#: wizard_field:account.entry_tax_info,view,ietu:0
+msgid "IETU Deductible"
+msgstr "Deducible para IETU"
+
+#. module: bias_tax_model
+#: view:account.bank.entries:0
+msgid "General Information"
+msgstr "Información General"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,property_account_position:0
+#: wizard_field:account.entry_tax_info,unlink,property_account_position:0
+#: wizard_field:account.entry_tax_info,view,property_account_position:0
+msgid "Fiscal Position"
+msgstr "Tasas de Impuesto"
+
+#. module: bias_tax_model
+#: wizard_button:account.entry_tax_info,select,end:0
+#: wizard_button:account.entry_tax_info,unlink,end:0
+#: wizard_button:account.entry_tax_info,view,end:0
+#: wizard_button:wizard.account.bank.entries,select,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bias_tax_model
+#: field:account.tax.parameters,other:0
+msgid "Other Accounts"
+msgstr "Otras Cuentas"
+
+#. module: bias_tax_model
+#: wizard_button:wizard.account.bank.entries,select,open:0
+msgid "Open"
+msgstr "Abrir"
+
+#. module: bias_tax_model
+#: view:account.tax.parameters:0
+msgid "Accounts Type For Amount"
+msgstr "Tipo de Cuentas para Importe"
+
+#. module: bias_tax_model
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "¡El nombre del objeto debe empezar con x_ y no contener ningún carácter especial!"
+
+#. module: bias_tax_model
+#: model:ir.model,name:bias_tax_model.model_third_party_operation
+msgid "Third Party operation"
+msgstr "Tipo de Operación"
+
+#. module: bias_tax_model
+#: field:account.tax.meta,tax:0
+msgid "tax"
+msgstr "Impuesto"
+
+#. module: bias_tax_model
+#: field:res.partner,id_fiscal:0
+msgid "ID Fiscal"
+msgstr "ID Fiscal"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,other:0
+#: wizard_field:account.entry_tax_info,unlink,other:0
+#: wizard_field:account.entry_tax_info,view,other:0
+#: field:account.tax.meta,other:0
+#: view:account.tax.parameters:0
+msgid "Other"
+msgstr "Otras"
+
+#. module: bias_tax_model
+#: view:account.tax.parameters:0
+msgid "Accounts Type For Base"
+msgstr "Tipo de Cuentas para Base"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,tax_partner_id:0
+#: wizard_field:account.entry_tax_info,unlink,tax_partner_id:0
+#: wizard_field:account.entry_tax_info,view,tax_partner_id:0
+msgid "Tax Partner"
+msgstr "Empresa Fiscal"
+
+#. module: bias_tax_model
+#: field:account.tax.parameters,tax:0
+msgid "Tax Accounts"
+msgstr "Cuentas de Impuesto"
+
+#. module: bias_tax_model
+#: field:account.tax.fiscal,name:0
+#: field:account.tax.ietu,name:0
+#: field:account.tax.ietu.concept,name:0
+#: field:account.tax.parameters,name:0
+#: field:third.party.operation,name:0
+#: field:third.party.type,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bias_tax_model
+#: field:account.bank.entries,name:0
+msgid "Line Name"
+msgstr "Nombre de Línea"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,move_id:0
+#: wizard_field:account.entry_tax_info,unlink,move_id:0
+#: wizard_field:account.entry_tax_info,view,move_id:0
+#: field:account.tax.fiscal,move_id:0
+#: field:account.tax.ietu,move_id:0
+#: field:account.tax.meta,move_id:0
+msgid "Entry"
+msgstr "Póliza"
+
+#. module: bias_tax_model
+#: view:account.tax.parameters:0
+msgid "Accounts Tranfer For Tax Declaration"
+msgstr "Traslado de Cuentas para Declaración de Impuestos"
+
+#. module: bias_tax_model
+#: wizard_view:account.entry_tax_info,select:0
+#: wizard_field:account.entry_tax_info,select,base_lines:0
+#: wizard_view:account.entry_tax_info,unlink:0
+#: wizard_field:account.entry_tax_info,unlink,base_lines:0
+#: wizard_view:account.entry_tax_info,view:0
+#: wizard_field:account.entry_tax_info,view,base_lines:0
+msgid "Base Lines"
+msgstr "Lineas para Base"
+
+#. module: bias_tax_model
+#: field:account.tax.meta,folio:0
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: bias_tax_model
+#: wizard_field:account.entry_tax_info,select,total:0
+#: wizard_field:account.entry_tax_info,unlink,total:0
+#: wizard_field:account.entry_tax_info,view,total:0
+#: view:account.tax.fiscal:0
+#: view:account.tax.ietu:0
+#: field:account.tax.meta,total:0
+#: view:account.tax.parameters:0
+msgid "Total"
+msgstr "Total"
+
+#. module: bias_tax_model
+#: model:ir.model,name:bias_tax_model.model_account_bank_entries
+msgid "Account Bank Entries"
+msgstr "Pólizas de Banco"
+

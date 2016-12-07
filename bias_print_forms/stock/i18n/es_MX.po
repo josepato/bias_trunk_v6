@@ -1,0 +1,245 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-04-02 18:40:50+0000\n"
+"PO-Revision-Date: 2010-04-02 18:40:50+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Referencia"
+msgstr "Referencia"
+
+#. module: bias_account
+#: selection:account.print.journal.report.bias,init,sort_selection:0
+msgid "Reference Number"
+msgstr "Número de Referencia"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Cuenta"
+msgstr "Cuenta"
+
+#. module: bias_account
+#: wizard_view:account.print.journal.report.bias,init:0
+msgid "Date Filter"
+msgstr "Filtro por Fecha"
+
+#. module: bias_account
+#: wizard_view:account.print.journal.report.bias,init:0
+msgid "Select Journals"
+msgstr "Selección de Diarios"
+
+#. module: bias_account
+#: wizard_field:account.print.journal.report.bias,init,text:0
+msgid "Nota"
+msgstr "Nota"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Periodo:"
+msgstr "Período"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Compania :"
+msgstr "Compañía"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Diario:"
+msgstr "Diario:"
+
+#. module: bias_account
+#: view:account.move:0
+#: wizard_button:account.print.journal.report.bias,init,print:0
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Nombre"
+msgstr "Nombre"
+
+#. module: bias_account
+#: wizard_field:account.print.journal.report.bias,init,date1:0
+msgid "Start date"
+msgstr "Fecha Inicial"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Estatus:"
+msgstr "Estatus:"
+
+#. module: bias_account
+#: wizard_view:account.print.journal.report.bias,init:0
+msgid "Filter on Periods"
+msgstr "Filtro por Príodos"
+
+#. module: bias_account
+#: wizard_view:account.print.journal.report.bias,init:0
+#: model:ir.actions.wizard,name:bias_account.wizard_print_journal
+#: model:ir.ui.menu,name:bias_account.menu_print_journal
+msgid "Print Journal"
+msgstr "Imprimir diario"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Nombre:"
+msgstr "Nombre:"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Ref. Empresa"
+msgstr "Ref. Empresa"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Referencia:"
+msgstr "Referencia:"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Debe"
+msgstr "Debe"
+
+#. module: bias_account
+#: selection:account.print.journal.report.bias,init,state:0
+msgid "By Period"
+msgstr "Por Período"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "/"
+msgstr "/"
+
+#. module: bias_account
+#: model:ir.module.module,description:bias_account.module_meta_information
+msgid "."
+msgstr "."
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Tipo:"
+msgstr "Tipo:"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Impreso por:"
+msgstr "Impreso por:"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Fecha Impresión:"
+msgstr "Fecha Impresión:"
+
+#. module: bias_account
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: bias_account
+#: wizard_view:account.print.journal.report.bias,init:0
+msgid "Filters"
+msgstr "Filtro"
+
+#. module: bias_account
+#: wizard_field:account.print.journal.report.bias,init,sort_selection:0
+msgid "Entries Sorted By"
+msgstr "Ordenados Por"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Total Moneda"
+msgstr "Total Moneda"
+
+#. module: bias_account
+#: model:ir.actions.wizard,name:bias_account.print_entry
+msgid "Print Entry"
+msgstr "Imprimir Póliza"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Haber"
+msgstr "Haber"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Fecha:"
+msgstr "Fecha:"
+
+#. module: bias_account
+#: model:ir.module.module,shortdesc:bias_account.module_meta_information
+msgid "Bias Account"
+msgstr "Bias Account"
+
+#. module: bias_account
+#: selection:account.print.journal.report.bias,init,state:0
+msgid "By Date"
+msgstr "Por Fecha"
+
+#. module: bias_account
+#: model:ir.actions.report.xml,name:bias_account.account_move_print
+msgid "Entry"
+msgstr "Entrada"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Poliza Contable"
+msgstr "Poliza Contable"
+
+#. module: bias_account
+#: wizard_field:account.print.journal.report.bias,init,date2:0
+msgid "End date"
+msgstr "Fecha Final"
+
+#. module: bias_account
+#: wizard_field:account.print.journal.report.bias,init,state:0
+msgid "Date/Period Filter"
+msgstr "Filtro Fecha/Período"
+
+#. module: bias_account
+#: wizard_field:account.print.journal.report.bias,init,period_id:0
+msgid "Period"
+msgstr "Período"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Factura"
+msgstr "Factura"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Moneda"
+msgstr "Moneda"
+
+#. module: bias_account
+#: selection:account.print.journal.report.bias,init,sort_selection:0
+msgid "By date"
+msgstr "Por Fecha"
+
+#. module: bias_account
+#: wizard_button:account.print.journal.report.bias,init,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bias_account
+#: rml:account.move.print:0
+msgid "Total"
+msgstr "Total"
+
+#. module: bias_account
+#: wizard_field:account.print.journal.report.bias,init,journal_id:0
+msgid "Journal"
+msgstr "Diario"
+

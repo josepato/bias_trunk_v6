@@ -1,0 +1,9 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_base_synchro_server_all","base.synchro.server_all","model_base_synchro_server","base.group_system",1,1,1,1
+"access_base_synchro_obj_all","base.synchro.obj_all","model_base_synchro_obj","base.group_system",1,1,1,1
+"access_base_synchro_obj_avoid_all","base.synchro.obj.avoid_all","model_base_synchro_obj_avoid","base.group_system",1,1,1,1
+"access_base_synchro_obj_line_all","base.synchro.obj.line_all","model_base_synchro_obj_line","base.group_system",1,1,1,1
+"access_base_synchro_server","base.synchro.server","model_base_synchro_server","base.group_erp_manager",1,1,0,0
+"access_base_synchro_obj","base.synchro.obj","model_base_synchro_obj","base.group_erp_manager",1,1,0,0
+"access_base_synchro_obj_avoid","base.synchro.obj.avoid","model_base_synchro_obj_avoid","base.group_erp_manager",1,1,0,0
+"access_base_synchro_obj_line","base.synchro.obj.line","model_base_synchro_obj_line","base.group_erp_manager",1,1,0,0

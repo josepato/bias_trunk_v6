@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(792.0,612.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="57.0" width="678" height="498"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica" fontSize="7.0" leading="9"/>
+    <paraStyle name="P2" fontName="Helvetica" fontSize="7.0" leading="9" alignment="LEFT"/>
+    <paraStyle name="P3" fontName="Helvetica-Oblique" fontSize="6.0" leading="8"/>
+    <paraStyle name="P4" fontName="Helvetica" fontSize="6.0" leading="8"/>
+    <paraStyle name="P5" fontName="Helvetica-Bold" fontSize="8.0" leading="10"/>
+    <paraStyle name="P6" fontName="Helvetica" fontSize="7.0" leading="9"/>
+    <paraStyle name="P7" fontName="Helvetica" fontSize="7.0" leading="9" alignment="LEFT"/>
+    <paraStyle name="P8" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="LEFT"/>
+    <paraStyle name="P9" fontName="Helvetica" fontSize="6.0" leading="8"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Heading" fontName="Times-Roman" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Italic" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="Table Contents" fontName="Times-Roman"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER"/>
+  </stylesheet>
+  <story>
+    <para style="P9">[[ repeatIn(objects,'o') ]] </para>
+    <para style="P3">[[ setLang(o.partner_id.lang) ]]</para>
+    <blockTable colWidths="169.0,101.0,409.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P7">Cliente:[[ o.partner_id.name ]] </para>
+        </td>
+        <td>
+          <para style="P4">N<font face="Times-Roman" size="7.0">úmero de OS: [[o.id]]</font></para>
+        </td>
+        <td>
+          <para style="P7">Tecnico: [[ o.technician_id.name ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P6">Fecha Realizada: [[ o.date_start]]</para>
+        </td>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P6">Estado: [[ o.state ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P6">Determiante: [[o.partner_shipping_id.determinante ]] [[o.partner_shipping_id.alias]]</para>
+        </td>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P5">Aplicaciones:</para>
+    <blockTable colWidths="97.0,97.0,97.0,97.0,97.0,97.0,97.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P1">Area</para>
+        </td>
+        <td>
+          <para style="P1">Producto Aplicado</para>
+        </td>
+        <td>
+          <para style="P1">Dosis Aplicada</para>
+        </td>
+        <td>
+          <para style="P1">Dosis Media</para>
+        </td>
+        <td>
+          <para style="P1">Cant Aplicada</para>
+        </td>
+        <td>
+          <para style="P1">Metodo</para>
+        </td>
+        <td>
+          <para style="P1">Ingrediente Activo</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P2">
+            <font face="Times-Roman">[[ repeatIn(o.service_order, 'so') ]]</font>
+          </para>
+          <para style="P2">
+            <font face="Times-Roman">[[ repeatIn(so.order_aplication, 'oa') ]]</font>
+          </para>
+          <para style="P2">
+            <font face="Times-Roman">[[ oa.name]]</font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">[[ oa.product_id.name ]]</para>
+        </td>
+        <td>
+          <para style="P1">[[ oa.product_preparetion_uom_qty ]] [[ oa.product_preparetion_uom.name ]]</para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">[[ oa.product_aplication_uom_qty ]][[ oa.product_aplication_uom.name ]]</para>
+        </td>
+        <td>
+          <para style="P1">[[ oa.method ]]</para>
+        </td>
+        <td>
+          <para style="P1">[[ oa.product_id.active_ingredient ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P8">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>
+

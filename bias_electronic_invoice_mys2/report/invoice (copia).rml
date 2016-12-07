@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(612.0,792.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="57.0" y1="28.0" width="498" height="707"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Tabla3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <blockBackground colorName="#ff0000" start="0,0" stop="0,0"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table5">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table6">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table4">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Tabla1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="GRID" colorName="black"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Times-Roman" fontSize="6.0" leading="8" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P2" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P3" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P4" fontName="Times-Roman" alignment="LEFT" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P5" fontName="Times-Roman" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P6" fontName="Courier" fontSize="10.0" leading="13" alignment="LEFT" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P7" fontName="Courier" fontSize="6.0" leading="8" alignment="LEFT" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P8" fontName="Courier" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P9" fontName="Courier" fontSize="8.0" leading="10"/>
+    <paraStyle name="P10" fontName="Courier" fontSize="10.0" leading="13"/>
+    <paraStyle name="P11" fontName="Courier" fontSize="10.0" leading="13" alignment="RIGHT"/>
+    <paraStyle name="P12" fontName="Courier-Bold" fontSize="6.0" leading="8" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P13" fontName="Courier-Bold" fontSize="12.0" leading="15" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P14" fontName="Courier" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P15" fontName="Times-Roman" fontSize="7.0" leading="9" alignment="RIGHT" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P16" fontName="Times-Roman" fontSize="10.0" leading="13" alignment="RIGHT" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P17" fontName="Courier" fontSize="10.0" leading="13"/>
+    <paraStyle name="P18" rightIndent="0.0" leftIndent="0.0" fontName="Times-Roman" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P19" fontName="Courier" fontSize="18.0" leading="22" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P20" fontName="Times-Roman" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P21" fontName="Times-Roman" fontSize="16.0" leading="20" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P22" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P23" fontName="Courier" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Standard" fontName="Times-Roman"/>
+    <paraStyle name="Text body" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Table Contents" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Table Heading" fontName="Times-Roman" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Times-Roman"/>
+    <paraStyle name="Frame contents" fontName="Times-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Objeto con punta de flecha" fontName="Times-Roman"/>
+    <paraStyle name="Objeto con sombra" fontName="Times-Roman"/>
+    <paraStyle name="Objeto sin relleno" fontName="Times-Roman"/>
+    <paraStyle name="Text" fontName="Times-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Cuerpo de texto justificado" fontName="Times-Roman" alignment="LEFT"/>
+    <paraStyle name="Sangr&#xED;a de la primera l&#xED;nea" rightIndent="0.0" leftIndent="0.0" fontName="Times-Roman"/>
+    <paraStyle name="Title" fontName="Helvetica-Bold" fontSize="18.0" leading="22" alignment="CENTER" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Subtitle" fontName="Helvetica-Oblique" fontSize="14.0" leading="17" alignment="CENTER" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="T&#xED;tulo1" fontName="Times-Roman" alignment="CENTER"/>
+    <paraStyle name="T&#xED;tulo2" rightIndent="6.0" leftIndent="0.0" fontName="Times-Roman" alignment="CENTER" spaceBefore="3.0" spaceAfter="3.0"/>
+    <paraStyle name="Encabezado1" fontName="Times-Roman" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Encabezado2" fontName="Times-Roman" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="L&#xED;nea de dimensiones" fontName="Times-Roman"/>
+    <paraStyle name="Default~LT~Gliederung 1" rightIndent="0.0" leftIndent="34.0" fontName="Helvetica" fontSize="32.0" leading="39" spaceBefore="0.0" spaceAfter="14.0"/>
+    <paraStyle name="Default~LT~Gliederung 2" rightIndent="0.0" leftIndent="68.0" fontName="Helvetica" fontSize="28.0" leading="34" spaceBefore="0.0" spaceAfter="11.0"/>
+    <paraStyle name="Default~LT~Gliederung 3" rightIndent="0.0" leftIndent="102.0" fontName="Helvetica" fontSize="24.0" leading="29" spaceBefore="0.0" spaceAfter="9.0"/>
+    <paraStyle name="Default~LT~Gliederung 4" rightIndent="0.0" leftIndent="136.0" fontName="Helvetica" fontSize="20.0" leading="25" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Default~LT~Gliederung 5" rightIndent="0.0" leftIndent="170.0" fontName="Helvetica" fontSize="20.0" leading="25" spaceBefore="0.0" spaceAfter="3.0"/>
+    <paraStyle name="Default~LT~Gliederung 6" rightIndent="0.0" leftIndent="204.0" fontName="Helvetica" fontSize="20.0" leading="25" spaceBefore="0.0" spaceAfter="3.0"/>
+    <paraStyle name="Default~LT~Gliederung 7" rightIndent="0.0" leftIndent="238.0" fontName="Helvetica" fontSize="20.0" leading="25" spaceBefore="0.0" spaceAfter="3.0"/>
+    <paraStyle name="Default~LT~Gliederung 8" rightIndent="0.0" leftIndent="272.0" fontName="Helvetica" fontSize="20.0" leading="25" spaceBefore="0.0" spaceAfter="3.0"/>
+    <paraStyle name="Default~LT~Gliederung 9" rightIndent="0.0" leftIndent="306.0" fontName="Helvetica" fontSize="20.0" leading="25" spaceBefore="0.0" spaceAfter="3.0"/>
+    <paraStyle name="Default~LT~Titel" fontName="Helvetica" fontSize="44.0" leading="53" alignment="CENTER"/>
+    <paraStyle name="Default~LT~Untertitel" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="32.0" leading="39" alignment="CENTER"/>
+    <paraStyle name="Default~LT~Notizen" rightIndent="0.0" leftIndent="17.0" fontName="Helvetica" fontSize="20.0" leading="25"/>
+    <paraStyle name="Default~LT~Hintergrundobjekte" fontName="Times-Roman"/>
+    <paraStyle name="Default~LT~Hintergrund" fontName="Times-Roman"/>
+    <paraStyle name="WW-T&#xED;tulo" fontName="Helvetica" fontSize="44.0" leading="53" alignment="CENTER"/>
+    <paraStyle name="Objetos de fondo" fontName="Times-Roman"/>
+    <paraStyle name="Fondo" fontName="Times-Roman"/>
+    <paraStyle name="Notas" rightIndent="0.0" leftIndent="17.0" fontName="Helvetica" fontSize="20.0" leading="25"/>
+    <paraStyle name="Esquema 1" rightIndent="0.0" leftIndent="34.0" fontName="Helvetica" fontSize="32.0" leading="39" spaceBefore="0.0" spaceAfter="14.0"/>
+    <paraStyle name="Esquema 2" rightIndent="0.0" leftIndent="68.0" fontName="Helvetica" fontSize="28.0" leading="34" spaceBefore="0.0" spaceAfter="11.0"/>
+    <paraStyle name="Esquema 3" rightIndent="0.0" leftIndent="102.0" fontName="Helvetica" fontSize="24.0" leading="29" spaceBefore="0.0" spaceAfter="9.0"/>
+    <paraStyle name="Esquema 4" rightIndent="0.0" leftIndent="136.0" fontName="Helvetica" fontSize="20.0" leading="25" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Esquema 5" rightIndent="0.0" leftIndent="170.0" fontName="Helvetica" fontSize="20.0" leading="25" spaceBefore="0.0" spaceAfter="3.0"/>
+    <paraStyle name="Esquema 6" rightIndent="0.0" leftIndent="204.0" fontName="Helvetica" fontSize="20.0" leading="25" spaceBefore="0.0" spaceAfter="3.0"/>
+    <paraStyle name="Esquema 7" rightIndent="0.0" leftIndent="238.0" fontName="Helvetica" fontSize="20.0" leading="25" spaceBefore="0.0" spaceAfter="3.0"/>
+    <paraStyle name="Esquema 8" rightIndent="0.0" leftIndent="272.0" fontName="Helvetica" fontSize="20.0" leading="25" spaceBefore="0.0" spaceAfter="3.0"/>
+    <paraStyle name="Esquema 9" rightIndent="0.0" leftIndent="306.0" fontName="Helvetica" fontSize="20.0" leading="25" spaceBefore="0.0" spaceAfter="3.0"/>
+    <paraStyle name="WW-T&#xED;tulo1" fontName="Helvetica" fontSize="44.0" leading="53" alignment="CENTER"/>
+    <paraStyle name="WW-T&#xED;tulo12" fontName="Helvetica" fontSize="44.0" leading="53" alignment="CENTER"/>
+    <paraStyle name="WW-T&#xED;tulo123" fontName="Helvetica" fontSize="44.0" leading="53" alignment="CENTER"/>
+  </stylesheet>
+  <story>
+    <para style="P1">[[ repeatIn(objects,'o') ]]</para>
+    <para style="P1">[[ setLang(o.partner_id.lang) ]]</para>
+    <para style="P3">
+      <font color="white"> </font>
+    </para>
+    <para style="P3">
+      <font color="white"> </font>
+    </para>
+    <para style="P3">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="26.0,92.0,402.0" repeatRows="1" style="Table1">
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+          <para style="P21">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+          <blockTable colWidths="83.0" style="Tabla3">
+            <tr>
+              <td>
+                <para style="P18">
+                  <font face="Helvetica" size="14.0">FOLIO</font>
+                </para>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <para style="P21">[[ o.number or removeParentNode('para')]]</para>
+              </td>
+            </tr>
+          </blockTable>
+          <para style="P21">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P2">
+            <font color="white"> </font>
+          </para>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+          <para style="P5">[[date_sp(o.date_invoice,1)]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P19">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="500.0,24.0" repeatRows="1" style="Table2">
+      <tr>
+        <td>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+          <para style="P10">[[ o.address_invoice_id.partner_id.name ]]</para>
+          <para style="P10">[[ o.address_invoice_id.street[0:45] ]] [[ o.address_invoice_id.street2 or '' ]]</para>
+          <para style="P10">[[ o.address_invoice_id.city or '' ]], [[ o.address_invoice_id.state_id and o.address_invoice_id.state_id.name or '' ]], CP [[ o.address_invoice_id.zip or '' ]]</para>
+          <para style="P10">[[ o.address_invoice_id.partner_id.vat ]]</para>
+          <para style="P10">Tel: [[ o.address_invoice_id.phone or removeParentNode('para')]]</para>
+        </td>
+        <td>
+          <para style="P9">
+            <font color="white"> </font>
+          </para>
+          <para style="P9">
+            <font color="white"> </font>
+          </para>
+          <para style="P9">
+            <font color="white"> </font>
+          </para>
+          <para style="P9">
+            <font color="white"> </font>
+          </para>
+          <para style="P9">
+            <font color="white"> </font>
+          </para>
+          <para style="P9"/>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P8">
+      <font color="white"> </font>
+    </para>
+    <para style="P8">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="570.0" repeatRows="1" style="Table5">
+      <tr>
+        <td>
+          <blockTable colWidths="26.0,81.0,260.0,84.0,91.0" repeatRows="1" style="Table6">
+            <tr>
+              <td>
+                <para style="P12">[[repeatIn(o.invoice_line,'l') ]]</para>
+              </td>
+              <td>
+                <para style="P10">[[l.quantity]]</para>
+              </td>
+              <td>
+                <para style="P10">[[ l.name ]]</para>
+                <para style="P10">
+                  <font color="white"> </font>
+                </para>
+              </td>
+              <td>
+                <para style="P11">[[moneyfmt( '%.2f' % l.price_unit) ]]</para>
+              </td>
+              <td>
+                <para style="P11">[[moneyfmt( '%.2f' %l.price_subtotal) ]]</para>
+              </td>
+            </tr>
+          </blockTable>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P8">
+      <font color="white"> </font>
+    </para>
+    <para style="P12">
+      <font color="white"> </font>
+    </para>
+    <para style="P12">
+      <font color="white"> </font>
+    </para>
+    <para style="P12">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="13.0,363.0,68.0,85.0" repeatRows="1" style="Table4">
+      <tr>
+        <td>
+          <para style="P15">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P6">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P11">[[moneyfmt( '%.2f' % o.amount_untaxed) ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P15">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P10">([[ texto(int(o.amount_total)) ]] [[ o.currency_id.name ]] [[ ('%.2f' % o.amount_total)[-2:] ]]/100 [[ o.currency_id.code ]])</para>
+        </td>
+        <td>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P11">[[moneyfmt( '%.2f' % o.amount_tax) ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P15">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P16">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P11">[[moneyfmt( '%.2f' % o.amount_total )]] </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P13">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="520.0" style="Tabla1">
+      <tr>
+        <td>
+          <para style="P7">[[fix_space(o.certificado,140)]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P7">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P7">[[fix_space(o.sello,140)]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P14">
+      <font color="white"> </font>
+    </para>
+    <para style="P14">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>
+

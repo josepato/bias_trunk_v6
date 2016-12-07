@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<terp>
+	<data>
+
+		<wizard 
+			string="Schedule Orders"
+			model="contracts.orders"
+			name="schedule.contract.orders"
+			menu="False"
+			id="wizard_schedule_orders"/>
+
+		<menuitem
+			name="Contracts Management/Schedule Orders"
+			action="wizard_schedule_orders"
+			type="wizard"
+			id="menu_wizard_schedule_orders"/>
+
+		<wizard
+		       string="Make invoices"
+		       model="service.order"
+		       name="service.order.make_invoice"
+		       keyword="client_action_multi"
+		       id="wizard_service_order_make_invoice"/>
+		
+		
+		
+	</data>
+</terp>
+
+	<!--	<wizard 
+			string="Wizard taxes report"
+			model="account.tax.code"
+			name="account.vat.declaration"
+			menu="False"
+			id="wizard_vat_declaration"/>
+
+		<menuitem
+			name="Financial Management/Reporting/Taxes Report"
+			action="wizard_vat_declaration"
+			type="wizard"
+			id="menu_wizard_vat_declaration"/>-->

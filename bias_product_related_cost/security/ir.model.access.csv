@@ -1,0 +1,6 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_res_partner_related_cost","res.partner.related.cost","model_res_partner_related_cost","purchase.group_purchase_user",1,1,1,1
+"access_res_partner_related_cost_manager","res.partner.related.cost","model_res_partner_related_cost","purchase.group_purchase_manager",1,1,1,1
+"access_res_partner_related_cost_line","res.partner.related.cost.line","model_res_partner_related_cost_line","purchase.group_purchase_user",1,1,1,1
+"access_res_partner_related_cost_line_manager","res.partner.related.cost.line","model_res_partner_related_cost_line","purchase.group_purchase_manager",1,1,1,1
+"access_stock_move_cost","stock.move.cost","model_stock_move_cost","purchase.group_purchase_manager",1,1,1,1

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+        <wizard id="wizard_restart" model="restart.restart" name="restart.restart" string="Restart Server" />
+        <menuitem icon="STOCK_EXECUTE" action="wizard_restart" id="menu_restart" parent="base.menu_administration" type="wizard"/>
+ 
+    </data>
+</openerp>

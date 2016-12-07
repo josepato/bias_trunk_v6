@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+ 	=========================================================
+	  Migrate Module
+	=========================================================
+        <record id="view_migrate_module" model="ir.ui.view">
+            <field name="name">migrate.module.form</field>
+            <field name="model">migrate.module</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+		<form string="Sign On">
+		    <separator string="___________________________________________________________________________________________________________________" colspan="4"/>
+		    <group states="change">
+		    	<field name="server_from" />
+			<newline/>
+		    	<field name="port_from" />
+                    	<separator colspan="4"/>
+                    	<group colspan="2" col="4">
+                            <button special="cancel" string="Cancel"  icon="terp-gtk-stop"/>
+                            <button name="save" string="Ok" type="object" icon="terp-camera_test"/>
+                    	</group>
+		    </group>
+		    <group states="choose">
+		    	<separator colspan="2" string="               Source DB          "/>
+		    	<separator colspan="2" string="               Target DB          "/>
+		    	<group colspan="4">
+		    	    <group colspan="2" col="6">
+		                <field name="url_from" readonly="1"/>
+	                        <button name="change" string="Change" type="object"/>
+                    	    </group>
+		    	    <field name="url_to" readonly="1"/>
+		    	    <newline/>
+		    	    <field name="db_from" widget="selection"/>
+		    	    <field name="db_to" />
+		    	    <field name="login_from" required="1"/>
+		    	    <newline/>
+		    	    <field name="password_from" required="1"/>
+<!--		    	    <field name="login_to" required="1"/>-->
+<!--		    	    <field name="password_to" required="1"/>-->
+		    	    <newline/>
+		    	    <field name="count"/>
+                        </group>
+                        <separator colspan="4"/>
+                        <group colspan="2" col="4">
+                            <button special="cancel" string="Cancel"  icon="terp-gtk-stop"/>
+                            <button name="_load_db" string="Migrate DB" type="object" icon="terp-camera_test"/>
+		    	    <field name="state" invisible="1"/>
+                        </group>
+		    </group>
+		</form>
+            </field>
+        </record>
+
+        <record id="action_migrate_module" model="ir.actions.act_window">
+            <field name="name">Migrate DB</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">migrate.module</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_migrate_module"/>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</openerp>

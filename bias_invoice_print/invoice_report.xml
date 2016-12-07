@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<openerp>
+<data>
+
+	<!--<delete model="ir.actions.report.xml" search="[('model','like','auction.')]"/>
+    	<delete model="ir.actions.report.xml" search="[('model','=','account.invoice')]"/>
+	-->
+
+	Custom Invoice Report
+        <report 
+	    auto="False"
+	    id="account_invoices_bias" 
+	    menu="True" 
+	    model="account.invoice" 
+	    name="invoice.printing" 
+ 	    keyword="client_print_multi"
+	    multi="False"
+	    string="Invoice"/>
+
+
+</data>
+</openerp>
+

@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+<!-- 
+account.account.template
+Chart template of l10n_mx
+Account template definition
+-->
+
+       <record id="a_root" model="account.account.template">
+           <field name="code">0</field>
+           <field name="name">Catalogo Contable</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+       </record>
+       <record id="a000-0100" model="account.account.template">
+           <field name="code">000-0100</field>
+           <field name="name">ACTIVO</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a_root"/>
+       </record>
+       <record id="a000-0110" model="account.account.template">
+           <field name="code">000-0110</field>
+           <field name="name">CIRCULANTE</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0100"/>
+       </record>
+       <record id="a100-0000" model="account.account.template">
+           <field name="code">100-0000</field>
+           <field name="name">FONDO FIJO DE CAJA</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0110"/>
+       </record>
+       <record id="a101-0000" model="account.account.template">
+           <field name="code">101-0000</field>
+           <field name="name">INVERSIONES TEMPORALES</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0110"/>
+       </record>
+       <record id="a101-0001" model="account.account.template">
+           <field name="code">101-0001</field>
+           <field name="name">Inversiones temporales</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a101-0000"/>
+       </record>
+       <record id="a102-0000" model="account.account.template">
+           <field name="code">102-0000</field>
+           <field name="name">BANCOS</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0110"/>
+       </record>
+       <record id="a102-0001" model="account.account.template">
+           <field name="code">102-0001</field>
+           <field name="name">Banorte 0558635194</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a102-0000"/>
+       </record>
+       <record id="a102-0002" model="account.account.template">
+           <field name="code">102-0002</field>
+           <field name="name">Bancomer 0161085417</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a102-0000"/>
+       </record>
+       <record id="a103-0000" model="account.account.template">
+           <field name="code">103-0000</field>
+           <field name="name">CLIENTES</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0110"/>
+       </record>
+       <record id="a106-0000" model="account.account.template">
+           <field name="code">106-0000</field>
+           <field name="name">IVA ACREDITABLE</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0110"/>
+       </record>
+       <record id="a107-0000" model="account.account.template">
+           <field name="code">107-0000</field>
+           <field name="name">FUNCIONARIOS Y EMPLEADOS</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0110"/>
+       </record>
+       <record id="a108-0000" model="account.account.template">
+           <field name="code">108-0000</field>
+           <field name="name">INVENTARIOS</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0110"/>
+       </record>
+       <record id="a109-0000" model="account.account.template">
+           <field name="code">109-0000</field>
+           <field name="name">ANTPO A PROVEEDORES</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0110"/>
+       </record>
+       <record id="a110-0000" model="account.account.template">
+           <field name="code">110-0000</field>
+           <field name="name">IVA ACREDITABLE</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0110"/>
+       </record>
+       <record id="a110-0001" model="account.account.template">
+           <field name="code">110-0001</field>
+           <field name="name">IVA Acreditable</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a110-0000"/>
+       </record>
+       <record id="a110-0003" model="account.account.template">
+           <field name="code">110-0003</field>
+           <field name="name">IVA Acreditado Pagos Prov</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a110-0000"/>
+       </record>
+       <record id="a111-0000" model="account.account.template">
+           <field name="code">111-0000</field>
+           <field name="name">IVA POR ACREDITAR</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0110"/>
+       </record>
+       <record id="a111-0001" model="account.account.template">
+           <field name="code">111-0001</field>
+           <field name="name">IVA Por Acreditar</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a111-0000"/>
+       </record>
+       <record id="a000-0120" model="account.account.template">
+           <field name="code">000-0120</field>
+           <field name="name">FIJO</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0100"/>
+       </record>
+       <record id="a120-0000" model="account.account.template">
+           <field name="code">120-0000</field>
+           <field name="name">Mobiliario y Equipo de oficina</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0120"/>
+       </record>
+       <record id="a121-0000" model="account.account.template">
+           <field name="code">121-0000</field>
+           <field name="name">Depreciación Acumulada de Mob y Eq. oficina</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0120"/>
+       </record>
+       <record id="a122-0000" model="account.account.template">
+           <field name="code">122-0000</field>
+           <field name="name">Equipo de Transporte</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0120"/>
+       </record>
+       <record id="a123-0000" model="account.account.template">
+           <field name="code">123-0000</field>
+           <field name="name">Depreciación Acumulada Equipo Transporte</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0120"/>
+       </record>
+       <record id="a124-0000" model="account.account.template">
+           <field name="code">124-0000</field>
+           <field name="name">Equipo de cómputo</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0120"/>
+       </record>
+       <record id="a125-0000" model="account.account.template">
+           <field name="code">125-0000</field>
+           <field name="name">Depreciación acumulada Eq. cómputo</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0120"/>
+       </record>
+       <record id="a126-0000" model="account.account.template">
+           <field name="code">126-0000</field>
+           <field name="name">Edificios</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0120"/>
+       </record>
+       <record id="a127-0000" model="account.account.template">
+           <field name="code">127-0000</field>
+           <field name="name">Depreciación Acumulada Edificios</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0120"/>
+       </record>
+       <record id="a128-0000" model="account.account.template">
+           <field name="code">128-0000</field>
+           <field name="name">Terrenos</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0120"/>
+       </record>
+       <record id="a129-0000" model="account.account.template">
+           <field name="code">129-0000</field>
+           <field name="name">Equipo de Servicios</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0120"/>
+       </record>
+       <record id="a130-0000" model="account.account.template">
+           <field name="code">130-0000</field>
+           <field name="name">Depreciación acumulada de Eq. de Servicios</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0120"/>
+       </record>
+       <record id="a000-0140" model="account.account.template">
+           <field name="code">000-0140</field>
+           <field name="name">DIFERIDO</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0100"/>
+       </record>
+       <record id="a140-0000" model="account.account.template">
+           <field name="code">140-0000</field>
+           <field name="name">Gastos de Organización</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0140"/>
+       </record>
+       <record id="a141-0000" model="account.account.template">
+           <field name="code">141-0000</field>
+           <field name="name">Gastos de Instalación y Adaptación</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0140"/>
+       </record>
+       <record id="a142-0000" model="account.account.template">
+           <field name="code">142-0000</field>
+           <field name="name">Impuesto IDE</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0140"/>
+       </record>
+       <record id="a143-0000" model="account.account.template">
+           <field name="code">143-0000</field>
+           <field name="name">Gastos Anticipados</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0140"/>
+       </record>
+       <record id="a150-0000" model="account.account.template">
+           <field name="code">150-0000</field>
+           <field name="name">Amortización Gastos Organización</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0140"/>
+       </record>
+       <record id="a151-0000" model="account.account.template">
+           <field name="code">151-0000</field>
+           <field name="name">Amortización Gastos Instalación y Adaptación</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0140"/>
+       </record>
+       <record id="a000-0200" model="account.account.template">
+           <field name="code">000-0200</field>
+           <field name="name">PASIVO</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a_root"/>
+       </record>
+       <record id="a000-0210" model="account.account.template">
+           <field name="code">000-0210</field>
+           <field name="name">CIRCULANTE</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0200"/>
+       </record>
+       <record id="a200-0000" model="account.account.template">
+           <field name="code">200-0000</field>
+           <field name="name">PROVEEDORES</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0210"/>
+       </record>
+       <record id="a201-0000" model="account.account.template">
+           <field name="code">201-0000</field>
+           <field name="name">ACREEDORES DIVERSOS</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0210"/>
+       </record>
+       <record id="a201-0001" model="account.account.template">
+           <field name="code">201-0001</field>
+           <field name="name">Nyxus Capital Sofom Enr</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a201-0000"/>
+       </record>
+       <record id="a201-0002" model="account.account.template">
+           <field name="code">201-0002</field>
+           <field name="name">United Auto de Monterrey</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a201-0000"/>
+       </record>
+       <record id="a201-0003" model="account.account.template">
+           <field name="code">201-0003</field>
+           <field name="name">Desarrollo Comercial Mca</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a201-0000"/>
+       </record>
+       <record id="a201-0004" model="account.account.template">
+           <field name="code">201-0004</field>
+           <field name="name">Consorcio Indust y Com Menovi</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a201-0000"/>
+       </record>
+       <record id="a201-0005" model="account.account.template">
+           <field name="code">201-0005</field>
+           <field name="name">Inova Waste, Sa de Cv</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a201-0000"/>
+       </record>
+       <record id="a201-1000" model="account.account.template">
+           <field name="code">201-1000</field>
+           <field name="name">Varios</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a201-0000"/>
+       </record>
+       <record id="a202-0000" model="account.account.template">
+           <field name="code">202-0000</field>
+           <field name="name">IMPUESTOS POR PAGAR</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0210"/>
+       </record>
+       <record id="a202-1000" model="account.account.template">
+           <field name="code">202-1000</field>
+           <field name="name">Iva por Pagar</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a202-0000"/>
+       </record>
+       <record id="a202-2000" model="account.account.template">
+           <field name="code">202-2000</field>
+           <field name="name">Impac</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a202-0000"/>
+       </record>
+       <record id="a202-3000" model="account.account.template">
+           <field name="code">202-3000</field>
+           <field name="name">Isr</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a202-0000"/>
+       </record>
+       <record id="a202-4000" model="account.account.template">
+           <field name="code">202-4000</field>
+           <field name="name">2% sobre Nómina</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a202-0000"/>
+       </record>
+       <record id="a202-5000" model="account.account.template">
+           <field name="code">202-5000</field>
+           <field name="name">Imss</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a202-0000"/>
+       </record>
+       <record id="a202-6000" model="account.account.template">
+           <field name="code">202-6000</field>
+           <field name="name">5% Infonavit</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a202-0000"/>
+       </record>
+       <record id="a202-7000" model="account.account.template">
+           <field name="code">202-7000</field>
+           <field name="name">Sar</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a202-0000"/>
+       </record>
+       <record id="a202-8000" model="account.account.template">
+           <field name="code">202-8000</field>
+           <field name="name">Retencion Iva 10%</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a202-0000"/>
+       </record>
+       <record id="a202-9000" model="account.account.template">
+           <field name="code">202-9000</field>
+           <field name="name">Retencion Isr  10%</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a202-0000"/>
+       </record>
+       <record id="a202-9002" model="account.account.template">
+           <field name="code">202-9002</field>
+           <field name="name">Retencion Iva 04%</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a202-0000"/>
+       </record>
+       <record id="a203-0000" model="account.account.template">
+           <field name="code">203-0000</field>
+           <field name="name">PRESTAMOS</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0210"/>
+       </record>
+       <record id="a203-1000" model="account.account.template">
+           <field name="code">203-1000</field>
+           <field name="name">Prestamos Bancarios</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a203-0000"/>
+       </record>
+       <record id="a203-2000" model="account.account.template">
+           <field name="code">203-2000</field>
+           <field name="name">Prestamos Particulares</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a203-0000"/>
+       </record>
+       <record id="a203-2001" model="account.account.template">
+           <field name="code">203-2001</field>
+           <field name="name">Nyxus Capital Sofom Enr</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a203-2000"/>
+       </record>
+       <record id="a203-2002" model="account.account.template">
+           <field name="code">203-2002</field>
+           <field name="name">Nyxus Factor Humano</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a203-2000"/>
+       </record>
+       <record id="a204-0000" model="account.account.template">
+           <field name="code">204-0000</field>
+           <field name="name">IVA COBRADO</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0210"/>
+       </record>
+       <record id="a204-0001" model="account.account.template">
+           <field name="code">204-0001</field>
+           <field name="name">Iva Cobrado</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a204-0000"/>
+       </record>
+       <record id="a204-0003" model="account.account.template">
+           <field name="code">204-0003</field>
+           <field name="name">IVA Acreditado en Pagos Provisionales</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a204-0000"/>
+       </record>
+       <record id="a204-0004" model="account.account.template">
+           <field name="code">204-0004</field>
+           <field name="name">IVA Trasladado No Cobrado</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a204-0000"/>
+       </record>
+       <record id="a205-0000" model="account.account.template">
+           <field name="code">205-0000</field>
+           <field name="name">ANTICIPOS CLIENTES</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0210"/>
+       </record>
+       <record id="a206-0000" model="account.account.template">
+           <field name="code">206-0000</field>
+           <field name="name">SUELDOS POR PAGAR</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0210"/>
+       </record>
+       <record id="a207-0000" model="account.account.template">
+           <field name="code">207-0000</field>
+           <field name="name">GASTOS POR PAGAR</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0210"/>
+       </record>
+       <record id="a208-0000" model="account.account.template">
+           <field name="code">208-0000</field>
+           <field name="name">PTU por Pagar</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0210"/>
+       </record>
+       <record id="a000-0220" model="account.account.template">
+           <field name="code">000-0220</field>
+           <field name="name">FIJO</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0200"/>
+       </record>
+       <record id="a220-0000" model="account.account.template">
+           <field name="code">220-0000</field>
+           <field name="name">Acreedores Hipotecarios</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0220"/>
+       </record>
+       <record id="a221-0000" model="account.account.template">
+           <field name="code">221-0000</field>
+           <field name="name">Creditos Bancarios</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0220"/>
+       </record>
+       <record id="a000-0230" model="account.account.template">
+           <field name="code">000-0230</field>
+           <field name="name">DIFERIDO</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0200"/>
+       </record>
+       <record id="a230-0000" model="account.account.template">
+           <field name="code">230-0000</field>
+           <field name="name">Intereses cobrados por adelantado</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a000-0230"/>
+       </record>
+       <record id="a000-0300" model="account.account.template">
+           <field name="code">000-0300</field>
+           <field name="name">CAPITAL</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a_root"/>
+       </record>
+       <record id="a000-0310" model="account.account.template">
+           <field name="code">000-0310</field>
+           <field name="name">Capital Social</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0300"/>
+       </record>
+       <record id="a000-0320" model="account.account.template">
+           <field name="code">000-0320</field>
+           <field name="name">Reserva Legal</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0300"/>
+       </record>
+       <record id="a000-0330" model="account.account.template">
+           <field name="code">000-0330</field>
+           <field name="name">Resultado Ejercicios Anteriores</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0300"/>
+       </record>
+       <record id="a000-0340" model="account.account.template">
+           <field name="code">000-0340</field>
+           <field name="name">Resultado del Ejercicio</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0300"/>
+       </record>
+       <record id="a000-0350" model="account.account.template">
+           <field name="code">000-0350</field>
+           <field name="name">Utilidades Retenidas</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0300"/>
+       </record>
+       <record id="a000-0360" model="account.account.template">
+           <field name="code">000-0360</field>
+           <field name="name">Ejercicio 2007</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0300"/>
+       </record>
+       <record id="a000-0370" model="account.account.template">
+           <field name="code">000-0370</field>
+           <field name="name">Futuros Aumentos de Capital</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0300"/>
+       </record>
+       <record id="a000-0380" model="account.account.template">
+           <field name="code">000-0380</field>
+           <field name="name">Ejercicio 2008</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0300"/>
+       </record>
+       <record id="a000-0400" model="account.account.template">
+           <field name="code">000-0400</field>
+           <field name="name">INGRESOS</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a_root"/>
+       </record>
+       <record id="a400-0000" model="account.account.template">
+           <field name="code">400-0000</field>
+           <field name="name">Ingresos x Serv cobrados</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0400"/>
+       </record>
+       <record id="a400-1000" model="account.account.template">
+           <field name="code">400-1000</field>
+           <field name="name">Ingresos x Serv no cobrados</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0400"/>
+       </record>
+       <record id="a401-0000" model="account.account.template">
+           <field name="code">401-0000</field>
+           <field name="name">Productos Financieros</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0400"/>
+       </record>
+       <record id="a402-0000" model="account.account.template">
+           <field name="code">402-0000</field>
+           <field name="name">Venta Activos Fijos</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0400"/>
+       </record>
+       <record id="a403-0000" model="account.account.template">
+           <field name="code">403-0000</field>
+           <field name="name">Ingresos Varios</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0400"/>
+       </record>
+       <record id="a404-0000" model="account.account.template">
+           <field name="code">404-0000</field>
+           <field name="name">Intereses Cobrados</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0400"/>
+       </record>
+       <record id="a405-0000" model="account.account.template">
+           <field name="code">405-0000</field>
+           <field name="name">Desc s/ingresos x serv</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0400"/>
+       </record>
+       <record id="a406-0000" model="account.account.template">
+           <field name="code">406-0000</field>
+           <field name="name">Ingresos cobros Ejercicios Anteriores</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0400"/>
+       </record>
+       <record id="a000-0500" model="account.account.template">
+           <field name="code">000-0500</field>
+           <field name="name">GASTOS</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a_root"/>
+       </record>
+       <record id="a501-0000" model="account.account.template">
+           <field name="code">501-0000</field>
+           <field name="name">Gastos de Venta</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0500"/>
+       </record>
+       <record id="a501-0100" model="account.account.template">
+           <field name="code">501-0100</field>
+           <field name="name">Sueldos y Salarios</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-0200" model="account.account.template">
+           <field name="code">501-0200</field>
+           <field name="name">Gratificaciones</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-0300" model="account.account.template">
+           <field name="code">501-0300</field>
+           <field name="name">Indeminizaciones</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-0400" model="account.account.template">
+           <field name="code">501-0400</field>
+           <field name="name">Imss patronal</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-0500" model="account.account.template">
+           <field name="code">501-0500</field>
+           <field name="name">Depreciaciones</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-0600" model="account.account.template">
+           <field name="code">501-0600</field>
+           <field name="name">Amortizaciones</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-0700" model="account.account.template">
+           <field name="code">501-0700</field>
+           <field name="name">Primas de seguro</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-0800" model="account.account.template">
+           <field name="code">501-0800</field>
+           <field name="name">Luz</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-0900" model="account.account.template">
+           <field name="code">501-0900</field>
+           <field name="name">Impuestos</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-1000" model="account.account.template">
+           <field name="code">501-1000</field>
+           <field name="name">Papelería y Utíles</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-1100" model="account.account.template">
+           <field name="code">501-1100</field>
+           <field name="name">Fletes y Acarreos</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-1200" model="account.account.template">
+           <field name="code">501-1200</field>
+           <field name="name">Transportes</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-1300" model="account.account.template">
+           <field name="code">501-1300</field>
+           <field name="name">Teléfonos</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-1400" model="account.account.template">
+           <field name="code">501-1400</field>
+           <field name="name">Gastos de Viaje</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-1500" model="account.account.template">
+           <field name="code">501-1500</field>
+           <field name="name">Capacitacion</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-9100" model="account.account.template">
+           <field name="code">501-9100</field>
+           <field name="name">No Deducibes</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a501-9200" model="account.account.template">
+           <field name="code">501-9200</field>
+           <field name="name">Varios</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a501-0000"/>
+       </record>
+       <record id="a502-0000" model="account.account.template">
+           <field name="code">502-0000</field>
+           <field name="name">Gastos Financieros</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0500"/>
+       </record>
+       <record id="a502-0001" model="account.account.template">
+           <field name="code">502-0001</field>
+           <field name="name">intereses</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a502-0000"/>
+       </record>
+       <record id="a502-0002" model="account.account.template">
+           <field name="code">502-0002</field>
+           <field name="name">comisiones bancarias</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a502-0000"/>
+       </record>
+       <record id="a502-0003" model="account.account.template">
+           <field name="code">502-0003</field>
+           <field name="name">Otros gastos</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a502-0000"/>
+       </record>
+       <record id="a503-0000" model="account.account.template">
+           <field name="code">503-0000</field>
+           <field name="name">Gastos de administracion</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0500"/>
+       </record>
+       <record id="a503-0100" model="account.account.template">
+           <field name="code">503-0100</field>
+           <field name="name">Sueldos y Salarios</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-0200" model="account.account.template">
+           <field name="code">503-0200</field>
+           <field name="name">Gratificaciones</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-0300" model="account.account.template">
+           <field name="code">503-0300</field>
+           <field name="name">Indeminizaciones</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-0400" model="account.account.template">
+           <field name="code">503-0400</field>
+           <field name="name">Seguro Social (Cuota Patronal)</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-0500" model="account.account.template">
+           <field name="code">503-0500</field>
+           <field name="name">Depreciaciones</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-0600" model="account.account.template">
+           <field name="code">503-0600</field>
+           <field name="name">Amortizaciones</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-0700" model="account.account.template">
+           <field name="code">503-0700</field>
+           <field name="name">Primas de seguro</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-0800" model="account.account.template">
+           <field name="code">503-0800</field>
+           <field name="name">Luz</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-0900" model="account.account.template">
+           <field name="code">503-0900</field>
+           <field name="name">Impuestos y Derechos</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-1000" model="account.account.template">
+           <field name="code">503-1000</field>
+           <field name="name">Articulos de oficina</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-1100" model="account.account.template">
+           <field name="code">503-1100</field>
+           <field name="name">Asesoria Legal</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-1200" model="account.account.template">
+           <field name="code">503-1200</field>
+           <field name="name">Transportes</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-1300" model="account.account.template">
+           <field name="code">503-1300</field>
+           <field name="name">Honorarios</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-1400" model="account.account.template">
+           <field name="code">503-1400</field>
+           <field name="name">Teléfonos</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-1500" model="account.account.template">
+           <field name="code">503-1500</field>
+           <field name="name">Capacitacion</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-1600" model="account.account.template">
+           <field name="code">503-1600</field>
+           <field name="name">Servicios Administrativos</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-1700" model="account.account.template">
+           <field name="code">503-1700</field>
+           <field name="name">Comisiones</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-1800" model="account.account.template">
+           <field name="code">503-1800</field>
+           <field name="name">Placas y Tenencia</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-1900" model="account.account.template">
+           <field name="code">503-1900</field>
+           <field name="name">Propaganda y Publicidad</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-2000" model="account.account.template">
+           <field name="code">503-2000</field>
+           <field name="name">Consultoria</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-2100" model="account.account.template">
+           <field name="code">503-2100</field>
+           <field name="name">Mtto de oficina</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-2200" model="account.account.template">
+           <field name="code">503-2200</field>
+           <field name="name">Cursos</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-2300" model="account.account.template">
+           <field name="code">503-2300</field>
+           <field name="name">Propaganda y Publicidad</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-2400" model="account.account.template">
+           <field name="code">503-2400</field>
+           <field name="name">Compensacion</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-9100" model="account.account.template">
+           <field name="code">503-9100</field>
+           <field name="name">No Deducibles</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-9200" model="account.account.template">
+           <field name="code">503-9200</field>
+           <field name="name">Gastos Varios</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-9300" model="account.account.template">
+           <field name="code">503-9300</field>
+           <field name="name">Servicios Profesionales</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-9400" model="account.account.template">
+           <field name="code">503-9400</field>
+           <field name="name">Asesorias administrativas</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-9500" model="account.account.template">
+           <field name="code">503-9500</field>
+           <field name="name">Bonos</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a503-9600" model="account.account.template">
+           <field name="code">503-9600</field>
+           <field name="name">Seguros y Fianzas</field>
+           <field name="type">other</field>
+           <field name="user_type" ref="user_type_other"/>
+         <field name="currency_id">2</field>
+           <field name="parent_id" ref="a503-0000"/>
+       </record>
+       <record id="a504-0000" model="account.account.template">
+           <field name="code">504-0000</field>
+           <field name="name">Costo Venta</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0500"/>
+       </record>
+       <record id="a505-0000" model="account.account.template">
+           <field name="code">505-0000</field>
+           <field name="name">Compras</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0500"/>
+       </record>
+       <record id="a506-0000" model="account.account.template">
+           <field name="code">506-0000</field>
+           <field name="name">Gastos sobre compras</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0500"/>
+       </record>
+       <record id="a507-0000" model="account.account.template">
+           <field name="code">507-0000</field>
+           <field name="name">Costo de Venta Activos Fijos</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0500"/>
+       </record>
+       <record id="a508-0000" model="account.account.template">
+           <field name="code">508-0000</field>
+           <field name="name">Devoluciones sobre Compra</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0500"/>
+       </record>
+       <record id="a509-0000" model="account.account.template">
+           <field name="code">509-0000</field>
+           <field name="name">Descuentos sobre Compras</field>
+           <field name="type">view</field>
+           <field name="user_type" ref="user_type_view"/>
+           <field name="parent_id" ref="a000-0500"/>
+       </record>
+    </data>
+</openerp>

@@ -1,0 +1,17 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_payment_cheque","payment.cheque","model_payment_cheque","bias_payment_wo_cc_wo_cc.group_cheque_manager",1,1,1,1
+"access_payment_cheque_user","payment.cheque","model_payment_cheque","bias_payment_wo_cc.group_cheque_user",1,1,1,0
+"access_payment_export_line","payment.export.line","model_payment_export_line","bias_payment_wo_cc.group_cheque_manager",1,1,1,1
+"access_payment_export_file","payment.export.file","model_payment_export_file","bias_payment_wo_cc.group_cheque_manager",1,1,1,1
+"access_report_cheque","report.cheque","model_report_cheque","bias_payment_wo_cc.group_cheque_manager",1,1,1,1
+"access_report_cheque_user","report.cheque","model_report_cheque","bias_payment_wo_cc.group_cheque_user",1,0,0,0
+"access_report_cheque_line","report.cheque.line","model_report_cheque_line","bias_payment_wo_cc.group_cheque_manager",1,1,1,1
+"access_report_cheque_line_user","report.cheque.line","model_report_cheque_line","bias_payment_wo_cc.group_cheque_user",1,0,0,0
+"access_account_treasury","account.treasury","model_account_treasury","bias_payment_wo_cc.group_treasury_manager",1,1,1,1
+"access_account_treasury_user","account.treasury","model_account_treasury","bias_payment_wo_cc.group_treasury_user",1,0,0,0
+"access_account_treasury_account","account.treasury.account","model_account_treasury_account","bias_payment_wo_cc.group_treasury_manager",1,1,1,1
+"access_account_treasury_account_user","account.treasury.account","model_account_treasury_account","bias_payment_wo_cc.group_treasury_user",1,0,0,0
+"access_account_global_treasury","account.global.treasury","model_account_global_treasury","bias_payment_wo_cc.group_treasury_manager",1,1,1,1
+"access_account_global_treasury_user","account.global.treasury","model_account_global_treasury","bias_payment_wo_cc.group_treasury_user",1,0,0,0
+"access_account_global_line","account.global.line","model_account_global_line","bias_payment_wo_cc.group_treasury_manager",1,1,1,1
+"access_account_global_line_user","account.global.line","model_account_global_line","bias_payment_wo_cc.group_treasury_user",1,0,0,0

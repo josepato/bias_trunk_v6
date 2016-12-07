@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+ 	=========================================================
+	  migrate 
+	=========================================================
+        <record id="view_migrate_form" model="ir.ui.view">
+            <field name="name">migrate.migrate.form</field>
+            <field name="model">migrate.migrate</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="DB Migrate">
+                    <group col="6" colspan="4">
+                    <field name="name" select="1"/>
+                    <button name="%(load_module)d" states="draft" string="Load Modules" type="action"/>
+                    <button name="%(migrate_module)d" states="idle,pause" string="Migrate Modules" type="action"/>
+                    <button name="%(set_sequences)d" states="done" string="Set Sequences" type="action"/>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Modules Information">
+		            <field colspan="4" name="module_ids" nolabel="1" widget="one2many_list">
+                                <form string="Modules">
+	                            <group col="4" colspan="4">
+            			        <field name="model_org" />
+			                <field name="model_dest" />
+	                            </group>
+			    		<field name="field_ids" width="450" height="450" colspan="4" nolabel="1"/>
+	                            <separator colspan="4"/>
+	                            <group col="4" colspan="4">
+	                            	<field name="state" select="1" readonly="1"/>
+	                            	<button name="cancel" states="field" string="Cancel" type="object"/>
+	                            	<button name="field" states="done" string="Set Field Loaded" type="object"/>
+	                            </group>
+			        </form>
+                            </field>
+                	    <separator colspan="4"/>
+    		    	    <group col="6" colspan="4">
+                        	<button name="cancel" states="modules,pause,idle" string="Cancel" type="object" colspan="2"/>
+    		    	 	<button name="include" states="pause" string="Include" type="object" colspan="2"/>
+    		    		<button name="exclude" states="idle" string="Exclude" type="object" colspan="2"/>
+                    	    </group>
+                        </page>
+                        <page string="Script Information">
+			    <field colspan="4" name="script_ids" nolabel="1" widget="one2many_list"/>
+                	    <separator colspan="4"/>
+  		    	    <button name="active_script" string="Activate All Script" type="object" colspan="1"/>
+  		    	    <button name="run" string="Run" type="object" colspan="1"/>
+                        </page>
+                        <page string="Python Test">
+			    <field name="localdic" colspan="3" nolabel="1"/>
+	                    <button name="%(run_python)d" string="Run Python" type="action" colspan="1"/>
+			    <field colspan="4" name="python" nolabel="1"/>
+                        </page>
+                        <page string="Instructions">
+			    <field colspan="4" name="instructions" nolabel="1"/>
+                        </page>
+                    </notebook>
+		    <separator colspan="4"/>
+		    <field name="state" select="1" readonly="1"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_migrate_tree" model="ir.ui.view">
+            <field name="name">migrate.migrate.tree</field>
+            <field name="model">migrate.migrate</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="DB Migrate">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+	<record model="ir.actions.act_window" id="action_migrate_form">
+	    <field name="name">DB Migrate</field>
+	    <field name="res_model">migrate.migrate</field>
+	    <field name="view_type">form</field>
+	    <field name="view_mode">tree,form</field>
+	</record>
+	<menuitem id="menu_migrate" name="DB Migrate" parent="base.menu_administration" sequence="17" />
+	<menuitem id="menu_migrate_form" action="action_migrate_form" parent="menu_migrate" />
+
+ 	=========================================================
+	  Migrate Objects
+	=========================================================
+        <record id="view_migrate_module_form" model="ir.ui.view">
+            <field name="name">migrate.migrate.module.form</field>
+            <field name="model">migrate.migrate.module</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Modules">
+		    <field name="model_org" />
+		    <field name="model_dest" />
+                    <notebook>
+                        <page string="Fields">
+			    <field name="field_ids" colspan="4" nolabel="1"/>
+                        </page>
+                        <page string="Notes">
+			    <field name="note" colspan="4" nolabel="1"/>
+                        </page>
+                    </notebook>
+                    <separator colspan="4"/>
+                    <field name="state" select="1" readonly="1"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_migrate_module_tree" model="ir.ui.view">
+            <field name="name">migrate.migrate.module.tree</field>
+            <field name="model">migrate.migrate.module</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree colors="blue:state=='field';red:state=='draft'" editable="top" string="Modules">
+		    <field name="seq" />
+		    <field name="name" />
+		    <field name="id_seq" />
+		    <field name="reg" />
+		    <field name="model_org" />
+		    <field name="model_dest" />
+		    <field name="state" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_migrate_module_form" model="ir.actions.act_window">
+            <field name="name">Modules</field>
+            <field name="res_model">migrate.migrate.module</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+ 	=========================================================
+	  Migrate Field
+	=========================================================
+        <record id="view_migrate_field_form" model="ir.ui.view">
+            <field name="name">migrate.migrate.field.form</field>
+            <field name="model">migrate.migrate.field</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Fields">
+<!--		    <field name="seq" />-->
+		    <field name="name" />
+		    <field name="field_org" />
+		    <field name="field_dest" />
+		    <field name="field_org_type" />
+		    <field name="field_org_type" />
+		    <field name="include_reg" height="10" colspan="4"/>
+		    <field name="exclude_reg" height="10" colspan="4"/>
+		    <separator string="Local Dictionary" colspan="4"/>
+		    <separator string="Object Dictionary cr_from, cr_to, field, reg, pool, cr, uid, val" colspan="4"/>
+		    <separator string="Python Code" colspan="4"/>
+		    <field name="python" nolabel="1" height="150" colspan="4"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_migrate_field_tree" model="ir.ui.view">
+            <field name="name">migrate.migrate.field.tree</field>
+            <field name="model">migrate.migrate.field</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree colors="blue:field_org_type!=field_dest_type" editable="bottom" string="Fields">
+<!--		    <field name="seq" />-->
+		    <field name="include" />
+		    <field name="code" />
+		    <field name="order" />
+		    <field name="name" />
+		    <field name="field_org" />
+		    <field name="field_org_type" />
+		    <field name="field_dest" domain="[('model_id','=',parent.model_dest)]" on_change="onchange_field_id(field_dest)"/>
+		    <field name="field_dest_type" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_migrate_field_form" model="ir.actions.act_window">
+            <field name="name">Fields</field>
+            <field name="res_model">migrate.migrate.field</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+ 	=========================================================
+	  SCRIPT
+	=========================================================
+        <record id="view_migrate_script_form" model="ir.ui.view">
+            <field name="name">migrate.migrate.script.form</field>
+            <field name="model">migrate.migrate.script</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Script">
+		    <field name="name"/>
+                    <button name="%(action_load_utilities)d" string="Load Utilities" type="action"/>
+		    <notebook colspan="4">
+		 	<page string="Python Code">
+			    <separator string="Script Dictionary pool, cr, uid, cr_from, cr_to, id" colspan="4"/>
+			    <separator string="Object Dictionary cr_from, cr_to, field, reg, pool, cr, uid, val" colspan="4"/>
+			    <field name="python" nolabel="1" height="150" colspan="4"/>
+			</page>
+			<page string="Notes">
+			    <field name="note" colspan="4" nolabel="1"/>
+			</page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+        <record id="view_migrate_script_tree" model="ir.ui.view">
+            <field name="name">migrate.migrate.script.tree</field>
+            <field name="model">migrate.migrate.script</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom" string="Script">
+		    <field name="seq" />
+		    <field name="actual_one" />
+		    <field name="next_one" />
+		    <field name="next" />
+		    <field name="active" />
+		    <field name="name" />
+		    <field name="object_id" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_migrate_script_form" model="ir.actions.act_window">
+            <field name="name">Script</field>
+            <field name="res_model">migrate.migrate.script</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+ 	=========================================================
+	  Utilities
+	=========================================================
+        <record id="view_migrate_utilities_form1" model="ir.ui.view">
+            <field name="name">migrate.migrate.utilities.form1</field>
+            <field name="model">migrate.migrate.utilities</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Utilities">
+		    <field name="name"/>
+		    <separator string="Free Utility Code, Script Dictionary: pool, cr, uid, cr_from, cr_to, id" colspan="4"/>
+			<field name="free_utility" nolabel="1" height="150" colspan="4"/>
+	 	        <field name="free_parameters"/>
+	 	        <field name="separator_1"/>
+		    <separator string="Object Utility Code, Script Dictionary: pool, cr, uid, cr_from, cr_to, id" colspan="4"/>
+			<field name="object_utility" nolabel="1" height="150" colspan="4"/>
+	 	        <field name="object_parameters"/>
+	 	        <field name="separator_2"/>
+		    <separator string="Field Utility Code, Object Dictionary: cr_from, cr_to, field, reg, pool, cr, uid, val" colspan="4"/>
+			<field name="field_utility" nolabel="1" height="150" colspan="4"/>
+	 	        <field name="field_parameters"/>
+	 	        <field name="separator_3"/>
+		    <separator string="Related Utility Code, Field Dictionary: cr_from, cr_to, field, reg, pool, cr, uid, val" colspan="4"/>
+			<field name="related_utility" nolabel="1" height="150" colspan="4"/>
+	 	        <field name="related_parameters"/>
+		    <separator string="Notes" colspan="4"/>
+		        <field name="note" colspan="4" nolabel="1"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_migrate_utilities_tree1" model="ir.ui.view">
+            <field name="name">migrate.migrate.utilities.tree1</field>
+            <field name="model">migrate.migrate.utilities</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Utilities">
+		    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_migrate_utilities_form1" model="ir.actions.act_window">
+            <field name="name">Utilities1</field>
+            <field name="res_model">migrate.migrate.utilities</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+	<menuitem id="menu_migrate_utilities_form1" action="action_migrate_utilities_form1" parent="menu_migrate" />
+
+        <record id="view_migrate_utilities_form" model="ir.ui.view">
+            <field name="name">migrate.utilities.form</field>
+            <field name="model">migrate.utilities</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Utilities">
+		    <field name="name"/>
+		    <separator string="Free Utility Code, Script Dictionary: pool, cr, uid, cr_from, cr_to, id" colspan="4"/>
+			<field name="free_utility" nolabel="1" height="150" colspan="4"/>
+	 	        <field name="free_parameters"/>
+	 	        <field name="separator_1"/>
+		    <separator string="Object Utility Code, Script Dictionary: pool, cr, uid, cr_from, cr_to, id" colspan="4"/>
+			<field name="object_utility" nolabel="1" height="150" colspan="4"/>
+	 	        <field name="object_parameters"/>
+	 	        <field name="separator_2"/>
+		    <separator string="Field Utility Code, Object Dictionary: cr_from, cr_to, field, reg, pool, cr, uid, val" colspan="4"/>
+			<field name="field_utility" nolabel="1" height="150" colspan="4"/>
+	 	        <field name="field_parameters"/>
+	 	        <field name="separator_3"/>
+			<button name="%(action_convert_python)d" type='action' string='Field Utility Library' icon="gtk-convert" colspan="4"/>
+		    <separator string="Related Utility Code, Object Dictionary: cr_from, cr_to, field, reg, pool, cr, uid, val" colspan="4"/>
+			<field name="related_utility" nolabel="1" height="150" colspan="4"/>
+	 	        <field name="related_parameters"/>
+		    <separator string="Notes" colspan="4"/>
+		        <field name="note" colspan="4" nolabel="1"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_migrate_utilities_tree" model="ir.ui.view">
+            <field name="name">migrate.utilities.tree</field>
+            <field name="model">migrate.utilities</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Utilities">
+		    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_migrate_utilities_form" model="ir.actions.act_window">
+            <field name="name">Utilities</field>
+            <field name="res_model">migrate.utilities</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+	<menuitem id="menu_migrate_utilities_form" action="action_migrate_utilities_form" parent="menu_migrate" />
+
+ 	=========================================================
+	  Python Utilities
+	=========================================================
+        <record id="view_migrate_python_utilities_form" model="ir.ui.view">
+            <field name="name">migrate.python.utilities.form</field>
+            <field name="model">migrate.python.utilities</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Python Utilities">
+		    <field name="name"/>
+		    <field name="type"/>
+		    <separator string="Write python code using this Field Dictionary: cr_from, cr_to, field, reg, pool, cr, uid, val" colspan="4"/>
+			<field name="python" nolabel="1" height="350" colspan="4"/>
+		    <separator string="Notes" colspan="4"/>
+		        <field name="note" colspan="4" nolabel="1"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_migrate_python_utilities_tree" model="ir.ui.view">
+            <field name="name">migrate.python.utilities.tree</field>
+            <field name="model">migrate.python.utilities</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Python Utilities">
+		    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_migrate_python_utilities_form" model="ir.actions.act_window">
+            <field name="name">Python Utilities</field>
+            <field name="res_model">migrate.python.utilities</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+	<menuitem id="menu_migrate_python_utilities_form" action="action_migrate_python_utilities_form" parent="menu_migrate" />
+
+    </data>
+</openerp>

@@ -1,0 +1,125 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* account_invoice_complement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-20120325-233047\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-04 19:51+0000\n"
+"PO-Revision-Date: 2012-07-04 15:04-0600\n"
+"Last-Translator: luis garcia <luisgescalera@hotmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. module: account_invoice_complement
+#: model:ir.model,name:account_invoice_complement.model_invoice_paymethod
+msgid "Invoice Pay Method"
+msgstr "Metodo de pago"
+
+#. module: account_invoice_complement
+#: selection:account.invoice,invoice_peymethod:0
+msgid "Credit Card or debit"
+msgstr "Tarjeta (credito ó debito)"
+
+#. module: account_invoice_complement
+#: sql_constraint:account.invoice:0
+msgid "Invoice Number must be unique per Company!"
+msgstr "¡El número de factura debe ser único por compañía!"
+
+#. module: account_invoice_complement
+#: help:account.invoice,invoice_kindpay:0
+msgid "pay kind."
+msgstr "Metodo de pago"
+
+#. module: account_invoice_complement
+#: selection:account.invoice,invoice_peymethod:0
+msgid "Bank Tranfer"
+msgstr "Transferencia Bancaria"
+
+#. module: account_invoice_complement
+#: field:account.invoice,invoice_account_number:0
+msgid "Invoice account number"
+msgstr "Ultimos 4 digitos de  Cta."
+
+#. module: account_invoice_complement
+#: selection:account.invoice,invoice_kindpay:0
+msgid "Bank Transfer"
+msgstr "Transferencia Bancaria"
+
+#. module: account_invoice_complement
+#: selection:account.invoice,invoice_bankname:0
+#: selection:account.invoice,invoice_kindpay:0
+#: selection:account.invoice,invoice_peymethod:0
+msgid "unidentified"
+msgstr "No identificado"
+
+#. module: account_invoice_complement
+#: selection:account.invoice,invoice_bankname:0
+msgid "Banamex"
+msgstr "Banamex"
+
+#. module: account_invoice_complement
+#: field:account.invoice,invoice_peymethod:0
+msgid "Pay Method"
+msgstr "Metodo de Pago"
+
+#. module: account_invoice_complement
+#: field:account.invoice,invoice_kindpay:0
+msgid "pay kind"
+msgstr "Metodo de pago"
+
+#. module: account_invoice_complement
+#: selection:account.invoice,invoice_kindpay:0
+#: selection:account.invoice,invoice_peymethod:0
+msgid "Cash"
+msgstr "Efectivo"
+
+#. module: account_invoice_complement
+#: selection:account.invoice,invoice_bankname:0
+msgid "HSBC"
+msgstr "HSBC"
+
+#. module: account_invoice_complement
+#: field:account.invoice,invoice_bankname:0
+msgid "Bank institution"
+msgstr "Institución bancaria"
+
+#. module: account_invoice_complement
+#: help:account.invoice,invoice_bankname:0
+msgid "the name of institution bank."
+msgstr "el nombre de la institucion bancaria"
+
+#. module: account_invoice_complement
+#: view:account.invoice:0
+msgid "Pey Method and Account Data"
+msgstr "Información del metodo de pago"
+
+#. module: account_invoice_complement
+#: selection:account.invoice,invoice_bankname:0
+msgid "BBVA Bancomer"
+msgstr "BBVA Bancomer"
+
+#. module: account_invoice_complement
+#: selection:account.invoice,invoice_kindpay:0
+msgid "Credit Card "
+msgstr "Tarjeta de credito ó debito"
+
+#. module: account_invoice_complement
+#: model:ir.model,name:account_invoice_complement.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: account_invoice_complement
+#: model:ir.model,name:account_invoice_complement.model_invoice_bankname
+msgid "Invoice Bank name"
+msgstr "nombre del banco que expide el metodo de pago"
+
+#. module: account_invoice_complement
+#: help:account.invoice,invoice_peymethod:0
+msgid "Will change of invoice pay method."
+msgstr "Cambia el metodo de pago de la factura"
+

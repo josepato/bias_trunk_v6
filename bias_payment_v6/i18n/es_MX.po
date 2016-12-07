@@ -1,0 +1,1043 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_payment_v6
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-06-29 18:04+0000\n"
+"PO-Revision-Date: 2011-06-29 18:04+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_payment_v6
+#: help:payment.cheque.line,move_line_id:0
+msgid "This Entry Line will be referred for the information of the ordering customer."
+msgstr "This Entry Line will be referred for the information of the ordering customer."
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "HECHO POR"
+msgstr "HECHO POR"
+
+#. module: bias_payment_v6
+#: field:payment.mode,cheque_sequence_id:0
+msgid "Cheque Sequence"
+msgstr "Cheque Sequence"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "Helvetica-Bold"
+msgstr "Helvetica-Bold"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,type:0
+msgid "Character"
+msgstr "Caracter"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+msgid "Total in Company Currency"
+msgstr "Total en moneda de la compañía"
+
+#. module: bias_payment_v6
+#: help:payment.cheque,mode:0
+msgid "Select the Payment Mode to be applied."
+msgstr "Selecciona la forma de pago"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+msgid "Group By..."
+msgstr "Group By..."
+
+#. module: bias_payment_v6
+#: field:payment.mode,gain_fluc_acc:0
+msgid "Gain Account"
+msgstr "Gain Account"
+
+#. module: bias_payment_v6
+#: help:payment.mode,cheque_sequence_id:0
+msgid "The sequence used for cheque numbers in this payment mode."
+msgstr "The sequence used for cheque numbers in this payment mode."
+
+#. module: bias_payment_v6
+#: field:payment.cheque.line,amount_document:0
+msgid "Document"
+msgstr "Documento"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,method:0
+msgid "Amount to Text"
+msgstr "Monto a Texto"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Code ID"
+msgstr "ID Código"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "Courier-BoldOblique"
+msgstr "Courier-BoldOblique"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,zero:0
+msgid "Add Zero Right"
+msgstr "Ceros Derecha"
+
+#. module: bias_payment_v6
+#: help:payment.cheque.line,date:0
+msgid "If no payment date is specified, the bank will treat this payment line directly"
+msgstr "Si no se especifica fecha de pago, la fecha de pago será la actual"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "Helvetica-BoldOblique"
+msgstr "Helvetica-BoldOblique"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+msgid "Set to Draft"
+msgstr "Cambiar a Draft"
+
+#. module: bias_payment_v6
+#: model:ir.model,name:bias_payment_v6.model_payment_cheque_line
+msgid "Payment Cheque Line"
+msgstr "Payment Cheque Line"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,writeoff_journal_id:0
+#: field:payment.mode,writeoff_journal_id:0
+msgid "Writeoff Journal"
+msgstr "Diario de Ajuste"
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "PÓLIZA DE CHEQUE"
+msgstr "PÓLIZA DE CHEQUE"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "VAT"
+msgstr "RFC"
+
+#. module: bias_payment_v6
+#: wizard_field:import_invoice,init,entries:0
+msgid "Entries"
+msgstr "Asientos"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Dscription"
+msgstr "Descripción"
+
+#. module: bias_payment_v6
+#: help:payment.cheque.line,amount_currency:0
+msgid "Payment amount in document currency"
+msgstr "Monto del pago en la moneda del documento"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,operator:0
+msgid "<"
+msgstr "<"
+
+#. module: bias_payment_v6
+#: field:payment.cheque.line,account_id:0
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: bias_payment_v6
+#: field:payment.export.file,same_bnk:0
+msgid "Same Bank Code"
+msgstr "El mismo Banco"
+
+#. module: bias_payment_v6
+#: wizard_field:import_invoice,init_back,duedate:0
+msgid "Due Date"
+msgstr "Vencimiento"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,operator:0
+msgid "=="
+msgstr "=="
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "Helvetica"
+msgstr "Helvetica"
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "DEBE"
+msgstr "DEBE"
+
+#. module: bias_payment_v6
+#: wizard_button:import_invoice,init,create:0
+msgid "_Add to payment order"
+msgstr "_Add to payment order"
+
+#. module: bias_payment_v6
+#: field:payment.export.line,value:0
+msgid "Value"
+msgstr "Valor"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,amount:0
+#: field:payment.export.file,number:0
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Amount"
+msgstr "Monto Doc."
+
+#. module: bias_payment_v6
+#: sql_constraint:account.move.line:0
+msgid "Wrong credit or debit value in accounting entry !"
+msgstr "¡Valor haber o debe erróneo en el asiento contable!"
+
+#. module: bias_payment_v6
+#: selection:payment.export.file,number:0
+msgid "#####000"
+msgstr "#####000"
+
+#. module: bias_payment_v6
+#: selection:payment.export.file,date:0
+msgid "DDMMYYYY"
+msgstr "DDMMYYYY"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,type:0
+msgid "With Decimals"
+msgstr "Con Decimales"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "Times-BoldItalic"
+msgstr "Times-BoldItalic"
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "PÓLIZA No."
+msgstr "PÓLIZA No."
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "MONTO"
+msgstr "MONTO"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "PAGESE EL CHEQUE"
+msgstr "PAGESE EL CHEQUE"
+
+#. module: bias_payment_v6
+#: field:payment.cheque.line,amount_currency:0
+msgid "Payment"
+msgstr "Pago"
+
+#. module: bias_payment_v6
+#: field:payment.mode,loss_fluc_acc:0
+msgid "Loss Account"
+msgstr "Loss Account"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "ZapfDingbats"
+msgstr "ZapfDingbats"
+
+#. module: bias_payment_v6
+#: sql_constraint:account.journal:0
+msgid "The code of the journal must be unique per company !"
+msgstr "¡El código del diario debe ser único por compañía!"
+
+#. module: bias_payment_v6
+#: wizard_button:import_invoice,init,end:0
+#: wizard_button:import_invoice,init_back,end:0
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+msgid "Payment Information"
+msgstr "Información del Pago"
+
+#. module: bias_payment_v6
+#: field:payment.export.line,operator:0
+msgid "Operator"
+msgstr "Operador"
+
+#. module: bias_payment_v6
+#: model:ir.model,name:bias_payment_v6.model_res_partner
+#: field:payment.cheque,partner_id:0
+#: field:payment.cheque.line,partner_id:0
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Operation"
+msgstr "Operación"
+
+#. module: bias_payment_v6
+#: field:report.cheque.line,font:0
+msgid "Font"
+msgstr "Fuente"
+
+#. module: bias_payment_v6
+#: selection:payment.export.file,number:0
+msgid "###00000"
+msgstr "###00000"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+#: selection:payment.cheque,state:0
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: bias_payment_v6
+#: field:payment.export.line,end:0
+msgid "End"
+msgstr "Fin"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: bias_payment_v6
+#: field:account.journal,gain_fluc_acc:0
+msgid "Gain Fluctuation Acc."
+msgstr "Cuenta de Ganancia Cambiaria."
+
+#. module: bias_payment_v6
+#: field:payment.export.line,std_field:0
+msgid "Standar Field"
+msgstr "Campo Estandar"
+
+#. module: bias_payment_v6
+#: selection:payment.export.file,number:0
+msgid "##000000"
+msgstr "##000000"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+msgid "Transaction Information"
+msgstr "Informe de Transacción"
+
+#. module: bias_payment_v6
+#: model:ir.model,name:bias_payment_v6.model_payment_mode
+#: view:payment.cheque:0
+msgid "Payment Mode"
+msgstr "Modo de pago"
+
+#. module: bias_payment_v6
+#: field:payment.cheque.line,ml_inv_ref:0
+msgid "Invoice Ref."
+msgstr "Factura"
+
+#. module: bias_payment_v6
+#: field:payment.cheque.line,move_line_id:0
+msgid "Entry line"
+msgstr "Línea Cont."
+
+#. module: bias_payment_v6
+#: field:payment.mode,available_account_id:0
+msgid "Available Account"
+msgstr "Monto Disponible"
+
+#. module: bias_payment_v6
+#: code:addons/bias_payment_v6/account_move_line.py:113
+#, python-format
+msgid "Error !"
+msgstr "Error !"
+
+#. module: bias_payment_v6
+#: help:account.journal,reconcile_tolerance:0
+msgid "Difference tolerated in payment transaction. "
+msgstr "Difference tolerated in payment transaction. "
+
+#. module: bias_payment_v6
+#: field:payment.cheque,reconciled:0
+msgid "Paid/Reconciled"
+msgstr "Pagado/Conciliado"
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "SUMAS IGUALES"
+msgstr "SUMAS IGUALES"
+
+#. module: bias_payment_v6
+#: selection:payment.cheque,state:0
+msgid "Printed"
+msgstr "Impreso"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,method:0
+msgid "None"
+msgstr "Ninguno"
+
+#. module: bias_payment_v6
+#: field:payment.mode,transit_account_id:0
+msgid "Transit Account"
+msgstr "Cuenta de Tránsito"
+
+#. module: bias_payment_v6
+#: field:payment.mode,payment_export_id:0
+msgid "Export File"
+msgstr "Archivo de Carga"
+
+#. module: bias_payment_v6
+#: wizard_button:import_invoice,init_back,search:0
+msgid "_Search"
+msgstr "_Search"
+
+#. module: bias_payment_v6
+#: help:payment.cheque.line,amount_document:0
+msgid "Document's Total Amount"
+msgstr "Monto total del documento"
+
+#. module: bias_payment_v6
+#: field:payment.export.line,zero:0
+msgid "Zero/Space"
+msgstr "Cero/Espacio"
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "CONCEPTO DEL PAGO"
+msgstr "CONCEPTO DEL PAGO"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "Times-Roman"
+msgstr "Times-Roman"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,zero:0
+msgid "Add Zero Left"
+msgstr "Ceros Izquierda"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Efective Date"
+msgstr "Fecha Efectiva"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,concept:0
+msgid "Concept"
+msgstr "Concepto"
+
+#. module: bias_payment_v6
+#: field:payment.cheque.line,partial:0
+msgid "Partial"
+msgstr "Parcial"
+
+#. module: bias_payment_v6
+#: field:report.cheque.line,y:0
+msgid "Vertical"
+msgstr "Vertical"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+msgid "State"
+msgstr "Estado"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "Times-Bold"
+msgstr "Times-Bold"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,currency_id:0
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,user_id:0
+msgid "User"
+msgstr "Usuario"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Currency Dest."
+msgstr "Moneda Dest."
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "Helvetica-Oblique"
+msgstr "Helvetica-Oblique"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "Symbol"
+msgstr "Symbol"
+
+#. module: bias_payment_v6
+#: model:ir.model,name:bias_payment_v6.model_account_payment_populate_statement
+msgid "Account Payment Populate Statement"
+msgstr "Contabilidad extracto generar pago"
+
+#. module: bias_payment_v6
+#: model:ir.actions.act_window,help:bias_payment_v6.action_cheque_tree
+msgid "Cheque control for supplier payments, payments can be codified manualy or imported, if so, the accounts move line will by reconciled."
+msgstr "Control de Cheques, los pagos por cheque pueden ser codificados manualmente o importados de facturas pendientes de pago, si es así los documentos serán conciliados, también permite la impresión de cheques y pólizas de cheque."
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "NOMBRE O CONCEPTO"
+msgstr "NOMBRE O CONCEPTO"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "Times-Italic"
+msgstr "Times-Italic"
+
+#. module: bias_payment_v6
+#: help:account.journal,gain_fluc_acc:0
+msgid "Used as write off account when the currency fluctuation result in gain."
+msgstr "Se utiliza como cuenta de ajuste cuando el resultado de la fluctuación es una ganancia."
+
+#. module: bias_payment_v6
+#: field:payment.export.line,start:0
+msgid "Start"
+msgstr "Inicio"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+#: selection:payment.cheque,state:0
+msgid "Draft"
+msgstr "Draft"
+
+#. module: bias_payment_v6
+#: selection:payment.export.file,date:0
+msgid "YYYYMMDD"
+msgstr "YYYYMMDD"
+
+#. module: bias_payment_v6
+#: field:account.journal,loss_fluc_acc:0
+msgid "Loss Fluctuation Acc."
+msgstr "Cuenta de perdida cambiaria."
+
+#. module: bias_payment_v6
+#: field:payment.export.file,other_bnk:0
+msgid "Other Bank Code"
+msgstr "Otro Banco"
+
+#. module: bias_payment_v6
+#: field:payment.cheque.line,currency:0
+msgid "Document Currency"
+msgstr "Moneda Doc."
+
+#. module: bias_payment_v6
+#: model:ir.actions.wizard,name:bias_payment_v6.wizard_import_invoice
+msgid "Import Supplier Invoice"
+msgstr "Importar Facturas de Proveedor"
+
+#. module: bias_payment_v6
+#: field:report.cheque.line,method:0
+msgid "Method"
+msgstr "Método"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,state:0
+msgid "Status"
+msgstr "Estado"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Payment Instruction"
+msgstr "Instrucciones de Pago"
+
+#. module: bias_payment_v6
+#: field:payment.cheque.line,pay_rate:0
+msgid "Payment Rate"
+msgstr "Tasa Pago"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "Courier"
+msgstr "Courier"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+msgid "To Print"
+msgstr "A Imprimir"
+
+#. module: bias_payment_v6
+#: help:payment.cheque.line,partner_id:0
+msgid "The Ordering Customer"
+msgstr "The Ordering Customer"
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "]"
+msgstr "]"
+
+#. module: bias_payment_v6
+#: view:report.cheque:0
+msgid "Cheque Line"
+msgstr "Líneas d eCheque"
+
+#. module: bias_payment_v6
+#: code:addons/bias_payment_v6/account_move_line.py:113
+#, python-format
+msgid "No partner defined on entry line"
+msgstr "Línea de pago sin empresa definida."
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "CUENTA"
+msgstr "CUENTA"
+
+#. module: bias_payment_v6
+#: help:report.cheque.line,report_id:0
+msgid "."
+msgstr "."
+
+#. module: bias_payment_v6
+#: model:ir.model,name:bias_payment_v6.model_report_cheque_line
+msgid "Report Cheque Line"
+msgstr "Línea de impresión de cheque"
+
+#. module: bias_payment_v6
+#: field:payment.cheque.line,date:0
+msgid "Payment Date"
+msgstr "Fecha de pago"
+
+#. module: bias_payment_v6
+#: model:ir.actions.act_window,name:bias_payment_v6.action_cheque_tree
+#: model:ir.ui.menu,name:bias_payment_v6.menu_action_cheque_form
+#: field:payment.cheque.line,cheque_id:0
+msgid "Cheque"
+msgstr "Cheque"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,date:0
+#: selection:payment.export.line,type:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,type:0
+msgid "Integer"
+msgstr "Entero"
+
+#. module: bias_payment_v6
+#: field:report.cheque.line,x:0
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Currency Source"
+msgstr "Moneda Fuente"
+
+#. module: bias_payment_v6
+#: constraint:account.move.line:0
+msgid "Company must be same for its related account and period."
+msgstr "La compañía debe ser la misma para la cuenta y periodo relacionados."
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "FECHA"
+msgstr "FECHA"
+
+#. module: bias_payment_v6
+#: field:payment.export.line,condition:0
+msgid "Condition"
+msgstr "Condición"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,operator:0
+msgid ">"
+msgstr ">"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Destiny Account"
+msgstr "Cuenta Destino"
+
+#. module: bias_payment_v6
+#: model:ir.actions.act_window,name:bias_payment_v6.action_report_cheque_form
+#: model:ir.model,name:bias_payment_v6.model_report_cheque
+#: model:ir.ui.menu,name:bias_payment_v6.menu_action_report_cheque_form
+#: field:payment.mode,report_cheque_id:0
+#: view:report.cheque:0
+#: field:report.cheque.line,report_id:0
+msgid "Report Cheque"
+msgstr "Formato de Cheque"
+
+#. module: bias_payment_v6
+#: model:ir.model,name:bias_payment_v6.model_payment_cheque
+#: view:payment.cheque:0
+msgid "Payment cheque"
+msgstr "Pago Cheque"
+
+#. module: bias_payment_v6
+#: model:ir.actions.report.xml,name:bias_payment_v6.print_cheque_entry
+msgid "Print Entry"
+msgstr "Imprimir Póliza"
+
+#. module: bias_payment_v6
+#: field:payment.export.line,required:0
+msgid "Required"
+msgstr "Requerido"
+
+#. module: bias_payment_v6
+#: model:ir.model,name:bias_payment_v6.model_account_move_line
+msgid "Journal Items"
+msgstr "Registros del diario"
+
+#. module: bias_payment_v6
+#: field:payment.cheque.line,ml_maturity_date:0
+msgid "Maturity Date"
+msgstr "Maturity Date"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "Courier-Bold"
+msgstr "Courier-Bold"
+
+#. module: bias_payment_v6
+#: help:payment.cheque.line,partial:0
+msgid "Check this for partial payments."
+msgstr "Check this for partial payments."
+
+#. module: bias_payment_v6
+#: field:payment.cheque,writeoff_acc_id:0
+#: field:payment.mode,writeoff_acc_id:0
+msgid "Writeoff Account"
+msgstr "Cuenta de Ajuste"
+
+#. module: bias_payment_v6
+#: field:payment.cheque.line,amount:0
+msgid "Amount in Company Currency"
+msgstr "Monto MN"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,method:0
+msgid "Mx Date Format"
+msgstr "Formato de Fecha MX"
+
+#. module: bias_payment_v6
+#: field:payment.export.file,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: bias_payment_v6
+#: constraint:res.partner:0
+msgid "unique (vat), The VAT of the partner must be unique !"
+msgstr "Único (RFC), El RFC de la empresa debe ser único !"
+
+#. module: bias_payment_v6
+#: selection:payment.export.file,number:0
+msgid "######00"
+msgstr "######00"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,period_id:0
+msgid "Period"
+msgstr "Período"
+
+#. module: bias_payment_v6
+#: selection:payment.cheque,state:0
+msgid "Done"
+msgstr "Hecho"
+
+#. module: bias_payment_v6
+#: model:ir.model,name:bias_payment_v6.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+msgid "Select Invoices to Pay"
+msgstr "Seleccion de Facturas a Pagar"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+#: selection:payment.cheque,state:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bias_payment_v6
+#: field:report.cheque.line,size:0
+msgid "Size"
+msgstr "Tamaño"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,font:0
+msgid "Courier-Oblique"
+msgstr "Courier-Oblique"
+
+#. module: bias_payment_v6
+#: field:report.cheque.line,angle:0
+msgid "Angle"
+msgstr "Angulo"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,operator:0
+msgid "Not In"
+msgstr "No En"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,zero:0
+msgid "Add Space Right"
+msgstr "Espacios Derecha"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,payment_order_id:0
+msgid "Payment Order"
+msgstr "Orden de Pago"
+
+#. module: bias_payment_v6
+#: sql_constraint:account.journal:0
+msgid "The name of the journal must be unique per company !"
+msgstr "¡El nombre del diaro debe ser único por compañía!"
+
+#. module: bias_payment_v6
+#: field:report.cheque.line,field_id:0
+msgid "Field"
+msgstr "Campo"
+
+#. module: bias_payment_v6
+#: help:payment.cheque.line,amount:0
+msgid "Payment amount in the company currency"
+msgstr "Monto del pago en moneda de la compañía"
+
+#. module: bias_payment_v6
+#: wizard_view:import_invoice,init_back:0
+msgid "Search Payment lines"
+msgstr "Buscar líneas de pago"
+
+#. module: bias_payment_v6
+#: selection:payment.export.file,number:0
+msgid "#0000000"
+msgstr "#0000000"
+
+#. module: bias_payment_v6
+#: help:payment.cheque,reconciled:0
+msgid "The account moves of the cheque have been reconciled with account moves of the invoice(s)."
+msgstr "El cheque fue conciliado con la factura"
+
+#. module: bias_payment_v6
+#: field:account.journal,reconcile_tolerance:0
+msgid "Reconcile Tolerance"
+msgstr "Reconcile Tolerance"
+
+#. module: bias_payment_v6
+#: field:payment.export.file,date:0
+#: field:payment.export.line,type:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: bias_payment_v6
+#: model:ir.model,name:bias_payment_v6.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: bias_payment_v6
+#: field:report.cheque,adjustment_y:0
+msgid "Adjustment y"
+msgstr "Ajuste y"
+
+#. module: bias_payment_v6
+#: field:report.cheque,adjustment_x:0
+msgid "Adjustment x"
+msgstr "Ajuste x"
+
+#. module: bias_payment_v6
+#: constraint:account.move.line:0
+msgid "You can not create move line on closed account."
+msgstr "No puede crear una línea de movimiento en una cuenta cerrada."
+
+#. module: bias_payment_v6
+#: field:payment.cheque.line,company_currency:0
+msgid "Company Currency"
+msgstr "Moneda Compañía"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Partner email"
+msgstr "Correo de Empresa"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+msgid "Payment Line"
+msgstr "Línea de Pago"
+
+#. module: bias_payment_v6
+#: selection:report.cheque.line,method:0
+msgid "Money Format"
+msgstr "Formato Moneda"
+
+#. module: bias_payment_v6
+#: field:payment.export.line,notes:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: bias_payment_v6
+#: field:payment.export.file,name:0
+#: field:payment.export.line,name:0
+#: field:report.cheque,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bias_payment_v6
+#: selection:payment.export.file,date:0
+msgid "MMDDYYYY"
+msgstr "MMDDYYYY"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+msgid "Search Cheque"
+msgstr "Buascar Cheque"
+
+#. module: bias_payment_v6
+#: field:payment.export.file,line_id:0
+msgid "Fields"
+msgstr "Campos"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,mode:0
+msgid "Payment mode"
+msgstr "Forma de Pago"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,line_id:0
+#: field:report.cheque,line_id:0
+msgid "Lines"
+msgstr "Líneas"
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "HABER"
+msgstr "HABER"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,partial_line_id:0
+msgid "Partial Payed Lines"
+msgstr "Líneas de Pagos Parciales"
+
+#. module: bias_payment_v6
+#: help:account.journal,loss_fluc_acc:0
+msgid "Used as write off account when the currency fluctuation result in loss."
+msgstr "Usado como cuenta de ajuste cuando la fluctuación resulta en perdida."
+
+#. module: bias_payment_v6
+#: field:payment.mode,statement_account_id:0
+msgid "Statement Account"
+msgstr "Cuenta de Estado"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,move_id:0
+msgid "Entry"
+msgstr "Póliza"
+
+#. module: bias_payment_v6
+#: selection:payment.export.file,number:0
+msgid "####0000"
+msgstr "####0000"
+
+#. module: bias_payment_v6
+#: view:payment.cheque:0
+msgid "Create Cheques"
+msgstr "Crear Cheque"
+
+#. module: bias_payment_v6
+#: help:res.partner,property_account_payment:0
+msgid "This account will be used in Bank Statement when import payment order line and the invoice reference field of payment line is empty. "
+msgstr "This account will be used in Bank Statement when import payment order line and the invoice reference field of payment line is empty. "
+
+#. module: bias_payment_v6
+#: field:payment.export.line,sequence:0
+msgid "Sequence"
+msgstr "Consecutivo"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,zero:0
+msgid "Add Space Left"
+msgstr "Espacios Izquierda"
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid "DIARIO"
+msgstr "DIARIO"
+
+#. module: bias_payment_v6
+#: field:res.partner,property_account_payment:0
+msgid "Account Payment"
+msgstr "Cuenta de Pagos"
+
+#. module: bias_payment_v6
+#: field:payment.export.line,length:0
+msgid "Length"
+msgstr "Longitud"
+
+#. module: bias_payment_v6
+#: field:payment.cheque,number:0
+msgid "Cheque Number"
+msgstr "Número de Cheque"
+
+#. module: bias_payment_v6
+#: field:payment.cheque.line,rate:0
+msgid "Rate"
+msgstr "Paridad"
+
+#. module: bias_payment_v6
+#: field:payment.export.line,export_id:0
+msgid "Export"
+msgstr "Exportar"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,operator:0
+msgid "In"
+msgstr "En"
+
+#. module: bias_payment_v6
+#: model:ir.model,name:bias_payment_v6.model_payment_export_file
+#: model:ir.model,name:bias_payment_v6.model_payment_export_line
+msgid "Payment Export File"
+msgstr "Archivo de Carga"
+
+#. module: bias_payment_v6
+#: report:payment.cheque.entry:0
+msgid ", [ID:"
+msgstr ", [ID:"
+
+#. module: bias_payment_v6
+#: selection:payment.export.line,condition:0
+#: selection:payment.export.line,std_field:0
+msgid "Origin Account"
+msgstr "Cuenta de Origen"
+
+#. module: bias_payment_v6
+#: constraint:account.move.line:0
+msgid "You can not create move line on view account."
+msgstr "No puede crear una línea de movimiento en una cuenta de tipo vista."
+

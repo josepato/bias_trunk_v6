@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- ######################
+        ### INVOICE INHERITANCE ###
+        ####################### -->
+        <!-- ## Suppliers ## -->
+        <record id="invoice_bank_data_form" model="ir.ui.view">
+            <field name="name">Account invoice bank and account data</field>
+            <field name="model">account.invoice</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <field name="comment" position="before">
+<!--                 <field name="invoice_paymethod"/>
+                    <field name="invoice_bankname"/>
+                    <field name="invoice_account_number"/>   --> 
+                    <newline/>      
+                    <group  expand='1' string='Pey Method and Account Data' groups="base.group_extended">
+                        <field name="invoice_kindpay"/> 
+                        <field name="invoice_bankname"/>                        
+                        <field name="invoice_account_number"/>                         
+                      <separator orientation="vertical"/>
+                    </group>                      
+                 </field>
+            </field>
+        </record>
+
+        <!-- ## direct Invoice ## 
+        <record id="invoice_company_currency_form" model="ir.ui.view">
+            <field name="name">Account invoice (form) - add company currency</field>
+            <field name="model">account.invoice</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <field name="comment" position="after">
+                    <field name="cc_amount_untaxed"/>
+                    <field name="cc_amount_tax"/>
+                    <field name="cc_amount_total"/>
+                </field>
+            </field>
+        </record>
+                    -->
+    </data>
+</openerp>

@@ -1,0 +1,514 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_migrate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-07-17 00:01+0000\n"
+"PO-Revision-Date: 2011-07-17 00:01+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_migrate
+#: code:addons/bias_migrate/wizard/wizard_load_field.py:63
+#: code:addons/bias_migrate/wizard/wizard_migrate_module.py:269
+#: code:addons/bias_migrate/wizard/wizard_migrate_module.py:339
+#: code:addons/bias_migrate/wizard/wizard_set_sequences.py:84
+#, python-format
+msgid "I am unable to connect to the database !"
+msgstr "I am unable to connect to the database !"
+
+#. module: bias_migrate
+#: code:addons/bias_migrate/wizard/wizard_load_field.py:148
+#, python-format
+msgid "I am unable to connect to the old database !"
+msgstr "I am unable to connect to the old database !"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,order:0
+msgid "Order by"
+msgstr "Order by"
+
+#. module: bias_migrate
+#: view:migrate.migrate:0
+msgid "Periods"
+msgstr "Periods"
+
+#. module: bias_migrate
+#: model:ir.model,name:bias_migrate.model_migrate_migrate
+msgid "Data Base Migrate"
+msgstr "Data Base Migrate"
+
+#. module: bias_migrate
+#: model:ir.actions.wizard,name:bias_migrate.set_sequences
+#: view:migrate.migrate:0
+msgid "Set Sequences"
+msgstr "Set Sequences"
+
+#. module: bias_migrate
+#: wizard_view:migrate.load.field,init:0
+#: wizard_view:migrate.load.module,connect:0
+#: wizard_view:migrate.load.module,init:0
+msgid "               From This DB          "
+msgstr "               From This DB          "
+
+#. module: bias_migrate
+#: model:ir.actions.wizard,name:bias_migrate.load_field
+#: wizard_button:migrate.load.field,init,db:0
+#: view:migrate.migrate:0
+msgid "Load Fields"
+msgstr "Load Fields"
+
+#. module: bias_migrate
+#: selection:migrate.migrate,state:0
+#: selection:migrate.migrate.module,state:0
+msgid "Draft"
+msgstr "Draft"
+
+#. module: bias_migrate
+#: field:migrate.migrate,db_from:0
+#: field:migrate.migrate,db_to:0
+msgid "Data Base"
+msgstr "Data Base"
+
+#. module: bias_migrate
+#: field:migrate.migrate.module,id_seq:0
+msgid "IDSeq"
+msgstr "IDSeq"
+
+#. module: bias_migrate
+#: code:addons/bias_migrate/wizard/wizard_migrate_module.py:157
+#, python-format
+msgid "Table Error"
+msgstr "Table Error"
+
+#. module: bias_migrate
+#: code:addons/bias_migrate/wizard/wizard_migrate_module.py:157
+#, python-format
+msgid "This table do not contain id field !"
+msgstr "This table do not contain id field !"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,include:0
+#: field:migrate.migrate.module,include:0
+msgid "Include"
+msgstr "Include"
+
+#. module: bias_migrate
+#: model:ir.actions.wizard,name:bias_migrate.migrate_module
+msgid "Migrate Module"
+msgstr "Migrate Module"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,localdic:0
+#: field:migrate.migrate.module,localdic:0
+msgid "Localdic"
+msgstr "Localdic"
+
+#. module: bias_migrate
+#: field:migrate.migrate,state:0
+#: field:migrate.migrate.module,state:0
+msgid "Status"
+msgstr "Status"
+
+#. module: bias_migrate
+#: code:addons/bias_migrate/wizard/wizard_migrate_module.py:302
+#, python-format
+msgid "No module selected !"
+msgstr "No module selected !"
+
+#. module: bias_migrate
+#: view:migrate.migrate:0
+#: view:migrate.migrate.field:0
+msgid "Local Dictionary"
+msgstr "Local Dictionary"
+
+#. module: bias_migrate
+#: code:addons/bias_migrate/wizard/wizard_migrate_module.py:303
+#, python-format
+msgid "Error !"
+msgstr "Error !"
+
+#. module: bias_migrate
+#: selection:migrate.migrate.module,replace,replace:0
+msgid "Replace & Add if not present"
+msgstr "Replace & Add if not present"
+
+#. module: bias_migrate
+#: model:ir.model,name:bias_migrate.model_migrate_migrate_field
+msgid "Data Base Migrate Field"
+msgstr "Data Base Migrate Field"
+
+#. module: bias_migrate
+#: code:addons/bias_migrate/migrate.py:107
+#: code:addons/bias_migrate/migrate.py:117
+#: code:addons/bias_migrate/wizard/wizard_load_field.py:63
+#: code:addons/bias_migrate/wizard/wizard_load_field.py:148
+#: code:addons/bias_migrate/wizard/wizard_load_module.py:84
+#: code:addons/bias_migrate/wizard/wizard_load_module.py:88
+#: code:addons/bias_migrate/wizard/wizard_migrate_module.py:269
+#: code:addons/bias_migrate/wizard/wizard_migrate_module.py:339
+#: code:addons/bias_migrate/wizard/wizard_set_sequences.py:84
+#, python-format
+msgid "Connection Error"
+msgstr "Connection Error"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,field_org:0
+msgid "Field ORG"
+msgstr "Field ORG"
+
+#. module: bias_migrate
+#: wizard_view:migrate.load.field,init:0
+#: wizard_view:migrate.load.module,connect:0
+msgid "Sign On"
+msgstr "Sign On"
+
+#. module: bias_migrate
+#: view:migrate.migrate:0
+msgid "Migrate Modules"
+msgstr "Migrate Modules"
+
+#. module: bias_migrate
+#: field:migrate.migrate,login_from:0
+#: field:migrate.migrate,login_to:0
+#: wizard_field:migrate.migrate.module,init,login:0
+#: wizard_field:migrate.set.sequences,init,login:0
+msgid "User Name"
+msgstr "User Name"
+
+#. module: bias_migrate
+#: view:migrate.migrate:0
+msgid "Set Field Loaded"
+msgstr "Set Field Loaded"
+
+#. module: bias_migrate
+#: model:ir.model,name:bias_migrate.model_migrate_migrate_module
+msgid "Data Base Migrate Module"
+msgstr "Data Base Migrate Module"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,pending:0
+#: selection:migrate.migrate.module,state:0
+msgid "Pending"
+msgstr "Pending"
+
+#. module: bias_migrate
+#: code:addons/bias_migrate/wizard/wizard_load_field.py:88
+#, python-format
+msgid "There are not model destination !"
+msgstr "There are not model destination !"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,field_dest:0
+msgid "Field DEST"
+msgstr "Field DEST"
+
+#. module: bias_migrate
+#: field:migrate.migrate,password_from:0
+#: field:migrate.migrate,password_to:0
+msgid "Password"
+msgstr "Password"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,exclude_reg:0
+msgid "Exclude Register"
+msgstr "Exclude Register"
+
+#. module: bias_migrate
+#: wizard_view:migrate.load.field,init:0
+#: wizard_view:migrate.load.module,connect:0
+#: wizard_view:migrate.load.module,init:0
+msgid "               To This DB          "
+msgstr "               To This DB          "
+
+#. module: bias_migrate
+#: wizard_field:migrate.migrate.module,init,count:0
+#: wizard_field:migrate.set.sequences,init,count:0
+msgid "Count Control"
+msgstr "Count Control"
+
+#. module: bias_migrate
+#: wizard_field:migrate.migrate.module,replace,replace:0
+msgid "Select Replace Type"
+msgstr "Select Replace Type"
+
+#. module: bias_migrate
+#: wizard_field:migrate.migrate.module,init,initial_id:0
+#: wizard_field:migrate.set.sequences,init,initial_id:0
+msgid "Initial ID"
+msgstr "Initial ID"
+
+#. module: bias_migrate
+#: field:migrate.migrate.module,model_dest:0
+msgid "Model DEST"
+msgstr "Model DEST"
+
+#. module: bias_migrate
+#: field:migrate.migrate,name:0
+#: field:migrate.migrate.field,name:0
+#: field:migrate.migrate.module,name:0
+msgid "Name"
+msgstr "Name"
+
+#. module: bias_migrate
+#: model:ir.actions.act_window,name:bias_migrate.action_migrate_form
+#: model:ir.ui.menu,name:bias_migrate.menu_migrate
+#: model:ir.ui.menu,name:bias_migrate.menu_migrate_form
+#: view:migrate.migrate:0
+msgid "DB Migrate"
+msgstr "DB Migrate"
+
+#. module: bias_migrate
+#: model:ir.actions.act_window,name:bias_migrate.action_migrate_field_form
+#: view:migrate.migrate:0
+#: view:migrate.migrate.field:0
+#: view:migrate.migrate.module:0
+#: field:migrate.migrate.module,field_ids:0
+msgid "Fields"
+msgstr "Campos"
+
+#. module: bias_migrate
+#: view:migrate.migrate:0
+#: view:migrate.migrate.module:0
+msgid "Notes"
+msgstr "Notes"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,include_reg:0
+msgid "Include Register"
+msgstr "Include Register"
+
+#. module: bias_migrate
+#: model:ir.actions.act_window,name:bias_migrate.action_migrate_module_form
+#: wizard_view:migrate.load.field,init:0
+#: view:migrate.migrate:0
+#: field:migrate.migrate,module_ids:0
+#: view:migrate.migrate.module:0
+#: wizard_view:migrate.migrate.module,init:0
+#: wizard_field:migrate.migrate.module,init,module_ids:0
+#: wizard_view:migrate.set.sequences,init:0
+#: wizard_field:migrate.set.sequences,init,module_ids:0
+msgid "Modules"
+msgstr "Módulos"
+
+#. module: bias_migrate
+#: field:migrate.migrate,server_from:0
+#: field:migrate.migrate,server_to:0
+#: wizard_field:migrate.migrate.module,init,server:0
+#: wizard_field:migrate.set.sequences,init,server:0
+msgid "Server"
+msgstr "Server"
+
+#. module: bias_migrate
+#: wizard_view:migrate.migrate.module,migration_end:0
+msgid "Migration Complited"
+msgstr "Migration Complited"
+
+#. module: bias_migrate
+#: view:migrate.migrate:0
+msgid "Load Modules"
+msgstr "Load Modules"
+
+#. module: bias_migrate
+#: wizard_view:migrate.migrate.module,replace:0
+msgid "Select Type of Replace"
+msgstr "Select Type of Replace"
+
+#. module: bias_migrate
+#: code:addons/bias_migrate/migrate.py:117
+#: code:addons/bias_migrate/wizard/wizard_load_module.py:88
+#, python-format
+msgid "Unable to connect to the \"Destiny Database\" !"
+msgstr "Unable to connect to the \"Destiny Database\" !"
+
+#. module: bias_migrate
+#: field:migrate.migrate,all:0
+msgid "Include All"
+msgstr "Include All"
+
+#. module: bias_migrate
+#: code:addons/bias_migrate/wizard/wizard_load_field.py:88
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: bias_migrate
+#: code:addons/bias_migrate/migrate.py:107
+#: code:addons/bias_migrate/wizard/wizard_load_module.py:84
+#, python-format
+msgid "Unable to connect to \"Origin Database\" !"
+msgstr "Unable to connect to \"Origin Database\" !"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,field_org_type:0
+msgid "Field ORG Type"
+msgstr "Field ORG Type"
+
+#. module: bias_migrate
+#: code:addons/bias_migrate/wizard/wizard_migrate_module.py:303
+#, python-format
+msgid "Hay líneas de asiento ya conciliadas!"
+msgstr "Hay líneas de asiento ya conciliadas!"
+
+#. module: bias_migrate
+#: wizard_button:migrate.load.module,connect,db:0
+msgid "Next"
+msgstr "Next"
+
+#. module: bias_migrate
+#: wizard_button:migrate.migrate.module,init,check:0
+#: wizard_button:migrate.migrate.module,replace,db:0
+msgid "Migrate Register"
+msgstr "Migrate Register"
+
+#. module: bias_migrate
+#: field:migrate.migrate.module,model_org:0
+msgid "Model ORG"
+msgstr "Model ORG"
+
+#. module: bias_migrate
+#: field:migrate.migrate.module,note:0
+msgid "Note"
+msgstr "Note"
+
+#. module: bias_migrate
+#: selection:migrate.migrate.module,replace,replace:0
+msgid "Replace Only"
+msgstr "Replace Only"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,code:0
+#: field:migrate.migrate.module,code:0
+msgid "Code"
+msgstr "Code"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,seq:0
+msgid "Seq"
+msgstr "Seq"
+
+#. module: bias_migrate
+#: code:addons/bias_migrate/wizard/wizard_migrate_module.py:302
+#, python-format
+msgid "Module Error"
+msgstr "Module Error"
+
+#. module: bias_migrate
+#: field:migrate.migrate.module,seq:0
+msgid "Sequence"
+msgstr "Sequence"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,module_id:0
+#: wizard_view:migrate.migrate.module,init:0
+#: field:migrate.migrate.module,migrate_id:0
+#: wizard_view:migrate.set.sequences,init:0
+msgid "Migrate"
+msgstr "Migrate"
+
+#. module: bias_migrate
+#: wizard_field:migrate.migrate.module,migration_end,count:0
+msgid "Register Processed"
+msgstr "Register Processed"
+
+#. module: bias_migrate
+#: view:migrate.migrate:0
+#: view:migrate.migrate.field:0
+msgid "Python Code"
+msgstr "Python Code"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,field_dest_type:0
+msgid "Field DEST Type"
+msgstr "Field DEST Type"
+
+#. module: bias_migrate
+#: wizard_button:migrate.set.sequences,init,reload:0
+msgid "Reload Sequence"
+msgstr "Reload Sequence"
+
+#. module: bias_migrate
+#: wizard_view:migrate.load.module,init:0
+msgid "Select Servers"
+msgstr "Select Servers"
+
+#. module: bias_migrate
+#: field:migrate.migrate.module,replace:0
+msgid "Replace"
+msgstr "Replace"
+
+#. module: bias_migrate
+#: wizard_field:migrate.migrate.module,init,url:0
+#: wizard_field:migrate.set.sequences,init,url:0
+msgid "url"
+msgstr "url"
+
+#. module: bias_migrate
+#: wizard_field:migrate.migrate.module,init,password:0
+#: wizard_field:migrate.set.sequences,init,password:0
+msgid "password"
+msgstr "password"
+
+#. module: bias_migrate
+#: field:migrate.migrate.module,reg:0
+msgid "Registers"
+msgstr "Registers"
+
+#. module: bias_migrate
+#: selection:migrate.migrate,state:0
+#: selection:migrate.migrate.module,state:0
+msgid "Done"
+msgstr "Done"
+
+#. module: bias_migrate
+#: wizard_button:migrate.load.module,init,connect:0
+msgid "Connect"
+msgstr "Connect"
+
+#. module: bias_migrate
+#: selection:migrate.migrate.module,state:0
+msgid "Fields Loaded"
+msgstr "Fields Loaded"
+
+#. module: bias_migrate
+#: view:migrate.migrate:0
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: bias_migrate
+#: wizard_button:migrate.load.field,init,end:0
+#: wizard_button:migrate.load.module,connect,end:0
+#: wizard_button:migrate.load.module,init,end:0
+#: wizard_button:migrate.migrate.module,init,end:0
+#: wizard_button:migrate.migrate.module,migration_end,end:0
+#: wizard_button:migrate.migrate.module,replace,end:0
+#: wizard_button:migrate.set.sequences,init,end:0
+msgid "Close"
+msgstr "Close"
+
+#. module: bias_migrate
+#: field:migrate.migrate.field,python:0
+#: field:migrate.migrate.module,python:0
+msgid "Paython Code"
+msgstr "Paython Code"
+
+#. module: bias_migrate
+#: model:ir.actions.wizard,name:bias_migrate.load_module
+msgid "Load Module"
+msgstr "Load Module"
+
+#. module: bias_migrate
+#: field:migrate.migrate,port_from:0
+#: field:migrate.migrate,port_to:0
+#: wizard_field:migrate.migrate.module,init,port:0
+#: wizard_field:migrate.set.sequences,init,port:0
+msgid "Port"
+msgstr "Port"
+

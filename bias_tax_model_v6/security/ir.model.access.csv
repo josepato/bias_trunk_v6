@@ -1,0 +1,12 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_account_move_fiscal","account.move.fiscal","model_account_move_fiscal","account.group_account_user",1,1,1,0
+"access_res_partner_type_manager","res.partner.type","model_res_partner_type","account.group_account_manager",1,1,1,0
+"access_res_partner_type_user","res.partner.type","model_res_partner_type","account.group_account_user",1,0,0,0
+"access_res_partner_operation_type_manager","res.partner.operation.type","model_res_partner_operation_type","account.group_account_manager",1,1,1,0
+"access_res_partner_operation_type_user","res.partner.operation.type","model_res_partner_operation_type","account.group_account_user",1,0,0,0
+"access_res_partner_operation_tax_manager","res.partner.operation.tax","model_res_partner_operation_tax","account.group_account_manager",1,1,1,0
+"access_res_partner_operation_tax_user","res.partner.operation.tax","model_res_partner_operation_tax","account.group_account_user",1,0,0,0
+"access_res_partner_operation_income_tax_manager","res.partner.operation.income.tax","model_res_partner_operation_income_tax","account.group_account_manager",1,1,1,0
+"access_res_partner_operation_income_tax_user","res.partner.operation.income.tax","model_res_partner_operation_income_tax","account.group_account_user",1,0,0,0
+"access_account_move_ietu_concept_manager","account.move.ietu.concept","model_account_move_ietu_concept","account.group_account_manager",1,1,1,0
+"access_account_move_ietu_concept_user","account.move.ietu.concept","model_account_move_ietu_concept","account.group_account_user",1,0,0,0

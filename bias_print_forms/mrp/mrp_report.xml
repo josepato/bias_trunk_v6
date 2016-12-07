@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <report         auto="False"
+			id="report_mrp_production_order_bias"			
+			model="mrp.production"
+			name="mrp.production.order.bias"
+			rml="bias_print_forms/mrp/report/order.rml"
+			string="Production Order" />
+
+    </data>
+</openerp>

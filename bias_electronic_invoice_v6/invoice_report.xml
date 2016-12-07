@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<terp>
+<data>
+	<!-- 
+	Custom Invoice Report
+	-->
+	<report id="account_invoices_electronic" 
+		string="eInvoice" 
+		model="account.invoice" 
+		name="account.invoice.electronic" 
+              attachment="(object.state in ('open','paid')) and ('INV'+(object.number or '').replace('/',''))"
+              attachment_use="1" 
+              header="False"
+	       auto="False"/>
+	
+	
+
+</data>
+</terp>

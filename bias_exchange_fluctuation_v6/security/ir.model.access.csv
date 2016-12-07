@@ -1,0 +1,5 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_exchange_fluctuation_account_manager","exchange.fluctuation.account.manager","model_exchange_fluctuation_account","account.group_account_manager",1,1,1,0
+"access_exchange_fluctuation_account","exchange.fluctuation.account","model_exchange_fluctuation_account","base.group_user",1,0,0,0
+"access_exchange_fluctuation_account_line","exchange.fluctuation.account.line","model_exchange_fluctuation_account_line","base.group_user",1,1,1,1
+"access_exchange_fluctuation","exchange.fluctuation","model_exchange_fluctuation","base.group_user",1,0,0,0

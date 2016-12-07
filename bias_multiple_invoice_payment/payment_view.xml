@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_multiple_payment_tree" model="ir.ui.view">
+            <field name="name">multiple.payment.tree</field>
+            <field name="model">multiple.payment</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Payment">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="partner_id"/>
+                    <field name="journal_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_multiple_payment_form" model="ir.ui.view">
+            <field name="name">multiple.payment.form</field>
+            <field name="model">multiple.payment</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Payment">
+                    <field name="date" on_change="onchange_journal_id(journal_id, date)" select="1"/>
+                    <field name="journal_id" domain="[('user_type','=','income')]" on_change="onchange_journal_id(journal_id, date)" select="1"/>
+                    <field name="name" select="1"/>
+                    <field name="partner_id" select="1" domain="[('customer','=',True)]"/>
+                    <field name="move_id" select="1"/>
+                    <field name="currency_id" on_change="onchange_journal_id(journal_id, date)"/>
+                    <field name="rate"/>
+                    <field name="amount"/>
+                    <newline/>
+		    <field colspan="4" name="payment_line" nolabel="1" widget="one2many_list">
+                        <form string="Documents">
+                            <field name="name"/>
+                            <field name="line_id" on_change="onchange_line_id(line_id, parent.journal_id, parent.rate)"  domain="[('partner_id','=',parent.partner_id),('reconcile_id','=',False),('account_id.type', 'in', ['payable','receivable']),('name', 'not ilike', 'cancel'),('name', 'not ilike', 'Write-Off'),('name', 'not ilike', 'NC'),('journal_id.type', '!=', 'cash')]"/>
+                            <field name="payment" on_change="onchange_payment(line_id, parent.journal_id, parent.rate, payment)"/>
+                            <field name="payment_currency" on_change="onchange_payment(line_id, parent.journal_id, parent.rate, False, payment_currency)" sum="Sum Currency Payment"/>
+                            <field name="amount_to_pay" on_change="onchange_line_id(line_id, parent.journal_id, parent.rate)"/>
+	                    <field name="amount_currency" on_change="onchange_line_id(line_id, parent.journal_id, parent.rate)"/>
+                            <field name="currency_id" on_change="onchange_line_id(line_id, parent.journal_id, parent.rate)"/>
+                            <field name="partial" on_change="onchange_payment(line_id, parent.journal_id, parent.rate, payment)"/>
+			    <separator colspan="4" string="Partial Payments"/>
+                            <field colspan="4" name="payments_ids" nolabel="1" widget="many2many"/>
+                        </form>
+                        <tree editable="botom" string="Documents">
+                            <field name="line_id" on_change="onchange_line_id(line_id, parent.journal_id, parent.rate)" domain="[('partner_id','=',parent.partner_id),('reconcile_id','=',False),('account_id.type', 'in', ['payable','receivable']),('name', 'not ilike', 'cancel'),('name', 'not ilike', 'Write-Off'),('name', 'not ilike', 'NC'),('journal_id.type', '!=', 'cash')]"/>
+                            <field name="payment" on_change="onchange_payment(line_id, parent.journal_id, parent.rate, payment)" sum="Sum Payment"/>
+                            <field name="payment_currency" on_change="onchange_payment(line_id, parent.journal_id, parent.rate, False, payment_currency)" sum="Sum Currency Payment"/>
+                            <field name="amount_to_pay" on_change="onchange_line_id(line_id, parent.journal_id, parent.rate)"/>
+                            <field name="amount_currency" on_change="onchange_line_id(line_id, parent.journal_id, parent.rate)"/>
+                            <field name="currency_id" on_change="onchange_line_id(line_id, parent.journal_id, parent.rate)"/>
+                            <field name="partial" on_change="onchange_payment(line_id, parent.journal_id, parent.rate, payment)"/>
+                            <field name="payments_ids"/>
+                        </tree>
+                    </field>
+                    <newline/>
+                    <group col="4" colspan="2">
+                        <field name="amount_total" sum="Total amount"/>
+                        <button name="button_compute" states="draft" string="Re-Compute" type="object"/>
+                    </group>
+		    <newline/>
+                    <group col="2" colspan="2">
+                        <field name="state" select="2"/>
+                    </group>
+                    <group col="5" colspan="2">
+                        <button name="button_cancel" states="draft,done,confirm" string="Cancel" type="object" icon="gtk-cancel"/>
+                        <button name="button_confirm" states="draft" string="Confirm" type="object" icon="gtk-execute"/>
+                        <button name="button_cancel_draft" states="cancel" string="Set to Draft" type="object" icon="gtk-convert"/>
+                        <button name="button_pay" states="confirm" string="Pay" type="object" icon="gtk-cancel"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="action_multiple_payment_form" model="ir.actions.act_window">
+            <field name="name">Multiple Invoice Payment</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">multiple.payment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem action="action_multiple_payment_form" id="menu_action_multiple_payment_form" parent="account.menu_action_invoice_tree1"/>
+
+
+        <act_window context="{'partner_id': active_id}" domain="[('partner_id', '=', active_id)]" id="act_res_partner_multiple_payment" name="Payment" res_model="multiple.payment" src_model="res.partner"/>
+
+    </data>
+</openerp>

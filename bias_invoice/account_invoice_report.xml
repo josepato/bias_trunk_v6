@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<openerp>
+<data>
+        <report
+            	auto="False"
+            	id="account_invoices_bias"
+            	model="account.invoice"
+            	name="account.invoice.bias"
+            	rml="bias_invoice/report/invoice.rml"
+            	string="Invoices"
+            	header ="False"/>
+
+	<!--	Custom Refound	-->
+	<report id="account_custom_refound"
+		string="Custom Refound" 
+		model="account.invoice"
+		name="account.customer.refound" 
+		rml="bias_invoice/report/refound.rml"
+                header ="False"
+		auto="False"/>
+
+	<!--	Print Entry From Invoice	-->
+	<report id="invoice_entry_print"
+		string="Entry" 
+		model="account.invoice"
+		name="invoice.entry.print" 
+		rml="bias_invoice/report/invoice_entry_print.rml"
+		auto="False"
+                header ="False"/>
+
+	<!-- 
+	Custom General Invoice Report RPM
+	-->
+	<report id="invoice_report"
+		string="Invoice Report"
+		model="account.invoice"
+		name="account.invoice.report"
+		rml="bias_invoice/report/invoice_report.rml"
+		auto="False"
+                header ="False"
+		menu="False"/>
+
+	<wizard id="wizard_invoice_report"
+		string="Wizard invoice Report"
+		model="account.invoice"
+		name="account.invoice.report"
+		menu="False"/>
+
+	<menuitem
+		parent="account.menu_finance_invoice"
+		action="wizard_invoice_report"
+		type="wizard"
+		icon="STOCK_PRINT"
+		id="menu_wizard_invoice_report"/>
+
+</data>
+</openerp>

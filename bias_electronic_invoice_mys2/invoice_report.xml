@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<terp>
+<data>
+	<!-- 
+	Custom Invoice Report
+	-->
+	<report id="account_invoices_dme" 
+		string="Invoices DME" 
+		model="account.invoice" 
+		name="account.invoice.dme" 
+		rml="bias_account/report/invoice.rml"
+		auto="False"/>
+	
+	<!-- 
+	Reporte de Consumo de Almacen por Sucursal
+	-->
+	<report id="account_consumo_suc"
+		string="Consumo De Sucursal"
+		model="account.account"
+		name="account.consumo.suc"
+		rml="bias_account/report/consumo_suc.rml"
+		auto="False"
+		menu="False"/>
+	
+
+</data>
+</terp>

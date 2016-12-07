@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_fiscal_statements_tree" model="ir.ui.view">
+            <field name="name">fiscal.statements.tree</field>
+            <field name="model">fiscal.statements</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Fiscal Statements">
+                    <field name="name"/>
+                    <field name="format"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_fiscal_statements_form" model="ir.ui.view">
+            <field name="name">fiscal.statements.form</field>
+            <field name="model">fiscal.statements</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Fiscal Statements">
+                    <group col="4" colspan="4">
+                    	<field name="name" select="1"/>
+                    	<field name="format" required="1" select="1"/>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Lines">
+                            <field name="fiscal_statements_line_id" colspan="4" nolabel="1"/>
+                        </page>
+                        <page string="Message">
+                            <field name="name_1"/>
+                            <field name="title_1"/>
+                            <field name="name_2"/>
+                            <field name="title_2"/>
+                            <separator string="Message" colspan="4"/>
+                            <field name="message_text"  colspan="4" nolabel="1"/>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+	<record model="ir.actions.act_window" id="action_fiscal_statements_form">
+		<field name="name">Fiscal Statements</field>
+		<field name="res_model">fiscal.statements</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+        <menuitem name="Fiscal Statements" id="menu_fiscal_statements_config" parent="account.menu_finance_configuration" sequence="10"/>
+        <menuitem action="action_fiscal_statements_form"  
+		id="menu_fiscal_statement_tree" 
+		parent="menu_fiscal_statements_config" sequence="6" />
+
+        <record id="view_fiscal_statements_lines_form" model="ir.ui.view">
+            <field name="name">fiscal.statements.lines.form</field>
+            <field name="model">fiscal.statements.lines</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Fiscal Statements Lines">
+                    <notebook>
+                        <page string="General">
+                            <field name="name" select="1"/>
+                            <field name="code" select="1"/>
+			    <newline/>
+                            <field name="sequence"/>
+                            <field name="section"/>
+	                    <field name="display_amount" />
+	                    <field name="display_label" />
+	                    <field name="font_style" />
+	                    <field name="state" />
+	                    <field name="invert_sign" />
+	                    <field name="income" />
+                            <separator string="Accounts" colspan="4"/>
+                            <field name="account_id" colspan="4" nolabel="1"/>
+                        </page>
+		        <page string="Notes">
+                            <field name="note" nolabel="1" colspan="4"/>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_fiscal_statements_line_tree" model="ir.ui.view">
+            <field name="name">fiscal.statements.lines.tree</field>
+            <field name="model">fiscal.statements.lines</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Fiscal Statements Lines">
+                    <field name="sequence"/>
+                    <field name="section"/>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="account_id" />
+                    <field name="display_amount" />
+                    <field name="display_label" />
+                </tree>
+            </field>
+        </record>
+
+	<record model="ir.actions.act_window" id="action_fiscal_statements_line_form">
+		<field name="name">Fiscal Statements Lines</field>
+		<field name="res_model">fiscal.statements.lines</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+    </data>
+</openerp>
+

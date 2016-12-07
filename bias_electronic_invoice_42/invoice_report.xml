@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<terp>
+<data>
+	<!-- 
+	Custom Invoice Report
+	-->
+	<report id="account_invoices_electronic" 
+		string="eInvoice" 
+		model="account.invoice" 
+		name="account.invoice.electronic2" 
+		rml="bias_electronic_invoice_42/report/invoice.rml"
+	       auto="False"/>
+	
+	
+
+</data>
+</terp>

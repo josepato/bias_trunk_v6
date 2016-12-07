@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+<!--
+	res.partner.title
+ 	Contact Title
+-->
+
+        <record id="partner_title_sr" model="res.partner.title">
+            <field name="domain">contact</field>
+            <field name="name">Señor</field>
+            <field name="shortcut">Sr.</field>
+        </record>
+        <record id="partner_title_sra" model="res.partner.title">
+            <field name="domain">contact</field>
+            <field name="name">Señora</field>
+            <field name="shortcut">Sra.</field>
+        </record>
+        <record id="partner_title_srita" model="res.partner.title">
+            <field name="domain">contact</field>
+            <field name="name">Señorita</field>
+            <field name="shortcut">Srita.</field>
+        </record>
+        <record id="partner_title_ing" model="res.partner.title">
+            <field name="domain">contact</field>
+            <field name="name">Ingeniero</field>
+            <field name="shortcut">Ing.</field>
+        </record>
+        <record id="partner_title_cp" model="res.partner.title">
+            <field name="domain">contact</field>
+            <field name="name">Contador</field>
+            <field name="shortcut">C.P.</field>
+        </record>
+        <record id="partner_title_lic" model="res.partner.title">
+            <field name="domain">contact</field>
+            <field name="name">Licenciado</field>
+            <field name="shortcut">Lic.</field>
+        </record>
+        <record id="partner_title_dr" model="res.partner.title">
+            <field name="domain">contact</field>
+            <field name="name">Doctor</field>
+            <field name="shortcut">Dr.</field>
+        </record>
+        <record id="partner_title_dra" model="res.partner.title">
+            <field name="domain">contact</field>
+            <field name="name">Doctora</field>
+            <field name="shortcut">Dra.</field>
+        </record>
+        <record id="partner_title_mstr" model="res.partner.title">
+            <field name="domain">contact</field>
+            <field name="name">Maestro</field>
+            <field name="shortcut">Mstr.</field>
+        </record>
+        <record id="partner_title_arq" model="res.partner.title">
+            <field name="domain">contact</field>
+            <field name="name">Arquitecto</field>
+            <field name="shortcut">Arq.</field>
+        </record>
+
+
+    </data>
+</openerp>

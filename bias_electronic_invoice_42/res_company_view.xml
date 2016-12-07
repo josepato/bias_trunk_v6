@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+
+	# ------------------------------------------------------
+	# Adds the company certificate number for the electronic invoice
+	# ------------------------------------------------------
+	<record model="ir.ui.view" id="view_res_company_form_inherit">
+		<field name="name">res.company.form.inherit</field>
+		<field name="model">res.company</field>
+		<field name="inherit_id" ref="base.view_company_form"/>
+		<field name="arch" type="xml">
+                            <field name="currency_id" position="after">
+                	       <separator colspan="4" string="Certificate Number"/>
+                	       <field name="certificate"  domain="[('res_model','=','res.company'), ('res_id','=',id)]"/>
+                               <field  name="nocertificado" />
+                	       <field colspan="4" name="key" domain="[('res_model','=','res.company'), ('res_id','=',id)]"/>
+                	       <field colspan="4" name="key_phrase"/>
+
+                	       <field name="folio_ids"/>
+		            </field>
+		</field>
+	</record>
+
+	</data>
+</openerp>

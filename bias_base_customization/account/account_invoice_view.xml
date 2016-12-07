@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        =============================
+	Add reference field in Supplier Invoice tree view
+        =============================
+        <record id="invoice_tree_ref" model="ir.ui.view">
+            <field name="name">account.invoice.tree.ref</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_tree"/>
+            <field name="arch" type="xml">
+                <field name="number" position="after">
+                    <field name="reference"/>
+                </field>
+            </field>
+        </record>
+
+        
+
+
+	=============================
+        Add button print invoice
+	=============================
+
+
+        <record id="view_account_invoice_inherit" model="ir.ui.view">
+            <field name="name">account.invoice.inherit.print.button</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+      	        <xpath expr="/form/notebook/page/group/group/button[@string='Print Invoice']" position="replace">
+                                       <button name="reprint_invoice" string="Print Invoice"  type="object" icon="gtk-print" states="open,paid,sale"/>
+
+                </xpath>
+                </field>
+
+        </record>
+
+
+
+    </data>
+</openerp>

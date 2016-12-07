@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<terp>
+	<data>
+		<wizard
+			string="Electronic Invoice Report"
+			model="account.invoice"
+			name="account.invoice.electronic.report"
+			menu="False"
+			id="wizard_electronic_invoice_report"/>
+		<menuitem
+			name="Financial Management/Reporting/Electronic Invoice Report"
+			action="wizard_electronic_invoice_report"
+			type="wizard"
+			id="menu_electronic_invoice_report"/>
+		<wizard
+			string="Electronic Invoice Redo"
+			model="account.invoice"
+			name="account.invoice.redo.einvoice"
+			menu="True"
+			id="wizard_electronic_invoice_redo"/>
+
+
+	</data>
+</terp>

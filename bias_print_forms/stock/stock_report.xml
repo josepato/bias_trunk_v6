@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <report auto="False" 
+		id="report_stock_picking_bias"
+		model="stock.picking" 
+		name="stock.picking.bias" 
+		rml="bias_print_forms/stock/report/picking.rml" 
+		string="Packing list" />
+
+	<report
+
+		id="report_stock_inventory_bias"
+		model="stock.location"
+		name="stock.inventory.bias"
+		rml="bias_print_forms/stock/report/stock.rml"
+
+		multi="True"
+		string="Imprimir Inventario Físico"/>
+
+    </data>
+</openerp>
+

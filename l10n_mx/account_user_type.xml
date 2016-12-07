@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+<!--
+	account.account.type
+ 	User Type
+-->
+
+        <record id="user_type_view" model="account.account.type">
+            <field name="name">view</field>
+            <field name="code">view</field>
+            <field name="close_method">none</field>
+        </record>
+        <record id="user_type_capital" model="account.account.type">
+            <field name="name">Capital</field>
+            <field name="code">capital</field>
+            <field name="close_method">balance</field>
+        </record>
+        <record id="user_type_asset" model="account.account.type">
+            <field name="name">Asset</field>
+            <field name="code">asset</field>
+            <field name="close_method">balance</field>
+        </record>
+        <record id="user_type_stock" model="account.account.type">
+            <field name="name">Stock</field>
+            <field name="code">stock</field>
+            <field name="close_method">balance</field>
+        </record>
+        <record id="user_type_partners" model="account.account.type">
+            <field name="name">Partners</field>
+            <field name="code">partners</field>
+            <field name="close_method">balance</field>
+        </record>
+        <record id="user_type_receivable" model="account.account.type">
+            <field name="name">Receivable</field>
+            <field name="code">receivable</field>
+            <field name="close_method">unreconciled</field>
+        </record>
+        <record id="user_type_payable" model="account.account.type">
+            <field name="name">Payable</field>
+            <field name="code">payable</field>
+            <field name="close_method">unreconciled</field>
+        </record>
+        <record id="user_type_tax" model="account.account.type">
+            <field name="name">Tax</field>
+            <field name="code">tax</field>
+            <field name="close_method">none</field>
+        </record>
+        <record id="user_type_cash" model="account.account.type">
+            <field name="name">Cash</field>
+            <field name="code">cash</field>
+            <field name="close_method">balance</field>
+        </record>
+        <record id="user_type_expense" model="account.account.type">
+            <field name="name">Expense</field>
+            <field name="code">expense</field>
+            <field name="close_method">none</field>
+        </record>
+        <record id="user_type_income" model="account.account.type">
+            <field name="name">Income</field>
+            <field name="code">income</field>
+            <field name="close_method">none</field>
+        </record>
+        <record id="user_type_producction" model="account.account.type">
+            <field name="name">Producction</field>
+            <field name="code">producction</field>
+            <field name="close_method">none</field>
+        </record>
+
+        <record id="user_type_other" model="account.account.type">
+            <field name="name">Other</field>
+            <field name="code">other</field>
+            <field name="close_method">none</field>
+        </record>
+
+
+    </data>
+</openerp>

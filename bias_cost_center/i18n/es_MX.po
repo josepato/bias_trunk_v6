@@ -1,0 +1,380 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_cost_center
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2010-06-21 21:48:33+0000\n"
+"PO-Revision-Date: 2010-06-21 21:48:33+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_cost_center
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "¡El nombre del objeto debe empezar con x_ y no contener ningún carácter especial!"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "(keep empty to use the current period)"
+msgstr "(vacío para período actual)"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "Other Info"
+msgstr "Otra información"
+
+#. module: bias_cost_center
+#: field:cost.center,child_id:0
+msgid "Child Cost Center"
+msgstr "Centro de Costos Hijos"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "Create"
+msgstr "Crear"
+
+#. module: bias_cost_center
+#: field:account.invoice,cost_center_id:0
+#: field:account.invoice.line,cost_center_id:0
+#: field:account.move.line,cost_center_id:0
+#: view:cost.center:0
+#: field:purchase.order,cost_center_id:0
+#: field:purchase.order.line,cost_center_id:0
+#: field:sale.order,cost_center_id:0
+#: field:sale.order.line,cost_center_id:0
+#: field:stock.move,cost_center_id:0
+#: field:stock.picking,cost_center_id:0
+msgid "Cost Center"
+msgstr "Centro de Costos"
+
+#. module: bias_cost_center
+#: view:cost.center:0
+#: model:ir.actions.act_window,name:bias_cost_center.action_cost_center_tree
+#: model:ir.ui.menu,name:bias_cost_center.menu_action_cost_center_tree
+msgid "Chart of Cost Center"
+msgstr "Catalogo de Centro de Costos"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "Sale Order Lines"
+msgstr "Líneas del pedido de venta"
+
+#. module: bias_cost_center
+#: view:account.move:0
+msgid "State"
+msgstr "Estado"
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Purchase Order Lines"
+msgstr "Lineas de Orden de Compra"
+
+#. module: bias_cost_center
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo inválido en definición de acción"
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Total amount"
+msgstr "Importe total"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "Qty"
+msgstr "Ctdad"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "PRO-FORMA"
+msgstr "PRO-FORMA"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "Invoice Lines"
+msgstr "Líneas de factura"
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Untaxed amount"
+msgstr "Base imponible"
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Delivery"
+msgstr "Envío"
+
+#. module: bias_cost_center
+#: help:cost.center,active:0
+msgid "Actives / Deactives The Cost Center"
+msgstr "Los centros de costos Activos / Desactivos"
+
+#. module: bias_cost_center
+#: field:cost.center,note:0
+msgid "Description"
+msgstr "Descripcion"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "Manual Description"
+msgstr "Descripción manual"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "Supplier invoice"
+msgstr "Factura de proveedor"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "Automatic Declaration"
+msgstr "Declaración automática"
+
+#. module: bias_cost_center
+#: view:account.move:0
+msgid "Total Credit"
+msgstr "Total crédito"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+#: view:purchase.order:0
+msgid "Set to Draft"
+msgstr "Cambiar a borrador"
+
+#. module: bias_cost_center
+#: model:ir.module.module,description:bias_cost_center.module_meta_information
+msgid "."
+msgstr "."
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Approved by Supplier"
+msgstr "Aprobado por proveedor"
+
+#. module: bias_cost_center
+#: view:account.move:0
+msgid "Optional Information"
+msgstr "Información opcional"
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Delivery & Invoices"
+msgstr "Albaranes & Facturas"
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Invoice Control"
+msgstr "Control factura"
+
+#. module: bias_cost_center
+#: field:cost.center,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "Validate"
+msgstr "Validar"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "Make Invoice"
+msgstr "Crear factura"
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Approve Purchase"
+msgstr "Aprobar compra"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "Invoice lines"
+msgstr "Líneas de factura"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "UoM"
+msgstr "UdM"
+
+#. module: bias_cost_center
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Compute"
+msgstr "Calcular"
+
+#. module: bias_cost_center
+#: field:cost.center,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bias_cost_center
+#: help:account.invoice.line,cost_center_id:0
+#: help:account.move.line,cost_center_id:0
+msgid "The Cost Center of this entry line."
+msgstr "El Centro de Costo de esta linea de Asiento"
+
+#. module: bias_cost_center
+#: view:cost.center:0
+#: view:purchase.order:0
+#: view:sale.order:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: bias_cost_center
+#: view:account.move:0
+msgid "Account Entry Line"
+msgstr "Línea del asiento contable"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "Compute Taxes"
+msgstr "Calcular impuestos"
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Cancel Purchase Order"
+msgstr "Cancelar pedido de compra"
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Purchase Order"
+msgstr "Orden de compra"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: bias_cost_center
+#: view:account.move:0
+msgid "Total Debit"
+msgstr "Total debe"
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Purchase Control"
+msgstr "Control de compra"
+
+#. module: bias_cost_center
+#: model:ir.model,name:bias_cost_center.model_cost_center
+#: model:ir.module.module,shortdesc:bias_cost_center.module_meta_information
+msgid "Bias Cost Center"
+msgstr "Centro de Costos Bias"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "History"
+msgstr "Historial"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "Additionnal Information"
+msgstr "Información adicional"
+
+#. module: bias_cost_center
+#: field:cost.center,complete_name:0
+msgid "Full Name"
+msgstr "Nombre Completo"
+
+#. module: bias_cost_center
+#: field:cost.center,code:0
+msgid "Code"
+msgstr "Codigo"
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Manually Corrected"
+msgstr "Corregido manualmente"
+
+#. module: bias_cost_center
+#: field:cost.center,parent_id:0
+msgid "Parent"
+msgstr "Padre"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "Sales order lines"
+msgstr "Líneas del pedido de ventas"
+
+#. module: bias_cost_center
+#: model:ir.actions.act_window,name:bias_cost_center.action_cost_center_form
+#: model:ir.ui.menu,name:bias_cost_center.menu_cost_center
+#: model:ir.ui.menu,name:bias_cost_center.menu_cost_center_form
+msgid "Cost Centers"
+msgstr "Centro de Costos"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "Properties"
+msgstr "Propiedades"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "States"
+msgstr "Estados"
+
+#. module: bias_cost_center
+#: view:account.move:0
+msgid "General Information"
+msgstr "Información general"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "Re-Open"
+msgstr "Reabrir"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "Extra Info"
+msgstr "Información extra"
+
+#. module: bias_cost_center
+#: help:cost.center,name:0
+msgid "Determines multiple cost center of a company, like a branch, certain office or a city"
+msgstr "Determina multiples centro de costos de una compañia, como una rama, cierta oficina o una ciudad"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: bias_cost_center
+#: view:purchase.order:0
+msgid "Confirm Purchase Order"
+msgstr "Confirmar pedido de compra"
+
+#. module: bias_cost_center
+#: view:account.invoice:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "Order Line"
+msgstr "Línea del pedido"
+
+#. module: bias_cost_center
+#: field:cost.center,child_parent_ids:0
+msgid "Children"
+msgstr "HIjos"
+
+#. module: bias_cost_center
+#: view:sale.order:0
+msgid "Stock Moves"
+msgstr "Movimientos de stock"
+

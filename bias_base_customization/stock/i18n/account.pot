@@ -1,0 +1,95 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.1\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2009-08-06 16:45:07+0000\n"
+"PO-Revision-Date: 2009-08-06 16:45:07+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_account
+#: field:account.tax.code,tax_code_id:0
+msgid "Tax Destination"
+msgstr ""
+
+#. module: bias_account
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: bias_account
+#: field:account.tax.code,account_debit_id:0
+msgid "Model Acc. debit"
+msgstr "Modelo Debito"
+
+#. module: bias_account
+#: help:account.tax.code,tax_code_id:0
+msgid "If will be created tax extra line in bank reconcile this is the tax code writed in."
+msgstr ""
+
+#. module: bias_account
+#: field:res.currency,rate_inverse:0
+msgid "Current Rate"
+msgstr "Tasa Actual"
+
+#. module: bias_account
+#: model:ir.module.module,description:bias_account.module_meta_information
+msgid "."
+msgstr ""
+
+#. module: bias_account
+#: field:account.tax.code,account_credit_id:0
+msgid "Model Acc. credit"
+msgstr "Modelo Credito"
+
+#. module: bias_account
+#: field:account.move.line,move_origin_id:0
+msgid "Move Origin"
+msgstr "Póliza Origen"
+
+#. module: bias_account
+#: model:ir.module.module,shortdesc:bias_account.module_meta_information
+msgid "Bias Account"
+msgstr ""
+
+#. module: bias_account
+#: view:res.currency:0
+msgid "Rates"
+msgstr "Tasas"
+
+#. module: bias_account
+#: code:addons/bias_account/account_move_line.py:0
+#, python-format
+msgid "Error"
+msgstr ""
+
+#. module: bias_account
+#: help:account.move.line,move_origin_id:0
+msgid "The move origin of this entry line."
+msgstr "La Póliza de origen de esta línea de póliza"
+
+#. module: bias_account
+#: help:res.currency,rate_inverse:0
+#: help:res.currency.rate,rate_inv:0
+msgid "The rate inverse of the currency to the currency of rate 1"
+msgstr "La tasa inversa de esta moneda a la moneda con taza 1"
+
+#. module: bias_account
+#: field:res.currency.rate,rate_inv:0
+msgid "Rate Inverse"
+msgstr "Tasa Inversa"
+
+#. module: bias_account
+#: code:addons/bias_account/account_move_line.py:0
+#, python-format
+msgid "Line ID \"%s\" have not Tax Code !"
+msgstr "La línea \"%s\" no tiene código de impuesto"
+

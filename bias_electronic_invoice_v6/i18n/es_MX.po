@@ -1,0 +1,562 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_electronic_invoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 5.0.6\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-02-11 01:52:03+0000\n"
+"PO-Revision-Date: 2011-02-11 01:52:03+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_electronic_invoice
+#: view:res.company:0
+msgid "My Suite"
+msgstr ""
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Cadena Original:"
+msgstr "Cadena Original:"
+
+#. module: bias_electronic_invoice
+#: selection:res.company,proveedor_cfd:0
+msgid "Propios Medios"
+msgstr ""
+
+#. module: bias_electronic_invoice
+#: field:res.company,entity:0
+msgid "Entity MySuite"
+msgstr ""
+
+#. module: bias_electronic_invoice
+#: field:res.company,requestor:0
+msgid "Requestor"
+msgstr ""
+
+#. module: bias_electronic_invoice
+#: constraint:ir.actions.act_window:0
+msgid "Invalid model name in the action definition."
+msgstr "Nombre de modelo inválido en definición de acción"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "1.3cm 1.5cm 20cm 1.5cm"
+msgstr "1.3cm 1.5cm 20cm 1.5cm"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "| No. Aprobación:"
+msgstr "| No. Aprobación:"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Facturado A:"
+msgstr "Facturado A:"
+
+#. module: bias_electronic_invoice
+#: field:res.company.folios,company_id:0
+msgid "Company"
+msgstr "Compañia"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid ","
+msgstr ","
+
+#. module: bias_electronic_invoice
+#: field:res.company.folios,serie:0
+msgid "Serie"
+msgstr "Serie"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Lugar de Expedición: Monterrey N.L."
+msgstr "Lugar de Expedición: Monterrey N.L."
+
+#. module: bias_electronic_invoice
+#: model:ir.ui.menu,name:bias_electronic_invoice.menu_electronic_invoice_report
+msgid "Electronic Invoice Report"
+msgstr "Reporte de Factura Electrónica"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "C.P.:"
+msgstr "C.P.:"
+
+#. module: bias_electronic_invoice
+#: wizard_button:account.invoice.redo.einvoice,export,close:0
+msgid "Ok"
+msgstr ""
+
+#. module: bias_electronic_invoice
+#: view:account.invoice.addenda:0
+#: field:account.invoice.addenda,name:0
+#: field:account.invoice.addenda.lines,addenda_id:0
+#: model:ir.actions.act_window,name:bias_electronic_invoice.action_account_invoice_addenda_form
+#: model:ir.ui.menu,name:bias_electronic_invoice.menu_account_invoice_addenda_form2
+#: field:res.partner,addenda:0
+msgid "Addenda"
+msgstr "Addenda"
+
+#. module: bias_electronic_invoice
+#: model:ir.model,name:bias_electronic_invoice.model_account_invoice_adenda_lines
+msgid "Lines of the Electronic Invoice Adenda"
+msgstr "Lines of the Electronic Invoice Adenda"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Colonia:"
+msgstr "Colonia:"
+
+#. module: bias_electronic_invoice
+#: field:res.company,proveedor_cfd:0
+msgid "Proveedor CDF"
+msgstr ""
+
+#. module: bias_electronic_invoice
+#: field:res.company.folios,folio_from:0
+msgid "Folio From"
+msgstr "Folio De:"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Tel.:"
+msgstr "Tel.:"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "/100"
+msgstr "/100"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice.addenda.lines,tag:0
+msgid "Tag"
+msgstr "Leyenda"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice,approved_number:0
+#: field:res.company.folios,approved_number:0
+msgid "Approved Number"
+msgstr "Numero de Aprobación"
+
+#. module: bias_electronic_invoice
+#: selection:res.company,proveedor_cfd:0
+msgid "My Suite - Timbrado"
+msgstr ""
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "|"
+msgstr "|"
+
+#. module: bias_electronic_invoice
+#: field:res.company,nocertificado:0
+msgid "Numero de Certificado"
+msgstr "Número de Certificado"
+
+#. module: bias_electronic_invoice
+#: constraint:ir.ui.view:0
+msgid "Invalid XML for View Architecture!"
+msgstr "¡XML inválido para la definición de la vista!"
+
+#. module: bias_electronic_invoice
+#: model:ir.actions.wizard,name:bias_electronic_invoice.wizard_electronic_invoice_report
+msgid "Electronic Invoice Redo"
+msgstr "Regenerar Factura Electronica"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "/"
+msgstr "/"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "R.F.C.:"
+msgstr "R.F.C.:"
+
+#. module: bias_electronic_invoice
+#: field:res.company,key:0
+msgid "Key"
+msgstr "Key"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Valor Unitario"
+msgstr "Valor Unitario"
+
+#. module: bias_electronic_invoice
+#: wizard_view:account.invoice.redo.einvoice,export:0
+msgid "Regeneration Done!!!"
+msgstr "Regeneración Realizada!!!"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Tel:"
+msgstr "Tel:"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Tipo de Cambio:"
+msgstr "Tipo de Cambio:"
+
+#. module: bias_electronic_invoice
+#: view:account.invoice:0
+#: model:ir.module.module,shortdesc:bias_electronic_invoice.module_meta_information
+#: view:res.company:0
+#: view:res.partner:0
+msgid "Electronic Invoice"
+msgstr "Factura Electrónica"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "| No. Certificado:"
+msgstr "| No. Certificado:"
+
+#. module: bias_electronic_invoice
+#: help:res.company,certificate:0
+msgid "Attach your Certificate .cer to the company as an Attachment,/n and then select it here"
+msgstr "Adjunta el Certificado (.cer) a la compañia y seleccionalo aqui."
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Pagina"
+msgstr "Página"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice,digital_signature:0
+msgid "Signature"
+msgstr "Firma"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Cantidad con Letra:"
+msgstr "Cantidad con Letra:"
+
+#. module: bias_electronic_invoice
+#: help:res.company,key:0
+msgid "Attach your Key .key to the company as an Attachment,/n and then select it here"
+msgstr "Adjunta el archivo de la Llave del CFD (.key) a la compañia y seleccionalo aqui."
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Fecha:"
+msgstr "Fecha:"
+
+#. module: bias_electronic_invoice
+#: wizard_field:account.invoice.redo.einvoice,init,invoice_ids:0
+#: wizard_field:account.invoice.redo.einvoice,md5,invoice_ids:0
+msgid "Invoices"
+msgstr "Facturas"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Moneda:"
+msgstr "Moneda:"
+
+#. module: bias_electronic_invoice
+#: selection:res.company,proveedor_cfd:0
+msgid "Buzon Fiscal - CFDI"
+msgstr ""
+
+#. module: bias_electronic_invoice
+#: model:ir.model,name:bias_electronic_invoice.model_account_invoice_adenda
+msgid "Adenda for the Electronic Invoice"
+msgstr "Adenda para la Factura Electronica"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Plazo de Pago:"
+msgstr "Plazo de Pago:"
+
+#. module: bias_electronic_invoice
+#: field:res.company,username_mysuite:0
+msgid "UserName MySuite"
+msgstr ""
+
+#. module: bias_electronic_invoice
+#: field:account.invoice,certificate:0
+msgid "Certificate"
+msgstr "Certificado"
+
+#. module: bias_electronic_invoice
+#: model:ir.model,name:bias_electronic_invoice.model_res_company_folios
+msgid "Folios autorizados a la compania"
+msgstr "Folios autorizados a la compania"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice.addenda.lines,field:0
+#: field:account.invoice.addenda.lines,name:0
+msgid "Field Name"
+msgstr "Nombre del Campo"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice,approved_year:0
+#: field:res.company.folios,approved_year:0
+msgid "Approved Year"
+msgstr "Año de Aprobación"
+
+#. module: bias_electronic_invoice
+#: selection:res.company,proveedor_cfd:0
+msgid "Buzon Fiscal - Timbrado"
+msgstr ""
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid ")*"
+msgstr ")*"
+
+#. module: bias_electronic_invoice
+#: field:res.company,user_mysuite:0
+msgid "User MySuite"
+msgstr ""
+
+#. module: bias_electronic_invoice
+#: field:res.company,key_phrase:0
+msgid "Key Phrase"
+msgstr "Frace de la llave"
+
+#. module: bias_electronic_invoice
+#: field:res.company,folio_ids:0
+msgid "Folios"
+msgstr "Folios"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Este documento es una representación impresa de un CFD"
+msgstr "Este documento es una representación impresa de un CFD"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "/ Fax:"
+msgstr "/ Fax:"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Col."
+msgstr "Col."
+
+#. module: bias_electronic_invoice
+#: model:ir.model,name:bias_electronic_invoice.model_account_invoice_addenda
+msgid "Addenda for the Electronic Invoice"
+msgstr "Addenda para la Factura Electróncia"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice,cancel_date:0
+msgid "Cancel Date"
+msgstr "Fecha de Cancelación"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "| Año de Aprobación:"
+msgstr "| Año de Aprobación:"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice.addenda,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: bias_electronic_invoice
+#: model:ir.module.module,description:bias_electronic_invoice.module_meta_information
+msgid " Makes a WebService conection with Buzon Fiscal     Stores an xml of the invoice    Sotres a digital certificate of the invice\n"
+"    "
+msgstr " Modulo de facturación electronica"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Descripción:"
+msgstr "Descripción:"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice.addenda.lines,default:0
+msgid "Default"
+msgstr "Default"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice.addenda.lines,required:0
+msgid "Required"
+msgstr "Requerido"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Sello Digital:"
+msgstr "Sello Digital:"
+
+#. module: bias_electronic_invoice
+#: view:account.invoice:0
+#: field:account.invoice,cadena:0
+msgid "Cadena"
+msgstr "Cadena"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice,sign_date:0
+msgid "Sing Date"
+msgstr "Fecha de Firmado"
+
+#. module: bias_electronic_invoice
+#: view:account.invoice:0
+msgid "Certificado"
+msgstr "Certificado"
+
+#. module: bias_electronic_invoice
+#: help:res.company,proveedor_cfd:0
+msgid "Seleccionar el Proveedor para la generacion del CFD o CFDI."
+msgstr ""
+
+#. module: bias_electronic_invoice
+#: wizard_button:account.invoice.redo.einvoice,init,md5:0
+#: wizard_button:account.invoice.redo.einvoice,md5,md5:0
+msgid "MD5 to SHA1"
+msgstr "MD5 a SHA1"
+
+#. module: bias_electronic_invoice
+#: view:account.invoice:0
+msgid "Sello"
+msgstr "Sello"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Folio:"
+msgstr "Folio:"
+
+#. module: bias_electronic_invoice
+#: field:res.company.folios,folio_to:0
+msgid "Folio To"
+msgstr "Folio Hasta:"
+
+#. module: bias_electronic_invoice
+#: help:account.invoice.addenda.lines,sequence:0
+msgid "The sequence field is used to order fields"
+msgstr "El campo de sequencia se usa para ordenar los campos"
+
+#. module: bias_electronic_invoice
+#: model:ir.actions.report.xml,name:bias_electronic_invoice.account_invoices_electronic
+msgid "eInvoice"
+msgstr "Factrua Electronica"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice.addenda.lines,relation:0
+msgid "Relation"
+msgstr "Relación"
+
+#. module: bias_electronic_invoice
+#: wizard_button:account.invoice.redo.einvoice,init,end:0
+#: wizard_button:account.invoice.redo.einvoice,md5,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bias_electronic_invoice
+#: selection:res.company,proveedor_cfd:0
+msgid "My Suite - CFDI"
+msgstr ""
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Importe"
+msgstr "Importe"
+
+#. module: bias_electronic_invoice
+#: constraint:ir.model:0
+msgid "The Object name must start with x_ and not contain any special character !"
+msgstr "¡El nombre del objeto debe empezar con x_ y no contener ningún carácter especial!"
+
+#. module: bias_electronic_invoice
+#: model:ir.model,name:bias_electronic_invoice.model_account_invoice_addenda_lines
+msgid "Lines of the Electronic Invoice Addenda"
+msgstr "Lineas de la Addenda de la Factura Electrónica"
+
+#. module: bias_electronic_invoice
+#: wizard_field:account.invoice.redo.einvoice,init,keep_date:0
+#: wizard_field:account.invoice.redo.einvoice,md5,keep_date:0
+msgid "Keep same Date?"
+msgstr "Mantener la Fecha de la Factura?"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice.addenda,line_ids:0
+msgid "Terms"
+msgstr "Terminos"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice.addenda,note:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "-"
+msgstr "-"
+
+#. module: bias_electronic_invoice
+#: view:res.company:0
+#: field:res.company,certificate:0
+msgid "Certificate Number"
+msgstr "Número de Certificado"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Dirección:"
+msgstr "Dirección:"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Pago en una Sola Exhibición"
+msgstr "Pago en una Sola Exhibición"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Concepto"
+msgstr "Concepto"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Sub-Total"
+msgstr "Sub-Total"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Unidad de Medida"
+msgstr "Unidad de Medida"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "*("
+msgstr "*("
+
+#. module: bias_electronic_invoice
+#: wizard_view:account.invoice.redo.einvoice,init:0
+#: wizard_view:account.invoice.redo.einvoice,md5:0
+msgid "Select the invoices to ReGenerate"
+msgstr "Seleccione las Facturas a Regenerar"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Comprobante de"
+msgstr "Comprobante de"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Cantidad"
+msgstr "Cantidad"
+
+#. module: bias_electronic_invoice
+#: field:account.invoice.addenda.lines,sequence:0
+msgid "Sequence"
+msgstr "Sequence"
+
+#. module: bias_electronic_invoice
+#: wizard_button:account.invoice.redo.einvoice,init,export:0
+#: wizard_button:account.invoice.redo.einvoice,md5,export:0
+msgid "Export"
+msgstr "Regenerar"
+
+#. module: bias_electronic_invoice
+#: rml:account.invoice.electronic:0
+msgid "Total"
+msgstr "Total"
+

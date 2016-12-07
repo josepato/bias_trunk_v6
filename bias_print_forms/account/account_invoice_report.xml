@@ -1,0 +1,23 @@
+<openerp>
+<data>
+
+
+<!--	Custom Refound	-->
+	<report id="account_custom_refound_bias"
+		string="Custom Refound" 
+		model="account.invoice"
+		name="account.custom.refound.bias" 
+		rml="bias_customization/account/report/custom_refound.rml"
+                header ="False"
+		auto="False"/>
+
+	<!--	Print Entry From Invoice	-->
+	<report id="invoice_entry_print_bias"
+		string="Entry" 
+		model="account.invoice"
+		name="invoice.entry.print.bias" 
+		rml="bias_customization/account/report/invoice_entry_print.rml"
+		auto="False"
+                header ="False"/>
+</data>
+</openerp>

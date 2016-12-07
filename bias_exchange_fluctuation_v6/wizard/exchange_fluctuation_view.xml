@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_exchange_fluctuation" model="ir.ui.view">
+            <field name="name">wizard.exchange.fluctuation.form</field>
+            <field name="model">wizard.exchange.fluctuation</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+		<form string="Parameters">
+	            <field name="period_id" on_change="onchange_period(period_id, currency_id)"/>
+	            <field name="date" on_change="onchange_period(period_id, currency_id)"/>
+	            <field name="rate"/>
+	            <field name="currency_id"/>
+	            <field name="ref" colspan="4"/>
+	            <field name="journal_id"/>
+	            <field name="company_id"/>
+	            <field name="move_id"/>
+	            <field name="reverse_move_id"/>
+	            <field name="bank_move_id"/>
+	            <field name="detailed"/>
+                    <field invisible="1" name="state"/>
+                    <field invisible="1" name="fluctuation_id"/>
+                    <group colspan="4" col="4" states="choose">
+	                <separator string="" colspan="4"/>
+                        <button icon="gtk-cancel" special="cancel" string="Cancel"/>
+                        <button icon="gtk-convert" string="Excel (.csv)" name="ouput_csv" type="object"/>
+<!--                        <button icon="gtk-print" name="check_report" string="Print" type="object" colspan="2" default_focus="1"/>-->
+                    </group>
+                    <group colspan="4" states="get,replace">
+		        <separator string="File" colspan="4"/>
+                        <field name="file.csv" nolabel="1" readonly="1" colspan="4"/>
+                    </group>
+                    <group colspan="2" states="get">
+                        <button icon="gtk-convert" string="Create Entry" name="create_entry" type="object"/>
+                    </group>
+                    <group colspan="2" states="replace">
+                        <button icon="gtk-convert" string="Replace Entry" name="replace_entry" type="object"/>
+                    </group>
+                    <group colspan="4" states="choose">
+                        <separator string="" colspan="4"/>
+                    </group>
+		</form>
+            </field>
+        </record>
+
+        <record id="action_exchange_fluctuation" model="ir.actions.act_window">
+            <field name="name">Exchange Fluctuation</field>
+            <field name="res_model">wizard.exchange.fluctuation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_exchange_fluctuation"/>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="menu_exchange_fluctuation_root" name="Exchange Fluctuation" parent="account.menu_finance_periodical_processing" sequence="9" groups="account.group_account_user,account.group_account_manager"/>
+        <menuitem action="action_exchange_fluctuation" id="menu_reports_exchange_fluctuation" parent="menu_exchange_fluctuation_root" sequence="20"/>
+<!--        <menuitem icon="STOCK_PRINT" action="action_exchange_fluctuation" id="menu_reports_exchange_fluctuation" parent="menu_exchange_fluctuation_root" sequence="20"/>-->
+    </data>
+</openerp>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+<!--        Account tax code -->
+        <record id="view_tax_code_form_inherit" model="ir.ui.view">
+            <field name="name">account.tax.code.form.inherit</field>
+            <field name="model">account.tax.code</field>
+            <field name="inherit_id" ref="account.view_tax_code_form"/>
+            <field name="arch" type="xml">
+                <field name="sum_period" position="after">
+                    <field name="account_debit_id"/>
+                    <field name="account_credit_id"/>
+                    <field name="tax_code_id"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>

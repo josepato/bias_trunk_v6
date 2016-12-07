@@ -1,0 +1,20 @@
+<openerp>
+<data noupdate="1">
+    
+
+    
+    <!--  Sequences for Electronic Invoice  -->
+    
+    <record model="ir.sequence.type" id="seq_type_e_invoice">
+       <field name="name">Account Electronic Invoice</field>
+      <field name="code">account.invoice.factura_e</field>
+    </record>
+    
+    <record model="ir.sequence" id="seq_auction_bid">
+       <field name="name">Account Electronic Invoice</field>
+       <field name="code">account.invoice.factura_e</field>
+       <field name="prefix"></field>
+    </record>
+
+</data>
+</openerp>

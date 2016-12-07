@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+
+	# ------------------------------------------------------
+	# Adds the company certificate number for the electronic invoice
+	# ------------------------------------------------------
+	<record model="ir.ui.view" id="view_res_company_form_inherit">
+		<field name="name">res.company.form.inherit</field>
+		<field name="model">res.company</field>
+		<field name="inherit_id" ref="base.view_company_form"/>
+		<field name="arch" type="xml">
+			 <notebook>
+                            <page position="inside" string="Electronic Invoice">
+                               <field  name="proveedor_cfd"/>
+                	       <separator colspan="4" string="Certificate Number"/>
+                	       <field name="certificate"  domain="[('res_model','=','res.company'), ('res_id','=',id)]"  attrs="{'readonly':[('proveedor_cfd','not in',('propios_medios','my_suite_timbre','buzon_fiscal_timbre', 'tralix_timbre'))], 'required':[('proveedor_cfd','in',('propios_medios','my_suite_timbre','buzon_fiscal_timbre', 'tralix_timbre'))]}"  />
+                               <field  name="nocertificado"  attrs="{'readonly':[('proveedor_cfd','not in',('propios_medios','my_suite_timbre','buzon_fiscal_timbre', 'tralix_timbre'))], 'required':[('proveedor_cfd','in',('propios_medios','my_suite_timbre','buzon_fiscal_timbre', 'tralix_timbre'))]}" />
+                	       <field colspan="4" name="key" domain="[('res_model','=','res.company'), ('res_id','=',id)]"  attrs="{'readonly':[('proveedor_cfd','not in',('propios_medios','my_suite_timbre','buzon_fiscal_timbre', 'tralix_timbre'))], 'required':[('proveedor_cfd','in',('propios_medios','my_suite_timbre','buzon_fiscal_timbre', 'tralix_timbre'))]}" />
+                	       <field colspan="4" name="key_phrase" password="True"  attrs="{'readonly':[('proveedor_cfd','not in',('propios_medios','my_suite_timbre','buzon_fiscal_timbre', 'tralix_timbre'))], 'required':[('proveedor_cfd','in',('propios_medios','my_suite_timbre','buzon_fiscal_timbre', 'tralix_timbre'))]}" />
+                	       <field name="id" invisible="1"/>
+                	       <field name="folio_ids"  attrs="{'readonly':[('proveedor_cfd','not in',('propios_medios','my_suite_timbre','buzon_fiscal_timbre', 'tralix_timbre'))], 'required':[('proveedor_cfd','in',('propios_medios','my_suite_timbre','buzon_fiscal_timbre', 'tralix_timbre'))]}" />
+
+                            </page>
+                         </notebook>
+		</field>
+	</record>
+
+	<record model="ir.ui.view" id="view_res_company_form_inherit_mysuite">
+		<field name="name">res.company.form.inherit.mysuite</field>
+		<field name="model">res.company</field>
+		<field name="inherit_id" ref="base.view_company_form"/>
+		<field name="arch" type="xml">
+			 <notebook>
+                            <page position="inside" string="My Suite">
+                               <field  name="requestor"  attrs="{'readonly':[('proveedor_cfd','not in',('my_suite_cfd','my_suite_timbre'))], 'required':[('proveedor_cfd','in',('my_suite_cfd', 'my_suite_timbre'))]}" />
+                               <field  name="user_mysuite" attrs="{'readonly':[('proveedor_cfd','not in',('my_suite_cfd','my_suite_timbre'))], 'required':[('proveedor_cfd','in',('my_suite_cfd', 'my_suite_timbre'))]}" />
+                               <field  name="username_mysuite" attrs="{'readonly':[('proveedor_cfd','not in',('my_suite_cfd','my_suite_timbre'))], 'required':[('proveedor_cfd','in',('my_suite_cfd', 'my_suite_timbre'))]}" />
+                               <field  name="entity" attrs="{'readonly':[('proveedor_cfd','not in',('my_suite_cfd','my_suite_timbre'))], 'required':[('proveedor_cfd','in',('my_suite_cfd', 'my_suite_timbre'))]}"  />
+                            </page>
+                         </notebook>
+		</field>
+	</record>
+
+	</data>
+</openerp>

@@ -1,0 +1,471 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* bias_fiscal_statements_v6
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.2\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2011-06-07 20:24+0000\n"
+"PO-Revision-Date: 2011-06-07 20:24+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,state:0
+msgid "Sub Total"
+msgstr "Sub Total"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_field:fiscal.statements,init,fiscalyear:0
+msgid "Ejercicio"
+msgstr "Ejercicio"
+
+#. module: bias_fiscal_statements_v6
+#: report:fiscal_statements_balance_1:0
+#: report:fiscal_statements_income:0
+msgid "Reg. Fed:"
+msgstr "Reg. Fed:"
+
+#. module: bias_fiscal_statements_v6
+#: report:fiscal_statements_income:0
+msgid "(Acumulado)"
+msgstr "(Acumulado)"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements.lines,state:0
+msgid "Tipo"
+msgstr "Tipo"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Times-BoldItalic"
+msgstr "Times-BoldItalic"
+
+#. module: bias_fiscal_statements_v6
+#: report:fiscal_statements_balance_1:0
+#: report:fiscal_statements_income:0
+msgid "al"
+msgstr "al"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Times-Bold"
+msgstr "Times-Bold"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements.lines,section:0
+msgid "Section"
+msgstr "Sección"
+
+#. module: bias_fiscal_statements_v6
+#: report:fiscal_statements_balance_1:0
+#: report:fiscal_statements_income:0
+msgid "Población:"
+msgstr "Población:"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements.lines,display_amount:0
+msgid "Display Amount"
+msgstr "Mostrar Monto"
+
+#. module: bias_fiscal_statements_v6
+#: view:fiscal.statements:0
+#: field:fiscal.statements.lines,fiscal_statements_id:0
+#: model:ir.actions.act_window,name:bias_fiscal_statements_v6.action_fiscal_statements_form
+#: model:ir.actions.wizard,name:bias_fiscal_statements_v6.wizard_fiscal_statements
+#: model:ir.model,name:bias_fiscal_statements_v6.model_fiscal_statements
+#: model:ir.ui.menu,name:bias_fiscal_statements_v6.menu_fiscal_statement_tree
+#: model:ir.ui.menu,name:bias_fiscal_statements_v6.menu_fiscal_statements
+#: model:ir.ui.menu,name:bias_fiscal_statements_v6.menu_fiscal_statements_config
+#: model:ir.ui.menu,name:bias_fiscal_statements_v6.menu_wizard_fiscal_statements
+msgid "Fiscal Statements"
+msgstr "Estados Financieros"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Helvetica"
+msgstr "Helvetica"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements.lines,note:0
+msgid "Note"
+msgstr "Nota"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements.lines,report_type:0
+msgid "Report Type"
+msgstr "Tipo de Reporte"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,state:0
+msgid "Nota"
+msgstr "Nota"
+
+#. module: bias_fiscal_statements_v6
+#: report:fiscal_statements_balance:0
+#: report:fiscal_statements_balance_1:0
+#: report:fiscal_statements_income:0
+msgid "a las"
+msgstr "a las"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements.lines,income:0
+msgid "Income"
+msgstr "Indicador del 100%"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_button:fiscal.statements,init,checkreport:0
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,state:0
+msgid "Titulo"
+msgstr "Titulo"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_field:fiscal.statements,init,title_1:0
+#: field:fiscal.statements,title_1:0
+msgid "Titulo 1"
+msgstr "Titulo 1"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements,format:0
+msgid "Balance Sheet one row"
+msgstr "Balance en una Columna"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Helvetica-Bold"
+msgstr "Helvetica-Bold"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements.lines,level:0
+msgid "Process level"
+msgstr "Nivel de Proceso"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_field:fiscal.statements,init,level:0
+msgid "Nivel"
+msgstr "Nivel"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,state:0
+msgid "Objeto"
+msgstr "Objeto"
+
+#. module: bias_fiscal_statements_v6
+#: report:fiscal_statements_balance:0
+#: report:fiscal_statements_income:0
+msgid "%"
+msgstr "%"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements,format:0
+msgid "Format"
+msgstr "Formato"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Courier"
+msgstr "Courier"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Courier-BoldOblique"
+msgstr "Courier-BoldOblique"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements,format:0
+#: model:ir.actions.report.xml,name:bias_fiscal_statements_v6.fiscal_statements_balance
+msgid "Balance Sheet"
+msgstr "Balance General"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_field:fiscal.statements,init,message_text:0
+#: field:fiscal.statements,message_text:0
+msgid "Mensaje"
+msgstr "Mensaje"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements,init,filter:0
+msgid "By Period"
+msgstr "Por Período"
+
+#. module: bias_fiscal_statements_v6
+#: report:fiscal_statements_balance_1:0
+#: report:fiscal_statements_income:0
+msgid ","
+msgstr ","
+
+#. module: bias_fiscal_statements_v6
+#: wizard_field:fiscal.statements,init,company_id:0
+msgid "Organizacion"
+msgstr "Organización"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements,format:0
+#: model:ir.actions.report.xml,name:bias_fiscal_statements_v6.fiscal_statements_income
+msgid "Income statement / Statement of earnings"
+msgstr "Estado de Resultados"
+
+#. module: bias_fiscal_statements_v6
+#: report:fiscal_statements_balance:0
+#: report:fiscal_statements_balance_1:0
+#: report:fiscal_statements_income:0
+msgid "Por:"
+msgstr "Por:"
+
+#. module: bias_fiscal_statements_v6
+#: help:fiscal.statements,report_csv,file:0
+msgid "File created for this report"
+msgstr "Archivo creado para este reporte"
+
+#. module: bias_fiscal_statements_v6
+#: report:fiscal_statements_balance_1:0
+#: report:fiscal_statements_income:0
+msgid "Dirección:"
+msgstr "Dirección:"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,report_type:0
+msgid "Report Objects With Accounts and child of Accounts"
+msgstr "Reporta objetos con cuentas e hijos"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements,fiscal_statements_line_id:0
+#: view:fiscal.statements.lines:0
+#: model:ir.actions.act_window,name:bias_fiscal_statements_v6.action_fiscal_statements_line_form
+#: model:ir.model,name:bias_fiscal_statements_v6.model_fiscal_statements_lines
+msgid "Fiscal Statements Lines"
+msgstr "Líneas de Estados Financieros"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,report_type:0
+msgid "Report Objects With Accounts"
+msgstr "Reporta objetos con cuentas"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Courier-Oblique"
+msgstr "Courier-Oblique"
+
+#. module: bias_fiscal_statements_v6
+#: report:fiscal_statements_balance:0
+#: report:fiscal_statements_balance_1:0
+#: report:fiscal_statements_income:0
+msgid "Fecha Impresión:"
+msgstr "Fecha Impresión:"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_button:fiscal.statements,report_csv,end:0
+msgid "Ok"
+msgstr "Ok"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements,name:0
+#: field:fiscal.statements.lines,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: bias_fiscal_statements_v6
+#: constraint:fiscal.statements.lines:0
+msgid "Error ! Value combination sequence - section must be unique ."
+msgstr "Error ! La convinación de valores sequencia y sección debe ser unica."
+
+#. module: bias_fiscal_statements_v6
+#: view:fiscal.statements.lines:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: bias_fiscal_statements_v6
+#: report:fiscal_statements_balance:0
+msgid "Acumulado"
+msgstr "Acumulado"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_field:fiscal.statements,init,name_2:0
+#: field:fiscal.statements,name_2:0
+msgid "Nombre 2"
+msgstr "Nombre 2"
+
+#. module: bias_fiscal_statements_v6
+#: help:fiscal.statements,init,fiscalyear:0
+msgid "Keep empty for all open fiscal year"
+msgstr "En blanco para todos los años fiscales abiertos"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_field:fiscal.statements,init,title_2:0
+#: field:fiscal.statements,title_2:0
+msgid "Titulo 2"
+msgstr "Titulo 2"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,state:0
+msgid "Salto de Pagina"
+msgstr "Salto de Pagina"
+
+#. module: bias_fiscal_statements_v6
+#: view:fiscal.statements:0
+msgid "Lines"
+msgstr "Líneas"
+
+#. module: bias_fiscal_statements_v6
+#: model:ir.actions.report.xml,name:bias_fiscal_statements_v6.fiscal_statements_balance_1
+msgid "Balance Sheet 1"
+msgstr "Hoja de Balance 1"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements.lines,invert_sign:0
+msgid "Invert Sign"
+msgstr "Invertir Signo"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_field:fiscal.statements,init,name_1:0
+#: field:fiscal.statements,name_1:0
+msgid "Nombre 1"
+msgstr "Nombre 1"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements,init,filter:0
+msgid "By Date"
+msgstr "Por Fecha"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements.lines,sequence:0
+msgid "Sequence"
+msgstr "Sequencia"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_field:fiscal.statements,init,fiscal_statements_id:0
+msgid "Reporte"
+msgstr "Reporte"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,report_type:0
+msgid "Report Objects Only"
+msgstr "Reporta Solo Objetos"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_field:fiscal.statements,init,message:0
+msgid "Con Mensaje"
+msgstr "Con Mensaje"
+
+#. module: bias_fiscal_statements_v6
+#: view:fiscal.statements:0
+msgid "Message"
+msgstr "Message"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,state:0
+msgid "Linea"
+msgstr "Línea"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_button:fiscal.statements,init,report_csv:0
+msgid "Excel"
+msgstr "Excel(csv)"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements.lines,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,section:0
+msgid "Column 2"
+msgstr "Columna 2"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,section:0
+msgid "Column 1"
+msgstr "Columna 1"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_field:fiscal.statements,init,period_id:0
+#: report:fiscal_statements_balance:0
+#: report:fiscal_statements_income:0
+msgid "Periodo"
+msgstr "Período"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_view:fiscal.statements,init:0
+msgid "Estados Financieros"
+msgstr "Estados Financieros"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_field:fiscal.statements,init,filter:0
+msgid "Date/Period Filter"
+msgstr "Filtro Fecha/Período"
+
+#. module: bias_fiscal_statements_v6
+#: view:fiscal.statements.lines:0
+msgid "General"
+msgstr "General"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Times-Italic"
+msgstr "Times-Italic"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Courier-Bold"
+msgstr "Courier-Bold"
+
+#. module: bias_fiscal_statements_v6
+#: view:fiscal.statements.lines:0
+#: field:fiscal.statements.lines,account_id:0
+msgid "Accounts"
+msgstr "Cuentas"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_view:fiscal.statements,report_csv:0
+msgid "File"
+msgstr "Archivo"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_field:fiscal.statements,report_csv,file:0
+msgid "Archivo"
+msgstr "Archivo"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_button:fiscal.statements,init,end:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Times-Roman"
+msgstr "Times-Roman"
+
+#. module: bias_fiscal_statements_v6
+#: selection:fiscal.statements.lines,font_style:0
+msgid "Helvetica-Oblique"
+msgstr "Helvetica-Oblique"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements.lines,font_style:0
+msgid "Font"
+msgstr "on"
+
+#. module: bias_fiscal_statements_v6
+#: wizard_view:fiscal.statements,report_csv:0
+msgid "Guardar Archivo .csv"
+msgstr "Guardar Archivo .csv"
+
+#. module: bias_fiscal_statements_v6
+#: field:fiscal.statements.lines,display_label:0
+msgid "Display label"
+msgstr "Mostrar Nombre"
+
+#. module: bias_fiscal_statements_v6
+#: report:fiscal_statements_balance:0
+msgid "at"
+msgstr "a las"
+

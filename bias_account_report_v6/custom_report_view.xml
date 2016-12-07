@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <menuitem icon="terp-sale" id="menu_report_root" name="Financial Reports" groups="account.group_account_user"/>
+
+        =============================
+        Account Custom Report
+        =============================
+
+        <record id="view_account_custom_report_tree" model="ir.ui.view">
+            <field name="name">account.custom.report.tree</field>
+            <field name="model">account.custom.report</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Account Custom Report">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_account_custom_report_form" model="ir.ui.view">
+            <field name="name">account.custom.report.form</field>
+            <field name="model">account.custom.report</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Account Custom Report">
+                    <field name="name"/>
+                </form>
+            </field>
+        </record>
+	<record model="ir.actions.act_window" id="action_account_custom_report_form">
+		<field name="name">Account Custom Report</field>
+		<field name="res_model">account.custom.report</field>
+		<field name="view_type">form</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+        =============================
+	Financial Report Configurator
+        =============================
+        <record id="view_financial_reports_form" model="ir.ui.view">
+            <field name="name">financial.reports.form</field>
+            <field name="model">financial.reports</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Financial Reports">
+                    <field name="company_id" select="1"/>
+		    <newline/>
+                    <field name="customer_account_id" select="1"/>
+                    <field name="supplier_account_id" select="1"/>
+                    <field name="mn_customer_account_id" select="1"/>
+                    <field name="mn_supplier_account_id" select="1"/>
+                    <field name="usd_customer_account_id" select="1"/>
+                    <field name="usd_supplier_account_id" select="1"/>
+                    <field name="creditor_account_id" select="1"/>
+		    <newline/>
+                    <field name="statement_balance_id"/>
+                    <field name="statement_income_id"/>
+                </form>
+            </field>
+        </record>
+        <record id="view_financial_reports_tree" model="ir.ui.view">
+            <field name="name">financial.reports.tree</field>
+            <field name="model">financial.reports</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Financial Reports">
+                    <field name="company_id"/>
+                    <field name="customer_account_id"/>
+                    <field name="supplier_account_id"/>
+                    <field name="mn_customer_account_id"/>
+                    <field name="usd_customer_account_id"/>
+                    <field name="mn_supplier_account_id"/>
+                    <field name="usd_supplier_account_id"/>
+                </tree>
+            </field>
+        </record>
+        <record id="action_financial_reports_form" model="ir.actions.act_window">
+            <field name="name">Financial Reports</field>
+            <field name="res_model">financial.reports</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="menu_report_configuration" name="Report Configuration" parent="account.menu_finance_configuration" sequence="9"/>
+        <menuitem action="action_financial_reports_form" id="menu_action_financial_reports_form" parent="menu_report_configuration"/>
+
+    </data>
+</openerp>

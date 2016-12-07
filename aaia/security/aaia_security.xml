@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+<data noupdate="0">
+
+    <record id="aaia.group_aaia_manager" model="res.groups">
+        <field name="name">AAIA / Manager</field>
+    </record>
+
+    <record id="aaia.group_aaia_user" model="res.groups">
+        <field name="name">AAIA / User</field>
+    </record>
+
+</data>
+</openerp>

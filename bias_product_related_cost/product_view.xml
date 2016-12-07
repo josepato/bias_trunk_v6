@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+<!--        All Product Price Tab -->
+    <record id="view_product_price_form" model="ir.ui.view">
+        <field name="name">product.price.inherit</field>
+        <field name="model">product.product</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook[last()]" position="inside">
+                <page string="Product's Costs">
+		    <field name="first_cost" readonly="1"/>
+		    <newline/>
+		    <field name="last_cost" readonly="1"/>
+		    <newline/>
+		    <field name="purchase_standard_price" readonly="1"/>
+		    <newline/>
+		    <field name="clon_standard_price"/>
+                    <separator string="Extra Purchase Cost " colspan="4"/>
+                    <field name="extra_cost"/>
+		    <field colspan="4" name="related_cost_ids" nolabel="1" widget="one2many_list">
+                        <tree string="Related Costs" editable="bottom">
+                            <field name="relaed_cost_id"/>
+                            <field name="factor" sum="Total Factor"/>
+	                    <field name="extra_cost"/>
+                            <field name="active"/>
+                        </tree>
+                        <form string="Related Costs">
+                            <field name="relaed_cost_id"/>
+                            <field name="factor"/>
+	                    <field name="extra_cost"/>
+                            <field name="active"/>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    </data>
+</openerp>

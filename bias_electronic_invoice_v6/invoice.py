@@ -655,7 +655,7 @@ class account_invoice(osv.osv):
                 data3 = ''
                 xmldata = self.make_MysuiteSoapPythonCall(cr, uid)
 
-                from invoice_mys import MYSUITEHOST, MYSUITEPORT, getMySuiteData1, getMySuiteData2, getMySuiteDataDescription
+                from invoice_mys import *
                 conn = httplib.HTTPSConnection(MYSUITEHOST, MYSUITEPORT)
                 conn.connect()
 
@@ -665,13 +665,14 @@ class account_invoice(osv.osv):
                 conn.endheaders()
                 conn.send(xmldata)
                 resp_xml = conn.getresponse().read()
-		if self.mysuiteConn.transaction == 'CONVERT_NATIVE_XML':
-                	data1 = getMySuiteData1(resp_xml)
-		elif self.mysuiteConn.transaction == 'CANCEL_XML':
-			data2 = getMySuiteData2(resp_xml)
-			if not data2:
-				error = getMySuiteDataDescription(resp_xml)
-				raise osv.except_osv(('Error al Cancelar!'), error)
+		if getMySuiteResult(resp_xml):
+			if self.mysuiteConn.transaction == 'CONVERT_NATIVE_XML':
+				data1 = getMySuiteData1(resp_xml)
+			elif self.mysuiteConn.transaction == 'CANCEL_XML':
+				data2 = getMySuiteData2(resp_xml)
+		else:
+			error = getMySuiteDataDescription(resp_xml)
+			raise osv.except_osv(('Error en operación MySuite !'), error)
                 return data1, data2, data3
 
 

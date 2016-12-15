@@ -99,6 +99,28 @@ def getMySuiteData2(responsexml):
                                     return data2
     return "RESPONSE ERROR"
 
+
+def getMySuiteResult(responsexml):
+    xmltree = etree.parse(StringIO.StringIO(responsexml))
+    root_elem = xmltree.getroot()
+    if getTagName(root_elem) == "Envelope":
+        body_elem = root_elem.getchildren()[0]
+        if getTagName(body_elem) == "Body":
+            resp_elem = body_elem.getchildren()[0]
+            if getTagName(resp_elem) == "RequestTransactionResponse":
+                result_elem = resp_elem.getchildren()[0]
+                if getTagName(result_elem) == "RequestTransactionResult":
+                    for child in result_elem.getchildren():
+                        if getTagName(child) == "Response":
+                            for child2 in child.getchildren():
+                                if getTagName(child2) == "Result":
+                                    if child2.text == "true":
+                                        return True
+                                    else:
+                                        return False
+
+
+
 def getMySuiteDataDescription(responsexml):
     xmltree = etree.parse(StringIO.StringIO(responsexml))
     root_elem = xmltree.getroot()
